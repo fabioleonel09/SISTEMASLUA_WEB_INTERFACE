@@ -19,8 +19,8 @@
         }
 
         .custom-font {
-    font-family: "Arial", arial; /* Especifica a fonte personalizada */
-  }
+            font-family: "Arial", arial; /* Especifica a fonte personalizada */
+        }
     </style>
 </head>
 <body class="custom-font" style="background-color: lightslategray;">
@@ -32,8 +32,8 @@
                 <asp:TableHeaderCell BackColor="#0033cc" Font-Bold="true" Font-Size="14" ForeColor="White" Width="20%" Height="50px">Orelha Esquerda</asp:TableHeaderCell>
             </asp:TableHeaderRow>
             <asp:TableRow>
-                <asp:TableCell Width="20%" Height="100%" style="vertical-align: bottom">
-                    <div id="dadosAudioOD" runat="server" >
+                <asp:TableCell Width="20%" Height="100%" Style="vertical-align: bottom">
+                    <div id="dadosAudioOD" runat="server">
                         <asp:Button ID="btnPlotarAudioOD" runat="server" Text="Plotar Gráfico OD" Width="100%" Height="10%" OnClick="btnPlotarAudioOD_Click" />
                     </div>
                 </asp:TableCell>
@@ -56,6 +56,10 @@
                                     </asp:ChartArea>
                                 </ChartAreas>
                             </asp:Chart>
+                            <asp:RadioButtonList ID="rbBananaFalaODClinica" runat="server" RepeatDirection="Horizontal">
+                                <asp:ListItem Text="Exibe a Banana da Fala" Value="0"></asp:ListItem>
+                                <asp:ListItem Text="Oculta a Banana da Fala" Value="1"></asp:ListItem>
+                            </asp:RadioButtonList>
                         </div>
                         <div class="box" id="audiogramaOE" runat="server">
                             <asp:Chart ID="chartAudioOE" runat="server" Height="416px" Width="467px" BackColor="AliceBlue">
@@ -74,11 +78,15 @@
                                     </asp:ChartArea>
                                 </ChartAreas>
                             </asp:Chart>
+                            <asp:RadioButtonList ID="rbBananaFalaOEClinica" runat="server" RepeatDirection="Horizontal">
+                                <asp:ListItem Text="Exibe a Banana da Fala" Value="0"></asp:ListItem>
+                                <asp:ListItem Text="Oculta a Banana da Fala" Value="1"></asp:ListItem>
+                            </asp:RadioButtonList>
                         </div>
                     </div>
                 </asp:TableCell>
-                <asp:TableCell Width="20%" Height="100%" style="vertical-align: bottom">
-                    <div id="dadosAudioOE" runat="server" >
+                <asp:TableCell Width="20%" Height="100%" Style="vertical-align: bottom">
+                    <div id="dadosAudioOE" runat="server">
                         <asp:Button ID="btnPlotarAudioOE" runat="server" Text="Plotar Gráfico OE" Width="100%" Height="10%" OnClick="btnPlotarAudioOE_Click" />
                     </div>
                 </asp:TableCell>

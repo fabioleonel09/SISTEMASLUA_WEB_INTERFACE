@@ -69,6 +69,15 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.DataVisualization.Charting.Chart chartAudioOD;
 
         /// <summary>
+        /// Controle rbBananaFalaODClinica.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rbBananaFalaODClinica;
+
+        /// <summary>
         /// Controle audiogramaOE.
         /// </summary>
         /// <remarks>
@@ -85,6 +94,15 @@ namespace SISTEMASLUASAUDE_APLICACAO
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.DataVisualization.Charting.Chart chartAudioOE;
+
+        /// <summary>
+        /// Controle rbBananaFalaOEClinica.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rbBananaFalaOEClinica;
 
         /// <summary>
         /// Controle dadosAudioOE.
