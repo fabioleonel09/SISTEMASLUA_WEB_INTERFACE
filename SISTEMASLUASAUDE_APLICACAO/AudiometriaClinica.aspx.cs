@@ -13,22 +13,33 @@ namespace SISTEMASLUASAUDE_APLICACAO
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            CarregaAudiogramaClinicoOD();
-            CarregaAudiogramaClinicoOE();
+            if (!IsPostBack)
+            {
+                CarregaAudiogramaClinicoOD();
+                CarregaAudiogramaClinicoOE();
+            }
         }
 
-        protected void btnPlotarAudioOD_Click(object sender, EventArgs e)
+        protected void btnPlotarGeral_Click(object sender, EventArgs e)
         {
             PlotaDadosAudiogramaOD();
+            PlotaDadosAudiogramaOE();
         }
 
-        protected void btnPlotarAudioOE_Click(object sender, EventArgs e)
+        protected void btnMediaTritonal_Click(object sender, EventArgs e)
         {
-            PlotaDadosAudiogramaOE();
+
+        }
+
+        protected void btnMediaQuadritonal_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void CarregaAudiogramaClinicoOD()
         {
+            chartAudioOD.Series.Clear();// limpa o chart
+
             //***PARA MONTAR O GRÁFICO***
 
             int iniciar = 1;
@@ -36,6 +47,26 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
             chartAudioOD.ChartAreas[0].AxisX.MajorGrid.LineDashStyle = ChartDashStyle.Dash;
             chartAudioOD.ChartAreas[0].AxisX.MajorGrid.LineColor = Color.Transparent;
+
+            string fundoChart = "fundoChartTransp";
+            Series imgFundo = chartAudioOD.Series.Add(fundoChart);
+
+            imgFundo.ChartArea = chartAudioOD.ChartAreas[0].Name;
+            imgFundo.Name = fundoChart;
+            imgFundo.ChartType = SeriesChartType.Point;
+
+            if (rbBananaFalaODClinica.SelectedValue == "0")
+            {
+                var fundoAudioOD = new NamedImage("bananaVermelha", Properties.Resources.bananaVermelha);
+                chartAudioOD.Images.Clear();
+                chartAudioOD.Images.Add(fundoAudioOD);
+                imgFundo.MarkerImage = "bananaVermelha";
+                imgFundo.Points.AddXY(7.50, 45);
+            }
+            else if (rbBananaFalaODClinica.SelectedValue == "1")
+            {
+                chartAudioOD.Series[fundoChart].Points.Clear();
+            }
 
             string seriesName1 = "grade1OD";
             Series ser1 = chartAudioOD.Series.Add(seriesName1);
@@ -189,6 +220,8 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         private void CarregaAudiogramaClinicoOE()
         {
+            chartAudioOE.Series.Clear();// limpa o chart
+
             //***PARA MONTAR O GRÁFICO***
 
             int iniciar = 1;
@@ -203,6 +236,19 @@ namespace SISTEMASLUASAUDE_APLICACAO
             imgFundo.ChartArea = chartAudioOE.ChartAreas[0].Name;
             imgFundo.Name = fundoChart;
             imgFundo.ChartType = SeriesChartType.Point;
+
+            if (rbBananaFalaOEClinica.SelectedValue == "0")
+            {
+                var fundoAudioOE = new NamedImage("bananaAzul", Properties.Resources.bananaAzul);
+                chartAudioOE.Images.Clear();
+                chartAudioOE.Images.Add(fundoAudioOE);
+                imgFundo.MarkerImage = "bananaAzul";
+                imgFundo.Points.AddXY(7.50, 45);
+            }
+            else if (rbBananaFalaOEClinica.SelectedValue == "1")
+            {
+                chartAudioOE.Series[fundoChart].Points.Clear();
+            }
 
             string seriesName1 = "grade1OE";
             Series ser1 = chartAudioOE.Series.Add(seriesName1);

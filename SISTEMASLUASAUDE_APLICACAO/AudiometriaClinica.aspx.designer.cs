@@ -42,15 +42,6 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl dadosAudioOD;
 
         /// <summary>
-        /// Controle btnPlotarAudioOD.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPlotarAudioOD;
-
-        /// <summary>
         /// Controle audiogramaOD.
         /// </summary>
         /// <remarks>
@@ -105,6 +96,24 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.RadioButtonList rbBananaFalaOEClinica;
 
         /// <summary>
+        /// Controle btnPlotaTodos.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl btnPlotaTodos;
+
+        /// <summary>
+        /// Controle btnPlotaGeral.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnPlotaGeral;
+
+        /// <summary>
         /// Controle dadosAudioOE.
         /// </summary>
         /// <remarks>
@@ -114,12 +123,129 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl dadosAudioOE;
 
         /// <summary>
-        /// Controle btnPlotarAudioOE.
+        /// Controle AudiometriaVocalClinica.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPlotarAudioOE;
+        protected global::System.Web.UI.WebControls.Table AudiometriaVocalClinica;
+
+        /// <summary>
+        /// Controle txtMediaOD.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMediaOD;
+
+        /// <summary>
+        /// Controle ddlIPRFod.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlIPRFod;
+
+        /// <summary>
+        /// Controle txtSRTOD.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSRTOD;
+
+        /// <summary>
+        /// Controle txtSDTOD.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSDTOD;
+
+        /// <summary>
+        /// Controle audioVocalOD.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl audioVocalOD;
+
+        /// <summary>
+        /// Controle btnMediaTritonal.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnMediaTritonal;
+
+        /// <summary>
+        /// Controle AudioVocalOE.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl AudioVocalOE;
+
+        /// <summary>
+        /// Controle btnMediaQuadritonal.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnMediaQuadritonal;
+
+        /// <summary>
+        /// Controle mediasTritonaisQuadritonais.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl mediasTritonaisQuadritonais;
+
+        /// <summary>
+        /// Controle txtMediaOE.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMediaOE;
+
+        /// <summary>
+        /// Controle ddlIPRFoe.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlIPRFoe;
+
+        /// <summary>
+        /// Controle txtSRTOE.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSRTOE;
+
+        /// <summary>
+        /// Controle txtSDTOE.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSDTOE;
     }
 }
