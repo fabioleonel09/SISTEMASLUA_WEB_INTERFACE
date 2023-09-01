@@ -119,15 +119,108 @@
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="bananaAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\bananaAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\bananaAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bananaCinza" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\bananaCinza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\bananaCinza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bananaVerde" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\bananaVerde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\bananaVerde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bananaVermelha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\bananaVermelha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\bananaVermelha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campoComAASIausente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campoComAASIausente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campoComAASIpresente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campoComAASIpresente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campoLivreODausente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campoLivreODausente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campoLivreODpresente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campoLivreODpresente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campoLivreOEausente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campoLivreOEausente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campoLivreOEpresente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campoLivreOEpresente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campoSemAASIausente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campoSemAASIausente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="campoSemAASIpresente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campoSemAASIpresente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vaODausente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vaODausente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vaODmascAusente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vaODmascAusente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vaODmascPresente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vaODmascPresente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vaODpresente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vaODpresente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vaOEausente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vaOEausente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vaOEmascAusente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vaOEmascAusente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vaOEmascPresente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vaOEmascPresente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vaOEpresente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vaOEpresente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vazio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vazio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voFRONTEausente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voFRONTEausente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voFRONTEmascAusenteOD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voFRONTEmascAusenteOD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voFRONTEmascAusenteOE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voFRONTEmascAusenteOE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voFRONTEmascPresenteOD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voFRONTEmascPresenteOD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voFRONTEmascPresenteOE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voFRONTEmascPresenteOE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voFRONTEpresente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voFRONTEpresente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voODausente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voODausente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voODmascAusente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voODmascAusente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voODmascPresente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voODmascPresente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voODpresente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voODpresente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voOEausente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voOEausente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voOEmascAusente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voOEmascAusente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voOEmascPresente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voOEmascPresente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voOEpresente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voOEpresente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

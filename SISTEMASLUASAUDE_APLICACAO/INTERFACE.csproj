@@ -141,13 +141,45 @@
     <Content Include="Exames.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Images\bananaAzul.png" />
-    <Content Include="Images\bananaCinza.png" />
-    <Content Include="Images\bananaVerde.png" />
-    <Content Include="Images\bananaVermelha.png" />
     <Content Include="Images\luaRecolorida2.png" />
+    <Content Include="Images\Simbologia.png" />
     <Content Include="Images\usuariosMaior.png" />
     <Content Include="Login.aspx" />
+    <None Include="Resources\campoComAASIausente.png" />
+    <None Include="Resources\campoComAASIpresente.png" />
+    <None Include="Resources\campoLivreODausente.png" />
+    <None Include="Resources\campoLivreODpresente.png" />
+    <None Include="Resources\campoLivreOEausente.png" />
+    <None Include="Resources\campoLivreOEpresente.png" />
+    <None Include="Resources\campoSemAASIausente.png" />
+    <None Include="Resources\campoSemAASIpresente.png" />
+    <None Include="Resources\vaODausente.png" />
+    <None Include="Resources\vaODmascAusente.png" />
+    <None Include="Resources\vaODmascPresente.png" />
+    <None Include="Resources\vaODpresente.png" />
+    <None Include="Resources\vaOEausente.png" />
+    <None Include="Resources\vaOEmascAusente.png" />
+    <None Include="Resources\vaOEmascPresente.png" />
+    <None Include="Resources\vaOEpresente.png" />
+    <None Include="Resources\vazio.png" />
+    <None Include="Resources\voFRONTEausente.png" />
+    <None Include="Resources\voFRONTEmascAusenteOD.png" />
+    <None Include="Resources\voFRONTEmascAusenteOE.png" />
+    <None Include="Resources\voFRONTEmascPresenteOD.png" />
+    <None Include="Resources\voFRONTEmascPresenteOE.png" />
+    <None Include="Resources\voFRONTEpresente.png" />
+    <None Include="Resources\voODausente.png" />
+    <None Include="Resources\voODmascAusente.png" />
+    <None Include="Resources\voODmascPresente.png" />
+    <None Include="Resources\voODpresente.png" />
+    <None Include="Resources\voOEausente.png" />
+    <None Include="Resources\voOEmascAusente.png" />
+    <None Include="Resources\voOEmascPresente.png" />
+    <None Include="Resources\voOEpresente.png" />
+    <None Include="Resources\bananaAzul.png" />
+    <None Include="Resources\bananaCinza.png" />
+    <None Include="Resources\bananaVerde.png" />
+    <None Include="Resources\bananaVermelha.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -311,6 +343,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
