@@ -108,172 +108,143 @@
                         <div class="box">
                             <asp:Panel ID="pnlGridDadosOD" runat="server" Width="100%" BackColor="MistyRose" BorderColor="Red" BorderStyle="Solid" BorderWidth="1">
                                 <asp:Table ID="tbDadosOD" runat="server" Width="100%">
-                                    <asp:TableHeaderRow Width="100%">
-                                        <asp:TableHeaderCell Width="10%" Height="30px">Hz</asp:TableHeaderCell>
-                                        <asp:TableHeaderCell Width="15%" Height="30px">VA</asp:TableHeaderCell>
-                                        <asp:TableHeaderCell Width="10%" Height="30px">M</asp:TableHeaderCell>
-                                        <asp:TableHeaderCell Width="10%" Height="30px">L</asp:TableHeaderCell>
-                                        <asp:TableHeaderCell Width="10%" Height="30px">A</asp:TableHeaderCell>
-                                        <asp:TableHeaderCell Width="15%" Height="30px">VO</asp:TableHeaderCell>
-                                        <asp:TableHeaderCell Width="10%" Height="30px">M</asp:TableHeaderCell>
-                                        <asp:TableHeaderCell Width="10%" Height="30px">L</asp:TableHeaderCell>
-                                        <asp:TableHeaderCell Width="10%" Height="30px">A</asp:TableHeaderCell>
+                                    <asp:TableHeaderRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
+                                        <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Hz</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">VA</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">M</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">L</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">A</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">VO</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">M</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">L</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">A</asp:TableHeaderCell>
                                     </asp:TableHeaderRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">125</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px">
-                                            <asp:DropDownList ID="va125odComboBox" runat="server" Width="100%" Height="30px">
-                                                <asp:ListItem Text="" Value="0" />
-                                                <asp:ListItem Text="-10" Value="1" />
-                                                <asp:ListItem Text="-5" Value="2" />
-                                                <asp:ListItem Text="0" Value="3" />
-                                                <asp:ListItem Text="5" Value="4" />
-                                                <asp:ListItem Text="10" Value="5" />
-                                                <asp:ListItem Text="15" Value="6" />
-                                                <asp:ListItem Text="20" Value="7" />
-                                                <asp:ListItem Text="25" Value="8" />
-                                                <asp:ListItem Text="30" Value="9" />
-                                                <asp:ListItem Text="35" Value="10" />
-                                                <asp:ListItem Text="40" Value="11" />
-                                                <asp:ListItem Text="45" Value="12" />
-                                                <asp:ListItem Text="50" Value="13" />
-                                                <asp:ListItem Text="55" Value="14" />
-                                                <asp:ListItem Text="60" Value="15" />
-                                                <asp:ListItem Text="65" Value="16" />
-                                                <asp:ListItem Text="70" Value="17" />
-                                                <asp:ListItem Text="75" Value="18" />
-                                                <asp:ListItem Text="80" Value="19" />
-                                                <asp:ListItem Text="85" Value="20" />
-                                                <asp:ListItem Text="90" Value="21" />
-                                                <asp:ListItem Text="95" Value="22" />
-                                                <asp:ListItem Text="100" Value="23" />
-                                                <asp:ListItem Text="105" Value="24" />
-                                                <asp:ListItem Text="110" Value="25" />
-                                                <asp:ListItem Text="115" Value="26" />
-                                                <asp:ListItem Text="120" Value="27" />
-                                            </asp:DropDownList>
+                                    <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">125</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                            <asp:DropDownList ID="va125odComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
                                         </asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px">
-                                            <asp:CheckBox ID="masc125vaODCheckBox" runat="server" />
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                            <asp:CheckBox ID="masc125vaODCheckBox" runat="server"/>
                                         </asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px">
-                                            <asp:CheckBox ID="aus125vaODCheckBox" runat="server" />
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                            <asp:CheckBox ID="aus125vaODCheckBox" runat="server"/>
                                         </asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">250</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">250</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">500</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">500</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">750</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">750</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">1k</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">1k</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">1,5k</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">1,5k</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">2k</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">2k</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">3k</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">3k</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">4k</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">4k</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">6k</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">6k</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">8k</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">8k</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
                                 </asp:Table>
                             </asp:Panel>
@@ -281,137 +252,143 @@
                         <div class="box">
                             <asp:Panel ID="pnlGridDadosOE" runat="server" Width="100%" BackColor="AliceBlue" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1">
                                 <asp:Table ID="tbDadosOE" runat="server" Width="100%">
-                                    <asp:TableHeaderRow Width="100%">
-                                        <asp:TableHeaderCell Width="10%" Height="30px">Hz</asp:TableHeaderCell>
-                                        <asp:TableHeaderCell Width="15%" Height="30px">VA</asp:TableHeaderCell>
-                                        <asp:TableHeaderCell Width="10%" Height="30px">M</asp:TableHeaderCell>
-                                        <asp:TableHeaderCell Width="10%" Height="30px">L</asp:TableHeaderCell>
-                                        <asp:TableHeaderCell Width="10%" Height="30px">A</asp:TableHeaderCell>
-                                        <asp:TableHeaderCell Width="15%" Height="30px">VO</asp:TableHeaderCell>
-                                        <asp:TableHeaderCell Width="10%" Height="30px">M</asp:TableHeaderCell>
-                                        <asp:TableHeaderCell Width="10%" Height="30px">L</asp:TableHeaderCell>
-                                        <asp:TableHeaderCell Width="10%" Height="30px">A</asp:TableHeaderCell>
+                                    <asp:TableHeaderRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
+                                        <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Hz</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">VA</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">M</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">L</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">A</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">VO</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">M</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">L</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">A</asp:TableHeaderCell>
                                     </asp:TableHeaderRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">125</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">125</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                            <asp:DropDownList ID="va125oeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                        </asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                            <asp:CheckBox ID="masc125vaOECheckBox" runat="server"/>
+                                        </asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                            <asp:CheckBox ID="aus125vaOECheckBox" runat="server"/>
+                                        </asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">250</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">250</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">500</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">500</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">750</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">750</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">1k</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">1k</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">1,5k</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">1,5k</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">2k</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">2k</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">3k</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">3k</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">4k</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">4k</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">6k</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">6k</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
-                                    <asp:TableRow Width="100%">
-                                        <asp:TableCell Width="10%" Height="30px">8k</asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="15%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
-                                        <asp:TableCell Width="10%" Height="30px"></asp:TableCell>
+                                    <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">8k</asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                        <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
                                     </asp:TableRow>
                                 </asp:Table>
                             </asp:Panel>
@@ -447,12 +424,21 @@
                                     <asp:TextBox ID="txtMediaOD" runat="server" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" Width="95%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
                                     <br />
                                     <br />
-                                    <label style="color: red;"><b>I. P. R. F.</b></label>
-                                    <asp:DropDownList ID="ddlIPRFod" runat="server" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" Width="98%" Height="45px" CssClass="cantos-arredondados-alinhamento">
-                                        
-                                    </asp:DropDownList>
-                                    <br />
-                                    <br />
+                                    <label style="color: red;"><b>I. P. R. F.</b></label><br />
+                                    <div class="box">
+                                        <div style="float: left; width: 50%">
+                                            <asp:Panel ID="pnlIPRFmomOd" runat="server" Width="100%">
+                                            <label style="color: red;"><b>MON.:</b></label><br />
+                                            <asp:DropDownList ID="ddlIPRFmonOd" runat="server" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" Width="93%" Height="45px" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                        </asp:Panel>
+                                        </div>
+                                        <div style="float: left; width: 50%">
+                                            <asp:Panel ID="pnlIPRFdissOd" runat="server" Width="100%">
+                                            <label style="color: red;"><b>DISS.:</b></label><br />
+                                            <asp:DropDownList ID="ddlIPRFdisOd" runat="server" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" Width="93%" Height="45px" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                        </asp:Panel><br />
+                                        </div>
+                                    </div>
                                     <label style="color: red;"><b>S. R. T.</b></label>
                                     <asp:TextBox ID="txtSRTOD" runat="server" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" Width="95%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
                                     <br />
@@ -473,11 +459,20 @@
                                     <br />
                                     <br />
                                     <label style="color: blue;"><b>I. P. R. F.</b></label>
-                                    <asp:DropDownList ID="ddlIPRFoe" runat="server" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="12" Width="98%" Height="45px" CssClass="cantos-arredondados-alinhamento">
-                                        
-                                    </asp:DropDownList>
-                                    <br />
-                                    <br />
+                                    <div class="box">
+                                        <div style="float: left; width: 50%">
+                                            <asp:Panel ID="pnlIPRFmonOe" runat="server" Width="100%">
+                                            <label style="color: blue;"><b>MON.:</b></label><br />
+                                            <asp:DropDownList ID="ddlIPRFmonOe" runat="server" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="12" Width="93%" Height="45px" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                        </asp:Panel>
+                                        </div>
+                                        <div style="float: left; width: 50%">
+                                            <asp:Panel ID="pnlIPRFdisOe" runat="server" Width="100%">
+                                            <label style="color: blue;"><b>DISS.:</b></label><br />
+                                            <asp:DropDownList ID="ddlIPRFdisOe" runat="server" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="12" Width="93%" Height="45px" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                        </asp:Panel><br />
+                                        </div>
+                                    </div>
                                     <label style="color: blue;"><b>S. R. T.</b></label>
                                     <asp:TextBox ID="txtSRTOE" runat="server" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" Width="95%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
                                     <br />

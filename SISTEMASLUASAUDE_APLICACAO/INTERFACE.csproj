@@ -273,7 +273,8 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ddlList_Items\DropdownData.cs" />
+    <Compile Include="ddlList_Items\DropdownData_VA.cs" />
+    <Compile Include="ddlList_Items\DropdownData_Vocal.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

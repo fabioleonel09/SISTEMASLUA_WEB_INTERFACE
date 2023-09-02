@@ -159,6 +159,33 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.Table tbDadosOE;
 
         /// <summary>
+        /// Controle va125oeComboBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList va125oeComboBox;
+
+        /// <summary>
+        /// Controle masc125vaOECheckBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox masc125vaOECheckBox;
+
+        /// <summary>
+        /// Controle aus125vaOECheckBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox aus125vaOECheckBox;
+
+        /// <summary>
         /// Controle btnPlotaTodos.
         /// </summary>
         /// <remarks>
@@ -213,13 +240,40 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.TextBox txtMediaOD;
 
         /// <summary>
-        /// Controle ddlIPRFod.
+        /// Controle pnlIPRFmomOd.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlIPRFod;
+        protected global::System.Web.UI.WebControls.Panel pnlIPRFmomOd;
+
+        /// <summary>
+        /// Controle ddlIPRFmonOd.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlIPRFmonOd;
+
+        /// <summary>
+        /// Controle pnlIPRFdissOd.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlIPRFdissOd;
+
+        /// <summary>
+        /// Controle ddlIPRFdisOd.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlIPRFdisOd;
 
         /// <summary>
         /// Controle txtSRTOD.
@@ -258,13 +312,40 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.TextBox txtMediaOE;
 
         /// <summary>
-        /// Controle ddlIPRFoe.
+        /// Controle pnlIPRFmonOe.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlIPRFoe;
+        protected global::System.Web.UI.WebControls.Panel pnlIPRFmonOe;
+
+        /// <summary>
+        /// Controle ddlIPRFmonOe.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlIPRFmonOe;
+
+        /// <summary>
+        /// Controle pnlIPRFdisOe.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlIPRFdisOe;
+
+        /// <summary>
+        /// Controle ddlIPRFdisOe.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlIPRFdisOe;
 
         /// <summary>
         /// Controle txtSRTOE.

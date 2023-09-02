@@ -6,7 +6,7 @@ using System.Web.UI.WebControls;
 
 namespace SISTEMASLUASAUDE_APLICACAO.ddlList_Items
 {
-    public class DropdownData
+    public class DropdownData_Vocal
     {
         public static List<ListItem> GetItems()
         {

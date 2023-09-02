@@ -19,6 +19,8 @@ namespace SISTEMASLUASAUDE_APLICACAO
                 CarregaAudiogramaClinicoOD();
                 CarregaAudiogramaClinicoOE();
 
+                CarregaDDLaudioTonalVA();
+
                 CarregaDDLaudioVocal();
             }
         }
@@ -767,14 +769,36 @@ namespace SISTEMASLUASAUDE_APLICACAO
             ser12a.Points.AddXY(15, 120);
         }
 
+        private void CarregaDDLaudioTonalVA()
+        {
+            //para VA OD
+            va125odComboBox.DataSource = DropdownData_VA.GetItems();//125Hz
+            va125odComboBox.DataBind();
+
+            //para VA OE
+            va125oeComboBox.DataSource = DropdownData_VA.GetItems();//125Hz
+            va125oeComboBox.DataBind();
+        }
+
         private void CarregaDDLaudioVocal()
         {
             //para o IPRF da OD
-            ddlIPRFod.DataSource = DropdownData.GetItems();
-            ddlIPRFod.DataBind();
+            //monossílabos
+            ddlIPRFmonOd.DataSource = DropdownData_Vocal.GetItems();
+            ddlIPRFmonOd.DataBind();
+
+            //dissílabos
+            ddlIPRFdisOd.DataSource = DropdownData_Vocal.GetItems();
+            ddlIPRFdisOd.DataBind();
+
             //para o IPRF da OE
-            ddlIPRFoe.DataSource = DropdownData.GetItems();
-            ddlIPRFoe.DataBind();
+            //monossílabos
+            ddlIPRFmonOe.DataSource = DropdownData_Vocal.GetItems();
+            ddlIPRFmonOe.DataBind();
+
+            //dissílabos
+            ddlIPRFdisOe.DataSource = DropdownData_Vocal.GetItems();
+            ddlIPRFdisOe.DataBind();
         }
     }
 }
