@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.DataVisualization.Charting;
 using System.Web.UI.WebControls;
+using SISTEMASLUASAUDE_APLICACAO.ddlList_Items;
 
 namespace SISTEMASLUASAUDE_APLICACAO
 {
@@ -17,6 +18,8 @@ namespace SISTEMASLUASAUDE_APLICACAO
             {
                 CarregaAudiogramaClinicoOD();
                 CarregaAudiogramaClinicoOE();
+
+                CarregaDDLaudioVocal();
             }
         }
 
@@ -762,6 +765,16 @@ namespace SISTEMASLUASAUDE_APLICACAO
             ser12a.MarkerStyle = MarkerStyle.None;
             ser12a.Points.AddXY(15, -10);  // x, high
             ser12a.Points.AddXY(15, 120);
+        }
+
+        private void CarregaDDLaudioVocal()
+        {
+            //para o IPRF da OD
+            ddlIPRFod.DataSource = DropdownData.GetItems();
+            ddlIPRFod.DataBind();
+            //para o IPRF da OE
+            ddlIPRFoe.DataSource = DropdownData.GetItems();
+            ddlIPRFoe.DataBind();
         }
     }
 }

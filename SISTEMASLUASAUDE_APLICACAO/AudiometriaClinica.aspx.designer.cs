@@ -96,6 +96,69 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.RadioButtonList rbBananaFalaOEClinica;
 
         /// <summary>
+        /// Controle pnlGridDadosOD.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlGridDadosOD;
+
+        /// <summary>
+        /// Controle tbDadosOD.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table tbDadosOD;
+
+        /// <summary>
+        /// Controle va125odComboBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList va125odComboBox;
+
+        /// <summary>
+        /// Controle masc125vaODCheckBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox masc125vaODCheckBox;
+
+        /// <summary>
+        /// Controle aus125vaODCheckBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox aus125vaODCheckBox;
+
+        /// <summary>
+        /// Controle pnlGridDadosOE.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlGridDadosOE;
+
+        /// <summary>
+        /// Controle tbDadosOE.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table tbDadosOE;
+
+        /// <summary>
         /// Controle btnPlotaTodos.
         /// </summary>
         /// <remarks>
