@@ -144,6 +144,7 @@
     <Content Include="Images\luaRecolorida2.png" />
     <Content Include="Images\Simbologia.png" />
     <Content Include="Images\usuariosMaior.png" />
+    <Content Include="Images\vai.png" />
     <Content Include="Login.aspx" />
     <None Include="Resources\campoComAASIausente.png" />
     <None Include="Resources\campoComAASIpresente.png" />

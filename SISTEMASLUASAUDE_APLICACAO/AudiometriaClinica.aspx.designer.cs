@@ -186,6 +186,24 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.CheckBox aus125vaOECheckBox;
 
         /// <summary>
+        /// Controle pnlLegenda.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlLegenda;
+
+        /// <summary>
+        /// Controle txtLegenda.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtLegenda;
+
+        /// <summary>
         /// Controle btnPlotaTodos.
         /// </summary>
         /// <remarks>
@@ -202,6 +220,24 @@ namespace SISTEMASLUASAUDE_APLICACAO
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnPlotaGeral;
+
+        /// <summary>
+        /// Controle pnlSimbologiaAudiometrica.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlSimbologiaAudiometrica;
+
+        /// <summary>
+        /// Controle imgSimbologiaAudiometrica.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgSimbologiaAudiometrica;
 
         /// <summary>
         /// Controle dadosAudioOE.

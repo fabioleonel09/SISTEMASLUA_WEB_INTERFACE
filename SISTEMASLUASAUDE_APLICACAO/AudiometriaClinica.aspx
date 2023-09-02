@@ -394,10 +394,17 @@
                             </asp:Panel>
                         </div>
                     </div>
+                    <asp:Panel ID="pnlLegenda" runat="server" Width="99.6%" HorizontalAlign="Justify" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                        <asp:TextBox ID="txtLegenda" runat="server" Width="99.6%" Enabled="false">Legenda: Hz = Hertz; VA = Via Aérea; VO = Via Óssea; M = simbologia de mascaramento; L = liga simbologia; A = simbologia de ausência de resposta.</asp:TextBox>
+                    </asp:Panel>
                     <br />
                     <div id="btnPlotaTodos" runat="server" style="text-align: center;">
                         <asp:Button ID="btnPlotaGeral" runat="server" Text="Plotar" BackColor="#00cc99" BorderColor="Green" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnPlotarGeral_Click" />
                     </div>
+                    <br />
+                    <asp:Panel ID="pnlSimbologiaAudiometrica" runat="server" Width="100%">
+                        <asp:Image id="imgSimbologiaAudiometrica" runat="server" ImageUrl="~/Images/Simbologia.png" AlternateText="A imagem da simbologia não carregou." Width="100%"/>
+                    </asp:Panel>
                 </asp:TableCell>
                 <asp:TableCell Width="20%" Height="100%" Style="vertical-align: bottom">
                     <div id="dadosAudioOE" runat="server">
