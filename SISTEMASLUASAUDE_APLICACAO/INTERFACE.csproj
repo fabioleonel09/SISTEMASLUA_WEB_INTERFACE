@@ -141,7 +141,10 @@
     <Content Include="Exames.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\agendamento.png" />
+    <Content Include="Images\chart1.png" />
     <Content Include="Images\luaRecolorida2.png" />
+    <Content Include="Images\prontuario.png" />
     <Content Include="Images\Simbologia.png" />
     <Content Include="Images\usuariosMaior.png" />
     <Content Include="Images\vai.png" />

@@ -16,6 +16,8 @@ namespace SISTEMASLUASAUDE_APLICACAO
         {
             if (!IsPostBack)
             {
+                CarregaProfissional();
+
                 CarregaAudiogramaClinicoOD();
                 CarregaAudiogramaClinicoOE();
 
@@ -767,6 +769,17 @@ namespace SISTEMASLUASAUDE_APLICACAO
             ser12a.MarkerStyle = MarkerStyle.None;
             ser12a.Points.AddXY(15, -10);  // x, high
             ser12a.Points.AddXY(15, 120);
+        }
+
+        private void CarregaProfissional()
+        {
+            if (!String.IsNullOrEmpty(Convert.ToString(Session["ssnUsuario"])) && !String.IsNullOrEmpty(Convert.ToString(Session["ssnConselhoRegional"])))
+            {
+                var usuario = Session["ssnUsuario"].ToString();
+                var conselhoRegional = Session["ssnConselhoRegional"].ToString();
+                var boasVindas = "Seja bem-vindo (a) " + usuario + ", " + conselhoRegional + ".";
+                lblBoasVindas.Text = boasVindas;
+            }
         }
 
         private void CarregaDDLaudioTonalVA()

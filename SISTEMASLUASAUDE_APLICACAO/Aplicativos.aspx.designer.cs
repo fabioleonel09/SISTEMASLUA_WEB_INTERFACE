@@ -24,13 +24,31 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Controle pnlAplicativos.
+        /// Controle geral.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlAplicativos;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl geral;
+
+        /// <summary>
+        /// Controle lblBoasVindas.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblBoasVindas;
+
+        /// <summary>
+        /// Controle tbAplicativos.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table tbAplicativos;
 
         /// <summary>
         /// Controle btnAgenda.
