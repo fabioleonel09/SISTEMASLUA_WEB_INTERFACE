@@ -27,7 +27,7 @@
         }
 
         header {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0; /* Certifique-se de que o cabeçalho comece da borda esquerda */
             right: 0;
@@ -82,7 +82,7 @@
             <b>Audiometria Clínica</b>
         </header>
         <br />
-        <div id="geral" runat="server" style="margin-top: 50px; margin-bottom: 50px; width: 100%; height: 100%; align-items: stretch; vertical-align: central">
+        <div id="geral" runat="server" style="margin-top: 50px; margin-bottom: 50px; width: 100%; height: 100%; align-items: center; vertical-align: central">
             <div class="container" style="text-align: right; width: 100%;">
                 <asp:Label ID="lblBoasVindas" runat="server" ForeColor="White" Font-Bold="true" Font-Size="Large"></asp:Label>
             </div>
@@ -98,9 +98,9 @@
             </div>
             <asp:Table ID="tbAudiometriaClinica" runat="server" Width="100%" BorderColor="#cccccc" BorderWidth="2px" BorderStyle="Solid">
                 <asp:TableHeaderRow Width="100%">
-                    <asp:TableHeaderCell BackColor="#ff0000" Font-Bold="true" Font-Size="14" ForeColor="White" Width="20%" Height="50px">Orelha Direita</asp:TableHeaderCell>
+                    <asp:TableHeaderCell BackColor="#ff0000" Font-Bold="true" Font-Size="12" ForeColor="White" Width="20%" Height="50px">Orelha Direita</asp:TableHeaderCell>
                     <asp:TableHeaderCell BackColor="#cccccc" Font-Bold="true" Font-Size="18" Width="60%" Height="50px">Audiometria Tonal</asp:TableHeaderCell>
-                    <asp:TableHeaderCell BackColor="#0033cc" Font-Bold="true" Font-Size="14" ForeColor="White" Width="20%" Height="50px">Orelha Esquerda</asp:TableHeaderCell>
+                    <asp:TableHeaderCell BackColor="#0033cc" Font-Bold="true" Font-Size="12" ForeColor="White" Width="20%" Height="50px">Orelha Esquerda</asp:TableHeaderCell>
                 </asp:TableHeaderRow>
                 <asp:TableRow>
                     <asp:TableCell Width="20%" Height="100%" Style="vertical-align: bottom">

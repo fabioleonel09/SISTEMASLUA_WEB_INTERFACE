@@ -786,15 +786,19 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         private void CarregaDadosPaciente()
         {
-            var nomePaciente = Session["ssnNomePaciente"].ToString();
-            var nomeSocialPaciente = Session["ssnNomeSocialPaciente"].ToString();
-            var idadePaciente = Session["ssnIdadePaciente"].ToString();
-            var dataHoje = Session["ssnDataHoje"].ToString();
+            if (!String.IsNullOrEmpty(Convert.ToString(Session["ssnNomePaciente"])) && !String.IsNullOrEmpty(Convert.ToString(Session["ssnIdadePaciente"])) && !String.IsNullOrEmpty(Convert.ToString(Session["ssnDataHoje"])) ||
+                !String.IsNullOrEmpty(Convert.ToString(Session["ssnNomeSocialPaciente"])))
+            {
+                var nomePaciente = Session["ssnNomePaciente"].ToString();
+                var nomeSocialPaciente = Session["ssnNomeSocialPaciente"].ToString();
+                var idadePaciente = Session["ssnIdadePaciente"].ToString();
+                var dataHoje = Session["ssnDataHoje"].ToString();
 
-            lblNomePaciente.Text = "Nome do Paciente: " + nomePaciente + ".";
-            lblIdadePaciente.Text = "Idade: " + idadePaciente + ".";
-            lblNomeSocialPaciente.Text = "Nome Social do Paciente: " + nomeSocialPaciente + ".";
-            lblDataHoje.Text = "Data de Hoje: " + dataHoje + ".";
+                lblNomePaciente.Text = "Nome do Paciente: " + nomePaciente + ".";
+                lblIdadePaciente.Text = "Idade: " + idadePaciente + ".";
+                lblNomeSocialPaciente.Text = "Nome Social do Paciente: " + nomeSocialPaciente + ".";
+                lblDataHoje.Text = "Data de Hoje: " + dataHoje + ".";
+            }
         }
 
         private void CarregaDDLaudioTonalVA()

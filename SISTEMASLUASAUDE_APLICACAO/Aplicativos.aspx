@@ -28,7 +28,7 @@
         }
 
         header {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0; /* Certifique-se de que o rodapé comece da borda esquerda */
             width: 100%;
