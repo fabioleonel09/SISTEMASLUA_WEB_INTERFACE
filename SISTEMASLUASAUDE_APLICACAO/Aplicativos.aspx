@@ -52,6 +52,12 @@
             font-family: "Arial", arial; /* Especifica a fonte personalizada */
         }
 
+        .cantos-arredondados-alinhamento {
+            border-radius: 10px; /* Valor do raio dos cantos arredondados */
+            text-align: left; /* Centraliza horizontalmente */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
+        }
+
         .btn-Agenda {
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
             border-radius: 10px; /* Valor do raio dos cantos arredondados */
@@ -93,6 +99,54 @@
             <div class="container" style="text-align: right; width: 100%;">
                 <asp:Label ID="lblBoasVindas" runat="server" ForeColor="White" Font-Bold="true" Font-Size="Large"></asp:Label>
             </div>
+            <br />
+            <div style="width: 100%; background-color: white; text-align: center; vertical-align: bottom;">
+                <asp:Label ID="lblTituloCabecalho" runat="server" Text="Dados do Paciente" Font-Bold="true" Font-Size="18" ></asp:Label>
+            </div>
+            <asp:Table ID="tbDadosPacientePrimeiraParte" runat="server" Width="100%">
+                <asp:TableHeaderRow Width="100%">
+                    <asp:TableHeaderCell Text="Nome do Paciente:" Width="20%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                    <asp:TableheaderCell Width="50%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                        <asp:TextBox ID="txtNomePaciente" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="99%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
+                    </asp:TableheaderCell>
+                    <asp:TableHeaderCell Text="Idade:" Width="10%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                        <asp:TextBox ID="txtIdade" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="40px" ReadOnly="true" ToolTip="Digite a D.N. para calcular a idade." CssClass="cantos-arredondados-alinhamento" ></asp:TextBox>
+                    </asp:TableHeaderCell>
+                </asp:TableHeaderRow>
+            </asp:Table>
+            <asp:Table ID="tbDadosPacienteNomeSocial" runat="server" Width="100%">
+                <asp:TableHeaderRow Width="100%">
+                    <asp:TableHeaderCell Text="Nome Social: " Width="20%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="80%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                        <asp:TextBox ID="txtNomeSocial" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="99.5%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
+                    </asp:TableHeaderCell>
+                </asp:TableHeaderRow>
+            </asp:Table>
+            <asp:Table ID="tbDadosPacienteSegundaParte" runat="server" Width="100%">
+                <asp:TableHeaderRow Width="100%">
+                    <asp:TableHeaderCell Text="D. N.:" Width="10%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                        <asp:TextBox ID="txtDataNasc" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
+                    </asp:TableHeaderCell>
+                    <asp:TableHeaderCell Text="Data:" Width="10%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                        <asp:TextBox ID="txtDataHoje" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
+                    </asp:TableHeaderCell>
+                    <asp:TableHeaderCell Text="Inspeção do M.A.E.:" Width="20%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                        <asp:TextBox ID="txtInspecaoMAE" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
+                    </asp:TableHeaderCell>
+                </asp:TableHeaderRow>
+            </asp:Table>
+            <asp:Table ID="tbDadosPacienteTerceiraParte" runat="server" Width="100%">
+                <asp:TableHeaderRow Width="100%">
+                    <asp:TableHeaderCell Text="Queixa (s) Clínica (s)" Width="20%" Height="38px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="80%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                        <asp:TextBox ID="txtQueixasClinicas" runat="server" TextMode="MultiLine" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="99.5%" Height="38px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
+                    </asp:TableHeaderCell>
+                </asp:TableHeaderRow>
+            </asp:Table>
             <br />
             <asp:Table ID="tbAplicativos" runat="server" Width="100%">
                 <asp:TableHeaderRow Width="100%">

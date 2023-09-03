@@ -142,7 +142,14 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Images\agendamento.png" />
+    <Content Include="Images\AudioCampo.png" />
+    <Content Include="Images\AudioCompleta.jpg" />
+    <Content Include="Images\AudioComportamentalpng.png" />
+    <Content Include="Images\AudioConvencional.png" />
+    <Content Include="Images\AudiometriaCampoConven.png" />
     <Content Include="Images\chart1.png" />
+    <Content Include="Images\fones.png" />
+    <Content Include="Images\impedanciometria.png" />
     <Content Include="Images\luaRecolorida2.png" />
     <Content Include="Images\prontuario.png" />
     <Content Include="Images\Simbologia.png" />
