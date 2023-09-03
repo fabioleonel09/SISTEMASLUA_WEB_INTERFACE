@@ -87,6 +87,15 @@
                 <asp:Label ID="lblBoasVindas" runat="server" ForeColor="White" Font-Bold="true" Font-Size="Large"></asp:Label>
             </div>
             <br />
+            <div style="width: 100%; background-color: white; text-align: left; vertical-align: bottom;">
+                <asp:Label ID="lblNomePaciente" runat="server" Font-Bold="true" Font-Size="14" ></asp:Label>
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <asp:Label ID="lblIdadePaciente" runat="server" Font-Bold="true" Font-Size="14" ></asp:Label>
+                <br />
+                <asp:Label ID="lblNomeSocialPaciente" runat="server" Font-Bold="true" Font-Size="14" ></asp:Label>
+                <br />
+                <asp:Label ID="lblDataHoje" runat="server" Font-Bold="true" Font-Size="14" ></asp:Label>
+            </div>
             <asp:Table ID="tbAudiometriaClinica" runat="server" Width="100%" BorderColor="#cccccc" BorderWidth="2px" BorderStyle="Solid">
                 <asp:TableHeaderRow Width="100%">
                     <asp:TableHeaderCell BackColor="#ff0000" Font-Bold="true" Font-Size="14" ForeColor="White" Width="20%" Height="50px">Orelha Direita</asp:TableHeaderCell>

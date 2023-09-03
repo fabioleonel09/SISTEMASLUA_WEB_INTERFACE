@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace SISTEMASLUASAUDE_APLICACAO
 {
@@ -16,16 +17,18 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         protected void btnAgenda_Click(object sender, EventArgs e)
         {
-            
+            EnviaDadosPaciente();
         }
 
         protected void btnProntuario_Click(object sender, EventArgs e)
         {
-
+            EnviaDadosPaciente();
         }
 
         protected void btnExames_Click(object sender, EventArgs e)
         {
+            EnviaDadosPaciente();
+
             Response.Redirect("Exames.aspx");
         }
 
@@ -38,6 +41,18 @@ namespace SISTEMASLUASAUDE_APLICACAO
                 var boasVindas = "Seja bem-vindo (a) " + usuario + ", " + conselhoRegional + ".";
                 lblBoasVindas.Text = boasVindas;
             }
+        }
+
+        private void EnviaDadosPaciente()
+        {
+            //coloca das informações do paciente e associa a Sessions
+            Session["ssnNomePaciente"] = txtNomePaciente.Text;
+            Session["ssnNomeSocialPaciente"] = txtNomeSocial.Text;
+            Session["ssnIdadePaciente"] = txtIdade.Text;
+            Session["ssnDataNascimento"] = txtDataNasc.Text;
+            Session["ssnDataHoje"] = txtDataHoje.Text;
+            Session["ssnInspecaoMAE"] = txtInspecaoMAE.Text;
+            Session["ssnQueixasClinicas"] = txtQueixasClinicas.Text;
         }
     }
 }

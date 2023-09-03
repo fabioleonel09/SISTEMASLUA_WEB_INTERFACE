@@ -6,9 +6,8 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <script type="text/javascript">
-        
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 
     <title></title>
     <style>
@@ -106,12 +105,12 @@
             <asp:Table ID="tbDadosPacientePrimeiraParte" runat="server" Width="100%">
                 <asp:TableHeaderRow Width="100%">
                     <asp:TableHeaderCell Text="Nome do Paciente:" Width="20%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                    <asp:TableheaderCell Width="50%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                    <asp:TableheaderCell Width="45%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
                         <asp:TextBox ID="txtNomePaciente" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="99%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
                     </asp:TableheaderCell>
                     <asp:TableHeaderCell Text="Idade:" Width="10%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
-                        <asp:TextBox ID="txtIdade" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="40px" ReadOnly="true" ToolTip="Digite a D.N. para calcular a idade." CssClass="cantos-arredondados-alinhamento" ></asp:TextBox>
+                    <asp:TableHeaderCell Width="25%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                        <asp:TextBox ID="txtIdade" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="40px" ToolTip="Digite a D.N. para calcular a idade." ClientIDMode="Static" CssClass="cantos-arredondados-alinhamento" ></asp:TextBox>
                     </asp:TableHeaderCell>
                 </asp:TableHeaderRow>
             </asp:Table>
@@ -127,15 +126,15 @@
                 <asp:TableHeaderRow Width="100%">
                     <asp:TableHeaderCell Text="D. N.:" Width="10%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
                     <asp:TableHeaderCell Width="20%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
-                        <asp:TextBox ID="txtDataNasc" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
+                        <asp:TextBox ID="txtDataNasc" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="40px" ClientIDMode="Static" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
                     </asp:TableHeaderCell>
                     <asp:TableHeaderCell Text="Data:" Width="10%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
                     <asp:TableHeaderCell Width="20%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
                         <asp:TextBox ID="txtDataHoje" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
                     </asp:TableHeaderCell>
-                    <asp:TableHeaderCell Text="Inspeção do M.A.E.:" Width="20%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
-                        <asp:TextBox ID="txtInspecaoMAE" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
+                    <asp:TableHeaderCell Text="Inspeção do M.A.E.:" Width="15%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="25%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                        <asp:TextBox ID="txtInspecaoMAE" runat="server" TextMode="MultiLine" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="38px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
                     </asp:TableHeaderCell>
                 </asp:TableHeaderRow>
             </asp:Table>
@@ -177,5 +176,48 @@
             <b>Sistemas Lua de Gerenciamento EIRELI. CNPJ: 34.648.108/0001-07. Todos os direitos reservados. 2023.</b>
         </footer>
     </form>
+
+    <%--Para o cálculo da idade od paciente--%>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#txtDataNasc').change(function () {
+                var dataNascimentoStr = $('#txtDataNasc').val();
+                var dataNascimento = moment(dataNascimentoStr, 'DD/MM/YYYY', true); // Parse a data com Moment.js
+
+                if (dataNascimento.isValid()) {
+                    var hoje = moment();
+                    var anos = hoje.diff(dataNascimento, 'years'); // Diferença em anos
+                    dataNascimento.add(anos, 'years'); // Avança o ponteiro de data em anos
+
+                    var meses = hoje.diff(dataNascimento, 'months'); // Diferença em meses
+                    dataNascimento.add(meses, 'months'); // Avança o ponteiro de data em meses
+
+                    var dias = hoje.diff(dataNascimento, 'days'); // Diferença em dias
+
+                    $('#txtIdade').val(anos + ' ano (s), ' + meses + ' mês (es), ' + dias + ' dia (s)');
+                } else {
+                    alert('Por favor, insira uma data de nascimento válida no formato dd/MM/yyyy.');
+                }
+            });
+        });
+    </script>
+
+    <%--Para a exibição da data atual--%>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Obtém a data atual
+            var dataAtual = new Date();
+
+            // Formata a data no formato desejado (dd/MM/yyyy)
+            var dia = String(dataAtual.getDate()).padStart(2, '0');
+            var mes = String(dataAtual.getMonth() + 1).padStart(2, '0'); // Adiciona 1 ao mês, pois os meses são baseados em zero
+            var ano = dataAtual.getFullYear();
+
+            var dataFormatada = dia + '/' + mes + '/' + ano;
+
+            // Exibe a data atual no TextBox
+            $('#txtDataHoje').val(dataFormatada);
+        });
+    </script>
 </body>
 </html>
