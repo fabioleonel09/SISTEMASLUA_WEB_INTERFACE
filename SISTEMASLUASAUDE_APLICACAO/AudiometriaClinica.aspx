@@ -79,7 +79,7 @@
 <body class="custom-font" style="background-color: lightslategray;">
     <form id="frmAudiometriaClinica" runat="server" style="width: 100%;">
         <header>
-            <b>Audiometria Clínica</b>
+            <b>Audiometria Clínica Convencional</b>
         </header>
         <br />
         <div id="geral" runat="server" style="margin-top: 50px; margin-bottom: 50px; width: 100%; height: 100%; align-items: stretch; vertical-align: central">
