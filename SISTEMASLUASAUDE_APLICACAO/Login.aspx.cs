@@ -23,5 +23,10 @@ namespace SISTEMASLUASAUDE_APLICACAO
             //redireciona para a próxima págna
             Response.Redirect("Aplicativos.aspx");
         }
+
+        protected void btnInstrucoes_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

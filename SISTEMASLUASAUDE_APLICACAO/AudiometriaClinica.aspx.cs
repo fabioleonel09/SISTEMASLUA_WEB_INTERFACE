@@ -803,13 +803,33 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         private void CarregaDDLaudioTonalVA()
         {
-            //para VA OD
+            //para OD ######################################################
+            //VA
             va125odComboBox.DataSource = DropdownData_VA.GetItems();//125Hz
             va125odComboBox.DataBind();
 
-            //para VA OE
+            va250odComboBox.DataSource = DropdownData_VA.GetItems();//250Hz
+            va250odComboBox.DataBind();
+
+            va500odComboBox.DataSource = DropdownData_VA.GetItems();//500Hz
+            va500odComboBox.DataBind();
+
+
+
+            //VO
+            vo250odComboBox.DataSource = DropdownData_VO.GetItems();//250Hz
+            vo250odComboBox.DataBind();
+
+            vo500odComboBox.DataSource = DropdownData_VO.GetItems();//500Hz
+            vo500odComboBox.DataBind();
+
+            //para OE ######################################################
+            //VA
             va125oeComboBox.DataSource = DropdownData_VA.GetItems();//125Hz
             va125oeComboBox.DataBind();
+
+            //VO
+
         }
 
         private void CarregaDDLaudioVocal()

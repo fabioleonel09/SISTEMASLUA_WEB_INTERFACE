@@ -141,6 +141,7 @@
     <Content Include="Exames.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\adiantar.png" />
     <Content Include="Images\agendamento.png" />
     <Content Include="Images\AudioCampo.png" />
     <Content Include="Images\AudioCompleta.jpg" />
@@ -284,6 +285,7 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ddlList_Items\DropdownData_VO.cs" />
     <Compile Include="ddlList_Items\DropdownData_VA.cs" />
     <Compile Include="ddlList_Items\DropdownData_Vocal.cs" />
     <Compile Include="Default.aspx.cs">

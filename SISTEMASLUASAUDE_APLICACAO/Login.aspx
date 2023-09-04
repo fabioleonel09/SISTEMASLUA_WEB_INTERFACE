@@ -72,6 +72,17 @@
             background-position: left left;
             background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
         }
+
+        .cantos-arredondados-alinhamento-imagem-como-usar {
+            cursor: pointer; /* Altera o cursor para a forma de uma mão */
+            border-radius: 10px; /* Valor do raio dos cantos arredondados */
+            text-align: right; /* Centraliza horizontalmente */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
+            background-image: url('./Images/adiantar.png');
+            background-repeat: no-repeat;
+            background-position: left left;
+            background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
+        }
     </style>
 </head>
 <body class="custom-font" style="background-color: lightslategray; background-image: url('./Images/luaRecolorida2.png'); background-repeat: no-repeat; background-size: 80%; background-position: right top">
@@ -79,7 +90,7 @@
         <header>
             <b>Sistemas Lua - Saúde: Audiologia</b>
         </header>
-        <div id="geral" runat="server" style="margin-top: 50px; margin-bottom: 50px; width: 100%; height: 100%; align-items: stretch; vertical-align: central">
+        <div id="geral" runat="server" style="margin-top: 40px; margin-bottom: 50px; width: 100%; height: 100%; align-items: stretch; vertical-align: central">
             <asp:Table ID="tbLogin" runat="server" Width="100%" CssClass="alinhamento-text-center">
                 <asp:TableHeaderRow>
                     <asp:TableHeaderCell Width="50%">
@@ -98,14 +109,17 @@
                         <asp:TextBox ID="txtSenha" runat="server" TextMode="Password" placeholder="Digite a senha..." Width="50%" Height="50px" Font-Bold="true" Font-Size="14" BorderColor="lightslategray" BorderStyle="Solid" BorderWidth="1" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
                         <br />
                         <br />
-                        <asp:Button ID="btnEntrar" runat="server" Text="Entrar" Width="30%" Height="50px" BackColor="#00cc66" ForeColor="Black" Font-Bold="true" Font-Size="14" BorderColor="Black" BorderStyle="Solid" BorderWidth="2" CssClass="cantos-arredondados-alinhamento-imagem" OnClick="btnEntrar_Click" />
+                        <asp:Button ID="btnEntrar" runat="server" Text="Entrar" Width="35%" Height="50px" BackColor="#00cc66" ForeColor="Black" Font-Bold="true" Font-Size="14" BorderColor="Black" BorderStyle="Solid" BorderWidth="2" CssClass="cantos-arredondados-alinhamento-imagem" OnClick="btnEntrar_Click" />
+                        <br />
+                        <br />
+                        <asp:Button ID="btnInstrucoes" runat="server" Text="Como usar?" Width="35%" Height="50px" BackColor="AliceBlue" ForeColor="Black" Font-Bold="true" Font-Size="14" BorderColor="Black" BorderStyle="Solid" BorderWidth="2" CssClass="cantos-arredondados-alinhamento-imagem-como-usar" OnClick="btnInstrucoes_Click" />
                     </asp:TableCell>
                     <asp:TableCell Width="50%"></asp:TableCell>
                 </asp:TableRow>
             </asp:Table>
         </div>
         <footer>
-            <b>Sistemas Lua de Gerenciamento EIRELI. CNPJ: 34.648.108/0001-07. Todos os direitos reservados. 2023.</b>
+            <b>Sistemas Lua de Gerenciamento EIRELI. CNPJ: 34.648.108/0001-07. Todos os direitos reservados. 2023. <a href="http://lattes.cnpq.br/5576683103146306" style="color: yellow; text-decoration: none;">Sobre o desenvolvedor.</a><a>&nbsp;&nbsp;&nbsp;</a><a href="https://www.linkedin.com/in/f%C3%A1bio-leonel-do-nascimento-0442b215b/" style="color: yellow; text-decoration: none;">Contato.</a></b>
         </footer>
     </form>
 </body>
