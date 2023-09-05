@@ -16,12 +16,12 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         protected void btnAudioConvencional_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AudiometriaClinica.aspx");
+            
         }
 
         protected void btnAudioCompleta_Click(object sender, EventArgs e)
         {
-            
+            Response.Redirect("AudiometriaClinicaTodasFreq.aspx");
         }
 
         protected void btnAudioComportamental_Click(object sender, EventArgs e)

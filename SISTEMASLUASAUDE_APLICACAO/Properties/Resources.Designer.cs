@@ -22,7 +22,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         ///   Retorna a instância de ResourceManager armazenada em cache usada por essa classe.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SISTEMASLUASAUDE_APLICACAO.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         ///   pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bananaAzul {
+        public static System.Drawing.Bitmap bananaAzul {
             get {
                 object obj = ResourceManager.GetObject("bananaAzul", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bananaCinza {
+        public static System.Drawing.Bitmap bananaCinza {
             get {
                 object obj = ResourceManager.GetObject("bananaCinza", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bananaVerde {
+        public static System.Drawing.Bitmap bananaVerde {
             get {
                 object obj = ResourceManager.GetObject("bananaVerde", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +93,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bananaVermelha {
+        public static System.Drawing.Bitmap bananaVermelha {
             get {
                 object obj = ResourceManager.GetObject("bananaVermelha", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +103,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap campoComAASIausente {
+        public static System.Drawing.Bitmap campoComAASIausente {
             get {
                 object obj = ResourceManager.GetObject("campoComAASIausente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +113,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap campoComAASIpresente {
+        public static System.Drawing.Bitmap campoComAASIpresente {
             get {
                 object obj = ResourceManager.GetObject("campoComAASIpresente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +123,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap campoLivreODausente {
+        public static System.Drawing.Bitmap campoLivreODausente {
             get {
                 object obj = ResourceManager.GetObject("campoLivreODausente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +133,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap campoLivreODpresente {
+        public static System.Drawing.Bitmap campoLivreODpresente {
             get {
                 object obj = ResourceManager.GetObject("campoLivreODpresente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +143,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap campoLivreOEausente {
+        public static System.Drawing.Bitmap campoLivreOEausente {
             get {
                 object obj = ResourceManager.GetObject("campoLivreOEausente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +153,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap campoLivreOEpresente {
+        public static System.Drawing.Bitmap campoLivreOEpresente {
             get {
                 object obj = ResourceManager.GetObject("campoLivreOEpresente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +163,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap campoSemAASIausente {
+        public static System.Drawing.Bitmap campoSemAASIausente {
             get {
                 object obj = ResourceManager.GetObject("campoSemAASIausente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +173,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap campoSemAASIpresente {
+        public static System.Drawing.Bitmap campoSemAASIpresente {
             get {
                 object obj = ResourceManager.GetObject("campoSemAASIpresente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +183,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap vaODausente {
+        public static System.Drawing.Bitmap vaODausente {
             get {
                 object obj = ResourceManager.GetObject("vaODausente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +193,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap vaODmascAusente {
+        public static System.Drawing.Bitmap vaODmascAusente {
             get {
                 object obj = ResourceManager.GetObject("vaODmascAusente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +203,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap vaODmascPresente {
+        public static System.Drawing.Bitmap vaODmascPresente {
             get {
                 object obj = ResourceManager.GetObject("vaODmascPresente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +213,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap vaODpresente {
+        public static System.Drawing.Bitmap vaODpresente {
             get {
                 object obj = ResourceManager.GetObject("vaODpresente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +223,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap vaOEausente {
+        public static System.Drawing.Bitmap vaOEausente {
             get {
                 object obj = ResourceManager.GetObject("vaOEausente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -233,7 +233,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap vaOEmascAusente {
+        public static System.Drawing.Bitmap vaOEmascAusente {
             get {
                 object obj = ResourceManager.GetObject("vaOEmascAusente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -243,7 +243,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap vaOEmascPresente {
+        public static System.Drawing.Bitmap vaOEmascPresente {
             get {
                 object obj = ResourceManager.GetObject("vaOEmascPresente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -253,7 +253,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap vaOEpresente {
+        public static System.Drawing.Bitmap vaOEpresente {
             get {
                 object obj = ResourceManager.GetObject("vaOEpresente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -263,7 +263,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap vazio {
+        public static System.Drawing.Bitmap vazio {
             get {
                 object obj = ResourceManager.GetObject("vazio", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -273,7 +273,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap voFRONTEausente {
+        public static System.Drawing.Bitmap voFRONTEausente {
             get {
                 object obj = ResourceManager.GetObject("voFRONTEausente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -283,7 +283,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap voFRONTEmascAusenteOD {
+        public static System.Drawing.Bitmap voFRONTEmascAusenteOD {
             get {
                 object obj = ResourceManager.GetObject("voFRONTEmascAusenteOD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -293,7 +293,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap voFRONTEmascAusenteOE {
+        public static System.Drawing.Bitmap voFRONTEmascAusenteOE {
             get {
                 object obj = ResourceManager.GetObject("voFRONTEmascAusenteOE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -303,7 +303,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap voFRONTEmascPresenteOD {
+        public static System.Drawing.Bitmap voFRONTEmascPresenteOD {
             get {
                 object obj = ResourceManager.GetObject("voFRONTEmascPresenteOD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -313,7 +313,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap voFRONTEmascPresenteOE {
+        public static System.Drawing.Bitmap voFRONTEmascPresenteOE {
             get {
                 object obj = ResourceManager.GetObject("voFRONTEmascPresenteOE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -323,7 +323,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap voFRONTEpresente {
+        public static System.Drawing.Bitmap voFRONTEpresente {
             get {
                 object obj = ResourceManager.GetObject("voFRONTEpresente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -333,7 +333,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap voODausente {
+        public static System.Drawing.Bitmap voODausente {
             get {
                 object obj = ResourceManager.GetObject("voODausente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -343,7 +343,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap voODmascAusente {
+        public static System.Drawing.Bitmap voODmascAusente {
             get {
                 object obj = ResourceManager.GetObject("voODmascAusente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -353,7 +353,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap voODmascPresente {
+        public static System.Drawing.Bitmap voODmascPresente {
             get {
                 object obj = ResourceManager.GetObject("voODmascPresente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -363,7 +363,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap voODpresente {
+        public static System.Drawing.Bitmap voODpresente {
             get {
                 object obj = ResourceManager.GetObject("voODpresente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -373,7 +373,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap voOEausente {
+        public static System.Drawing.Bitmap voOEausente {
             get {
                 object obj = ResourceManager.GetObject("voOEausente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -383,7 +383,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap voOEmascAusente {
+        public static System.Drawing.Bitmap voOEmascAusente {
             get {
                 object obj = ResourceManager.GetObject("voOEmascAusente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -393,7 +393,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap voOEmascPresente {
+        public static System.Drawing.Bitmap voOEmascPresente {
             get {
                 object obj = ResourceManager.GetObject("voOEmascPresente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -403,7 +403,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap voOEpresente {
+        public static System.Drawing.Bitmap voOEpresente {
             get {
                 object obj = ResourceManager.GetObject("voOEpresente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
