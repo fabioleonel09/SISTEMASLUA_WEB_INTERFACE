@@ -38,12 +38,16 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         protected void btnMediaTritonal_Click(object sender, EventArgs e)
         {
-
+            CalculaMediaTritonal();
+            PlotaDadosAudiogramaOD();
+            PlotaDadosAudiogramaOE();
         }
 
         protected void btnMediaQuadritonal_Click(object sender, EventArgs e)
         {
-
+            CalculaMediaQuadritonal();
+            PlotaDadosAudiogramaOD();
+            PlotaDadosAudiogramaOE();
         }
 
         private void CarregaAudiogramaClinicoOD()
@@ -2566,8 +2570,60 @@ namespace SISTEMASLUASAUDE_APLICACAO
             va125oeComboBox.DataSource = DropdownData_VA.GetItems();//125Hz
             va125oeComboBox.DataBind();
 
-            //VO
+            va250oeComboBox.DataSource = DropdownData_VA.GetItems();//250Hz
+            va250oeComboBox.DataBind();
 
+            va500oeComboBox.DataSource = DropdownData_VA.GetItems();//500Hz
+            va500oeComboBox.DataBind();
+
+            va750oeComboBox.DataSource = DropdownData_VA.GetItems();//750Hz
+            va750oeComboBox.DataBind();
+
+            va1koeComboBox.DataSource = DropdownData_VA.GetItems();//1kHz
+            va1koeComboBox.DataBind();
+
+            va1e5koeComboBox.DataSource = DropdownData_VA.GetItems();//1,5kHz
+            va1e5koeComboBox.DataBind();
+
+            va2koeComboBox.DataSource = DropdownData_VA.GetItems();//2kHz
+            va2koeComboBox.DataBind();
+
+            va3koeComboBox.DataSource = DropdownData_VA.GetItems();//3kHz
+            va3koeComboBox.DataBind();
+
+            va4koeComboBox.DataSource = DropdownData_VA.GetItems();//4kHz
+            va4koeComboBox.DataBind();
+
+            va6koeComboBox.DataSource = DropdownData_VA.GetItems();//6kHz
+            va6koeComboBox.DataBind();
+
+            va8koeComboBox.DataSource = DropdownData_VA.GetItems();//8kHz
+            va8koeComboBox.DataBind();
+
+            //VO
+            vo250oeComboBox.DataSource = DropdownData_VO.GetItems();//250Hz
+            vo250oeComboBox.DataBind();
+
+            vo500oeComboBox.DataSource = DropdownData_VO.GetItems();//500Hz
+            vo500oeComboBox.DataBind();
+
+            vo750oeComboBox.DataSource = DropdownData_VO.GetItems();//750Hz
+            vo750oeComboBox.DataBind();
+
+            vo1koeComboBox.DataSource = DropdownData_VO.GetItems();//1kHz
+            vo1koeComboBox.DataBind();
+
+            vo1e5koeComboBox.DataSource = DropdownData_VO.GetItems();//1,5kHz
+            vo1e5koeComboBox.DataBind();
+
+            vo2koeComboBox.DataSource = DropdownData_VO.GetItems();//2kHz
+            vo2koeComboBox.DataBind();
+
+            vo3koeComboBox.DataSource = DropdownData_VO.GetItems();//3kHz
+            vo3koeComboBox.DataBind();
+
+            vo4koeComboBox.DataSource = DropdownData_VO.GetItems();//4kHz
+            vo4koeComboBox.DataBind();
         }
 
         private void CarregaDDLaudioVocal()
@@ -2589,6 +2645,148 @@ namespace SISTEMASLUASAUDE_APLICACAO
             //dissílabos
             ddlIPRFdisOe.DataSource = DropdownData_Vocal.GetItems();
             ddlIPRFdisOe.DataBind();
+        }
+
+        private void CalculaMediaTritonal()
+        { 
+            //Para a OD #############################################
+            try//no bloco de tratamento de erros
+            {
+                mEDIAodTextBox.Text = "";//limpa o txt média tritonal 
+
+                if ((va500odComboBox.Text == "") || (va1kodComboBox.Text == "") || (va2kodComboBox.Text == ""))//caso alguma das txt's de 500Hz, 1kHz e 2kHz estejam vazias
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Por favor, escolha os valores para a média tritonal de 500Hz, 1kHz e 2kHZ da OD.');", true);
+                }
+
+                else//do contrário
+                {
+                    if ((aus500vaODCheckBox.Checked == true) || (aus1kvaODCheckBox.Checked == true) || (aus2kvaODCheckBox.Checked == true))//caso alguma das txt's de 500Hz, 1kHz ou 2kHz esteja com o texto AUS, de ausente
+                    {
+                        mEDIAodTextBox.Text = "Saída máxima";//atritui a frase à txt média
+                    }
+
+                    else//caso contrário
+                    {
+                        int valor1, valor2, valor3, resultado;
+
+                        valor1 = Convert.ToInt32(va500odComboBox.Text);
+                        valor2 = Convert.ToInt32(va1kodComboBox.Text);
+                        valor3 = Convert.ToInt32(va2kodComboBox.Text);
+
+                        resultado = ((valor1 + valor2 + valor3) / 3);
+
+                        mEDIAodTextBox.Text = Convert.ToString(resultado);
+                        lblMediaOD.Text = "Média Tritonal:";
+                    }
+                }
+
+                //Para a OE #######################################
+                mEDIAoeTextBox.Text = "";//limpa o txt média tritonal 
+
+                if ((va500oeComboBox.Text == "") || (va1koeComboBox.Text == "") || (va2koeComboBox.Text == ""))//caso alguma das txt's de 500Hz, 1kHz e 2kHz estejam vazias
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Por favor, escolha os valores para a média tritonal de 500Hz, 1kHz e 2kHZ da OE.');", true);
+                }
+
+                else//do contrário
+                {
+                    if ((aus500vaOECheckBox.Checked == true) || (aus1kvaOECheckBox.Checked == true) || (aus2kvaOECheckBox.Checked == true))//caso alguma das txt's de 500Hz, 1kHz ou 2kHz esteja com o texto AUS, de ausente
+                    {
+                        mEDIAoeTextBox.Text = "Saída máxima";//atritui a frase à txt média com AASI
+                    }
+
+                    else//caso contrário
+                    {
+                        int valor1, valor2, valor3, resultado;
+
+                        valor1 = Convert.ToInt32(va500oeComboBox.Text);
+                        valor2 = Convert.ToInt32(va1koeComboBox.Text);
+                        valor3 = Convert.ToInt32(va2koeComboBox.Text);
+
+                        resultado = ((valor1 + valor2 + valor3) / 3);
+
+                        mEDIAoeTextBox.Text = Convert.ToString(resultado);
+                        lblMediaOE.Text = "Média Tritonal:";
+                    }
+                }
+            }
+            catch (Exception ex)//tratamento de erro
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Ocorreu um erro.');" + ex.Message, true);
+            }
+        }
+
+        private void CalculaMediaQuadritonal()
+        {
+            try//no bloco de tratamento de erros
+            {
+                //Para a OD #########################################
+                mEDIAodTextBox.Text = "";//limpa o txt média tritonal
+
+                if ((va500odComboBox.Text == "") || (va1kodComboBox.Text == "") || (va2kodComboBox.Text == "") || (va4kodComboBox.Text == ""))//caso alguma das txt's de 500Hz, 1kHz e 2kHz estejam vazias
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Por favor, escolha os valores para a média tritonal de 500Hz, 1kHz, 2kHZ e 4kHz da OD.');", true);
+                }
+
+                else//do contrário
+                {
+                    if ((aus500vaODCheckBox.Checked == true) || (aus1kvaODCheckBox.Checked == true) || (aus2kvaODCheckBox.Checked == true) || (aus4kvaODCheckBox.Checked == true))//caso alguma das txt's de 500Hz, 1kHz ou 2kHz esteja com o texto AUS, de ausente
+                    {
+                        mEDIAodTextBox.Text = "Saída máxima";//atritui a frase à txt média
+                    }
+
+                    else//caso contrário
+                    {
+                        int valor1, valor2, valor3, valor4, resultado;
+
+                        valor1 = Convert.ToInt32(va500odComboBox.Text);
+                        valor2 = Convert.ToInt32(va1kodComboBox.Text);
+                        valor3 = Convert.ToInt32(va2kodComboBox.Text);
+                        valor4 = Convert.ToInt32(va4kodComboBox.Text);
+
+                        resultado = ((valor1 + valor2 + valor3 + valor4) / 4);
+
+                        mEDIAodTextBox.Text = Convert.ToString(resultado);
+                        lblMediaOD.Text = "Média Quadritonal:";
+                    }
+                }
+
+                //Para a OE #######################################
+                mEDIAoeTextBox.Text = "";//limpa o txt média tritonal
+
+                if ((va500oeComboBox.Text == "") || (va1koeComboBox.Text == "") || (va2koeComboBox.Text == "") || (va4koeComboBox.Text == ""))//caso alguma das txt's de 500Hz, 1kHz e 2kHz estejam vazias
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Por favor, escolha os valores para a média tritonal de 500Hz, 1kHz, 2kHZ e 4kHz da OE.');", true);
+                }
+
+                else//do contrário
+                {
+                    if ((aus500vaOECheckBox.Checked == true) || (aus1kvaOECheckBox.Checked == true) || (aus2kvaOECheckBox.Checked == true) || (aus4kvaOECheckBox.Checked == true))//caso alguma das txt's de 500Hz, 1kHz ou 2kHz esteja com o texto AUS, de ausente
+                    {
+                        mEDIAoeTextBox.Text = "Saída máxima";//atritui a frase à txt média
+                    }
+
+                    else//caso contrário
+                    {
+                        int valor1, valor2, valor3, valor4, resultado;
+
+                        valor1 = Convert.ToInt32(va500oeComboBox.Text);
+                        valor2 = Convert.ToInt32(va1koeComboBox.Text);
+                        valor3 = Convert.ToInt32(va2koeComboBox.Text);
+                        valor4 = Convert.ToInt32(va4koeComboBox.Text);
+
+                        resultado = ((valor1 + valor2 + valor3 + valor4) / 4);
+
+                        mEDIAoeTextBox.Text = Convert.ToString(resultado);
+                        lblMediaOE.Text = "Média Quadritonal:";
+                    }
+                }
+            }
+            catch (Exception ex)//tratamento de erro
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Ocorreu um erro.');" + ex.Message, true);
+            }
         }
     }
 }
