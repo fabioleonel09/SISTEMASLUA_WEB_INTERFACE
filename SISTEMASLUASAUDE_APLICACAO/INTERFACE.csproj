@@ -399,6 +399,7 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ddlList_Items\DropdownData_TesteWeber.cs" />
     <Compile Include="ddlList_Items\DropdownData_VO.cs" />
     <Compile Include="ddlList_Items\DropdownData_VA.cs" />
     <Compile Include="ddlList_Items\DropdownData_Vocal.cs" />

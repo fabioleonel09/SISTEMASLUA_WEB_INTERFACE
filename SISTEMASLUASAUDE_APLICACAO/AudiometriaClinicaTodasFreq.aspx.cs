@@ -27,6 +27,8 @@ namespace SISTEMASLUASAUDE_APLICACAO
                 CarregaDDLaudioTonalVA();
 
                 CarregaDDLaudioVocal();
+
+                CarregaTesteWeber();
             }
         }
 
@@ -4343,6 +4345,25 @@ namespace SISTEMASLUASAUDE_APLICACAO
             //dissílabos
             ddlIPRFdisOe.DataSource = DropdownData_Vocal.GetItems();
             ddlIPRFdisOe.DataBind();
+        }
+
+        private void CarregaTesteWeber()
+        {
+            //para 500Hz
+            weber500ComboBox.DataSource = DropdownData_TesteWeber.GetItems();
+            weber500ComboBox.DataBind();
+
+            //para 1kHz
+            weber1kComboBox.DataSource = DropdownData_TesteWeber.GetItems();
+            weber1kComboBox.DataBind();
+            
+            //para 2kHz
+            weber2kComboBox.DataSource = DropdownData_TesteWeber.GetItems();
+            weber2kComboBox.DataBind();
+            
+            //para 4kHz
+            weber4kComboBox.DataSource = DropdownData_TesteWeber.GetItems();
+            weber4kComboBox.DataBind();
         }
 
         private void CalculaMediaTritonal()

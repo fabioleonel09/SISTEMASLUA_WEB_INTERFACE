@@ -791,6 +791,64 @@
                                     <asp:Button ID="btnPlotaGeral" runat="server" Text="Plotar" BackColor="#00cc99" BorderColor="Green" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnPlotarGeral_Click" />
                                 </div>
                                 <br />
+                                <div class="container" style="text-align: center;">
+                                    <asp:Table ID="tbTesteWeberCabecalho" runat="server" Width="100%">
+                                        <asp:TableHeaderRow Width="100%" Height="30px" BackColor="#cccccc" Font-Bold="true" Font-Size="14">
+                                            <asp:TableHeaderCell Text="Teste de Weber"></asp:TableHeaderCell>
+                                        </asp:TableHeaderRow>
+                                    </asp:Table>
+                                </div>
+                                <div class="container" style="text-align: center;">
+                                    <div class="box">
+                                        <asp:Panel ID="pnlTesteWeberParteUm" runat="server" Width="100%">
+                                            <asp:Table ID="tbTesteWeberCorpoPrimeiro" runat="server" Width="100%">
+                                                <asp:TableHeaderRow Width="100%" Height="30px">
+                                                    <asp:TableHeaderCell Text="Weber em 500Hz:" Width="50%" Height="30px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="50%" Height="30px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="weber500ComboBox" runat="server" Width="100%" Height="30px" BorderColor="Black"
+                                                            BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="14"
+                                                            CssClass="cantos-arredondados-alinhamento" >
+                                                        </asp:DropDownList>
+                                                    </asp:TableHeaderCell>
+                                                </asp:TableHeaderRow>
+                                                <asp:TableHeaderRow Width="100%" Height="30px">
+                                                    <asp:TableHeaderCell Text="Weber em 1kHz:" Width="50%" Height="30px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="50%" Height="30px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="weber1kComboBox" runat="server" Width="100%" Height="30px" BorderColor="Black"
+                                                            BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="14"
+                                                            CssClass="cantos-arredondados-alinhamento">
+                                                        </asp:DropDownList>
+                                                    </asp:TableHeaderCell>
+                                                </asp:TableHeaderRow>
+                                            </asp:Table>
+                                        </asp:Panel>
+                                    </div>
+                                    <div class="box">
+                                        <asp:Panel ID="pnlTesteWeberParteDois" runat="server" Width="100%">
+                                            <asp:Table ID="tbTesteWeberCorpoSegundo" runat="server" Width="100%">
+                                                <asp:TableHeaderRow Width="100%" Height="30px">
+                                                    <asp:TableHeaderCell Text="Weber em 2kHz:" Width="50%" Height="30px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="50%" Height="30px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="weber2kComboBox" runat="server" Width="100%" Height="30px" BorderColor="Black"
+                                                            BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="14"
+                                                            CssClass="cantos-arredondados-alinhamento">
+                                                        </asp:DropDownList>
+                                                    </asp:TableHeaderCell>
+                                                </asp:TableHeaderRow>
+                                                <asp:TableHeaderRow Width="100%" Height="30px">
+                                                    <asp:TableHeaderCell Text="Weber em 4kHz:" Width="50%" Height="30px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="50%" Height="30px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="weber4kComboBox" runat="server" Width="100%" Height="30px" BorderColor="Black"
+                                                            BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="14"
+                                                            CssClass="cantos-arredondados-alinhamento">
+                                                        </asp:DropDownList>
+                                                    </asp:TableHeaderCell>
+                                                </asp:TableHeaderRow>
+                                            </asp:Table>
+                                        </asp:Panel>
+                                    </div>
+                                </div>
+                                <br />
                                 <asp:Panel ID="pnlSimbologiaAudiometrica" runat="server" Width="100%">
                                     <asp:Image ID="imgSimbologiaAudiometrica" runat="server" ImageUrl="~/Images/Simbologia.png" AlternateText="A imagem da simbologia não carregou." Width="100%" />
                                 </asp:Panel>
