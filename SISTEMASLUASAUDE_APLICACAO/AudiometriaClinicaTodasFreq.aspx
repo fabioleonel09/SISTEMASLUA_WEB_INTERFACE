@@ -71,8 +71,24 @@
             line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
         }
 
+        .cantos-arredondados-alinhamento-left {
+            border-radius: 10px; /* Valor do raio dos cantos arredondados */
+            text-align: left; /* Centraliza horizontalmente */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
+        }
+
         .alinhamento-text-center {
             text-align: center; /* Centraliza horizontalmente */
+        }
+
+        .btn-Imprimir {
+            cursor: pointer; /* Altera o cursor para a forma de uma mão */
+            border-radius: 10px; /* Valor do raio dos cantos arredondados */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
+            background-image: url('./Images/imprimirMaior.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: auto; /* Ajuste o tamanho da imagem conforme necessário */
         }
     </style>
 </head>
@@ -1075,6 +1091,87 @@
                             <asp:TableCell Width="10%" Height="100%" Style="vertical-align: bottom"></asp:TableCell>
                         </asp:TableRow>
                     </asp:Table>
+                    <br />
+                    <asp:Table ID="tbOutrosDados" runat="server" Width="100%" BorderColor="#cccccc" BorderWidth="2px" BorderStyle="Solid">
+                        <asp:TableHeaderRow Width="100%">
+                            <asp:TableHeaderCell Text="Mascaramento tonal/fala:" Width="20%" Height="50px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                            <asp:TableHeaderCell Width="80%" Height="50px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                <asp:TextBox ID="txtMascaramentoComent" runat="server" TextMode="MultiLine" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="38px" CssClass="cantos-arredondados-alinhamento-left "></asp:TextBox>
+                            </asp:TableHeaderCell>
+                        </asp:TableHeaderRow>
+                        <asp:TableHeaderRow Width="100%">
+                            <asp:TableHeaderCell Text="Comentários: " Width="20%" Height="50px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                            <asp:TableHeaderCell Width="80%" Height="50px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                <asp:TextBox ID="txtComentariosGerais" runat="server" TextMode="MultiLine" BackColor="#ffff99" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="38px" CssClass="cantos-arredondados-alinhamento-left "></asp:TextBox>
+                            </asp:TableHeaderCell>
+                        </asp:TableHeaderRow>
+                        <asp:TableHeaderRow Width="100%">
+                            <asp:TableHeaderCell Text="Laudos/Autores: " Width="20%" Height="50px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                            <asp:TableHeaderCell Width="80%" Height="50px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                <asp:DropDownList ID="ddlLaudos" runat="server" Width="98.7%" Height="50px" ForeColor="Black" BorderColor="Black"
+                                                            BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="8"
+                                                            CssClass="cantos-arredondados-alinhamento-left">
+                                </asp:DropDownList>
+                            </asp:TableHeaderCell>
+                        </asp:TableHeaderRow>
+                    </asp:Table>
+                    <br />
+                    <asp:Table ID="tbDadosComplementares" runat="server"  Width="100%" BorderColor="#cccccc" BorderWidth="2px" BorderStyle="Solid">
+                        <asp:TableHeaderRow Width="100%">
+                            <asp:TableHeaderCell Width="100%">
+                                <div class="container" style="text-align: center;">
+                                    <div class="box">
+                                        <asp:Panel ID="pnlDadosComplementaresPrimeiro" runat="server" Width="100%">
+                                            <asp:Table ID="tbDadosComplementaresPrimeiro" runat="server" Width="100%">
+                                                <asp:TableHeaderRow Width="100%" Height="30px">
+                                                    <asp:TableHeaderCell Text="Audiômetro:" Width="50%" Height="30px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="50%" Height="30px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:TextBox ID="txtAudiometro" runat="server" BackColor="White" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="38px" CssClass="cantos-arredondados-alinhamento-left "></asp:TextBox>
+                                                    </asp:TableHeaderCell>
+                                                </asp:TableHeaderRow>
+                                                <asp:TableHeaderRow Width="100%" Height="30px">
+                                                    <asp:TableHeaderCell Text="Data de Calibração:" Width="50%" Height="30px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="50%" Height="30px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:TextBox ID="txtDataCalibracao" runat="server" TextMode="Date" BackColor="White" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="38px" CssClass="cantos-arredondados-alinhamento-left "></asp:TextBox>
+                                                    </asp:TableHeaderCell>
+                                                </asp:TableHeaderRow>
+                                            </asp:Table>
+                                        </asp:Panel>
+                                    </div>
+                                    <div class="box">
+                                        <asp:Panel ID="pnlDadosComplementaresSegundo" runat="server" Width="100%">
+                                            <asp:Table ID="tbDadosComplementaresSegundo" runat="server" Width="100%">
+                                                <asp:TableHeaderRow Width="100%" Height="30px">
+                                                    <asp:TableHeaderCell Text="Examinador:" Width="20%" Height="30px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="80%" Height="30px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:TextBox ID="txtExaminador" runat="server" BackColor="White" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="38px" CssClass="cantos-arredondados-alinhamento-left "></asp:TextBox>
+                                                    </asp:TableHeaderCell>
+                                                </asp:TableHeaderRow>
+                                                <asp:TableHeaderRow Width="100%" Height="30px">
+                                                    <asp:TableHeaderCell Text="Data de hoje:" Width="20%" Height="30px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="80%" Height="30px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:TextBox ID="txtDataHoje" runat="server" BackColor="White" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="38px" CssClass="cantos-arredondados-alinhamento-left "></asp:TextBox>
+                                                    </asp:TableHeaderCell>
+                                                </asp:TableHeaderRow>
+                                            </asp:Table>
+                                        </asp:Panel>
+                                    </div>
+                                </div>
+                            </asp:TableHeaderCell>
+                        </asp:TableHeaderRow>
+                    </asp:Table>
+                    <br />
+                    <asp:Table ID="tbImprimir" runat="server" Width="100%">
+                <asp:TableHeaderRow Width="100%">
+                    <asp:TableHeaderCell Width="20%" Height="150px"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="150px"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="150px">
+                        <asp:Button ID="btnImprimir" runat="server" Width="100%" Height="100%" OnClick="btnImprimir_Click" CssClass="btn-Imprimir" />
+                    </asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="150px"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="150px"></asp:TableHeaderCell>
+                </asp:TableHeaderRow>
+                        </asp:Table>
                 </div>
             </div>
         </div>

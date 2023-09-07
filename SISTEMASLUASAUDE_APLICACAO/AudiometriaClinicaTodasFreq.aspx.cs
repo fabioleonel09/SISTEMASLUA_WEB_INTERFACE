@@ -29,6 +29,10 @@ namespace SISTEMASLUASAUDE_APLICACAO
                 CarregaDDLaudioVocal();
 
                 CarregaTesteWeber();
+
+                CarregaLaudoaudiologico();
+
+                CarregaLaudosAutores();
             }
         }
 
@@ -50,6 +54,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
             CalculaMediaQuadritonal();
             PlotaDadosAudiogramaOD();
             PlotaDadosAudiogramaOE();
+        }
+
+        protected void btnImprimir_Click(object sender, EventArgs e)
+        {
+            ImprimeAudiograma();
         }
 
         private void CarregaAudiogramaClinicoOD()
@@ -4182,7 +4191,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
                 var usuario = Session["ssnUsuario"].ToString();
                 var conselhoRegional = Session["ssnConselhoRegional"].ToString();
                 var boasVindas = "Seja bem-vindo (a) " + usuario + ", " + conselhoRegional + ".";
+                var dataHoje = Session["ssnDataHoje"].ToString();
                 lblBoasVindas.Text = boasVindas;
+
+                txtExaminador.Text = usuario + ". " + conselhoRegional + ".";
+                txtDataHoje.Text = dataHoje;
             }
         }
 
@@ -4506,6 +4519,56 @@ namespace SISTEMASLUASAUDE_APLICACAO
             {
                 ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Ocorreu um erro.');" + ex.Message, true);
             }
+        }
+
+        private void CarregaLaudoaudiologico()
+        {
+            //para ddl normal
+            ddlAudicaoNormalOD.DataSource = DropdownData_LaudoAudioNormal.GetItems();
+            ddlAudicaoNormalOD.DataBind();
+
+            ddlAudicaoNormalOE.DataSource = DropdownData_LaudoAudioNormal.GetItems();
+            ddlAudicaoNormalOE.DataBind();
+
+            //para tipo de curva
+            ddlCurvaTipoOD.DataSource = DropdownData_CurvaAudioTipo.GetItems();
+            ddlCurvaTipoOD.DataBind();
+
+            ddlCurvaTipoOE.DataSource = DropdownData_CurvaAudioTipo.GetItems();
+            ddlCurvaTipoOE.DataBind();
+
+            //para o grau
+            ddlDeGrauOD.DataSource = DropdownData_GrauAudio.GetItems();
+            ddlDeGrauOD.DataBind();
+
+            ddlDeGrauOE.DataSource = DropdownData_GrauAudio.GetItems();
+            ddlDeGrauOE.DataBind();
+
+            //para a configuração
+            ddlDeConfigOD.DataSource = DropdownData_ConfigTipo.GetItems();
+            ddlDeConfigOD.DataBind();
+
+            ddlDeConfigOE.DataSource = DropdownData_ConfigTipo.GetItems();
+            ddlDeConfigOE.DataBind();
+
+            //para a audio vocal
+            ddlEaudioVocalOD.DataSource = DropdownData_LaudoAudioVocal.GetItems();
+            ddlEaudioVocalOD.DataBind();
+
+            ddlEaudioVocalOE.DataSource = DropdownData_LaudoAudioVocal.GetItems();
+            ddlEaudioVocalOE.DataBind();
+        }
+
+        private void CarregaLaudosAutores()
+        {
+            ddlLaudos.AppendDataBoundItems = true;
+            ddlLaudos.DataSource = DropdownData_LaudosAutores.GetItems();
+            ddlLaudos.DataBind();
+        }
+
+        private void ImprimeAudiograma()
+        {
+
         }
     }
 }

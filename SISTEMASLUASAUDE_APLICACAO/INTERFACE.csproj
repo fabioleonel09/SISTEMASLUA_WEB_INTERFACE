@@ -190,6 +190,8 @@
     <Content Include="Images\chart1.png" />
     <Content Include="Images\fones.png" />
     <Content Include="Images\impedanciometria.png" />
+    <Content Include="Images\imprimir.png" />
+    <Content Include="Images\imprimirMaior.png" />
     <Content Include="Images\luaRecolorida2.png" />
     <Content Include="Images\prontuario.png" />
     <Content Include="Images\Simbologia.png" />
@@ -399,6 +401,12 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ddlList_Items\DropdownData_LaudosAutores.cs" />
+    <Compile Include="ddlList_Items\DropdownData_LaudoAudioVocal.cs" />
+    <Compile Include="ddlList_Items\DropdownData_ConfigTipo.cs" />
+    <Compile Include="ddlList_Items\DropdownData_GrauAudio.cs" />
+    <Compile Include="ddlList_Items\DropdownData_CurvaAudioTipo.cs" />
+    <Compile Include="ddlList_Items\DropdownData_LaudoAudioNormal.cs" />
     <Compile Include="ddlList_Items\DropdownData_TesteWeber.cs" />
     <Compile Include="ddlList_Items\DropdownData_VO.cs" />
     <Compile Include="ddlList_Items\DropdownData_VA.cs" />
