@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.DataVisualization.Charting;
 using System.Web.UI.WebControls;
+using SISTEMASLUASAUDE_APLICACAO.ClassesDadosRelatorios;
 using SISTEMASLUASAUDE_APLICACAO.ddlList_Items;
 
 namespace SISTEMASLUASAUDE_APLICACAO
@@ -4568,7 +4569,71 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         private void ImprimeAudiograma()
         {
+            PlotaDadosAudiogramaOD();
+            PlotaDadosAudiogramaOE();
 
+            chartAudioOD.SaveImage("C:\\users/public/documents/chartODAudioClinica.png", System.Web.UI.DataVisualization.Charting.ChartImageFormat.Png);
+            chartAudioOE.SaveImage("C:\\users/public/documents/chartOEAudioClinica.png", System.Web.UI.DataVisualization.Charting.ChartImageFormat.Png);
+
+            DadosRelatorioImpressao();
+
+            // Define o URL para onde você deseja redirecionar
+            string url = "RelatorioImpressaoAudioClinicaCompleta.aspx";
+
+            // Cria o script JavaScript para abrir uma nova janela
+            string script = "window.open('" + url + "', '_blank');";
+
+            // Registra o script no cliente para ser executado
+            ClientScript.RegisterStartupScript(this.GetType(), "OpenWindow", script, true);
+        }
+
+        public void DadosRelatorioImpressao()
+        {
+            //instância da classe dos dados do relatório
+            DadosRelatorioAudio dadosRel = new DadosRelatorioAudio();
+
+            dadosRel.nomePaciente = Session["ssnNomePaciente"].ToString();
+            dadosRel.nomeSocialPaciente = Session["ssnNomeSocialPaciente"].ToString();
+            dadosRel.idadePaciente = Session["ssnIdadePaciente"].ToString();
+            dadosRel.dataNascimento = Session["ssnDataNascimento"].ToString();
+
+            dadosRel.monOD = ddlIPRFmonOd.Text;
+            dadosRel.monOE = ddlIPRFmonOe.Text;
+            dadosRel.dissOD = ddlIPRFdisOd.Text;
+            dadosRel.dissOE = ddlIPRFdisOe.Text;
+            dadosRel.srtOD = txtSRTOD.Text;
+            dadosRel.srtOE = txtSRTOE.Text;
+            dadosRel.sdtOD = txtSDTOD.Text;
+            dadosRel.sdtOE = txtSDTOE.Text;
+            dadosRel.mediaOD = mEDIAodTextBox.Text;
+            dadosRel.mediaOE = mEDIAoeTextBox.Text;
+
+            dadosRel.weber500Hz = weber500ComboBox.Text;
+            dadosRel.weber1kHz = weber1kComboBox.Text;
+            dadosRel.weber2kHz = weber2kComboBox.Text;
+            dadosRel.weber4kHz = weber4kComboBox.Text;
+
+            dadosRel.mascaramento = txtMascaramentoComent.Text;
+
+            dadosRel.curvaAudioNormalOD = ddlAudicaoNormalOD.Text;
+            dadosRel.curvaAudioNormalOE = ddlAudicaoNormalOE.Text;
+            dadosRel.doTipoOD = ddlCurvaTipoOD.Text;
+            dadosRel.doTipoOE = ddlCurvaTipoOE.Text;
+            dadosRel.deGrauOD = ddlDeGrauOD.Text;
+            dadosRel.deGrauOE = ddlDeGrauOE.Text;
+            dadosRel.deConfigOD = ddlDeConfigOD.Text;
+            dadosRel.deConfigOE = ddlDeConfigOE.Text;
+            dadosRel.deAudioVocalOD = ddlEaudioVocalOD.Text;
+            dadosRel.deAudioVocalOE = ddlEaudioVocalOE.Text;
+
+            dadosRel.autoresLaudo = ddlLaudos.Text;
+
+            dadosRel.comentarios = txtComentariosGerais.Text;
+
+            var examinadorCompleto = Session["ssnUsuario"].ToString() + ". " + Session["ssnConselhoRegional"].ToString() + ".";
+            dadosRel.examidador = examinadorCompleto;
+            dadosRel.audiometro = txtAudiometro.Text;
+            dadosRel.dataCalibracao = txtDataCalibracao.Text;
         }
     }
 }
