@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using SISTEMASLUASAUDE_APLICACAO.ClassesDadosRelatorios;
+using System.Data;
 
 namespace SISTEMASLUASAUDE_APLICACAO
 {
@@ -15,7 +16,16 @@ namespace SISTEMASLUASAUDE_APLICACAO
         {
             rpvRelatorioImpressaoAudioClinCompl.LocalReport.EnableExternalImages = true;
 
-            rpvRelatorioImpressaoAudioClinCompl.LocalReport.Refresh();  
+            DataSet dataSet = RelatorioDataSource.GetDadosRelatorio();
+
+            // Configure o ReportViewer
+            rpvRelatorioImpressaoAudioClinCompl.LocalReport.ReportPath = Server.MapPath("~/RelatoriosImpressao/rltAudioClinicaCompleta.rdlc"); // Substitua pelo caminho do seu arquivo .rdlc
+            ReportDataSource reportDataSource = new ReportDataSource("DataSet1", dataSet.Tables["DadosRelatorioAudio"]);
+            rpvRelatorioImpressaoAudioClinCompl.LocalReport.DataSources.Add(reportDataSource);
+
+            // Atualize o ReportViewer
+            rpvRelatorioImpressaoAudioClinCompl.LocalReport.Refresh();
+            //rpvRelatorioImpressaoAudioClinCompl.LocalReport.Refresh();
         }
     }
 }

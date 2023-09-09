@@ -430,6 +430,7 @@
       <DependentUpon>AudiometriaClinicaTodasFreq.aspx</DependentUpon>
     </Compile>
     <Compile Include="ClassesDadosRelatorios\DadosRelatorioAudio.cs" />
+    <Compile Include="ClassesDadosRelatorios\RelatorioDataSource.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

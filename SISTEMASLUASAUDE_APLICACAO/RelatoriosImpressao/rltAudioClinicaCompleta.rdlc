@@ -6,7 +6,7 @@
         <Source>External</Source>
         <Value>file:////C:\users/public/documents/chartODAudioClinica.png</Value>
         <Sizing>FitProportional</Sizing>
-        <Top>2.80864cm</Top>
+        <Top>3.44364cm</Top>
         <Left>1.44163cm</Left>
         <Height>6.36834cm</Height>
         <Width>7.18312cm</Width>
@@ -20,7 +20,7 @@
         <Source>External</Source>
         <Value>file:////C:\users/public/documents/chartOEAudioClinica.png</Value>
         <Sizing>FitProportional</Sizing>
-        <Top>2.80864cm</Top>
+        <Top>3.44364cm</Top>
         <Left>9.5787cm</Left>
         <Height>6.36834cm</Height>
         <Width>7.18312cm</Width>
@@ -161,10 +161,8 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
-                              <Style>
-                                <FontSize>12pt</FontSize>
-                              </Style>
+                              <Value>=Fields!nomePaciente.Value</Value>
+                              <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -185,21 +183,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="idadePacienteNovo">
+                    <Textbox Name="idadePaciente">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!idadePaciente.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>idadePacienteNovo</rd:DefaultName>
+                      <rd:DefaultName>idadePaciente</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -221,7 +219,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!dataNascimento.Value</Value>
                               <Style>
                                 <Format>dd/MM/yyyy</Format>
                               </Style>
@@ -348,7 +346,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox26</rd:DefaultName>
-        <Top>2.03225cm</Top>
+        <Top>2.66725cm</Top>
         <Left>1.44163cm</Left>
         <Height>0.6cm</Height>
         <Width>15.32019cm</Width>
@@ -491,14 +489,21 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="MONod">
+                    <Textbox Name="monossilaboOD">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>MON.: </Value>
+                              <Value>Mom.: </Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>Red</Color>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>=Fields!monossilaboOD.Value</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>Red</Color>
@@ -508,7 +513,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>MONod</rd:DefaultName>
+                      <rd:DefaultName>monossilaboOD</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -523,14 +528,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="MONoe">
+                    <Textbox Name="monossilaboOE">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>MON.: </Value>
+                              <Value>Mom.: </Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>Blue</Color>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>=Fields!monossilaboOE.Value</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>Blue</Color>
@@ -540,7 +552,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>MONoe</rd:DefaultName>
+                      <rd:DefaultName>monossilaboOE</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -555,7 +567,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="weber500">
+                    <Textbox Name="weber500Hz">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -568,7 +580,7 @@
                               </Style>
                             </TextRun>
                             <TextRun>
-                              <Value>=Fields!weber500.Value</Value>
+                              <Value>=Fields!weber500Hz.Value</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -577,7 +589,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>weber500</rd:DefaultName>
+                      <rd:DefaultName>weber500Hz</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -597,14 +609,21 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="DISSod">
+                    <Textbox Name="dissilaboOD">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>DISS.: </Value>
+                              <Value>Diss.: </Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>Red</Color>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>=Fields!dissilaboOD.Value</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>Red</Color>
@@ -614,7 +633,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>DISSod</rd:DefaultName>
+                      <rd:DefaultName>dissilaboOD</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -629,14 +648,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="DISSoe">
+                    <Textbox Name="dissilaboOE">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>DISS.: </Value>
+                              <Value>Diss.: </Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>Blue</Color>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>=Fields!dissilaboOE.Value</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>Blue</Color>
@@ -646,7 +672,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>DISSoe</rd:DefaultName>
+                      <rd:DefaultName>dissilaboOE</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -661,7 +687,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="weber1k">
+                    <Textbox Name="weber1kHz">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -674,7 +700,7 @@
                               </Style>
                             </TextRun>
                             <TextRun>
-                              <Value>=Fields!weber1k.Value</Value>
+                              <Value>=Fields!weber1kHz.Value</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -683,7 +709,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>weber1k</rd:DefaultName>
+                      <rd:DefaultName>weber1kHz</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -703,7 +729,7 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="SRTod">
+                    <Textbox Name="srtOD">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -716,11 +742,18 @@
                                 <Color>Red</Color>
                               </Style>
                             </TextRun>
+                            <TextRun>
+                              <Value>=Fields!srtOD.Value</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>Red</Color>
+                              </Style>
+                            </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>SRTod</rd:DefaultName>
+                      <rd:DefaultName>srtOD</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -735,7 +768,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="SRToe">
+                    <Textbox Name="srtOE">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -748,11 +781,18 @@
                                 <Color>Blue</Color>
                               </Style>
                             </TextRun>
+                            <TextRun>
+                              <Value>=Fields!srtOE.Value</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>Blue</Color>
+                              </Style>
+                            </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>SRToe</rd:DefaultName>
+                      <rd:DefaultName>srtOE</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -767,7 +807,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="weber2k">
+                    <Textbox Name="weber2kHz">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -780,7 +820,7 @@
                               </Style>
                             </TextRun>
                             <TextRun>
-                              <Value>=Fields!weber2k.Value</Value>
+                              <Value>=Fields!weber2kHz.Value</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -789,7 +829,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>weber2k</rd:DefaultName>
+                      <rd:DefaultName>weber2kHz</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -809,7 +849,7 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="SDTod">
+                    <Textbox Name="sdtOD">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -822,11 +862,18 @@
                                 <Color>Red</Color>
                               </Style>
                             </TextRun>
+                            <TextRun>
+                              <Value>=Fields!sdtOD.Value</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>Red</Color>
+                              </Style>
+                            </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>SDTod</rd:DefaultName>
+                      <rd:DefaultName>sdtOD</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -841,7 +888,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="SDToe">
+                    <Textbox Name="sdtOE">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -854,11 +901,18 @@
                                 <Color>Blue</Color>
                               </Style>
                             </TextRun>
+                            <TextRun>
+                              <Value>=Fields!sdtOE.Value</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>Blue</Color>
+                              </Style>
+                            </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>SDToe</rd:DefaultName>
+                      <rd:DefaultName>sdtOE</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -873,7 +927,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="weber4k">
+                    <Textbox Name="weber4kHz">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -886,7 +940,7 @@
                               </Style>
                             </TextRun>
                             <TextRun>
-                              <Value>=Fields!weber4k.Value</Value>
+                              <Value>=Fields!weber4kHz.Value</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -895,7 +949,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>weber4k</rd:DefaultName>
+                      <rd:DefaultName>weber4kHz</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -915,7 +969,7 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="MEDIAod">
+                    <Textbox Name="mediaOD">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -928,11 +982,18 @@
                                 <Color>Red</Color>
                               </Style>
                             </TextRun>
+                            <TextRun>
+                              <Value>=Fields!mediaOD.Value</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>Red</Color>
+                              </Style>
+                            </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>MEDIAod</rd:DefaultName>
+                      <rd:DefaultName>mediaOD</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -947,7 +1008,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="MEDIAoe">
+                    <Textbox Name="mediaOE">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -960,11 +1021,18 @@
                                 <Color>Blue</Color>
                               </Style>
                             </TextRun>
+                            <TextRun>
+                              <Value>=Fields!mediaOE.Value</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>Blue</Color>
+                              </Style>
+                            </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>MEDIAoe</rd:DefaultName>
+                      <rd:DefaultName>mediaOE</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -1041,7 +1109,8 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <Top>9.32597cm</Top>
+        <DataSetName>DataSet1</DataSetName>
+        <Top>9.96097cm</Top>
         <Left>7.29036cm</Left>
         <Height>3.6cm</Height>
         <Width>9.47146cm</Width>
@@ -1109,14 +1178,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="audioNormalOD">
+                    <Textbox Name="curvaAudioNormalOD">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!curvaAudioNormalOD.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Color>Red</Color>
@@ -1126,7 +1195,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>audioNormalOD</rd:DefaultName>
+                      <rd:DefaultName>curvaAudioNormalOD</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -1141,14 +1210,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="audioNormalOE">
+                    <Textbox Name="curvaAudioNormalOE">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!curvaAudioNormalOE.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Color>Blue</Color>
@@ -1158,7 +1227,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>audioNormalOE</rd:DefaultName>
+                      <rd:DefaultName>curvaAudioNormalOE</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -1210,14 +1279,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="curvaAudiood">
+                    <Textbox Name="doTipoOD">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!doTipoOD.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Color>Red</Color>
@@ -1227,7 +1296,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>curvaAudiood</rd:DefaultName>
+                      <rd:DefaultName>doTipoOD</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -1242,14 +1311,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="curvaAudiooe">
+                    <Textbox Name="doTipoOE">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!doTipoOE.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Color>Blue</Color>
@@ -1259,7 +1328,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>curvaAudiooe</rd:DefaultName>
+                      <rd:DefaultName>doTipoOE</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -1311,14 +1380,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="grauAudiood">
+                    <Textbox Name="deGrauOD">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!deGrauOD.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Color>Red</Color>
@@ -1328,7 +1397,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>grauAudiood</rd:DefaultName>
+                      <rd:DefaultName>deGrauOD</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -1343,14 +1412,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="grauAudiooe">
+                    <Textbox Name="deGrauOE">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!deGrauOE.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Color>Blue</Color>
@@ -1360,7 +1429,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>grauAudiooe</rd:DefaultName>
+                      <rd:DefaultName>deGrauOE</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -1412,14 +1481,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="configAudiood">
+                    <Textbox Name="deConfigOD">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!deConfigOD.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Color>Red</Color>
@@ -1429,7 +1498,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>configAudiood</rd:DefaultName>
+                      <rd:DefaultName>deConfigOD</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -1444,14 +1513,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="configAudiooe">
+                    <Textbox Name="deConfigOE">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!deConfigOE.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Color>Blue</Color>
@@ -1461,7 +1530,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>configAudiooe</rd:DefaultName>
+                      <rd:DefaultName>deConfigOE</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -1513,14 +1582,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="vocalAudiood">
+                    <Textbox Name="deAudioVocalOD">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!deAudioVocalOD.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Color>Red</Color>
@@ -1530,7 +1599,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>vocalAudiood</rd:DefaultName>
+                      <rd:DefaultName>deAudioVocalOD</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -1545,14 +1614,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="vocalAudiooe">
+                    <Textbox Name="deAudioVocalOE">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!deAudioVocalOE.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Color>Blue</Color>
@@ -1562,7 +1631,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>vocalAudiooe</rd:DefaultName>
+                      <rd:DefaultName>deAudioVocalOE</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -1605,7 +1674,8 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <Top>14.94646cm</Top>
+        <DataSetName>DataSet1</DataSetName>
+        <Top>15.58146cm</Top>
         <Left>1.44163cm</Left>
         <Height>3cm</Height>
         <Width>15.32019cm</Width>
@@ -1634,7 +1704,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox35</rd:DefaultName>
-        <Top>13.60535cm</Top>
+        <Top>14.24035cm</Top>
         <Left>1.44163cm</Left>
         <Height>0.6cm</Height>
         <Width>15.32019cm</Width>
@@ -1686,7 +1756,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox26</rd:DefaultName>
-        <Top>14.2759cm</Top>
+        <Top>14.9109cm</Top>
         <Left>1.44163cm</Left>
         <Height>0.6cm</Height>
         <Width>15.32019cm</Width>
@@ -1714,28 +1784,31 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="mascFala">
+                    <Textbox Name="mascaramento">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Mascaramento:</Value>
+                              <Value>Mascaramento: </Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
                             <TextRun>
-                              <Value xml:space="preserve"> </Value>
-                              <Style />
+                              <Value>=Fields!mascaramento.Value</Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>mascFala</rd:DefaultName>
+                      <rd:DefaultName>mascaramento</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -1766,7 +1839,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>12.97007cm</Top>
+        <Top>13.60507cm</Top>
         <Left>1.44163cm</Left>
         <Height>0.6cm</Height>
         <Width>15.32019cm</Width>
@@ -1790,14 +1863,14 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="laudoAudio">
+                    <Textbox Name="autoresLaudo">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!autoresLaudo.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                               </Style>
@@ -1806,7 +1879,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>laudoAudio</rd:DefaultName>
+                      <rd:DefaultName>autoresLaudo</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>
@@ -1833,16 +1906,10 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Comentários:</Value>
+                              <Value>=Fields!comentarios.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value xml:space="preserve"> </Value>
-                              <Style>
-                                <FontSize>8pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1881,7 +1948,8 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <Top>18.05229cm</Top>
+        <DataSetName>DataSet1</DataSetName>
+        <Top>18.68729cm</Top>
         <Left>1.44163cm</Left>
         <Height>1.2cm</Height>
         <Width>15.32019cm</Width>
@@ -1907,7 +1975,7 @@
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>1.27056cm</Height>
+              <Height>0.63556cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -1918,7 +1986,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!examinador.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                               </Style>
@@ -1949,7 +2017,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!audiometro.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                               </Style>
@@ -1980,7 +2048,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!dataCalibracao.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <Format>dd/MM/yyyy</Format>
@@ -2021,9 +2089,10 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <Top>19.42868cm</Top>
+        <DataSetName>DataSet1</DataSetName>
+        <Top>20.06368cm</Top>
         <Left>1.44163cm</Left>
-        <Height>1.27056cm</Height>
+        <Height>0.63556cm</Height>
         <Width>15.32019cm</Width>
         <ZIndex>11</ZIndex>
         <Style>
@@ -2036,7 +2105,7 @@
         <Source>Embedded</Source>
         <Value>quadroSimbologia1</Value>
         <Sizing>Fit</Sizing>
-        <Top>9.36125cm</Top>
+        <Top>9.99625cm</Top>
         <Left>1.44163cm</Left>
         <Height>3.56472cm</Height>
         <Width>5.41559cm</Width>
@@ -2047,6 +2116,111 @@
           </Border>
         </Style>
       </Image>
+      <Tablix Name="Tablix2">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>4.42533cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>10.89486cm</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.6cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox12">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Nome Social:</Value>
+                              <Style>
+                                <FontSize>12pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox12</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="nomeSocialPaciente">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!nomeSocialPaciente.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>nomeSocialPaciente</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="Detalhes6" />
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>DataSet1</DataSetName>
+        <Top>2.0162cm</Top>
+        <Left>1.44163cm</Left>
+        <Height>0.6cm</Height>
+        <Width>15.32019cm</Width>
+        <ZIndex>13</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
     </ReportItems>
     <Height>8.21875in</Height>
     <Style />
@@ -2054,7 +2228,7 @@
   <Width>7.16671in</Width>
   <Page>
     <PageHeader>
-      <Height>1.82562cm</Height>
+      <Height>1.4552cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -2064,8 +2238,8 @@
           <Sizing>FitProportional</Sizing>
           <Top>0.04375cm</Top>
           <Left>1.80599cm</Left>
-          <Height>1.73813cm</Height>
-          <Width>2.08208cm</Width>
+          <Height>1.28799cm</Height>
+          <Width>1.60583cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -2082,12 +2256,12 @@
                   <Value>SISTEMAS LUA DE GERENCIAMENTO</Value>
                   <Style>
                     <FontStyle>Italic</FontStyle>
-                    <FontSize>14pt</FontSize>
+                    <FontSize>12pt</FontSize>
                   </Style>
                 </TextRun>
               </TextRuns>
               <Style>
-                <TextAlign>Center</TextAlign>
+                <TextAlign>Left</TextAlign>
               </Style>
             </Paragraph>
             <Paragraph>
@@ -2110,7 +2284,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
-          <Top>0.36125cm</Top>
+          <Top>0.04375cm</Top>
           <Left>4.61058cm</Left>
           <Height>1.28799cm</Height>
           <Width>11.78687cm</Width>
@@ -2133,53 +2307,10 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>1.34938cm</Height>
+      <Height>0.89959cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Textbox Name="Textbox2">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>Um produto Sistemas Lua de Gerenciamento EIRELI. Copyright</Value>
-                  <Style>
-                    <FontSize>8pt</FontSize>
-                  </Style>
-                </TextRun>
-                <TextRun>
-                  <Value>® 2023.</Value>
-                  <Style>
-                    <FontStyle>Normal</FontStyle>
-                    <FontSize>8pt</FontSize>
-                    <FontWeight>Normal</FontWeight>
-                    <TextDecoration>None</TextDecoration>
-                    <Color>#000000</Color>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Left</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox1</rd:DefaultName>
-          <Top>0.37469cm</Top>
-          <Left>1.44163cm</Left>
-          <Height>0.6cm</Height>
-          <Width>10.21346cm</Width>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
         <Textbox Name="Textbox16">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
@@ -2199,11 +2330,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox16</rd:DefaultName>
-          <Top>0.37469cm</Top>
+          <Top>0.05719cm</Top>
           <Left>11.7962cm</Left>
           <Height>0.52944cm</Height>
           <Width>4.96562cm</Width>
-          <ZIndex>1</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -2231,6 +2361,167 @@
     <Style />
   </Page>
   <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="SISTEMASLUASAUDE_APLICACAOClassesDadosRelatorios">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>e4cb18b7-5c74-42ef-865a-b19b6a0df893</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>SISTEMASLUASAUDE_APLICACAOClassesDadosRelatorios</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="nomePaciente">
+          <DataField>nomePaciente</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="nomeSocialPaciente">
+          <DataField>nomeSocialPaciente</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="idadePaciente">
+          <DataField>idadePaciente</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="dataNascimento">
+          <DataField>dataNascimento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="monossilaboOD">
+          <DataField>monossilaboOD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="monossilaboOE">
+          <DataField>monossilaboOE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="dissilaboOD">
+          <DataField>dissilaboOD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="dissilaboOE">
+          <DataField>dissilaboOE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="srtOD">
+          <DataField>srtOD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="srtOE">
+          <DataField>srtOE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="sdtOD">
+          <DataField>sdtOD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="sdtOE">
+          <DataField>sdtOE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="mediaOD">
+          <DataField>mediaOD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="mediaOE">
+          <DataField>mediaOE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="weber500Hz">
+          <DataField>weber500Hz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="weber1kHz">
+          <DataField>weber1kHz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="weber2kHz">
+          <DataField>weber2kHz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="weber4kHz">
+          <DataField>weber4kHz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="mascaramento">
+          <DataField>mascaramento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="curvaAudioNormalOD">
+          <DataField>curvaAudioNormalOD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="curvaAudioNormalOE">
+          <DataField>curvaAudioNormalOE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="doTipoOD">
+          <DataField>doTipoOD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="doTipoOE">
+          <DataField>doTipoOE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="deGrauOD">
+          <DataField>deGrauOD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="deGrauOE">
+          <DataField>deGrauOE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="deConfigOD">
+          <DataField>deConfigOD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="deConfigOE">
+          <DataField>deConfigOE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="deAudioVocalOD">
+          <DataField>deAudioVocalOD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="deAudioVocalOE">
+          <DataField>deAudioVocalOE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="autoresLaudo">
+          <DataField>autoresLaudo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="comentarios">
+          <DataField>comentarios</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="examinador">
+          <DataField>examinador</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="audiometro">
+          <DataField>audiometro</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="dataCalibracao">
+          <DataField>dataCalibracao</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>SISTEMASLUASAUDE_APLICACAO.ClassesDadosRelatorios</rd:DataSetName>
+        <rd:TableName>RelatorioDataSource</rd:TableName>
+        <rd:ObjectDataSourceSelectMethod>GetDadosRelatorio</rd:ObjectDataSourceSelectMethod>
+        <rd:ObjectDataSourceType>SISTEMASLUASAUDE_APLICACAO.ClassesDadosRelatorios.RelatorioDataSource, SISTEMASLUASAUDE_APLICACAO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
   <EmbeddedImages>
     <EmbeddedImage Name="quadroSimbologia1">
       <MIMEType>image/png</MIMEType>
