@@ -11,7 +11,7 @@
         
     </script>
 
-    <title></title>
+    <title>Exames Audiológicos</title>
     <style>
         footer {
             position: fixed;

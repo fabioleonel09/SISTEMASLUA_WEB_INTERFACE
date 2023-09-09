@@ -7,7 +7,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
+    <title>Audiometria Clínica Completa</title>
 
     <style>
         footer {
@@ -95,24 +95,28 @@
             width: 50px;
             height: 50px;
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
-            border-radius: 10px; /* Valor do raio dos cantos arredondados */
             line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
             background-image: url('./Images/voltaTelaCadastro.png');
             background-repeat: no-repeat;
             background-position: center center;
-            background-size: auto; /* Ajuste o tamanho da imagem conforme necessário */
+            background-size: 30px; /* Ajuste o tamanho da imagem conforme necessário */
+            background-color: transparent;
+            border: 1px solid #363636;
+            color: #333;
         }
 
         .btn-Volta-Tela-Exames {
             width: 50px;
             height: 50px;
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
-            border-radius: 10px; /* Valor do raio dos cantos arredondados */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */       
             background-image: url('./Images/voltaTelaExames.png');
             background-repeat: no-repeat;
             background-position: center center;
-            background-size: auto; /* Ajuste o tamanho da imagem conforme necessário */
+            background-size: 30px; /* Ajuste o tamanho da imagem conforme necessário */
+            background-color: transparent;
+            border: 1px solid #363636;
+            color: #333;
         }
     </style>
 </head>
