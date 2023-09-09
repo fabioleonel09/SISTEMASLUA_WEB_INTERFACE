@@ -90,12 +90,45 @@
             background-position: center center;
             background-size: auto; /* Ajuste o tamanho da imagem conforme necessário */
         }
+
+        .btn-Volta-Tela-Aplicativos {
+            width: 50px;
+            height: 50px;
+            cursor: pointer; /* Altera o cursor para a forma de uma mão */
+            border-radius: 10px; /* Valor do raio dos cantos arredondados */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
+            background-image: url('./Images/voltaTelaCadastro.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: auto; /* Ajuste o tamanho da imagem conforme necessário */
+        }
+
+        .btn-Volta-Tela-Exames {
+            width: 50px;
+            height: 50px;
+            cursor: pointer; /* Altera o cursor para a forma de uma mão */
+            border-radius: 10px; /* Valor do raio dos cantos arredondados */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
+            background-image: url('./Images/voltaTelaExames.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: auto; /* Ajuste o tamanho da imagem conforme necessário */
+        }
     </style>
 </head>
 <body class="custom-font" style="background-color: lightslategray;">
     <form id="frmAudiometriaClinica" runat="server" style="width: 100%;">
         <header>
-            <b>Audiometria Clínica Completa</b>
+            <div class="container" style="width: 100%;">
+                <div class="box" style="width: 33%;">
+                    <asp:Button id="voltaTelaCadastro" runat="server" OnClick="btnVoltaTelaAplicativos" ToolTip="Volta à tela de Aplicativos/Cadastro" CssClass="btn-Volta-Tela-Aplicativos"/>
+                    <asp:Button id="voltaTelaExames" runat="server" OnClick="btnVoltaTelaExames" ToolTip="Volta à tela de Exames" CssClass="btn-Volta-Tela-Exames"/>
+                </div>
+                <div class="box" style="width: 34%;">
+                    <b>Audiometria Clínica Completa</b>
+                </div>
+                <div class="box" style="width: 33%;"></div>
+            </div>
         </header>
         <br />
         <div id="geral" runat="server" style="margin-top: 50px; margin-bottom: 50px; width: 100%; height: 100%; align-items: stretch; vertical-align: central">

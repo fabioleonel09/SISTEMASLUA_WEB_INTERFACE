@@ -269,6 +269,8 @@
     <Content Include="Images\voFRONTEpresente.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\voltaTelaCadastro.png" />
+    <Content Include="Images\voltaTelaExames.png" />
     <Content Include="Images\voODausente.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

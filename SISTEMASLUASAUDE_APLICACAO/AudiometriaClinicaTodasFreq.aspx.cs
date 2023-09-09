@@ -39,6 +39,16 @@ namespace SISTEMASLUASAUDE_APLICACAO
             }
         }
 
+        protected void btnVoltaTelaAplicativos(object sender, EventArgs e)
+        {
+            Response.Redirect("Aplicativos.aspx");
+        }
+
+        protected void btnVoltaTelaExames(object sender, EventArgs e)
+        {
+            Response.Redirect("Exames.aspx");
+        }
+
         protected void btnPlotarGeral_Click(object sender, EventArgs e)
         {
             PlotaDadosAudiogramaOD();
