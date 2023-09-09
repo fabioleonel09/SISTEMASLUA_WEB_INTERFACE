@@ -910,11 +910,11 @@
                                                         <br />
                                                     </div>
                                                 </div>
-                                                <label style="color: red;"><b>S. R. T.</b></label>
+                                                <label style="color: red;"><b>S. R. T. (dBNA)</b></label>
                                                 <asp:TextBox ID="txtSRTOD" runat="server" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" Width="95%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
                                                 <br />
                                                 <br />
-                                                <label style="color: red;"><b>S. D. T.</b></label>
+                                                <label style="color: red;"><b>S. D. T. (dBNA)</b></label>
                                                 <asp:TextBox ID="txtSDTOD" runat="server" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" Width="95%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
                                                 <br />
                                                 <br />
@@ -945,11 +945,11 @@
                                                         <br />
                                                     </div>
                                                 </div>
-                                                <label style="color: blue;"><b>S. R. T.</b></label>
+                                                <label style="color: blue;"><b>S. R. T. (dBNA)</b></label>
                                                 <asp:TextBox ID="txtSRTOE" runat="server" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" Width="95%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
                                                 <br />
                                                 <br />
-                                                <label style="color: blue;"><b>S. D. T.</b></label>
+                                                <label style="color: blue;"><b>S. D. T. (dBNA)</b></label>
                                                 <asp:TextBox ID="txtSDTOE" runat="server" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" Width="95%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
                                                 <br />
                                                 <br />
@@ -1132,7 +1132,7 @@
                                                 <asp:TableHeaderRow Width="100%" Height="30px">
                                                     <asp:TableHeaderCell Text="Data de Calibração:" Width="50%" Height="30px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
                                                     <asp:TableHeaderCell Width="50%" Height="30px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="txtDataCalibracao" runat="server" TextMode="Date" BackColor="White" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="38px" CssClass="cantos-arredondados-alinhamento-left "></asp:TextBox>
+                                                        <asp:TextBox ID="txtDataCalibracao" runat="server" BackColor="White" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="38px" CssClass="cantos-arredondados-alinhamento-left "></asp:TextBox>
                                                     </asp:TableHeaderCell>
                                                 </asp:TableHeaderRow>
                                             </asp:Table>

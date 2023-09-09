@@ -4412,7 +4412,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
                         resultado = ((valor1 + valor2 + valor3) / 3);
 
                         mEDIAodTextBox.Text = Convert.ToString(resultado);
-                        lblMediaOD.Text = "Média Tritonal:";
+                        lblMediaOD.Text = "Média Tritonal (dBNA):";
                     }
                 }
 
@@ -4442,7 +4442,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
                         resultado = ((valor1 + valor2 + valor3) / 3);
 
                         mEDIAoeTextBox.Text = Convert.ToString(resultado);
-                        lblMediaOE.Text = "Média Tritonal:";
+                        lblMediaOE.Text = "Média Tritonal (dBNA):";
                     }
                 }
             }
@@ -4483,7 +4483,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
                         resultado = ((valor1 + valor2 + valor3 + valor4) / 4);
 
                         mEDIAodTextBox.Text = Convert.ToString(resultado);
-                        lblMediaOD.Text = "Média Quadritonal:";
+                        lblMediaOD.Text = "Média Quadritonal (dBNA):";
                     }
                 }
 
@@ -4514,7 +4514,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
                         resultado = ((valor1 + valor2 + valor3 + valor4) / 4);
 
                         mEDIAoeTextBox.Text = Convert.ToString(resultado);
-                        lblMediaOE.Text = "Média Quadritonal:";
+                        lblMediaOE.Text = "Média Quadritonal (dBNA):";
                     }
                 }
             }
@@ -4603,12 +4603,60 @@ namespace SISTEMASLUASAUDE_APLICACAO
             dadosRel.monOE = ddlIPRFmonOe.Text;
             dadosRel.dissOD = ddlIPRFdisOd.Text;
             dadosRel.dissOE = ddlIPRFdisOe.Text;
-            dadosRel.srtOD = txtSRTOD.Text;
-            dadosRel.srtOE = txtSRTOE.Text;
-            dadosRel.sdtOD = txtSDTOD.Text;
-            dadosRel.sdtOE = txtSDTOE.Text;
-            dadosRel.mediaOD = mEDIAodTextBox.Text;
-            dadosRel.mediaOE = mEDIAoeTextBox.Text;
+            var srtod = txtSRTOD.Text + " dBNA";
+            if (!String.IsNullOrEmpty(txtSRTOD.Text))
+            {
+                dadosRel.srtOD = srtod;
+            }
+            else
+            {
+                dadosRel.srtOD = txtSRTOD.Text;
+            }
+            var srtoe = txtSRTOE.Text + " dBNA";
+            if (!String.IsNullOrEmpty(txtSRTOE.Text))
+            {
+                dadosRel.srtOE = srtoe;
+            }
+            else
+            {
+                dadosRel.srtOE = txtSRTOE.Text;
+            }
+            var sdtod = txtSDTOD.Text + " dBNA";
+            if (!String.IsNullOrEmpty(txtSDTOD.Text))
+            {
+                dadosRel.sdtOD = sdtod;
+            }
+            else
+            {
+                dadosRel.sdtOD = txtSDTOD.Text;
+            }
+            var sdtoe = txtSDTOE.Text + " dBNA";
+            if (!String.IsNullOrEmpty(txtSDTOE.Text))
+            {
+                dadosRel.sdtOE = sdtoe;
+            }
+            else
+            {
+                dadosRel.sdtOE = txtSDTOE.Text;
+            }
+            var mediaod = mEDIAodTextBox.Text + " dBNA";
+            if (!String.IsNullOrEmpty(mEDIAodTextBox.Text))
+            {
+                dadosRel.mediaOD = mediaod;
+            }
+            else
+            {
+                dadosRel.mediaOD = mEDIAodTextBox.Text;
+            }
+            var mediaoe = mEDIAoeTextBox.Text + " dBNA";
+            if (!String.IsNullOrEmpty(mEDIAoeTextBox.Text))
+            {
+                dadosRel.mediaOE = mediaoe;
+            }
+            else
+            {
+                dadosRel.mediaOE = mEDIAoeTextBox.Text;
+            }
 
             dadosRel.weber500Hz = weber500ComboBox.Text;
             dadosRel.weber1kHz = weber1kComboBox.Text;

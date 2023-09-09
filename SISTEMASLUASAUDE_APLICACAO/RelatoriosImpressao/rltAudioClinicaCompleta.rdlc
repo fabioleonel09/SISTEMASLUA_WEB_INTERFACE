@@ -6,10 +6,10 @@
         <Source>External</Source>
         <Value>file:////C:\users/public/documents/chartODAudioClinica.png</Value>
         <Sizing>FitProportional</Sizing>
-        <Top>3.44364cm</Top>
-        <Left>1.44163cm</Left>
-        <Height>6.36834cm</Height>
-        <Width>7.18312cm</Width>
+        <Top>5.45447cm</Top>
+        <Left>1.29416cm</Left>
+        <Height>6.68584cm</Height>
+        <Width>7.47154cm</Width>
         <Style>
           <Border>
             <Style>Solid</Style>
@@ -20,10 +20,10 @@
         <Source>External</Source>
         <Value>file:////C:\users/public/documents/chartOEAudioClinica.png</Value>
         <Sizing>FitProportional</Sizing>
-        <Top>3.44364cm</Top>
-        <Left>9.5787cm</Left>
-        <Height>6.36834cm</Height>
-        <Width>7.18312cm</Width>
+        <Top>5.45447cm</Top>
+        <Left>8.91317cm</Left>
+        <Height>6.68584cm</Height>
+        <Width>7.47154cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -35,13 +35,13 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>7.35015cm</Width>
+              <Width>6.97304cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>5.77373cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.19631cm</Width>
+              <Width>2.30214cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -263,10 +263,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>0.71037cm</Top>
-        <Left>1.44163cm</Left>
+        <Top>2.93287cm</Top>
+        <Left>1.29416cm</Left>
         <Height>1.2cm</Height>
-        <Width>15.32019cm</Width>
+        <Width>15.04891cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -294,8 +294,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox10</rd:DefaultName>
-        <Top>0.07056cm</Top>
-        <Left>4.07592cm</Left>
+        <Top>2.29306cm</Top>
+        <Left>3.75842cm</Left>
         <Height>0.53398cm</Height>
         <Width>10.22583cm</Width>
         <ZIndex>3</ZIndex>
@@ -329,7 +329,7 @@
                 </Style>
               </TextRun>
               <TextRun>
-                <Value xml:space="preserve">                                                   </Value>
+                <Value xml:space="preserve">                                                     </Value>
                 <Style>
                   <FontWeight>Bold</FontWeight>
                 </Style>
@@ -346,10 +346,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox26</rd:DefaultName>
-        <Top>2.66725cm</Top>
-        <Left>1.44163cm</Left>
+        <Top>4.85447cm</Top>
+        <Left>1.29416cm</Left>
         <Height>0.6cm</Height>
-        <Width>15.32019cm</Width>
+        <Width>15.09055cm</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
@@ -365,13 +365,13 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>3.49896cm</Width>
+              <Width>3.75619cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.4725cm</Width>
+              <Width>3.63125cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.33455cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -1110,10 +1110,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>9.96097cm</Top>
-        <Left>7.29036cm</Left>
+        <Top>12.23639cm</Top>
+        <Left>6.65536cm</Left>
         <Height>3.6cm</Height>
-        <Width>9.47146cm</Width>
+        <Width>9.72199cm</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -1131,13 +1131,13 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>4.42533cm</Width>
+              <Width>3.89976cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>5.44417cm</Width>
+              <Width>5.5918cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>5.45069cm</Width>
+              <Width>5.59163cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -1254,7 +1254,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Curva audiométrica do tipo:</Value>
+                              <Value>Curva audiométrica tipo:</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -1675,10 +1675,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>15.58146cm</Top>
-        <Left>1.44163cm</Left>
+        <Top>17.22188cm</Top>
+        <Left>1.29416cm</Left>
         <Height>3cm</Height>
-        <Width>15.32019cm</Width>
+        <Width>15.0832cm</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -1686,7 +1686,7 @@
           </Border>
         </Style>
       </Tablix>
-      <Textbox Name="Textbox35">
+      <Textbox Name="Textbox27">
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
         <Paragraphs>
@@ -1699,34 +1699,8 @@
                   <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox35</rd:DefaultName>
-        <Top>14.24035cm</Top>
-        <Left>1.44163cm</Left>
-        <Height>0.6cm</Height>
-        <Width>15.32019cm</Width>
-        <ZIndex>7</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="Textbox27">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
               <TextRun>
-                <Value xml:space="preserve">                                                   </Value>
+                <Value xml:space="preserve">                      </Value>
                 <Style>
                   <FontWeight>Bold</FontWeight>
                 </Style>
@@ -1739,7 +1713,7 @@
                 </Style>
               </TextRun>
               <TextRun>
-                <Value xml:space="preserve">                              </Value>
+                <Value xml:space="preserve">                           </Value>
                 <Style>
                   <FontWeight>Bold</FontWeight>
                 </Style>
@@ -1756,11 +1730,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox26</rd:DefaultName>
-        <Top>14.9109cm</Top>
-        <Left>1.44163cm</Left>
+        <Top>16.55132cm</Top>
+        <Left>1.29416cm</Left>
         <Height>0.6cm</Height>
-        <Width>15.32019cm</Width>
-        <ZIndex>8</ZIndex>
+        <Width>15.0832cm</Width>
+        <ZIndex>7</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1775,7 +1749,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>15.32019cm</Width>
+              <Width>15.09055cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -1811,7 +1785,6 @@
                       <rd:DefaultName>mascaramento</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
                         <PaddingLeft>2pt</PaddingLeft>
@@ -1839,11 +1812,11 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>13.60507cm</Top>
-        <Left>1.44163cm</Left>
+        <Top>15.94222cm</Top>
+        <Left>1.29416cm</Left>
         <Height>0.6cm</Height>
-        <Width>15.32019cm</Width>
-        <ZIndex>9</ZIndex>
+        <Width>15.09055cm</Width>
+        <ZIndex>8</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1854,7 +1827,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>15.32019cm</Width>
+              <Width>15.0832cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -1906,6 +1879,13 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
+                              <Value>Comentários: </Value>
+                              <Style>
+                                <FontSize>8pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
                               <Value>=Fields!comentarios.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
@@ -1949,11 +1929,11 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>18.68729cm</Top>
-        <Left>1.44163cm</Left>
+        <Top>20.32771cm</Top>
+        <Left>1.29416cm</Left>
         <Height>1.2cm</Height>
-        <Width>15.32019cm</Width>
-        <ZIndex>10</ZIndex>
+        <Width>15.0832cm</Width>
+        <ZIndex>9</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1964,13 +1944,13 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>5.10673cm</Width>
+              <Width>6.08829cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>5.10673cm</Width>
+              <Width>4.83839cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>5.10673cm</Width>
+              <Width>4.15652cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -2051,7 +2031,7 @@
                               <Value>=Fields!dataCalibracao.Value</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
-                                <Format>dd/MM/yyyy</Format>
+                                <Format>d</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2090,11 +2070,11 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>20.06368cm</Top>
-        <Left>1.44163cm</Left>
+        <Top>21.7041cm</Top>
+        <Left>1.29416cm</Left>
         <Height>0.63556cm</Height>
-        <Width>15.32019cm</Width>
-        <ZIndex>11</ZIndex>
+        <Width>15.0832cm</Width>
+        <ZIndex>10</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2105,11 +2085,11 @@
         <Source>Embedded</Source>
         <Value>quadroSimbologia1</Value>
         <Sizing>Fit</Sizing>
-        <Top>9.99625cm</Top>
-        <Left>1.44163cm</Left>
-        <Height>3.56472cm</Height>
-        <Width>5.41559cm</Width>
-        <ZIndex>12</ZIndex>
+        <Top>12.27167cm</Top>
+        <Left>1.29416cm</Left>
+        <Height>3.49416cm</Height>
+        <Width>5.18481cm</Width>
+        <ZIndex>11</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2120,10 +2100,10 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>4.42533cm</Width>
+              <Width>4.34032cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>10.89486cm</Width>
+              <Width>10.75023cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -2210,147 +2190,57 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>2.0162cm</Top>
-        <Left>1.44163cm</Left>
+        <Top>4.2387cm</Top>
+        <Left>1.29416cm</Left>
         <Height>0.6cm</Height>
-        <Width>15.32019cm</Width>
-        <ZIndex>13</ZIndex>
+        <Width>15.09055cm</Width>
+        <ZIndex>12</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Tablix>
+      <Textbox Name="Textbox16">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>= "Data de hoje: " + DateTime.Today.Date.ToShortDateString</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox16</rd:DefaultName>
+        <Top>22.37493cm</Top>
+        <Left>11.10682cm</Left>
+        <Height>0.52944cm</Height>
+        <Width>5.23625cm</Width>
+        <ZIndex>13</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>8.21875in</Height>
+    <Height>9.01747in</Height>
     <Style />
   </Body>
-  <Width>7.16671in</Width>
+  <Width>6.69796in</Width>
   <Page>
-    <PageHeader>
-      <Height>1.4552cm</Height>
-      <PrintOnFirstPage>true</PrintOnFirstPage>
-      <PrintOnLastPage>true</PrintOnLastPage>
-      <ReportItems>
-        <Image Name="Image3">
-          <Source>Embedded</Source>
-          <Value>luaMaior</Value>
-          <Sizing>FitProportional</Sizing>
-          <Top>0.04375cm</Top>
-          <Left>1.80599cm</Left>
-          <Height>1.28799cm</Height>
-          <Width>1.60583cm</Width>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </Image>
-        <Textbox Name="Textbox3">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>SISTEMAS LUA DE GERENCIAMENTO</Value>
-                  <Style>
-                    <FontStyle>Italic</FontStyle>
-                    <FontSize>12pt</FontSize>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Left</TextAlign>
-              </Style>
-            </Paragraph>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value xml:space="preserve">                                                        </Value>
-                  <Style />
-                </TextRun>
-                <TextRun>
-                  <Value> Segmento Saúde</Value>
-                  <Style>
-                    <FontStyle>Italic</FontStyle>
-                    <FontSize>12pt</FontSize>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Right</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox1</rd:DefaultName>
-          <Top>0.04375cm</Top>
-          <Left>4.61058cm</Left>
-          <Height>1.28799cm</Height>
-          <Width>11.78687cm</Width>
-          <ZIndex>1</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-      </ReportItems>
-      <Style>
-        <Border>
-          <Style>None</Style>
-        </Border>
-      </Style>
-    </PageHeader>
-    <PageFooter>
-      <Height>0.89959cm</Height>
-      <PrintOnFirstPage>true</PrintOnFirstPage>
-      <PrintOnLastPage>true</PrintOnLastPage>
-      <ReportItems>
-        <Textbox Name="Textbox16">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>= "Data de hoje: " + DateTime.Today.Date.ToShortDateString</Value>
-                  <Style>
-                    <FontSize>8pt</FontSize>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Right</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <rd:DefaultName>Textbox16</rd:DefaultName>
-          <Top>0.05719cm</Top>
-          <Left>11.7962cm</Left>
-          <Height>0.52944cm</Height>
-          <Width>4.96562cm</Width>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-      </ReportItems>
-      <Style>
-        <Border>
-          <Style>None</Style>
-        </Border>
-      </Style>
-    </PageFooter>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
     <LeftMargin>2cm</LeftMargin>
