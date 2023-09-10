@@ -36,7 +36,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         protected void btnAudioCampoConvencional_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("AudiometriaEmCampoConvencional.aspx");
         }
 
         protected void btnAltasFrequencias_Click(object sender, EventArgs e)

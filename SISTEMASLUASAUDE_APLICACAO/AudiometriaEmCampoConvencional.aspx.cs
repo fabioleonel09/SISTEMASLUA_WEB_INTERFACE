@@ -14,7 +14,7 @@ using SISTEMASLUASAUDE_APLICACAO.ddlList_Items;
 
 namespace SISTEMASLUASAUDE_APLICACAO
 {
-    public partial class AudiometriaClinicaConvencional : System.Web.UI.Page
+    public partial class AudiometriaEmCampoConvencional : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -4300,7 +4300,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
             DadosRelatorioImpressao();
 
             // Define o URL para onde você deseja redirecionar
-            string url = "RelatorioImpressaoAudioClinicaConvencional.aspx";
+            string url = "RelatorioImpressaoAudioEmCampoConvencional.aspx";
 
             // Cria o script JavaScript para abrir uma nova janela
             string script = "window.open('" + url + "', '_blank');";
