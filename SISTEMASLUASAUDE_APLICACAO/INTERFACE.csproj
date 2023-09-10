@@ -139,6 +139,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Aplicativos.aspx" />
+    <Content Include="AudiometriaClinicaConvencional.aspx" />
     <Content Include="AudiometriaClinicaTodasFreq.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -295,6 +296,7 @@
     <Content Include="Images\voOEpresente.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="RelatorioImpressaoAudioClinicaConvencional.aspx" />
     <Content Include="RelatorioImpressaoAudioClinicaCompleta.aspx" />
     <Content Include="Login.aspx" />
     <None Include="Resources\campoComAASIausente.png" />
@@ -424,6 +426,13 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="AudiometriaClinicaConvencional.aspx.cs">
+      <DependentUpon>AudiometriaClinicaConvencional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AudiometriaClinicaConvencional.aspx.designer.cs">
+      <DependentUpon>AudiometriaClinicaConvencional.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AudiometriaClinicaTodasFreq.aspx.cs">
       <DependentUpon>AudiometriaClinicaTodasFreq.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -466,6 +475,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="RelatorioImpressaoAudioClinicaConvencional.aspx.cs">
+      <DependentUpon>RelatorioImpressaoAudioClinicaConvencional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelatorioImpressaoAudioClinicaConvencional.aspx.designer.cs">
+      <DependentUpon>RelatorioImpressaoAudioClinicaConvencional.aspx</DependentUpon>
     </Compile>
     <Compile Include="RelatorioImpressaoAudioClinicaCompleta.aspx.cs">
       <DependentUpon>RelatorioImpressaoAudioClinicaCompleta.aspx</DependentUpon>
@@ -530,6 +546,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="RelatoriosImpressao\rltAudioClinicaConvencional .rdlc" />
     <EmbeddedResource Include="RelatoriosImpressao\rltAudioClinicaCompleta.rdlc" />
   </ItemGroup>
   <PropertyGroup>
