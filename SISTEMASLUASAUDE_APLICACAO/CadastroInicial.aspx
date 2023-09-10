@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Aplicativos.aspx.cs" Inherits="SISTEMASLUASAUDE_APLICACAO.Aplicativos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CadastroInicial.aspx.cs" Inherits="SISTEMASLUASAUDE_APLICACAO.CadastroInicial" %>
 
 <!DOCTYPE html>
 
@@ -136,12 +136,22 @@
             background-position: center center;
             background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
         }
+
+        .btn-Caracol {
+            cursor: pointer; /* Altera o cursor para a forma de uma mão */
+            border-radius: 10px; /* Valor do raio dos cantos arredondados */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
+            background-image: url('./Images/caracolFundo.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
+        }
     </style>
 </head>
 <body class="custom-font" style="background-color: lightslategray;">
     <form id="form1" runat="server" style="width: 100%; height: 100%">
         <header>
-            <b>Menu Inicial</b>
+            <b>Audiologia: Cadastro Inicial</b>
         </header>
         <div id="geral" runat="server" style="margin-top: 50px; margin-bottom: 50px; width: 100%; height: 100%; align-items: center; vertical-align: central">
             <br />
@@ -149,54 +159,73 @@
                 <asp:Label ID="lblBoasVindas" runat="server" ForeColor="White" Font-Bold="true" Font-Size="Large"></asp:Label>
             </div>
             <br />
-            <asp:Table ID="tbAplicativosPrimeiro" runat="server" Width="100%">
+            <div style="width: 100%; background-color: white; text-align: center; vertical-align: bottom;">
+                <asp:Label ID="lblTituloCabecalho" runat="server" Text="Dados do Paciente" Font-Bold="true" Font-Size="18" ></asp:Label>
+            </div>
+            <asp:Table ID="tbDadosPacientePrimeiraParte" runat="server" Width="100%">
                 <asp:TableHeaderRow Width="100%">
-                    <asp:TableHeaderCell Width="20%" Height="50px"></asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Prontuário</asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Exames</asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Conservação Auditiva</asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Text="Nome do Paciente:" Width="20%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                    <asp:TableheaderCell Width="45%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                        <asp:TextBox ID="txtNomePaciente" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="99%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
+                    </asp:TableheaderCell>
+                    <asp:TableHeaderCell Text="Idade:" Width="10%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="25%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                        <asp:TextBox ID="txtIdade" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="40px" ToolTip="Digite a D.N. para calcular a idade." ClientIDMode="Static" CssClass="cantos-arredondados-alinhamento" ></asp:TextBox>
+                    </asp:TableHeaderCell>
                 </asp:TableHeaderRow>
-                <asp:TableRow Width="100%">
-                    <asp:TableCell Width="20%" Height="150px">
-                    </asp:TableCell>
-                    <asp:TableCell Width="20%" Height="150px">
-                        <asp:Button ID="btnProntuario" runat="server" Width="100%" Height="100%" OnClick="btnProntuario_Click" CssClass="btn-Prontuario" Enabled="false" ToolTip="Botão Inativo" />
-                    </asp:TableCell>
-                    <asp:TableCell Width="20%" Height="150px">
-                        <asp:Button ID="btnExames" runat="server" Width="100%" Height="100%" OnClick="btnExames_Click" CssClass="btn-Exames" />
-                    </asp:TableCell>
-                    <asp:TableCell Width="20%" Height="150px">
-                        <asp:Button ID="btnConservacaoAuditiva" runat="server" Width="100%" Height="100%" OnClick="btnConservacaoAuditiva_Click" CssClass="btn-Conservacao-Auditiva" Enabled="false" ToolTip="Botão Inativo" />
-                    </asp:TableCell>
-                    <asp:TableCell Width="20%" Height="150px">  
-                    </asp:TableCell>
-                </asp:TableRow>
+            </asp:Table>
+            <asp:Table ID="tbDadosPacienteNomeSocial" runat="server" Width="100%">
+                <asp:TableHeaderRow Width="100%">
+                    <asp:TableHeaderCell Text="Nome Social: " Width="20%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="80%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                        <asp:TextBox ID="txtNomeSocial" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="99.5%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
+                    </asp:TableHeaderCell>
+                </asp:TableHeaderRow>
+            </asp:Table>
+            <asp:Table ID="tbDadosPacienteSegundaParte" runat="server" Width="100%">
+                <asp:TableHeaderRow Width="100%">
+                    <asp:TableHeaderCell Text="D. N.:" Width="10%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                        <asp:TextBox ID="txtDataNasc" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="40px" ClientIDMode="Static" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
+                    </asp:TableHeaderCell>
+                    <asp:TableHeaderCell Text="Data:" Width="10%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                        <asp:TextBox ID="txtDataHoje" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
+                    </asp:TableHeaderCell>
+                    <asp:TableHeaderCell Text="Inspeção do M.A.E.:" Width="15%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="25%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                        <asp:TextBox ID="txtInspecaoMAE" runat="server" TextMode="MultiLine" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="98%" Height="38px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
+                    </asp:TableHeaderCell>
+                </asp:TableHeaderRow>
+            </asp:Table>
+            <asp:Table ID="tbDadosPacienteTerceiraParte" runat="server" Width="100%">
+                <asp:TableHeaderRow Width="100%">
+                    <asp:TableHeaderCell Text="Queixa (s) Clínica (s)" Width="20%" Height="38px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="80%" Height="40px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                        <asp:TextBox ID="txtQueixasClinicas" runat="server" TextMode="MultiLine" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" Width="99.5%" Height="38px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
+                    </asp:TableHeaderCell>
+                </asp:TableHeaderRow>
             </asp:Table>
             <br />
-            <asp:Table ID="tbAplicativosSegundo" runat="server" Width="100%">
+            <asp:Table ID="tbBotaoVai" runat="server" Width="100%">
                 <asp:TableHeaderRow Width="100%">
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Agenda</asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Recepção</asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Faturamento</asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Estoque</asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Receituário</asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" ></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" ></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" ></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" ></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" ></asp:TableHeaderCell>
                 </asp:TableHeaderRow>
                 <asp:TableRow Width="100%">
                     <asp:TableCell Width="20%" Height="150px">
-                        <asp:Button ID="btnAgenda" runat="server" Width="100%" Height="100%" OnClick="btnAgenda_Click" CssClass="btn-Agenda" Enabled="false" ToolTip="Botão Inativo" />
                     </asp:TableCell>
                     <asp:TableCell Width="20%" Height="150px">
-                        <asp:Button ID="Recepcao" runat="server" Width="100%" Height="100%" OnClick="btnRecepcao_Click" CssClass="btn-Recepcao" Enabled="false" ToolTip="Botão Inativo" />
                     </asp:TableCell>
                     <asp:TableCell Width="20%" Height="150px">
-                        <asp:Button ID="btnFaturamento" runat="server" Width="100%" Height="100%" OnClick="btnFaturamento_Click" CssClass="btn-Faturamento" Enabled="false" ToolTip="Botão Inativo" />
                     </asp:TableCell>
                     <asp:TableCell Width="20%" Height="150px">
-                        <asp:Button ID="btnEstoque" runat="server" Width="100%" Height="100%" OnClick="btnEstoque_Click" CssClass="btn-Estoque" Enabled="false" ToolTip="Botão Inativo" />
                     </asp:TableCell>
                     <asp:TableCell Width="20%" Height="150px">
-                        <asp:Button ID="btnReceituario" runat="server" Width="100%" Height="100%" OnClick="btnReceituario_Click" CssClass="btn-Receituario" Enabled="false" ToolTip="Botão Inativo" />
+                        <asp:Button ID="btnVai" runat="server" Width="100%" Height="100%" OnClick="btnVai_Click" CssClass="btn-Caracol" ToolTip="Vai!" />
                     </asp:TableCell>
                 </asp:TableRow>
             </asp:Table>

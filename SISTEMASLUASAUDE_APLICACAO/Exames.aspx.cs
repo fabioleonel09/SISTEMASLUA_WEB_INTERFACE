@@ -46,7 +46,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         protected void btnImpedanciometria_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("Impedanciometria.aspx");
         }
 
         private void CarregaProfissional()

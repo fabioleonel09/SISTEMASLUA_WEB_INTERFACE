@@ -138,7 +138,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="CadastroInicial.aspx" />
     <Content Include="Aplicativos.aspx" />
+    <Content Include="Images\calculator.png" />
+    <Content Include="Images\caracolFundo.png" />
+    <Content Include="Images\conservAudit.png" />
+    <Content Include="Images\Estoque.png" />
+    <Content Include="Images\receituario.png" />
+    <Content Include="Images\recepcao.png" />
+    <Content Include="Impedanciometria.aspx" />
     <Content Include="AudiometriaEmCampoConvencional.aspx" />
     <Content Include="AudiometriaClinicaConvencional.aspx" />
     <Content Include="AudiometriaClinicaTodasFreq.aspx" />
@@ -297,6 +305,7 @@
     <Content Include="Images\voOEpresente.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="RelatorioImpressaoImpedanciometria.aspx" />
     <Content Include="RelatorioImpressaoAudioEmCampoConvencional.aspx" />
     <Content Include="RelatorioImpressaoAudioClinicaConvencional.aspx" />
     <Content Include="RelatorioImpressaoAudioClinicaCompleta.aspx" />
@@ -411,6 +420,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastroInicial.aspx.cs">
+      <DependentUpon>CadastroInicial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroInicial.aspx.designer.cs">
+      <DependentUpon>CadastroInicial.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Aplicativos.aspx.cs">
       <DependentUpon>Aplicativos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -428,6 +444,13 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Impedanciometria.aspx.cs">
+      <DependentUpon>Impedanciometria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Impedanciometria.aspx.designer.cs">
+      <DependentUpon>Impedanciometria.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AudiometriaEmCampoConvencional.aspx.cs">
       <DependentUpon>AudiometriaEmCampoConvencional.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -484,6 +507,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="RelatorioImpressaoImpedanciometria.aspx.cs">
+      <DependentUpon>RelatorioImpressaoImpedanciometria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelatorioImpressaoImpedanciometria.aspx.designer.cs">
+      <DependentUpon>RelatorioImpressaoImpedanciometria.aspx</DependentUpon>
     </Compile>
     <Compile Include="RelatorioImpressaoAudioEmCampoConvencional.aspx.cs">
       <DependentUpon>RelatorioImpressaoAudioEmCampoConvencional.aspx</DependentUpon>
@@ -562,6 +592,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="RelatoriosImpressao\rltImpedanciometria.rdlc" />
     <EmbeddedResource Include="RelatoriosImpressao\rltAudioEmCampoConvencional.rdlc" />
     <EmbeddedResource Include="RelatoriosImpressao\rltAudioClinicaConvencional.rdlc" />
     <EmbeddedResource Include="RelatoriosImpressao\rltAudioClinicaCompleta.rdlc" />

@@ -11,7 +11,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
 {
 
 
-    public partial class Aplicativos
+    public partial class CadastroInicial
     {
 
         /// <summary>
@@ -42,93 +42,129 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.Label lblBoasVindas;
 
         /// <summary>
-        /// Controle tbAplicativosPrimeiro.
+        /// Controle lblTituloCabecalho.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tbAplicativosPrimeiro;
+        protected global::System.Web.UI.WebControls.Label lblTituloCabecalho;
 
         /// <summary>
-        /// Controle btnProntuario.
+        /// Controle tbDadosPacientePrimeiraParte.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnProntuario;
+        protected global::System.Web.UI.WebControls.Table tbDadosPacientePrimeiraParte;
 
         /// <summary>
-        /// Controle btnExames.
+        /// Controle txtNomePaciente.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnExames;
+        protected global::System.Web.UI.WebControls.TextBox txtNomePaciente;
 
         /// <summary>
-        /// Controle btnConservacaoAuditiva.
+        /// Controle txtIdade.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnConservacaoAuditiva;
+        protected global::System.Web.UI.WebControls.TextBox txtIdade;
 
         /// <summary>
-        /// Controle tbAplicativosSegundo.
+        /// Controle tbDadosPacienteNomeSocial.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tbAplicativosSegundo;
+        protected global::System.Web.UI.WebControls.Table tbDadosPacienteNomeSocial;
 
         /// <summary>
-        /// Controle btnAgenda.
+        /// Controle txtNomeSocial.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAgenda;
+        protected global::System.Web.UI.WebControls.TextBox txtNomeSocial;
 
         /// <summary>
-        /// Controle Recepcao.
+        /// Controle tbDadosPacienteSegundaParte.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Recepcao;
+        protected global::System.Web.UI.WebControls.Table tbDadosPacienteSegundaParte;
 
         /// <summary>
-        /// Controle btnFaturamento.
+        /// Controle txtDataNasc.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFaturamento;
+        protected global::System.Web.UI.WebControls.TextBox txtDataNasc;
 
         /// <summary>
-        /// Controle btnEstoque.
+        /// Controle txtDataHoje.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEstoque;
+        protected global::System.Web.UI.WebControls.TextBox txtDataHoje;
 
         /// <summary>
-        /// Controle btnReceituario.
+        /// Controle txtInspecaoMAE.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnReceituario;
+        protected global::System.Web.UI.WebControls.TextBox txtInspecaoMAE;
+
+        /// <summary>
+        /// Controle tbDadosPacienteTerceiraParte.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table tbDadosPacienteTerceiraParte;
+
+        /// <summary>
+        /// Controle txtQueixasClinicas.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtQueixasClinicas;
+
+        /// <summary>
+        /// Controle tbBotaoVai.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table tbBotaoVai;
+
+        /// <summary>
+        /// Controle btnVai.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnVai;
     }
 }

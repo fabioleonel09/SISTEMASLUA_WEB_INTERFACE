@@ -8,51 +8,17 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace SISTEMASLUASAUDE_APLICACAO
 {
-    public partial class Aplicativos : System.Web.UI.Page
+    public partial class CadastroInicial : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             CarregaProfissional();
         }
 
-        protected void btnAgenda_Click(object sender, EventArgs e)
+        protected void btnVai_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        protected void btnProntuario_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        protected void btnExames_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("CadastroInicial.aspx");
-        }
-
-        protected void btnRecepcao_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        protected void btnReceituario_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void btnFaturamento_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void btnEstoque_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void btnConservacaoAuditiva_Click(object sender, EventArgs e)
-        {
-
+            EnviaDadosPaciente();
+            Response.Redirect("Exames.aspx");
         }
 
         private void CarregaProfissional()
@@ -64,6 +30,18 @@ namespace SISTEMASLUASAUDE_APLICACAO
                 var boasVindas = "Seja bem-vindo (a) " + usuario + ", " + conselhoRegional + ".";
                 lblBoasVindas.Text = boasVindas;
             }
+        }
+
+        private void EnviaDadosPaciente()
+        {
+            //coloca das informações do paciente e associa a Sessions
+            Session["ssnNomePaciente"] = txtNomePaciente.Text;
+            Session["ssnNomeSocialPaciente"] = txtNomeSocial.Text;
+            Session["ssnIdadePaciente"] = txtIdade.Text;
+            Session["ssnDataNascimento"] = txtDataNasc.Text;
+            Session["ssnDataHoje"] = txtDataHoje.Text;
+            Session["ssnInspecaoMAE"] = txtInspecaoMAE.Text;
+            Session["ssnQueixasClinicas"] = txtQueixasClinicas.Text;
         }
     }
 }
