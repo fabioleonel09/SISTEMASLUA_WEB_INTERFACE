@@ -146,6 +146,7 @@
     <Content Include="Images\Estoque.png" />
     <Content Include="Images\receituario.png" />
     <Content Include="Images\recepcao.png" />
+    <Content Include="Images\voltaTelaAplicativos.png" />
     <Content Include="Impedanciometria.aspx" />
     <Content Include="AudiometriaEmCampoConvencional.aspx" />
     <Content Include="AudiometriaClinicaConvencional.aspx" />

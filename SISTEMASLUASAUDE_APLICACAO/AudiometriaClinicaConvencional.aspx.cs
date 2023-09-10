@@ -44,6 +44,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
             Response.Redirect("Aplicativos.aspx");
         }
 
+        protected void btnVoltaTelaCadastro(object sender, EventArgs e)
+        {
+            Response.Redirect("CadastroInicial.aspx");
+        }
+
         protected void btnVoltaTelaExames(object sender, EventArgs e)
         {
             Response.Redirect("Exames.aspx");

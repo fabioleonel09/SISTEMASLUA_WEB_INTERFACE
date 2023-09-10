@@ -162,6 +162,7 @@
             <div style="width: 100%; background-color: white; text-align: center; vertical-align: bottom;">
                 <asp:Label ID="lblTituloCabecalho" runat="server" Text="Dados do Paciente" Font-Bold="true" Font-Size="18" ></asp:Label>
             </div>
+            <br />
             <asp:Table ID="tbDadosPacientePrimeiraParte" runat="server" Width="100%">
                 <asp:TableHeaderRow Width="100%">
                     <asp:TableHeaderCell Text="Nome do Paciente:" Width="20%" Height="40px" BackColor="#cccccc" Font-Bold="true" Font-Size="14" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>

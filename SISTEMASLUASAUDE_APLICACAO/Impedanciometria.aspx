@@ -91,7 +91,7 @@
             background-size: auto; /* Ajuste o tamanho da imagem conforme necessário */
         }
 
-        .btn-Volta-Tela-Aplicativos {
+        .btn-Volta-Tela-Cadastro {
             width: 50px;
             height: 50px;
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
@@ -118,6 +118,20 @@
             border: 1px solid #363636;
             color: #333;
         }
+
+        .btn-Volta-Tela-Aplicativos {
+            width: 50px;
+            height: 50px;
+            cursor: pointer; /* Altera o cursor para a forma de uma mão */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */       
+            background-image: url('./Images/voltaTelaAplicativos.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 30px; /* Ajuste o tamanho da imagem conforme necessário */
+            background-color: transparent;
+            border: 1px solid #363636;
+            color: #333;
+        }
     </style>
 </head>
 <body class="custom-font" style="background-color: lightslategray;">
@@ -125,7 +139,8 @@
         <header>
             <div class="container" style="width: 100%;">
                 <div class="box" style="width: 15%;">
-                    <asp:Button id="voltaTelaCadastro" runat="server" OnClick="btnVoltaTelaAplicativos" ToolTip="Volta à tela de Aplicativos/Cadastro" CssClass="btn-Volta-Tela-Aplicativos"/>
+                    <asp:Button id="voltaTelaAplicativos" runat="server" OnClick="btnVoltaTelaAplicativos" ToolTip="Volta à tela de Aplicativos" CssClass="btn-Volta-Tela-Aplicativos"/>
+                    <asp:Button id="voltaTelaCadastro" runat="server" OnClick="btnVoltaTelaCadastro" ToolTip="Volta à tela de Cadastro" CssClass="btn-Volta-Tela-Cadastro"/>
                     <asp:Button id="voltaTelaExames" runat="server" OnClick="btnVoltaTelaExames" ToolTip="Volta à tela de Exames" CssClass="btn-Volta-Tela-Exames"/>
                 </div>
                 <div class="box" style="width: 70%;">
