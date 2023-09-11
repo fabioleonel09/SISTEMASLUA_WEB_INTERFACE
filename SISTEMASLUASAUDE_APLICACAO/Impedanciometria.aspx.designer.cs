@@ -123,22 +123,22 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl dadosAudioOD;
 
         /// <summary>
-        /// Controle audiogramaOD.
+        /// Controle impOD.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl audiogramaOD;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl impOD;
 
         /// <summary>
-        /// Controle chartAudioOD.
+        /// Controle chartODimp.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.DataVisualization.Charting.Chart chartAudioOD;
+        protected global::System.Web.UI.DataVisualization.Charting.Chart chartODimp;
 
         /// <summary>
         /// Controle rbBananaFalaODClinica.
@@ -150,22 +150,22 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.RadioButtonList rbBananaFalaODClinica;
 
         /// <summary>
-        /// Controle audiogramaOE.
+        /// Controle impOE.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl audiogramaOE;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl impOE;
 
         /// <summary>
-        /// Controle chartAudioOE.
+        /// Controle chartOEimp.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.DataVisualization.Charting.Chart chartAudioOE;
+        protected global::System.Web.UI.DataVisualization.Charting.Chart chartOEimp;
 
         /// <summary>
         /// Controle rbBananaFalaOEClinica.

@@ -109,7 +109,7 @@
             width: 50px;
             height: 50px;
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */       
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
             background-image: url('./Images/voltaTelaExames.png');
             background-repeat: no-repeat;
             background-position: center center;
@@ -123,7 +123,7 @@
             width: 50px;
             height: 50px;
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */       
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
             background-image: url('./Images/voltaTelaAplicativos.png');
             background-repeat: no-repeat;
             background-position: center center;
@@ -139,9 +139,9 @@
         <header>
             <div class="container" style="width: 100%;">
                 <div class="box" style="width: 15%;">
-                    <asp:Button id="voltaTelaAplicativos" runat="server" OnClick="btnVoltaTelaAplicativos" ToolTip="Volta à tela de Aplicativos" CssClass="btn-Volta-Tela-Aplicativos"/>
-                    <asp:Button id="voltaTelaCadastro" runat="server" OnClick="btnVoltaTelaCadastro" ToolTip="Volta à tela de Cadastro" CssClass="btn-Volta-Tela-Cadastro"/>
-                    <asp:Button id="voltaTelaExames" runat="server" OnClick="btnVoltaTelaExames" ToolTip="Volta à tela de Exames" CssClass="btn-Volta-Tela-Exames"/>
+                    <asp:Button ID="voltaTelaAplicativos" runat="server" OnClick="btnVoltaTelaAplicativos" ToolTip="Volta à tela de Aplicativos" CssClass="btn-Volta-Tela-Aplicativos" />
+                    <asp:Button ID="voltaTelaCadastro" runat="server" OnClick="btnVoltaTelaCadastro" ToolTip="Volta à tela de Cadastro" CssClass="btn-Volta-Tela-Cadastro" />
+                    <asp:Button ID="voltaTelaExames" runat="server" OnClick="btnVoltaTelaExames" ToolTip="Volta à tela de Exames" CssClass="btn-Volta-Tela-Exames" />
                 </div>
                 <div class="box" style="width: 70%;">
                     <b>Impedanciometria</b>
@@ -177,46 +177,50 @@
                             </asp:TableCell>
                             <asp:TableCell Width="60%" Height="100%">
                                 <div class="container" style="text-align: center;">
-                                    <div class="box" id="audiogramaOD" runat="server">
-                                        <asp:Chart ID="chartAudioOD" runat="server" Height="416px" Width="467px" BackColor="MistyRose" BorderColor="Red" BorderStyle="Solid" BorderWidth="1">
+                                    <div class="box" id="impOD" runat="server">
+                                        <asp:Chart ID="chartODimp" runat="server" Height="454px" Width="545px">
                                             <Series>
-                                                <asp:Series ChartArea="ChartArea4" Name="Series1">
+                                                <asp:Series BorderWidth="2" ChartType="Line" Color="Red" Name="OD">
                                                 </asp:Series>
                                             </Series>
                                             <ChartAreas>
-                                                <asp:ChartArea Name="ChartArea4">
-                                                    <AxisY Crossing="Min" Interval="10" IsReversed="True" Maximum="120" Minimum="-10" TextOrientation="Rotated270" Title="Gráfico ISO/64 frequência (Hz) por decibel nível de audição (dBNA)">
-                                                    </AxisY>
-                                                    <AxisX Maximum="15" Minimum="1" TextOrientation="Horizontal" Title="      125            250             500     750  1k     1,5k  2k        3k   4k       6k   8k" TitleAlignment="Near">
+                                                <asp:ChartArea BackImageAlignment="Center" Name="ChartArea1">
+                                                    <AxisY LineWidth="2" Maximum="2.5" Minimum="0" TextOrientation="Horizontal" Title="(ml) 2,5\n\n\n\n\n\n           2,0\n\n\n\n\n\n          1,5\n\n\n\n\n\n          1,0\n\n\n\n\n\n          0,5\n\n\n\n\n\n\n\n\n          " TitleAlignment="Near" TitleFont="Microsoft Sans Serif, 8.5pt">
+                                                        <MajorGrid LineColor="Gray" LineDashStyle="Dash" />
                                                         <MajorTickMark Enabled="False" />
                                                         <LabelStyle Enabled="False" />
+                                                    </AxisY>
+                                                    <AxisX Crossing="0" Interval="100" LineWidth="2" Maximum="200" Minimum="-600" Title="Pressão (mml H2O = daPa)" TitleAlignment="Near">
+                                                        <MajorGrid LineColor="Gray" LineDashStyle="Dash" />
                                                     </AxisX>
                                                 </asp:ChartArea>
                                             </ChartAreas>
                                         </asp:Chart>
-                                        <asp:RadioButtonList ID="rbBananaFalaODClinica" runat="server" RepeatDirection="Horizontal" ForeColor="Red" BackColor="MistyRose" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="12" Width="467px">
+                                        <asp:RadioButtonList ID="rbBananaFalaODClinica" runat="server" RepeatDirection="Horizontal" ForeColor="Red" BackColor="MistyRose" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="12" Width="545px">
                                             <asp:ListItem Text="Exibe a Banana da Fala" Value="0"></asp:ListItem>
                                             <asp:ListItem Text="Oculta a Banana da Fala" Value="1"></asp:ListItem>
                                         </asp:RadioButtonList>
                                     </div>
-                                    <div class="box" id="audiogramaOE" runat="server">
-                                        <asp:Chart ID="chartAudioOE" runat="server" Height="416px" Width="467px" BackColor="AliceBlue" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1">
+                                    <div class="box" id="impOE" runat="server">
+                                        <asp:Chart ID="chartOEimp" runat="server" Height="454px" Width="545px">
                                             <Series>
-                                                <asp:Series ChartArea="ChartArea5" Name="Series1">
+                                                <asp:Series BorderWidth="2" ChartType="Line" Color="Blue" Name="OE">
                                                 </asp:Series>
                                             </Series>
                                             <ChartAreas>
-                                                <asp:ChartArea Name="ChartArea5">
-                                                    <AxisY Crossing="Min" Interval="10" IsReversed="True" Maximum="120" Minimum="-10" TextOrientation="Rotated270" Title="Gráfico ISO/64 frequência (Hz) por decibel nível de audição (dBNA)">
-                                                    </AxisY>
-                                                    <AxisX Maximum="15" Minimum="1" TextOrientation="Horizontal" Title="      125            250             500     750  1k     1,5k  2k        3k   4k       6k   8k" TitleAlignment="Near">
+                                                <asp:ChartArea BackImageAlignment="Center" Name="ChartArea1">
+                                                    <AxisY LineWidth="2" Maximum="2.5" Minimum="0" TextOrientation="Horizontal" Title="(ml) 2,5\n\n\n\n\n\n           2,0\n\n\n\n\n\n          1,5\n\n\n\n\n\n          1,0\n\n\n\n\n\n          0,5\n\n\n\n\n\n\n\n\n          " TitleAlignment="Near" TitleFont="Microsoft Sans Serif, 8.5pt">
+                                                        <MajorGrid LineColor="Gray" LineDashStyle="Dash" />
                                                         <MajorTickMark Enabled="False" />
                                                         <LabelStyle Enabled="False" />
+                                                    </AxisY>
+                                                    <AxisX Crossing="0" Interval="100" LineWidth="2" Maximum="200" Minimum="-600" Title="Pressão (mml H2O = daPa)" TitleAlignment="Near">
+                                                        <MajorGrid LineColor="Gray" LineDashStyle="Dash" />
                                                     </AxisX>
                                                 </asp:ChartArea>
                                             </ChartAreas>
                                         </asp:Chart>
-                                        <asp:RadioButtonList ID="rbBananaFalaOEClinica" runat="server" RepeatDirection="Horizontal" ForeColor="Blue" BackColor="AliceBlue" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="12" Width="467px">
+                                        <asp:RadioButtonList ID="rbBananaFalaOEClinica" runat="server" RepeatDirection="Horizontal" ForeColor="Blue" BackColor="AliceBlue" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="12" Width="545px">
                                             <asp:ListItem Text="Exibe a Banana da Fala" Value="0"></asp:ListItem>
                                             <asp:ListItem Text="Oculta a Banana da Fala" Value="1"></asp:ListItem>
                                         </asp:RadioButtonList>
@@ -875,7 +879,7 @@
                                                     <asp:TableHeaderCell Width="50%" Height="30px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
                                                         <asp:DropDownList ID="weber500ComboBox" runat="server" Width="100%" Height="30px" BorderColor="Black"
                                                             BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento" >
+                                                            CssClass="cantos-arredondados-alinhamento">
                                                         </asp:DropDownList>
                                                     </asp:TableHeaderCell>
                                                 </asp:TableHeaderRow>
@@ -1036,14 +1040,14 @@
                                 <div class="container" style="text-align: center;">
                                     <div class="box" id="LaudoOD" runat="server">
                                         <asp:Panel ID="pnlLaudoOD" runat="server" Width="100%" BackColor="MistyRose" BorderColor="Red"
-                                                            BorderStyle="Solid" BorderWidth="1">
+                                            BorderStyle="Solid" BorderWidth="1">
                                             <asp:Table ID="tbLaudoOD" runat="server" Width="100%">
                                                 <asp:TableHeaderRow Width="100%" Height="50px">
                                                     <asp:TableHeaderCell Text="Audição normal?" Width="50%" Height="50px" ForeColor="Red" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
                                                     <asp:TableHeaderCell Width="50%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
                                                         <asp:DropDownList ID="ddlAudicaoNormalOD" runat="server" Width="100%" Height="50px" ForeColor="Red" BorderColor="Red"
                                                             BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="12"
-                                                            CssClass="cantos-arredondados-alinhamento" >
+                                                            CssClass="cantos-arredondados-alinhamento">
                                                         </asp:DropDownList>
                                                     </asp:TableHeaderCell>
                                                 </asp:TableHeaderRow>
@@ -1088,14 +1092,14 @@
                                     </div>
                                     <div class="box" id="LaudoOE" runat="server">
                                         <asp:Panel ID="pnlLaudoOE" runat="server" Width="100%" BackColor="AliceBlue" BorderColor="Blue"
-                                                            BorderStyle="Solid" BorderWidth="1">
+                                            BorderStyle="Solid" BorderWidth="1">
                                             <asp:Table ID="tbLaudoOE" runat="server" Width="100%">
                                                 <asp:TableHeaderRow Width="100%" Height="50px">
                                                     <asp:TableHeaderCell Text="Audição normal?" Width="50%" Height="50px" ForeColor="Blue" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
                                                     <asp:TableHeaderCell Width="50%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
                                                         <asp:DropDownList ID="ddlAudicaoNormalOE" runat="server" Width="100%" Height="50px" ForeColor="Blue" BorderColor="Blue"
                                                             BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="12"
-                                                            CssClass="cantos-arredondados-alinhamento" >
+                                                            CssClass="cantos-arredondados-alinhamento">
                                                         </asp:DropDownList>
                                                     </asp:TableHeaderCell>
                                                 </asp:TableHeaderRow>
@@ -1161,14 +1165,14 @@
                             <asp:TableHeaderCell Text="Laudos/Autores: " Width="20%" Height="50px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
                             <asp:TableHeaderCell Width="80%" Height="50px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
                                 <asp:DropDownList ID="ddlLaudos" runat="server" Width="98.7%" Height="50px" ForeColor="Black" BorderColor="Black"
-                                                            BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="8"
-                                                            CssClass="cantos-arredondados-alinhamento-left">
+                                    BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="8"
+                                    CssClass="cantos-arredondados-alinhamento-left">
                                 </asp:DropDownList>
                             </asp:TableHeaderCell>
                         </asp:TableHeaderRow>
                     </asp:Table>
                     <br />
-                    <asp:Table ID="tbDadosComplementares" runat="server"  Width="100%" BorderColor="#cccccc" BorderWidth="2px" BorderStyle="Solid">
+                    <asp:Table ID="tbDadosComplementares" runat="server" Width="100%" BorderColor="#cccccc" BorderWidth="2px" BorderStyle="Solid">
                         <asp:TableHeaderRow Width="100%">
                             <asp:TableHeaderCell Width="100%">
                                 <div class="container" style="text-align: center;">
@@ -1214,16 +1218,16 @@
                     </asp:Table>
                     <br />
                     <asp:Table ID="tbImprimir" runat="server" Width="100%">
-                <asp:TableHeaderRow Width="100%">
-                    <asp:TableHeaderCell Width="20%" Height="150px"></asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="150px"></asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="150px">
-                        <asp:Button ID="btnImprimir" runat="server" Width="100%" Height="100%" OnClick="btnImprimir_Click" CssClass="btn-Imprimir" />
-                    </asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="150px"></asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="150px"></asp:TableHeaderCell>
-                </asp:TableHeaderRow>
-                        </asp:Table>
+                        <asp:TableHeaderRow Width="100%">
+                            <asp:TableHeaderCell Width="20%" Height="150px"></asp:TableHeaderCell>
+                            <asp:TableHeaderCell Width="20%" Height="150px"></asp:TableHeaderCell>
+                            <asp:TableHeaderCell Width="20%" Height="150px">
+                                <asp:Button ID="btnImprimir" runat="server" Width="100%" Height="100%" OnClick="btnImprimir_Click" CssClass="btn-Imprimir" />
+                            </asp:TableHeaderCell>
+                            <asp:TableHeaderCell Width="20%" Height="150px"></asp:TableHeaderCell>
+                            <asp:TableHeaderCell Width="20%" Height="150px"></asp:TableHeaderCell>
+                        </asp:TableHeaderRow>
+                    </asp:Table>
                 </div>
             </div>
         </div>
