@@ -196,9 +196,9 @@
                                                 </asp:ChartArea>
                                             </ChartAreas>
                                         </asp:Chart>
-                                        <asp:RadioButtonList ID="rbBananaFalaODClinica" runat="server" RepeatDirection="Horizontal" ForeColor="Red" BackColor="MistyRose" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="12" Width="545px">
-                                            <asp:ListItem Text="Exibe a Banana da Fala" Value="0"></asp:ListItem>
-                                            <asp:ListItem Text="Oculta a Banana da Fala" Value="1"></asp:ListItem>
+                                        <asp:RadioButtonList ID="rbExibeEstimativaOD" runat="server" RepeatDirection="Horizontal" ForeColor="Red" BackColor="MistyRose" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="12" Width="545px">
+                                            <asp:ListItem Text="Exibe Estimativa" Value="0"></asp:ListItem>
+                                            <asp:ListItem Text="Oculta Estimativa" Value="1"></asp:ListItem>
                                         </asp:RadioButtonList>
                                     </div>
                                     <div class="box" id="impOE" runat="server">
@@ -220,9 +220,9 @@
                                                 </asp:ChartArea>
                                             </ChartAreas>
                                         </asp:Chart>
-                                        <asp:RadioButtonList ID="rbBananaFalaOEClinica" runat="server" RepeatDirection="Horizontal" ForeColor="Blue" BackColor="AliceBlue" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="12" Width="545px">
-                                            <asp:ListItem Text="Exibe a Banana da Fala" Value="0"></asp:ListItem>
-                                            <asp:ListItem Text="Oculta a Banana da Fala" Value="1"></asp:ListItem>
+                                        <asp:RadioButtonList ID="rbExibeEstimativaOE" runat="server" RepeatDirection="Horizontal" ForeColor="Blue" BackColor="AliceBlue" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="12" Width="545px">
+                                            <asp:ListItem Text="Exibe Estimativa" Value="0"></asp:ListItem>
+                                            <asp:ListItem Text="Oculta Estimativa" Value="1"></asp:ListItem>
                                         </asp:RadioButtonList>
                                     </div>
                                 </div>

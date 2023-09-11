@@ -141,13 +141,13 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.DataVisualization.Charting.Chart chartODimp;
 
         /// <summary>
-        /// Controle rbBananaFalaODClinica.
+        /// Controle rbExibeEstimativaOD.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rbBananaFalaODClinica;
+        protected global::System.Web.UI.WebControls.RadioButtonList rbExibeEstimativaOD;
 
         /// <summary>
         /// Controle impOE.
@@ -168,13 +168,13 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.DataVisualization.Charting.Chart chartOEimp;
 
         /// <summary>
-        /// Controle rbBananaFalaOEClinica.
+        /// Controle rbExibeEstimativaOE.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rbBananaFalaOEClinica;
+        protected global::System.Web.UI.WebControls.RadioButtonList rbExibeEstimativaOE;
 
         /// <summary>
         /// Controle pnlGridDadosOD.

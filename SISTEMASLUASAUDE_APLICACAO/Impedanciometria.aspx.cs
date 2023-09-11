@@ -486,8 +486,8 @@ namespace SISTEMASLUASAUDE_APLICACAO
             PlotaDadosAudiogramaOD();
             PlotaDadosAudiogramaOE();
 
-            //chartAudioOD.SaveImage("C:\\users/public/documents/chartODAudioClinica.png", System.Web.UI.DataVisualization.Charting.ChartImageFormat.Png);
-            //chartAudioOE.SaveImage("C:\\users/public/documents/chartOEAudioClinica.png", System.Web.UI.DataVisualization.Charting.ChartImageFormat.Png);
+            chartODimp.SaveImage("C:\\users/public/documents/chartODimp.png", System.Web.UI.DataVisualization.Charting.ChartImageFormat.Png);
+            chartOEimp.SaveImage("C:\\users/public/documents/chartOEimp.png", System.Web.UI.DataVisualization.Charting.ChartImageFormat.Png);
 
             DadosRelatorioImpressao();
 
