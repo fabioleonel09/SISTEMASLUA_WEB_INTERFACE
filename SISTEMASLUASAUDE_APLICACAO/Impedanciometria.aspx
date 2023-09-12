@@ -178,7 +178,7 @@
                             <asp:TableCell Width="60%" Height="100%">
                                 <div class="container" style="text-align: center;">
                                     <div class="box" id="impOD" runat="server">
-                                        <asp:Chart ID="chartODimp" runat="server" Height="454px" Width="545px">
+                                        <asp:Chart ID="chartODimp" runat="server" BackImageAlignment="Center" Height="454px" Width="545px">
                                             <Series>
                                                 <asp:Series BorderWidth="2" ChartType="Line" Color="Red" Name="OD">
                                                 </asp:Series>
@@ -202,7 +202,7 @@
                                         </asp:RadioButtonList>
                                     </div>
                                     <div class="box" id="impOE" runat="server">
-                                        <asp:Chart ID="chartOEimp" runat="server" Height="454px" Width="545px">
+                                        <asp:Chart ID="chartOEimp" runat="server" BackImageAlignment="Center" Height="454px" Width="545px">
                                             <Series>
                                                 <asp:Series BorderWidth="2" ChartType="Line" Color="Blue" Name="OE">
                                                 </asp:Series>
@@ -232,284 +232,31 @@
                                         <asp:Panel ID="pnlGridDadosOD" runat="server" Width="100%" BackColor="MistyRose" BorderColor="Red" BorderStyle="Solid" BorderWidth="1">
                                             <asp:Table ID="tbDadosOD" runat="server" Width="100%">
                                                 <asp:TableHeaderRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Hz</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">VA</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">M</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">L</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">A</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">VO</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">M</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">L</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">A</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Pressão:</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:TextBox ID="pressaoodTextBox" runat="server" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        </asp:TextBox>
+                                                    </asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>   
                                                 </asp:TableHeaderRow>
-                                                <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14" Enabled="false">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">125</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va125odComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BackColor="#cccccc" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14" >
+                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Complacência:</asp:TableCell>
+                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:TextBox ID="complodTextBox" runat="server" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        </asp:TextBox>
                                                     </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc125vaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus125vaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                    </asp:TableCell> 
                                                 </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">250</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va250odComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc250vaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga125_250vaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus250vaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="vo250odComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc250vo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus250vo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">500</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va500odComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc500vaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga250_500vaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus500vaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="vo500odComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc500vo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga250_500vo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus500vo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14" Enabled="false">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">750</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va750odComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BackColor="#cccccc" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc750vaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga500_750vaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus750vaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="vo750odComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BackColor="#cccccc" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc750vo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga500_750vo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus750vo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">1k</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va1kodComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc1kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga750_1kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus1kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="vo1kodComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc1kvo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga750_1kvo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus1kvo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14" Enabled="false">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">1,5k</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va1e5kodComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BackColor="#cccccc" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc1_5kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga1k_1_5kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus1_5kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="vo1e5kodComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BackColor="#cccccc" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc1_5kvo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga1k_1_5kvo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus1_5kvo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">2k</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va2kodComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc2kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga1_5k_2kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus2kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="vo2kodComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc2kvo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga1_5k_2kvo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus2kvo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">3k</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va3kodComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc3kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga2k_3kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus3kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="vo3kodComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc3kvo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga2k_3kvo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus3kvo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">4k</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va4kodComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc4kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga3k_4kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus4kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="vo4kodComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc4kvo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga3k_4kvo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus4kvo_ODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">6k</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va6kodComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc6kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga4k_6kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus6kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">8k</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va8kodComboBox" runat="server" Width="100%" Height="30px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc8kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga6k_8kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus8kvaODCheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                                <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14" >
+                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Fecha em:</asp:TableCell>
+                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:TextBox ID="fechaodTextBox" runat="server" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        </asp:TextBox>
+                                                    </asp:TableCell>
+                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:CheckBox ID="curvaBodCheckBox" runat="server" Text="curva tipo B"/>
+                                                    </asp:TableCell> 
                                                 </asp:TableRow>
                                             </asp:Table>
                                         </asp:Panel>
@@ -518,416 +265,41 @@
                                         <asp:Panel ID="pnlGridDadosOE" runat="server" Width="100%" BackColor="AliceBlue" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1">
                                             <asp:Table ID="tbDadosOE" runat="server" Width="100%">
                                                 <asp:TableHeaderRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Hz</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">VA</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">M</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">L</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">A</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">VO</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">M</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">L</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">A</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Pressão:</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:TextBox ID="pressaooeTextBox" runat="server" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        </asp:TextBox>
+                                                    </asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>   
                                                 </asp:TableHeaderRow>
-                                                <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14" Enabled="false">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">125</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va125oeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue" BackColor="#cccccc" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14" >
+                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Complacência:</asp:TableCell>
+                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:TextBox ID="comploeTextBox" runat="server" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        </asp:TextBox>
                                                     </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc125vaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus125vaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                    </asp:TableCell> 
                                                 </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">250</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va250oeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc250vaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga125_250vaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus250vaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="vo250oeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc250vo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus250vo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">500</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va500oeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc500vaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga250_500vaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus500vaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="vo500oeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc500vo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga250_500vo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus500vo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14" Enabled="false">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">750</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va750oeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue" BackColor="#cccccc"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc750vaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga500_750vaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus750vaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="vo750oeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue" BackColor="#cccccc"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc750vo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga500_750vo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus750vo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">1k</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va1koeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc1kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga750_1kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus1kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="vo1koeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc1kvo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga750_1kvo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus1kvo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14" Enabled="false">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">1,5k</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va1e5koeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue" BackColor="#cccccc"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc1_5kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga1k_1_5kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus1_5kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="vo1e5koeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue" BackColor="#cccccc"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc1_5kvo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga1k_1_5kvo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus1_5kvo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">2k</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va2koeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc2kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga1_5k_2kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus2kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="vo2koeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc2kvo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga1_5k_2kvo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus2kvo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">3k</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va3koeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc3kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga2k_3kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus3kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="vo3koeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc3kvo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga2k_3kvo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus3kvo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">4k</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va4koeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc4kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga3k_4kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus4kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="vo4koeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc4kvo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga3k_4kvo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus4kvo_OECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">6k</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va6koeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc6kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga4k_6kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus6kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">8k</asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="va8koeComboBox" runat="server" Width="100%" Height="30px" BorderColor="Blue"
-                                                            BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="masc8kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="liga6k_8kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="aus8kvaOECheckBox" runat="server" />
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="15%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
-                                                    <asp:TableCell Width="10%" Height="30px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableCell>
+                                                <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14" >
+                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Fecha em:</asp:TableCell>
+                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:TextBox ID="fechaoeTextBox" runat="server" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        </asp:TextBox>
+                                                    </asp:TableCell>
+                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:CheckBox ID="curvaBoeCheckBox" runat="server" Text="curva tipo B"/>
+                                                    </asp:TableCell> 
                                                 </asp:TableRow>
                                             </asp:Table>
                                         </asp:Panel>
                                     </div>
                                 </div>
-                                <asp:Panel ID="pnlLegenda" runat="server" Width="99.6%" HorizontalAlign="Justify" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                    <asp:TextBox ID="txtLegenda" runat="server" Width="99.6%" Enabled="false">Legenda: Hz = Hertz; VA = Via Aérea; VO = Via Óssea; M = simbologia de mascaramento; L = liga simbologia; A = simbologia de ausência de resposta.</asp:TextBox>
-                                </asp:Panel>
                                 <br />
                                 <div id="btnPlotaTodos" runat="server" style="text-align: center;">
                                     <asp:Button ID="btnPlotaGeral" runat="server" Text="Plotar" BackColor="#00cc99" BorderColor="Green" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnPlotarGeral_Click" />
                                 </div>
                                 <br />
-                                <div class="container" style="text-align: center;">
-                                    <asp:Table ID="tbTesteWeberCabecalho" runat="server" Width="100%">
-                                        <asp:TableHeaderRow Width="100%" Height="30px" BackColor="#cccccc" Font-Bold="true" Font-Size="16">
-                                            <asp:TableHeaderCell Text="Teste de Weber"></asp:TableHeaderCell>
-                                        </asp:TableHeaderRow>
-                                    </asp:Table>
-                                </div>
-                                <div class="container" style="text-align: center;">
-                                    <div class="box">
-                                        <asp:Panel ID="pnlTesteWeberParteUm" runat="server" Width="100%">
-                                            <asp:Table ID="tbTesteWeberCorpoPrimeiro" runat="server" Width="100%">
-                                                <asp:TableHeaderRow Width="100%" Height="30px">
-                                                    <asp:TableHeaderCell Text="Weber em 500Hz:" Width="50%" Height="30px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="50%" Height="30px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="weber500ComboBox" runat="server" Width="100%" Height="30px" BorderColor="Black"
-                                                            BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableHeaderCell>
-                                                </asp:TableHeaderRow>
-                                                <asp:TableHeaderRow Width="100%" Height="30px">
-                                                    <asp:TableHeaderCell Text="Weber em 1kHz:" Width="50%" Height="30px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="50%" Height="30px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="weber1kComboBox" runat="server" Width="100%" Height="30px" BorderColor="Black"
-                                                            BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableHeaderCell>
-                                                </asp:TableHeaderRow>
-                                            </asp:Table>
-                                        </asp:Panel>
-                                    </div>
-                                    <div class="box">
-                                        <asp:Panel ID="pnlTesteWeberParteDois" runat="server" Width="100%">
-                                            <asp:Table ID="tbTesteWeberCorpoSegundo" runat="server" Width="100%">
-                                                <asp:TableHeaderRow Width="100%" Height="30px">
-                                                    <asp:TableHeaderCell Text="Weber em 2kHz:" Width="50%" Height="30px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="50%" Height="30px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="weber2kComboBox" runat="server" Width="100%" Height="30px" BorderColor="Black"
-                                                            BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableHeaderCell>
-                                                </asp:TableHeaderRow>
-                                                <asp:TableHeaderRow Width="100%" Height="30px">
-                                                    <asp:TableHeaderCell Text="Weber em 4kHz:" Width="50%" Height="30px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="50%" Height="30px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="weber4kComboBox" runat="server" Width="100%" Height="30px" BorderColor="Black"
-                                                            BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="14"
-                                                            CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:DropDownList>
-                                                    </asp:TableHeaderCell>
-                                                </asp:TableHeaderRow>
-                                            </asp:Table>
-                                        </asp:Panel>
-                                    </div>
-                                </div>
-                                <br />
-                                <asp:Panel ID="pnlSimbologiaAudiometrica" runat="server" Width="100%">
-                                    <asp:Image ID="imgSimbologiaAudiometrica" runat="server" ImageUrl="~/Images/Simbologia.png" AlternateText="A imagem da simbologia não carregou." Width="100%" />
-                                </asp:Panel>
-                            </asp:TableCell>
-                            <asp:TableCell Width="20%" Height="100%" Style="vertical-align: bottom">
-                                <div id="dadosAudioOE" runat="server">
-                                </div>
                             </asp:TableCell>
                         </asp:TableRow>
                     </asp:Table>
