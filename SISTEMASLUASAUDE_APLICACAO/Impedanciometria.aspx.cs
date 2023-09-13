@@ -83,50 +83,12 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         private void CarregaAudiogramaClinicoOD()
         {
-            string fundoChart = "fundoChartTransp";
-            Series imgFundo = chartODimp.Series.Add(fundoChart);
 
-            imgFundo.ChartArea = chartODimp.ChartAreas[0].Name;
-            imgFundo.Name = fundoChart;
-            imgFundo.ChartType = SeriesChartType.Point;
-
-            if (rbExibeEstimativaOD.SelectedValue == "0")
-            {
-                // Caminho virtual da imagem (relativo à raiz do projeto)
-                string caminhoVirtual = "~/Images/sombraImpedancioOD.png";
-
-                // Define o caminho virtual da imagem como imagem do marcador
-                imgFundo.Points.AddXY(7.50, 45);
-                imgFundo.MarkerImage = caminhoVirtual;
-            }
-            else if (rbExibeEstimativaOE.SelectedValue == "1")
-            {
-                chartODimp.Series[fundoChart].Points.Clear();
-            }
         }
 
         private void CarregaAudiogramaClinicoOE()
         {
-            string fundoChart = "fundoChartTransp";
-            Series imgFundo = chartOEimp.Series.Add(fundoChart);
-
-            imgFundo.ChartArea = chartOEimp.ChartAreas[0].Name;
-            imgFundo.Name = fundoChart;
-            imgFundo.ChartType = SeriesChartType.Point;
-
-            if (rbExibeEstimativaOE.SelectedValue == "0")
-            {
-                // Caminho virtual da imagem (relativo à raiz do projeto)
-                string caminhoVirtual = "~/Images/sombraImpedancioOE.png";
-
-                // Define o caminho virtual da imagem como imagem do marcador
-                imgFundo.Points.AddXY(7.5, 45);
-                imgFundo.MarkerImage = caminhoVirtual;
-            }
-            else if (rbExibeEstimativaOE.SelectedValue == "1")
-            {
-                chartOEimp.Series[fundoChart].Points.Clear();
-            }
+            
         }
 
         private void PlotaDadosTimpanogramaOD()
@@ -146,24 +108,6 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                 string fundoChart = "fundoChartTransp";
                 Series imgFundo = chartODimp.Series.Add(fundoChart);
-
-                imgFundo.ChartArea = chartODimp.ChartAreas[0].Name;
-                imgFundo.Name = fundoChart;
-                imgFundo.ChartType = SeriesChartType.Point;
-
-                if (rbExibeEstimativaOD.SelectedValue == "0")
-                {
-                    // Caminho virtual da imagem (relativo à raiz do projeto)
-                    string caminhoVirtual = "~/Images/sombraImpedancioOD.png";
-
-                    // Define o caminho virtual da imagem como imagem do marcador
-                    imgFundo.Points.AddXY(7.50, 45);
-                    imgFundo.MarkerImage = caminhoVirtual;
-                }
-                else if (rbExibeEstimativaOE.SelectedValue == "1")
-                {
-                    chartODimp.Series[fundoChart].Points.Clear();
-                }
 
                 string seriesNameA = "liga A";
                 Series serA = chartODimp.Series.Add(seriesNameA);
@@ -292,28 +236,6 @@ namespace SISTEMASLUASAUDE_APLICACAO
         {
             if (!String.IsNullOrEmpty(pressaooeTextBox.Text) || !String.IsNullOrEmpty(comploeTextBox.Text))
             {
-                string fundoChart = "fundoChartTransp";
-                Series imgFundo = chartOEimp.Series.Add(fundoChart);
-
-                imgFundo.ChartArea = chartOEimp.ChartAreas[0].Name;
-                imgFundo.Name = fundoChart;
-                imgFundo.ChartType = SeriesChartType.Point;
-
-                if (rbExibeEstimativaOE.SelectedValue == "0")
-                {
-                    // Caminho virtual da imagem (relativo à raiz do projeto)
-                    string caminhoVirtual = "~/Images/sombraImpedancioOE.png";
-
-                    // Define o caminho virtual da imagem como imagem do marcador
-                    imgFundo.Points.AddXY(7.5, 45);
-                    imgFundo.MarkerImage = caminhoVirtual;
-                }
-                else if (rbExibeEstimativaOE.SelectedValue == "1")
-                {
-                    chartOEimp.Series[fundoChart].Points.Clear();
-                }
-
-
                 chartOEimp.Series.Clear();//limpa o gráfico
                 fechaoeTextBox.Visible = true;
 
@@ -324,7 +246,6 @@ namespace SISTEMASLUASAUDE_APLICACAO
                 if (String.IsNullOrEmpty(fechaoeTextBox.Text))
                     fechaoeTextBox.Text = valorFechaCurva;
                 valorC = Convert.ToDecimal(fechaoeTextBox.Text);
-
 
                 string seriesNameA = "liga A";
                 Series serA = chartOEimp.Series.Add(seriesNameA);

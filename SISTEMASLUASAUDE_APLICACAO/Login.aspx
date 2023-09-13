@@ -66,22 +66,20 @@
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
             border-radius: 10px; /* Valor do raio dos cantos arredondados */
             text-align: right; /* Centraliza horizontalmente */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
-            background-image: url('./Images/Vai.png');
-            background-repeat: no-repeat;
-            background-position: left left;
-            background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */           
+            background: linear-gradient(to right, #0074D9, #2ECC40);
+            color: white;
+            padding: 10px 20px;
         }
 
         .cantos-arredondados-alinhamento-imagem-como-usar {
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
             border-radius: 10px; /* Valor do raio dos cantos arredondados */
-            text-align: right; /* Centraliza horizontalmente */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
-            background-image: url('./Images/adiantar.png');
-            background-repeat: no-repeat;
-            background-position: left left;
-            background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
+            text-align: left; /* Centraliza horizontalmente */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */           
+            background: linear-gradient(to right, #2ECC40, #0074D9);
+            color: white;
+            padding: 10px 20px;
         }
     </style>
 </head>
@@ -109,7 +107,7 @@
                         <asp:TextBox ID="txtSenha" runat="server" TextMode="Password" placeholder="Digite a senha..." Width="50%" Height="50px" Font-Bold="true" Font-Size="14" BorderColor="lightslategray" BorderStyle="Solid" BorderWidth="1" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
                         <br />
                         <br />
-                        <asp:Button ID="btnEntrar" runat="server" Text="Entrar" Width="35%" Height="50px" BackColor="#00cc66" ForeColor="Black" Font-Bold="true" Font-Size="14" BorderColor="Black" BorderStyle="Solid" BorderWidth="2" CssClass="cantos-arredondados-alinhamento-imagem" OnClick="btnEntrar_Click" />
+                        <asp:Button ID="btnEntrar" runat="server" Text="Entrar" Width="35%" Height="50px" ForeColor="Black" Font-Bold="true" Font-Size="14" BorderColor="Black" BorderStyle="Solid" BorderWidth="2" CssClass="cantos-arredondados-alinhamento-imagem" OnClick="btnEntrar_Click" />
                         <br />
                         <br />
                         <asp:Button ID="btnInstrucoes" runat="server" Text="Como usar?" Width="35%" Height="50px" BackColor="AliceBlue" ForeColor="Black" Font-Bold="true" Font-Size="14" BorderColor="Black" BorderStyle="Solid" BorderWidth="2" CssClass="cantos-arredondados-alinhamento-imagem-como-usar" OnClick="btnInstrucoes_Click" />

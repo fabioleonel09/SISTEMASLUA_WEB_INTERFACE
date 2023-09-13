@@ -61,8 +61,13 @@
         }
 
         .cantos-arredondados-hand {
-            border-radius: 10px; /* Valor do raio dos cantos arredondados */
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
+            border-radius: 10px; /* Valor do raio dos cantos arredondados */
+            text-align: center; /* Centraliza horizontalmente */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */           
+            background: linear-gradient(to right, red, #0074D9);
+            color: white;
+            padding: 10px 20px
         }
 
         .cantos-arredondados-alinhamento {
@@ -856,7 +861,7 @@
                                 </asp:Panel>
                                 <br />
                                 <div id="btnPlotaTodos" runat="server" style="text-align: center;">
-                                    <asp:Button ID="btnPlotaGeral" runat="server" Text="Plotar" BackColor="#00cc99" BorderColor="Green" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnPlotarGeral_Click" />
+                                    <asp:Button ID="btnPlotaGeral" runat="server" Text="Plotar" BorderColor="#4B0082" BorderStyle="Solid" BorderWidth="1" ForeColor="White" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnPlotarGeral_Click" />
                                 </div>
                                 <br />
                                 <div class="container" style="text-align: center;">
@@ -1012,11 +1017,11 @@
                                 <div style="text-align: center;">
                                     <br />
                                     <div class="box" id="audioVocalOD" runat="server">
-                                        <asp:Button ID="btnMediaTritonal" runat="server" Text="Média Tritonal (X/3)" BackColor="#00cc99" BorderColor="Green" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnMediaTritonal_Click" />
+                                        <asp:Button ID="btnMediaTritonal" runat="server" Text="Média Tritonal (X/3)" BorderColor="#4B0082" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnMediaTritonal_Click" />
                                     </div>
                                     <br />
                                     <div class="box" id="audioVocalOE" runat="server">
-                                        <asp:Button ID="btnMediaQuadritonal" runat="server" Text="Média Quadritonal (X/4)" BackColor="#00cc99" BorderColor="Green" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnMediaQuadritonal_Click" />
+                                        <asp:Button ID="btnMediaQuadritonal" runat="server" Text="Média Quadritonal (X/4)" BorderColor="#4B0082" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnMediaQuadritonal_Click" />
                                     </div>
                                 </div>
                             </asp:TableCell>

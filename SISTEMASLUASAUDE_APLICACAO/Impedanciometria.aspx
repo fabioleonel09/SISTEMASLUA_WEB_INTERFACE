@@ -7,7 +7,41 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Audiometria Clínica Convencional</title>
+    <title>Impedanciometria</title>
+
+    <script>
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode;
+            if (
+                (charCode >= 48 && charCode <= 57) || // Números de 0 a 9
+                charCode === 44 || // Vírgula (,)
+                charCode === 43 || // Sinal de mais (+)
+                charCode === 45 // Sinal de menos (-)
+            ) {
+                return true;
+            }
+            return false;
+        }
+
+        function validateInput(input) {
+            var value = input.value;
+            if (!/\d/.test(value)) {
+                document.getElementById('errorMsgODp').style.display = 'block';
+                document.getElementById('errorMsgODc').style.display = 'block';
+                document.getElementById('errorMsgODf').style.display = 'block';
+                document.getElementById('errorMsgOEp').style.display = 'block';
+                document.getElementById('errorMsgOEc').style.display = 'block';
+                document.getElementById('errorMsgOEf').style.display = 'block';
+            } else {
+                document.getElementById('errorMsgODp').style.display = 'none';
+                document.getElementById('errorMsgODc').style.display = 'none';
+                document.getElementById('errorMsgODf').style.display = 'none';
+                document.getElementById('errorMsgOEp').style.display = 'none';
+                document.getElementById('errorMsgOEc').style.display = 'none';
+                document.getElementById('errorMsgOEf').style.display = 'none';
+            }
+        }
+    </script>
 
     <style>
         footer {
@@ -61,8 +95,13 @@
         }
 
         .cantos-arredondados-hand {
-            border-radius: 10px; /* Valor do raio dos cantos arredondados */
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
+            border-radius: 10px; /* Valor do raio dos cantos arredondados */
+            text-align: center; /* Centraliza horizontalmente */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */           
+            background: linear-gradient(to right, red, #0074D9);
+            color: white;
+            padding: 10px 20px
         }
 
         .cantos-arredondados-alinhamento {
@@ -178,7 +217,7 @@
                             <asp:TableCell Width="60%" Height="100%">
                                 <div class="container" style="text-align: center;">
                                     <div class="box" id="impOD" runat="server">
-                                        <asp:Chart ID="chartODimp" runat="server" BackImageAlignment="Center" Height="454px" Width="545px">
+                                        <asp:Chart ID="chartODimp" runat="server" BackImageAlignment="Center" Height="454px" Width="545px" BackColor="MistyRose" BorderColor="Red">
                                             <Series>
                                                 <asp:Series BorderWidth="2" ChartType="Line" Color="Red" Name="OD">
                                                 </asp:Series>
@@ -196,13 +235,9 @@
                                                 </asp:ChartArea>
                                             </ChartAreas>
                                         </asp:Chart>
-                                        <asp:RadioButtonList ID="rbExibeEstimativaOD" runat="server" RepeatDirection="Horizontal" ForeColor="Red" BackColor="MistyRose" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="12" Width="545px">
-                                            <asp:ListItem Text="Exibe Estimativa" Value="0"></asp:ListItem>
-                                            <asp:ListItem Text="Oculta Estimativa" Value="1"></asp:ListItem>
-                                        </asp:RadioButtonList>
                                     </div>
                                     <div class="box" id="impOE" runat="server">
-                                        <asp:Chart ID="chartOEimp" runat="server" BackImageAlignment="Center" Height="454px" Width="545px">
+                                        <asp:Chart ID="chartOEimp" runat="server" BackImageAlignment="Center" Height="454px" Width="545px" BackColor="AliceBlue" BorderColor="Blue">
                                             <Series>
                                                 <asp:Series BorderWidth="2" ChartType="Line" Color="Blue" Name="OE">
                                                 </asp:Series>
@@ -220,10 +255,6 @@
                                                 </asp:ChartArea>
                                             </ChartAreas>
                                         </asp:Chart>
-                                        <asp:RadioButtonList ID="rbExibeEstimativaOE" runat="server" RepeatDirection="Horizontal" ForeColor="Blue" BackColor="AliceBlue" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="12" Width="545px">
-                                            <asp:ListItem Text="Exibe Estimativa" Value="0"></asp:ListItem>
-                                            <asp:ListItem Text="Oculta Estimativa" Value="1"></asp:ListItem>
-                                        </asp:RadioButtonList>
                                     </div>
                                 </div>
                                 <br />
@@ -232,27 +263,30 @@
                                         <asp:Panel ID="pnlGridDadosOD" runat="server" Width="100%" BackColor="MistyRose" BorderColor="Red" BorderStyle="Solid" BorderWidth="1">
                                             <asp:Table ID="tbDadosOD" runat="server" Width="100%">
                                                 <asp:TableHeaderRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableHeaderCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Pressão:</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Pressão (daPa):</asp:TableHeaderCell>
                                                     <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="pressaoodTextBox" runat="server" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        <asp:TextBox ID="pressaoodTextBox" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
                                                         </asp:TextBox>
+                                                        <span id="errorMsgODp" style="color: red; display: none;">Por favor, insira pelo menos um número válido.</span>
                                                     </asp:TableHeaderCell>
                                                     <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>   
                                                 </asp:TableHeaderRow>
                                                 <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14" >
-                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Complacência:</asp:TableCell>
+                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Complacência (ml):</asp:TableCell>
                                                     <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="complodTextBox" runat="server" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        <asp:TextBox ID="complodTextBox" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
                                                         </asp:TextBox>
+                                                        <span id="errorMsgODc" style="color: red; display: none;">Por favor, insira pelo menos um número válido.</span>
                                                     </asp:TableCell>
                                                     <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
                                                     </asp:TableCell> 
                                                 </asp:TableRow>
                                                 <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14" >
-                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Fecha em:</asp:TableCell>
+                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Curva fecha em (daPa):</asp:TableCell>
                                                     <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="fechaodTextBox" runat="server" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        <asp:TextBox ID="fechaodTextBox" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
                                                         </asp:TextBox>
+                                                        <span id="errorMsgODf" style="color: red; display: none;">Por favor, insira pelo menos um número válido.</span>
                                                     </asp:TableCell>
                                                     <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
                                                         <asp:CheckBox ID="curvaBodCheckBox" runat="server" Text="curva tipo B"/>
@@ -265,27 +299,30 @@
                                         <asp:Panel ID="pnlGridDadosOE" runat="server" Width="100%" BackColor="AliceBlue" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1">
                                             <asp:Table ID="tbDadosOE" runat="server" Width="100%">
                                                 <asp:TableHeaderRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableHeaderCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Pressão:</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Pressão (daPa):</asp:TableHeaderCell>
                                                     <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="pressaooeTextBox" runat="server" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        <asp:TextBox ID="pressaooeTextBox" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
                                                         </asp:TextBox>
+                                                        <span id="errorMsgOEp" style="color: red; display: none;">Por favor, insira pelo menos um número válido.</span>
                                                     </asp:TableHeaderCell>
                                                     <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>   
                                                 </asp:TableHeaderRow>
                                                 <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14" >
-                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Complacência:</asp:TableCell>
+                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Complacência (ml):</asp:TableCell>
                                                     <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="comploeTextBox" runat="server" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        <asp:TextBox ID="comploeTextBox" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
                                                         </asp:TextBox>
+                                                        <span id="errorMsgOEc" style="color: red; display: none;">Por favor, insira pelo menos um número válido.</span>
                                                     </asp:TableCell>
                                                     <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
                                                     </asp:TableCell> 
                                                 </asp:TableRow>
                                                 <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14" >
-                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Fecha em:</asp:TableCell>
+                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Curva fecha em (daPa):</asp:TableCell>
                                                     <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="fechaoeTextBox" runat="server" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        <asp:TextBox ID="fechaoeTextBox" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
                                                         </asp:TextBox>
+                                                        <span id="errorMsgOEf" style="color: red; display: none;">Por favor, insira pelo menos um número válido.</span>
                                                     </asp:TableCell>
                                                     <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
                                                         <asp:CheckBox ID="curvaBoeCheckBox" runat="server" Text="curva tipo B"/>
@@ -297,7 +334,7 @@
                                 </div>
                                 <br />
                                 <div id="btnPlotaTodos" runat="server" style="text-align: center;">
-                                    <asp:Button ID="btnPlotaGeral" runat="server" Text="Plotar" BackColor="#00cc99" BorderColor="Green" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnPlotarGeral_Click" />
+                                    <asp:Button ID="btnPlotaGeral" runat="server" Text="Plotar" BorderColor="#4B0082" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnPlotarGeral_Click" />
                                 </div>
                                 <br />
                             </asp:TableCell>
@@ -388,11 +425,11 @@
                                 <div style="text-align: center;">
                                     <br />
                                     <div class="box" id="audioVocalOD" runat="server">
-                                        <asp:Button ID="btnMediaTritonal" runat="server" Text="Média Tritonal (X/3)" BackColor="#00cc99" BorderColor="Green" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnMediaTritonal_Click" />
+                                        <asp:Button ID="btnMediaTritonal" runat="server" Text="Média Tritonal (X/3)" BorderColor="#4B0082" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnMediaTritonal_Click" />
                                     </div>
                                     <br />
                                     <div class="box" id="audioVocalOE" runat="server">
-                                        <asp:Button ID="btnMediaQuadritonal" runat="server" Text="Média Quadritonal (X/4)" BackColor="#00cc99" BorderColor="Green" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnMediaQuadritonal_Click" />
+                                        <asp:Button ID="btnMediaQuadritonal" runat="server" Text="Média Quadritonal (X/4)" BorderColor="#4B0082" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnMediaQuadritonal_Click" />
                                     </div>
                                 </div>
                             </asp:TableCell>
@@ -608,5 +645,4 @@
         </footer>
     </form>
 </body>
-
 </html>
