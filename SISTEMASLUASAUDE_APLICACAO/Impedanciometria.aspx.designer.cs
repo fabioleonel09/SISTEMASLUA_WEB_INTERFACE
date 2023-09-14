@@ -285,211 +285,283 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.Button btnPlotaGeral;
 
         /// <summary>
-        /// Controle AudiometriaVocalClinica.
+        /// Controle PesquisaReflexoEstapedio.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table AudiometriaVocalClinica;
+        protected global::System.Web.UI.WebControls.Table PesquisaReflexoEstapedio;
 
         /// <summary>
-        /// Controle pnlAudioVocalOD.
+        /// Controle pnlReflexosEstapedioOD.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlAudioVocalOD;
+        protected global::System.Web.UI.WebControls.Panel pnlReflexosEstapedioOD;
 
         /// <summary>
-        /// Controle lblMediaOD.
+        /// Controle tbReflexosEstapedioOD.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMediaOD;
+        protected global::System.Web.UI.WebControls.Table tbReflexosEstapedioOD;
 
         /// <summary>
-        /// Controle mEDIAodTextBox.
+        /// Controle dif500odTextBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox mEDIAodTextBox;
+        protected global::System.Web.UI.WebControls.TextBox dif500odTextBox;
 
         /// <summary>
-        /// Controle pnlIPRFmomOd.
+        /// Controle contra500odComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlIPRFmomOd;
+        protected global::System.Web.UI.WebControls.DropDownList contra500odComboBox;
 
         /// <summary>
-        /// Controle ddlIPRFmonOd.
+        /// Controle ipsi500odComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlIPRFmonOd;
+        protected global::System.Web.UI.WebControls.DropDownList ipsi500odComboBox;
 
         /// <summary>
-        /// Controle pnlIPRFdissOd.
+        /// Controle dif1kodTextBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlIPRFdissOd;
+        protected global::System.Web.UI.WebControls.TextBox dif1kodTextBox;
 
         /// <summary>
-        /// Controle ddlIPRFdisOd.
+        /// Controle contra1kodComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlIPRFdisOd;
+        protected global::System.Web.UI.WebControls.DropDownList contra1kodComboBox;
 
         /// <summary>
-        /// Controle txtSRTOD.
+        /// Controle ipsi1kodComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSRTOD;
+        protected global::System.Web.UI.WebControls.DropDownList ipsi1kodComboBox;
 
         /// <summary>
-        /// Controle txtSDTOD.
+        /// Controle dif2kodTextBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSDTOD;
+        protected global::System.Web.UI.WebControls.TextBox dif2kodTextBox;
 
         /// <summary>
-        /// Controle pnlAudioVocalOE.
+        /// Controle contra2kodComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlAudioVocalOE;
+        protected global::System.Web.UI.WebControls.DropDownList contra2kodComboBox;
 
         /// <summary>
-        /// Controle lblMediaOE.
+        /// Controle ipsi2kodComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMediaOE;
+        protected global::System.Web.UI.WebControls.DropDownList ipsi2kodComboBox;
 
         /// <summary>
-        /// Controle mEDIAoeTextBox.
+        /// Controle dif4kodTextBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox mEDIAoeTextBox;
+        protected global::System.Web.UI.WebControls.TextBox dif4kodTextBox;
 
         /// <summary>
-        /// Controle pnlIPRFmonOe.
+        /// Controle contra4kodComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlIPRFmonOe;
+        protected global::System.Web.UI.WebControls.DropDownList contra4kodComboBox;
 
         /// <summary>
-        /// Controle ddlIPRFmonOe.
+        /// Controle ipsi4kodComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlIPRFmonOe;
+        protected global::System.Web.UI.WebControls.DropDownList ipsi4kodComboBox;
 
         /// <summary>
-        /// Controle pnlIPRFdisOe.
+        /// Controle pnlReflexosEstapedioOE.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlIPRFdisOe;
+        protected global::System.Web.UI.WebControls.Panel pnlReflexosEstapedioOE;
 
         /// <summary>
-        /// Controle ddlIPRFdisOe.
+        /// Controle tbReflexosEstapedioOE.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlIPRFdisOe;
+        protected global::System.Web.UI.WebControls.Table tbReflexosEstapedioOE;
 
         /// <summary>
-        /// Controle txtSRTOE.
+        /// Controle dif500oeTextBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSRTOE;
+        protected global::System.Web.UI.WebControls.TextBox dif500oeTextBox;
 
         /// <summary>
-        /// Controle txtSDTOE.
+        /// Controle contra500oeComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSDTOE;
+        protected global::System.Web.UI.WebControls.DropDownList contra500oeComboBox;
 
         /// <summary>
-        /// Controle audioVocalOD.
+        /// Controle ipsi500oeComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl audioVocalOD;
+        protected global::System.Web.UI.WebControls.DropDownList ipsi500oeComboBox;
 
         /// <summary>
-        /// Controle btnMediaTritonal.
+        /// Controle dif1koeTextBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnMediaTritonal;
+        protected global::System.Web.UI.WebControls.TextBox dif1koeTextBox;
 
         /// <summary>
-        /// Controle audioVocalOE.
+        /// Controle contra1koeComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl audioVocalOE;
+        protected global::System.Web.UI.WebControls.DropDownList contra1koeComboBox;
 
         /// <summary>
-        /// Controle btnMediaQuadritonal.
+        /// Controle ipsi1koeComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnMediaQuadritonal;
+        protected global::System.Web.UI.WebControls.DropDownList ipsi1koeComboBox;
+
+        /// <summary>
+        /// Controle dif2koeTextBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox dif2koeTextBox;
+
+        /// <summary>
+        /// Controle contra2koeComboBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList contra2koeComboBox;
+
+        /// <summary>
+        /// Controle ipsi2koeComboBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ipsi2koeComboBox;
+
+        /// <summary>
+        /// Controle dif4koeTextBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox dif4koeTextBox;
+
+        /// <summary>
+        /// Controle contra4koeComboBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList contra4koeComboBox;
+
+        /// <summary>
+        /// Controle ipsi4koeComboBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ipsi4koeComboBox;
+
+        /// <summary>
+        /// Controle calculaDiferenca.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl calculaDiferenca;
+
+        /// <summary>
+        /// Controle btnCalculaDiferenca.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCalculaDiferenca;
 
         /// <summary>
         /// Controle tbLaudoParecer.
@@ -528,15 +600,6 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.Table tbLaudoOD;
 
         /// <summary>
-        /// Controle ddlAudicaoNormalOD.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlAudicaoNormalOD;
-
-        /// <summary>
         /// Controle ddlCurvaTipoOD.
         /// </summary>
         /// <remarks>
@@ -546,31 +609,85 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.DropDownList ddlCurvaTipoOD;
 
         /// <summary>
-        /// Controle ddlDeGrauOD.
+        /// Controle tdResultadosReflexosOD.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDeGrauOD;
+        protected global::System.Web.UI.WebControls.Table tdResultadosReflexosOD;
 
         /// <summary>
-        /// Controle ddlDeConfigOD.
+        /// Controle DropDownList7.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDeConfigOD;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList7;
 
         /// <summary>
-        /// Controle ddlEaudioVocalOD.
+        /// Controle DropDownList1.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlEaudioVocalOD;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+
+        /// <summary>
+        /// Controle DropDownList2.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+
+        /// <summary>
+        /// Controle DropDownList17.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList17;
+
+        /// <summary>
+        /// Controle DropDownList8.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList8;
+
+        /// <summary>
+        /// Controle DropDownList3.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList3;
+
+        /// <summary>
+        /// Controle DropDownList4.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList4;
+
+        /// <summary>
+        /// Controle DropDownList18.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList18;
 
         /// <summary>
         /// Controle LaudoOE.
@@ -600,15 +717,6 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.Table tbLaudoOE;
 
         /// <summary>
-        /// Controle ddlAudicaoNormalOE.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlAudicaoNormalOE;
-
-        /// <summary>
         /// Controle ddlCurvaTipoOE.
         /// </summary>
         /// <remarks>
@@ -618,31 +726,85 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.DropDownList ddlCurvaTipoOE;
 
         /// <summary>
-        /// Controle ddlDeGrauOE.
+        /// Controle Table2.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDeGrauOE;
+        protected global::System.Web.UI.WebControls.Table Table2;
 
         /// <summary>
-        /// Controle ddlDeConfigOE.
+        /// Controle DropDownList13.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDeConfigOE;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList13;
 
         /// <summary>
-        /// Controle ddlEaudioVocalOE.
+        /// Controle DropDownList9.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlEaudioVocalOE;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList9;
+
+        /// <summary>
+        /// Controle DropDownList10.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList10;
+
+        /// <summary>
+        /// Controle DropDownList5.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList5;
+
+        /// <summary>
+        /// Controle DropDownList14.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList14;
+
+        /// <summary>
+        /// Controle DropDownList11.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList11;
+
+        /// <summary>
+        /// Controle DropDownList12.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList12;
+
+        /// <summary>
+        /// Controle DropDownList6.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList6;
 
         /// <summary>
         /// Controle tbOutrosDados.
@@ -652,15 +814,6 @@ namespace SISTEMASLUASAUDE_APLICACAO
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Table tbOutrosDados;
-
-        /// <summary>
-        /// Controle txtMascaramentoComent.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMascaramentoComent;
 
         /// <summary>
         /// Controle txtComentariosGerais.
@@ -708,13 +861,13 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.Table tbDadosComplementaresPrimeiro;
 
         /// <summary>
-        /// Controle txtAudiometro.
+        /// Controle txtImpedanciometro.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAudiometro;
+        protected global::System.Web.UI.WebControls.TextBox txtImpedanciometro;
 
         /// <summary>
         /// Controle txtDataCalibracao.

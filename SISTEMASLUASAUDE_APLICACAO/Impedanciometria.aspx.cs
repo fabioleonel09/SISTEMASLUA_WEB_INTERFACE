@@ -64,16 +64,10 @@ namespace SISTEMASLUASAUDE_APLICACAO
             PlotaDadosTimpanogramaOE();
         }
 
-        protected void btnMediaTritonal_Click(object sender, EventArgs e)
+        protected void btnCalculaDiferenca_Click(object sender, EventArgs e)
         {
-            CalculaMediaTritonal();
+            CalculaDiferenca();
            
-        }
-
-        protected void btnMediaQuadritonal_Click(object sender, EventArgs e)
-        {
-            CalculaMediaQuadritonal();
-            
         }
 
         protected void btnImprimir_Click(object sender, EventArgs e)
@@ -411,23 +405,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         private void CarregaDDLaudioVocal()
         {
-            //para o IPRF da OD
-            //monossílabos
-            ddlIPRFmonOd.DataSource = DropdownData_Vocal.GetItems();
-            ddlIPRFmonOd.DataBind();
-
-            //dissílabos
-            ddlIPRFdisOd.DataSource = DropdownData_Vocal.GetItems();
-            ddlIPRFdisOd.DataBind();
-
-            //para o IPRF da OE
-            //monossílabos
-            ddlIPRFmonOe.DataSource = DropdownData_Vocal.GetItems();
-            ddlIPRFmonOe.DataBind();
-
-            //dissílabos
-            ddlIPRFdisOe.DataSource = DropdownData_Vocal.GetItems();
-            ddlIPRFdisOe.DataBind();
+            
         }
 
         private void CarregaTesteWeber()
@@ -435,24 +413,14 @@ namespace SISTEMASLUASAUDE_APLICACAO
             
         }
 
-        private void CalculaMediaTritonal()
+        private void CalculaDiferenca()
         { 
-            
-        }
-
-        private void CalculaMediaQuadritonal()
-        {
             
         }
 
         private void CarregaLaudoaudiologico()
         {
-            //para ddl normal
-            ddlAudicaoNormalOD.DataSource = DropdownData_LaudoAudioNormal.GetItems();
-            ddlAudicaoNormalOD.DataBind();
-
-            ddlAudicaoNormalOE.DataSource = DropdownData_LaudoAudioNormal.GetItems();
-            ddlAudicaoNormalOE.DataBind();
+            
 
             //para tipo de curva
             ddlCurvaTipoOD.DataSource = DropdownData_CurvaAudioTipo.GetItems();
@@ -461,26 +429,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
             ddlCurvaTipoOE.DataSource = DropdownData_CurvaAudioTipo.GetItems();
             ddlCurvaTipoOE.DataBind();
 
-            //para o grau
-            ddlDeGrauOD.DataSource = DropdownData_GrauAudio.GetItems();
-            ddlDeGrauOD.DataBind();
-
-            ddlDeGrauOE.DataSource = DropdownData_GrauAudio.GetItems();
-            ddlDeGrauOE.DataBind();
-
-            //para a configuração
-            ddlDeConfigOD.DataSource = DropdownData_ConfigTipo.GetItems();
-            ddlDeConfigOD.DataBind();
-
-            ddlDeConfigOE.DataSource = DropdownData_ConfigTipo.GetItems();
-            ddlDeConfigOE.DataBind();
-
-            //para a audio vocal
-            ddlEaudioVocalOD.DataSource = DropdownData_LaudoAudioVocal.GetItems();
-            ddlEaudioVocalOD.DataBind();
-
-            ddlEaudioVocalOE.DataSource = DropdownData_LaudoAudioVocal.GetItems();
-            ddlEaudioVocalOE.DataBind();
+            
         }
 
         private void CarregaLaudosAutores()
@@ -520,79 +469,6 @@ namespace SISTEMASLUASAUDE_APLICACAO
             dadosRel.idadePaciente = Session["ssnIdadePaciente"].ToString();
             dadosRel.dataNascimento = Session["ssnDataNascimento"].ToString();
 
-            dadosRel.monOD = ddlIPRFmonOd.Text;
-            dadosRel.monOE = ddlIPRFmonOe.Text;
-            dadosRel.dissOD = ddlIPRFdisOd.Text;
-            dadosRel.dissOE = ddlIPRFdisOe.Text;
-            var srtod = txtSRTOD.Text + " dBNA";
-            if (!String.IsNullOrEmpty(txtSRTOD.Text))
-            {
-                dadosRel.srtOD = srtod;
-            }
-            else
-            {
-                dadosRel.srtOD = txtSRTOD.Text;
-            }
-            var srtoe = txtSRTOE.Text + " dBNA";
-            if (!String.IsNullOrEmpty(txtSRTOE.Text))
-            {
-                dadosRel.srtOE = srtoe;
-            }
-            else
-            {
-                dadosRel.srtOE = txtSRTOE.Text;
-            }
-            var sdtod = txtSDTOD.Text + " dBNA";
-            if (!String.IsNullOrEmpty(txtSDTOD.Text))
-            {
-                dadosRel.sdtOD = sdtod;
-            }
-            else
-            {
-                dadosRel.sdtOD = txtSDTOD.Text;
-            }
-            var sdtoe = txtSDTOE.Text + " dBNA";
-            if (!String.IsNullOrEmpty(txtSDTOE.Text))
-            {
-                dadosRel.sdtOE = sdtoe;
-            }
-            else
-            {
-                dadosRel.sdtOE = txtSDTOE.Text;
-            }
-            var mediaod = mEDIAodTextBox.Text + " dBNA";
-            if (!String.IsNullOrEmpty(mEDIAodTextBox.Text))
-            {
-                dadosRel.mediaOD = mediaod;
-            }
-            else
-            {
-                dadosRel.mediaOD = mEDIAodTextBox.Text;
-            }
-            var mediaoe = mEDIAoeTextBox.Text + " dBNA";
-            if (!String.IsNullOrEmpty(mEDIAoeTextBox.Text))
-            {
-                dadosRel.mediaOE = mediaoe;
-            }
-            else
-            {
-                dadosRel.mediaOE = mEDIAoeTextBox.Text;
-            }
-
-           
-
-            dadosRel.mascaramento = txtMascaramentoComent.Text;
-
-            dadosRel.curvaAudioNormalOD = ddlAudicaoNormalOD.Text;
-            dadosRel.curvaAudioNormalOE = ddlAudicaoNormalOE.Text;
-            dadosRel.doTipoOD = ddlCurvaTipoOD.Text;
-            dadosRel.doTipoOE = ddlCurvaTipoOE.Text;
-            dadosRel.deGrauOD = ddlDeGrauOD.Text;
-            dadosRel.deGrauOE = ddlDeGrauOE.Text;
-            dadosRel.deConfigOD = ddlDeConfigOD.Text;
-            dadosRel.deConfigOE = ddlDeConfigOE.Text;
-            dadosRel.deAudioVocalOD = ddlEaudioVocalOD.Text;
-            dadosRel.deAudioVocalOE = ddlEaudioVocalOE.Text;
 
             dadosRel.autoresLaudo = ddlLaudos.Text;
 
@@ -600,7 +476,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
             var examinadorCompleto = Session["ssnUsuario"].ToString() + ". " + Session["ssnConselhoRegional"].ToString() + ".";
             dadosRel.examidador = examinadorCompleto;
-            dadosRel.audiometro = txtAudiometro.Text;
+            //dadosRel.audiometro = txtAudiometro.Text;*********
             dadosRel.dataCalibracao = txtDataCalibracao.Text;
 
             // Configure as propriedades da classe com os dados da sessão
