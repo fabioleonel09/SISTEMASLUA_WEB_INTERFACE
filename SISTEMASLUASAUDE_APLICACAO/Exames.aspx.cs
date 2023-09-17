@@ -49,6 +49,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
             Response.Redirect("Impedanciometria.aspx");
         }
 
+        protected void btnTesteFuncaoTubaria_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("TesteFuncaoTubaria.aspx");
+        }
+
         private void CarregaProfissional()
         {
             if (!String.IsNullOrEmpty(Convert.ToString(Session["ssnUsuario"])) && !String.IsNullOrEmpty(Convert.ToString(Session["ssnConselhoRegional"])))

@@ -57,6 +57,12 @@
             line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
         }
 
+        .cantos-arredondados-alinhamento-center {
+            border-radius: 10px; /* Valor do raio dos cantos arredondados */
+            text-align: center; /* Centraliza horizontalmente */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
+        }
+
         .btn-Agenda {
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
             border-radius: 10px; /* Valor do raio dos cantos arredondados */
@@ -152,9 +158,9 @@
             <asp:Table ID="tbAplicativosPrimeiro" runat="server" Width="100%">
                 <asp:TableHeaderRow Width="100%">
                     <asp:TableHeaderCell Width="20%" Height="50px"></asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Prontuário</asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Exames</asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Conservação Auditiva</asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18" CssClass="cantos-arredondados-alinhamento-center">Prontuário</asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18" CssClass="cantos-arredondados-alinhamento-center">Exames</asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18" CssClass="cantos-arredondados-alinhamento-center">Conservação Auditiva</asp:TableHeaderCell>
                     <asp:TableHeaderCell Width="20%" Height="50px"></asp:TableHeaderCell>
                 </asp:TableHeaderRow>
                 <asp:TableRow Width="100%">
@@ -176,11 +182,11 @@
             <br />
             <asp:Table ID="tbAplicativosSegundo" runat="server" Width="100%">
                 <asp:TableHeaderRow Width="100%">
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Agenda</asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Recepção</asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Faturamento</asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Estoque</asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Receituário</asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18" CssClass="cantos-arredondados-alinhamento-center">Agenda</asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18" CssClass="cantos-arredondados-alinhamento-center">Recepção</asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18" CssClass="cantos-arredondados-alinhamento-center">Faturamento</asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18" CssClass="cantos-arredondados-alinhamento-center">Estoque</asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18" CssClass="cantos-arredondados-alinhamento-center">Receituário</asp:TableHeaderCell>
                 </asp:TableHeaderRow>
                 <asp:TableRow Width="100%">
                     <asp:TableCell Width="20%" Height="150px">

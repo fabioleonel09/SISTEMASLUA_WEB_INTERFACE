@@ -53,6 +53,12 @@
             font-family: "Arial", arial; /* Especifica a fonte personalizada */
         }
 
+        .cantos-arredondados-alinhamento-center {
+            border-radius: 10px; /* Valor do raio dos cantos arredondados */
+            text-align: center; /* Centraliza horizontalmente */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
+        }
+
         .btn-Audio-Convencional {
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
             border-radius: 10px; /* Valor do raio dos cantos arredondados */
@@ -122,6 +128,16 @@
             background-position: center center;
             background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
         }
+
+        .btn-Teste-Funcao-Tubaria {
+            cursor: pointer; /* Altera o cursor para a forma de uma mão */
+            border-radius: 10px; /* Valor do raio dos cantos arredondados */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
+            background-image: url('./Images/sondaImpedancio.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
+        }
     </style>
 </head>
 <body class="custom-font" style="background-color: lightslategray;">
@@ -138,13 +154,14 @@
             <div style="width: 100%; background-color: white; text-align: center; vertical-align: bottom;">
                 <asp:Label ID="lblTituloCabecalho" runat="server" Text="Audiometria" Font-Bold="true" Font-Size="22" ></asp:Label>
             </div>
+            <br />
             <asp:Table ID="tbAplicativosExames" runat="server" Width="100%">
                 <asp:TableHeaderRow Width="100%">
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Convencional</asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Completa</asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Comportamental</asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Campo Livre</asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Campo Livre Convencional</asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18" CssClass="cantos-arredondados-alinhamento-center">Convencional</asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18" CssClass="cantos-arredondados-alinhamento-center">Completa</asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18" CssClass="cantos-arredondados-alinhamento-center">Comportamental</asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18" CssClass="cantos-arredondados-alinhamento-center">Campo Livre</asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18" CssClass="cantos-arredondados-alinhamento-center">Campo Livre Convencional</asp:TableHeaderCell>
                 </asp:TableHeaderRow>
                 <asp:TableRow Width="100%">
                     <asp:TableCell Width="20%" Height="150px">
@@ -166,19 +183,19 @@
             </asp:Table>
             <asp:Table ID="tbAplicativosExamesCont" runat="server" Width="100%">
                 <asp:TableHeaderRow Width="100%">
+                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18" CssClass="cantos-arredondados-alinhamento-center">Altas Frequências</asp:TableHeaderCell>
                     <asp:TableHeaderCell Width="20%" Height="50px" ></asp:TableHeaderCell>
                     <asp:TableHeaderCell Width="20%" Height="50px" ></asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Altas Frequências</asp:TableHeaderCell>
                     <asp:TableHeaderCell Width="20%" Height="50px" ></asp:TableHeaderCell>
                     <asp:TableHeaderCell Width="20%" Height="50px" ></asp:TableHeaderCell>
                 </asp:TableHeaderRow>
                 <asp:TableRow Width="100%">
                     <asp:TableCell Width="20%" Height="150px">
-                    </asp:TableCell>
-                    <asp:TableCell Width="20%" Height="150px">
-                    </asp:TableCell>
-                    <asp:TableCell Width="20%" Height="150px">
                         <asp:Button ID="btnAltasFrequencias" runat="server" Width="100%" Height="100%" OnClick="btnAltasFrequencias_Click" CssClass="btn-Altas-frequencias" />
+                    </asp:TableCell>
+                    <asp:TableCell Width="20%" Height="150px">
+                    </asp:TableCell>
+                    <asp:TableCell Width="20%" Height="150px">
                     </asp:TableCell>
                     <asp:TableCell Width="20%" Height="150px">
                     </asp:TableCell>
@@ -190,21 +207,23 @@
             <div style="width: 100%; background-color: white; text-align: center; vertical-align: bottom;">
                 <asp:Label ID="lblTituloImpedanciometria" runat="server" Text="Timpanometria e Pesquisa dos Reflexos do Músculo do Estapédio" Font-Bold="true" Font-Size="22" ></asp:Label>
             </div>
+            <br />
             <asp:Table ID="tbImpedanciometria" runat="server" Width="100%">
                 <asp:TableHeaderRow Width="100%">
+                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18" CssClass="cantos-arredondados-alinhamento-center">Impedanciometria</asp:TableHeaderCell>
+                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18" CssClass="cantos-arredondados-alinhamento-center">Teste de Função Tubária</asp:TableHeaderCell>
                     <asp:TableHeaderCell Width="20%" Height="50px" ></asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" ></asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="20%" Height="50px" BackColor="#cccccc" Font-Bold="true" Font-Size="18">Impedanciometria</asp:TableHeaderCell>
                     <asp:TableHeaderCell Width="20%" Height="50px" ></asp:TableHeaderCell>
                     <asp:TableHeaderCell Width="20%" Height="50px" ></asp:TableHeaderCell>
                 </asp:TableHeaderRow>
                 <asp:TableRow Width="100%">
                     <asp:TableCell Width="20%" Height="150px">
-                    </asp:TableCell>
-                    <asp:TableCell Width="20%" Height="150px">
-                    </asp:TableCell>
-                    <asp:TableCell Width="20%" Height="150px">
                         <asp:Button ID="btnImpedanciometia" runat="server" Width="100%" Height="100%" OnClick="btnImpedanciometria_Click" CssClass="btn-Impepanciometria" />
+                    </asp:TableCell>
+                    <asp:TableCell Width="20%" Height="150px">
+                        <asp:Button ID="btnTesteFuncaoTubaria" runat="server" Width="100%" Height="100%" OnClick="btnTesteFuncaoTubaria_Click" CssClass="btn-Teste-Funcao-Tubaria" />
+                    </asp:TableCell>
+                    <asp:TableCell Width="20%" Height="150px">
                     </asp:TableCell>
                     <asp:TableCell Width="20%" Height="150px">
                     </asp:TableCell>
