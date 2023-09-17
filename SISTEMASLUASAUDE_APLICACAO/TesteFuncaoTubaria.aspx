@@ -477,13 +477,12 @@
                                     </div>
                                 </div>
                                 <br />
+                                <div id="btnPlotaTodos" runat="server" style="text-align: center;">
+                                    <asp:Button ID="btnPlotaGeral" runat="server" Text="Plotar Avaliações" BorderColor="#4B0082" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnPlotarGeral_Click" />
+                                </div>
                             </asp:TableCell>
                         </asp:TableRow>
                     </asp:Table>
-                    <br />
-                    <div id="btnPlotaTodos" runat="server" style="text-align: center;">
-                        <asp:Button ID="btnPlotaGeral" runat="server" Text="Plotar Avaliações" BorderColor="#4B0082" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnPlotarGeral_Click" />
-                    </div>
                     <br />
                     <asp:Table ID="tbOutrosDados" runat="server" Width="100%" BorderColor="#cccccc" BorderWidth="2px" BorderStyle="Solid">
                         <asp:TableHeaderRow Width="100%">
