@@ -103,6 +103,14 @@ namespace SISTEMASLUASAUDE_APLICACAO
                 serA.Points.AddXY(200, 0);
                 serA.Points.AddXY(valorA, valorB);
 
+                DataPoint primeiroTeste = new DataPoint();
+                decimal pontoB = valorB + 1/5;
+                primeiroTeste.SetValueXY(valorA, pontoB);
+                primeiroTeste.Label = "1a";
+                primeiroTeste.LabelForeColor = Color.White;
+                primeiroTeste.LabelBackColor = Color.Red;
+                serA.Points.Add(primeiroTeste);
+
                 serA.IsVisibleInLegend = false;
                 serA.MarkerStyle = MarkerStyle.None;
                 serA.BorderColor = Color.Transparent;
@@ -211,6 +219,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
                 }
             }
 
+            //segunda avaliação
             if (!String.IsNullOrEmpty(txtPressaoSegDeglutOD.Text) || !String.IsNullOrEmpty(txtComplSegDeglutOD.Text))
             {
                 txtFechaSegDeglutOD.Visible = true;
@@ -232,6 +241,14 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                 serE.Points.AddXY(200, 0);
                 serE.Points.AddXY(valorD, valorE);
+
+                DataPoint segundoTeste = new DataPoint();
+                decimal pontoB = valorE + 1 / 5;
+                segundoTeste.SetValueXY(valorD, pontoB);
+                segundoTeste.Label = "2a";
+                segundoTeste.LabelForeColor = Color.White;
+                segundoTeste.LabelBackColor = Color.Red;
+                serE.Points.Add(segundoTeste);
 
                 serE.IsVisibleInLegend = false;
                 serE.MarkerStyle = MarkerStyle.None;
@@ -341,6 +358,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
                 }
             }
 
+            //terceira avaliação
             if (!String.IsNullOrEmpty(txtPressaoTerDeglutOD.Text) || !String.IsNullOrEmpty(txtComplTerDeglutOD.Text))
             {
                 txtFechaTerDeglutOD.Visible = true;
@@ -362,6 +380,14 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                 serI.Points.AddXY(200, 0);
                 serI.Points.AddXY(valorG, valorH);
+
+                DataPoint terceiroTeste = new DataPoint();
+                decimal pontoB = valorH + 1 / 5;
+                terceiroTeste.SetValueXY(valorG, pontoB);
+                terceiroTeste.Label = "3a";
+                terceiroTeste.LabelForeColor = Color.White;
+                terceiroTeste.LabelBackColor = Color.Red;
+                serI.Points.Add(terceiroTeste);
 
                 serI.IsVisibleInLegend = false;
                 serI.MarkerStyle = MarkerStyle.None;
@@ -478,6 +504,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         private void PlotaDadosTimpanogramaOE()
         {
+            //primeira avaliação
             if (!String.IsNullOrEmpty(pressaooeTextBox.Text) || !String.IsNullOrEmpty(comploeTextBox.Text))
             {
                 fechaoeTextBox.Visible = true;
@@ -499,6 +526,14 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                 serA.Points.AddXY(200, 0);
                 serA.Points.AddXY(valorA, valorB);
+
+                DataPoint primeiroTeste = new DataPoint();
+                decimal pontoB = valorB + 1 / 5;
+                primeiroTeste.SetValueXY(valorA, pontoB);
+                primeiroTeste.Label = "1a";
+                primeiroTeste.LabelForeColor = Color.White;
+                primeiroTeste.LabelBackColor = Color.Blue;
+                serA.Points.Add(primeiroTeste);
 
                 serA.IsVisibleInLegend = false;
                 serA.MarkerStyle = MarkerStyle.None;
@@ -608,6 +643,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
                 }
             }
 
+            //segundo teste
             if (!String.IsNullOrEmpty(txtPressaoSegDeglutOE.Text) || !String.IsNullOrEmpty(txtComplSegDeglutOE.Text))
             {
                 txtFechaSegDeglutOE.Visible = true;
@@ -629,6 +665,14 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                 serE.Points.AddXY(200, 0);
                 serE.Points.AddXY(valorD, valorE);
+
+                DataPoint segundoTeste = new DataPoint();
+                decimal pontoB = valorE + 1 / 5;
+                segundoTeste.SetValueXY(valorD, pontoB);
+                segundoTeste.Label = "2a";
+                segundoTeste.LabelForeColor = Color.White;
+                segundoTeste.LabelBackColor = Color.Blue;
+                serE.Points.Add(segundoTeste);
 
                 serE.IsVisibleInLegend = false;
                 serE.MarkerStyle = MarkerStyle.None;
@@ -738,6 +782,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
                 }
             }
 
+            //terceiro teste
             if (!String.IsNullOrEmpty(txtPressaoTerDeglutOE.Text) || !String.IsNullOrEmpty(txtComplTerDeglutOE.Text))
             {
                 txtFechaTercDeglutOE.Visible = true;
@@ -759,6 +804,14 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                 serI.Points.AddXY(200, 0);
                 serI.Points.AddXY(valorG, valorH);
+
+                DataPoint terceiroTeste = new DataPoint();
+                decimal pontoB = valorH + 1 / 5;
+                terceiroTeste.SetValueXY(valorG, pontoB);
+                terceiroTeste.Label = "3a";
+                terceiroTeste.LabelForeColor = Color.White;
+                terceiroTeste.LabelBackColor = Color.Blue;
+                serI.Points.Add(terceiroTeste);
 
                 serI.IsVisibleInLegend = false;
                 serI.MarkerStyle = MarkerStyle.None;
