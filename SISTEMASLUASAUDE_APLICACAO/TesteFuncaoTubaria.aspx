@@ -335,19 +335,86 @@
                                     </div>
                                 </div>
                                 <br />
-                                <div id="btnPlotaTodos" runat="server" style="text-align: center;">
-                                    <asp:Button ID="btnPlotaGeral" runat="server" Text="Plotar Primeira Avaliação" BorderColor="#4B0082" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnPlotarGeral_Click" />
+                                <div class="container">
+                                    <div class="box">
+                                        <asp:Panel ID="pnlDadosGeraisSegundaOD" runat="server" Width="100%" BackColor="MistyRose" BorderColor="Red" BorderStyle="Solid" BorderWidth="1">
+                                            <asp:Label ID="lblSegundaDegluticaoOD" runat="server" Text="Segunda Deglutição" ForeColor="Red" Font-Bold="true" Font-Size="14"></asp:Label>
+                                            <asp:Table ID="tbSegundaDegluticaoOD" runat="server" Width="100%">
+                                                <asp:TableHeaderRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
+                                                    <asp:TableHeaderCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Pressão (daPa):</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:TextBox ID="txtPressaoSegDeglutOD" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        </asp:TextBox>
+                                                    </asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                </asp:TableHeaderRow>
+                                                <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
+                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Complacência (ml):</asp:TableCell>
+                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:TextBox ID="txtComplSegDeglutOD" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        </asp:TextBox>
+                                                    </asp:TableCell>
+                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                    </asp:TableCell>
+                                                </asp:TableRow>
+                                                <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
+                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Curva fecha em (daPa):</asp:TableCell>
+                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:TextBox ID="txtFechaSegDeglutOD" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        </asp:TextBox>
+                                                    </asp:TableCell>
+                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:CheckBox ID="ckCurvaBsegDeglutOD" runat="server" Text="curva tipo B" />
+                                                    </asp:TableCell>
+                                                </asp:TableRow>
+                                            </asp:Table>
+                                        </asp:Panel>
+                                    </div>
+                                    <div class="box">
+                                        <asp:Panel ID="pnlSegudaDegluticaoOE" runat="server" Width="100%" BackColor="AliceBlue" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1">
+                                            <asp:Label ID="lblSegDeglutOE" runat="server" Text="Segunda Deglutição" ForeColor="Blue" Font-Bold="true" Font-Size="14"></asp:Label>
+                                            <asp:Table ID="tbSegDeglutOE" runat="server" Width="100%">
+                                                <asp:TableHeaderRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
+                                                    <asp:TableHeaderCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Pressão (daPa):</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:TextBox ID="txtPressaoSegDeglutOE" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        </asp:TextBox>
+                                                    </asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                </asp:TableHeaderRow>
+                                                <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
+                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Complacência (ml):</asp:TableCell>
+                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:TextBox ID="txtComplSegDeglutOE" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        </asp:TextBox>
+                                                    </asp:TableCell>
+                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                    </asp:TableCell>
+                                                </asp:TableRow>
+                                                <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
+                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Curva fecha em (daPa):</asp:TableCell>
+                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:TextBox ID="txtFechaSegDeglutOE" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        </asp:TextBox>
+                                                    </asp:TableCell>
+                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:CheckBox ID="ckCruvaBsegDeglutOE" runat="server" Text="curva tipo B" />
+                                                    </asp:TableCell>
+                                                </asp:TableRow>
+                                            </asp:Table>
+                                        </asp:Panel>
+                                    </div>
                                 </div>
                                 <br />
                                 <div class="container">
                                     <div class="box">
-                                        <asp:Panel ID="Panel1" runat="server" Width="100%" BackColor="MistyRose" BorderColor="Red" BorderStyle="Solid" BorderWidth="1">
-                                            <asp:Label ID="Label1" runat="server" Text="Segunda Deglutição" ForeColor="Red" Font-Bold="true" Font-Size="14"></asp:Label>
-                                            <asp:Table ID="Table1" runat="server" Width="100%">
+                                        <asp:Panel ID="pnlTerceriaDegluticao" runat="server" Width="100%" BackColor="MistyRose" BorderColor="Red" BorderStyle="Solid" BorderWidth="1">
+                                            <asp:Label ID="lblTerceiraDegluticao" runat="server" Text="Terceira Deglutição" ForeColor="Red" Font-Bold="true" Font-Size="14"></asp:Label>
+                                            <asp:Table ID="tbTerceiraDegluticao" runat="server" Width="100%">
                                                 <asp:TableHeaderRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
                                                     <asp:TableHeaderCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Pressão (daPa):</asp:TableHeaderCell>
                                                     <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="TextBox1" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        <asp:TextBox ID="txtPressaoTerDeglutOD" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
                                                         </asp:TextBox>
                                                     </asp:TableHeaderCell>
                                                     <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
@@ -355,7 +422,7 @@
                                                 <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
                                                     <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Complacência (ml):</asp:TableCell>
                                                     <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="TextBox2" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        <asp:TextBox ID="txtComplTerDeglutOD" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
                                                         </asp:TextBox>
                                                     </asp:TableCell>
                                                     <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
@@ -364,24 +431,24 @@
                                                 <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
                                                     <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Curva fecha em (daPa):</asp:TableCell>
                                                     <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="TextBox3" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        <asp:TextBox ID="txtFechaTerDeglutOD" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
                                                         </asp:TextBox>
                                                     </asp:TableCell>
                                                     <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="CheckBox1" runat="server" Text="curva tipo B" />
+                                                        <asp:CheckBox ID="ckCurvaBterDeglutOD" runat="server" Text="curva tipo B" />
                                                     </asp:TableCell>
                                                 </asp:TableRow>
                                             </asp:Table>
                                         </asp:Panel>
                                     </div>
                                     <div class="box">
-                                        <asp:Panel ID="Panel2" runat="server" Width="100%" BackColor="AliceBlue" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1">
-                                            <asp:Label ID="Label2" runat="server" Text="Segunda Deglutição" ForeColor="Blue" Font-Bold="true" Font-Size="14"></asp:Label>
-                                            <asp:Table ID="Table3" runat="server" Width="100%">
+                                        <asp:Panel ID="pnlTerceiraDegluticaoOE" runat="server" Width="100%" BackColor="AliceBlue" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1">
+                                            <asp:Label ID="lblTerceiraDegluticaoOE" runat="server" Text="Terceira Deglutição" ForeColor="Blue" Font-Bold="true" Font-Size="14"></asp:Label>
+                                            <asp:Table ID="tbTerceriaDegluticaoOE" runat="server" Width="100%">
                                                 <asp:TableHeaderRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
                                                     <asp:TableHeaderCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Pressão (daPa):</asp:TableHeaderCell>
                                                     <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="TextBox4" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        <asp:TextBox ID="txtPressaoTerDeglutOE" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
                                                         </asp:TextBox>
                                                     </asp:TableHeaderCell>
                                                     <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
@@ -389,7 +456,7 @@
                                                 <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
                                                     <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Complacência (ml):</asp:TableCell>
                                                     <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="TextBox5" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        <asp:TextBox ID="txtComplTerDeglutOE" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
                                                         </asp:TextBox>
                                                     </asp:TableCell>
                                                     <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
@@ -398,100 +465,25 @@
                                                 <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
                                                     <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Curva fecha em (daPa):</asp:TableCell>
                                                     <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="TextBox6" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
+                                                        <asp:TextBox ID="txtFechaTercDeglutOE" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
                                                         </asp:TextBox>
                                                     </asp:TableCell>
                                                     <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="CheckBox2" runat="server" Text="curva tipo B" />
+                                                        <asp:CheckBox ID="ckCurvaBterDeglutOE" runat="server" Text="curva tipo B" />
                                                     </asp:TableCell>
                                                 </asp:TableRow>
                                             </asp:Table>
                                         </asp:Panel>
                                     </div>
-                                </div>
-                                <br />
-                                <div id="Div1" runat="server" style="text-align: center;">
-                                    <asp:Button ID="btnPlotarSegundaAvaliacao" runat="server" Text="Plotar Segunda Avaliação" BorderColor="#4B0082" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnPlotarSegundaAvaliacao_Click" />
-                                </div>
-                                <br />
-                                <div class="container">
-                                    <div class="box">
-                                        <asp:Panel ID="Panel3" runat="server" Width="100%" BackColor="MistyRose" BorderColor="Red" BorderStyle="Solid" BorderWidth="1">
-                                            <asp:Label ID="Label3" runat="server" Text="Terceira Deglutição" ForeColor="Red" Font-Bold="true" Font-Size="14"></asp:Label>
-                                            <asp:Table ID="Table4" runat="server" Width="100%">
-                                                <asp:TableHeaderRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableHeaderCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Pressão (daPa):</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="TextBox7" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:TextBox>
-                                                    </asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                </asp:TableHeaderRow>
-                                                <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Complacência (ml):</asp:TableCell>
-                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="TextBox8" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:TextBox>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Red" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Curva fecha em (daPa):</asp:TableCell>
-                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="TextBox9" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:TextBox>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="CheckBox3" runat="server" Text="curva tipo B" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                            </asp:Table>
-                                        </asp:Panel>
-                                    </div>
-                                    <div class="box">
-                                        <asp:Panel ID="Panel4" runat="server" Width="100%" BackColor="AliceBlue" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1">
-                                            <asp:Label ID="Label4" runat="server" Text="Terceira Deglutição" ForeColor="Blue" Font-Bold="true" Font-Size="14"></asp:Label>
-                                            <asp:Table ID="Table5" runat="server" Width="100%">
-                                                <asp:TableHeaderRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableHeaderCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Pressão (daPa):</asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="TextBox10" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:TextBox>
-                                                    </asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                </asp:TableHeaderRow>
-                                                <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Complacência (ml):</asp:TableCell>
-                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="TextBox11" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:TextBox>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                                <asp:TableRow Width="100%" ForeColor="Blue" Font-Bold="true" Font-Size="14">
-                                                    <asp:TableCell Width="34%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">Curva fecha em (daPa):</asp:TableCell>
-                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:TextBox ID="TextBox12" runat="server" onkeypress="return isNumberKey(event)" onkeyup="validateInput(this)" Height="50px" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento">
-                                                        </asp:TextBox>
-                                                    </asp:TableCell>
-                                                    <asp:TableCell Width="33%" Height="50px" BorderColor="Gray" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:CheckBox ID="CheckBox4" runat="server" Text="curva tipo B" />
-                                                    </asp:TableCell>
-                                                </asp:TableRow>
-                                            </asp:Table>
-                                        </asp:Panel>
-                                    </div>
-                                </div>
-                                <br />
-                                <div id="Div2" runat="server" style="text-align: center;">
-                                    <asp:Button ID="btnPlotarTerceiraAvaliacao" runat="server" Text="Plotar Terceira Avaliação" BorderColor="#4B0082" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnPlotarTerceiraAvaliacao_Click" />
                                 </div>
                                 <br />
                             </asp:TableCell>
                         </asp:TableRow>
                     </asp:Table>
+                    <br />
+                    <div id="btnPlotaTodos" runat="server" style="text-align: center;">
+                        <asp:Button ID="btnPlotaGeral" runat="server" Text="Plotar Avaliações" BorderColor="#4B0082" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnPlotarGeral_Click" />
+                    </div>
                     <br />
                     <asp:Table ID="tbOutrosDados" runat="server" Width="100%" BorderColor="#cccccc" BorderWidth="2px" BorderStyle="Solid">
                         <asp:TableHeaderRow Width="100%">
