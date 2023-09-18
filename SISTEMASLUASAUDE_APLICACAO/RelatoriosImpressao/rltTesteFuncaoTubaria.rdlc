@@ -4,11 +4,11 @@
     <ReportItems>
       <Image Name="Image1">
         <Source>External</Source>
-        <Value>file:////C:\users/public/documents/chartODAudioClinica.png</Value>
+        <Value>file:////C:\users/public/documents/chartODimp.png</Value>
         <Sizing>FitProportional</Sizing>
         <Top>6.08947cm</Top>
         <Left>2.88166cm</Left>
-        <Height>6.68584cm</Height>
+        <Height>6.18313cm</Height>
         <Width>7.47154cm</Width>
         <Style>
           <Border>
@@ -18,11 +18,11 @@
       </Image>
       <Image Name="Image2">
         <Source>External</Source>
-        <Value>file:////C:\users/public/documents/chartOEAudioClinica.png</Value>
+        <Value>file:////C:\users/public/documents/chartOEimp.png</Value>
         <Sizing>FitProportional</Sizing>
         <Top>6.08947cm</Top>
         <Left>10.50067cm</Left>
-        <Height>6.68584cm</Height>
+        <Height>6.18313cm</Height>
         <Width>7.47154cm</Width>
         <ZIndex>1</ZIndex>
         <Style>

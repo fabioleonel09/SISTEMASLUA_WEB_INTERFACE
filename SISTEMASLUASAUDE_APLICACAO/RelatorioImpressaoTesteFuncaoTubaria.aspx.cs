@@ -19,7 +19,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
             DataSet dataSet = RelatorioDataSource.GetDadosRelatorio();
 
             // Configure o ReportViewer
-            rpvRelatorioImpressaoTesteFuncaoTubaria.LocalReport.ReportPath = Server.MapPath("~/RelatoriosImpressao/rltImpedanciometria.rdlc"); // Substitua pelo caminho do seu arquivo .rdlc
+            rpvRelatorioImpressaoTesteFuncaoTubaria.LocalReport.ReportPath = Server.MapPath("~/RelatoriosImpressao/rltTesteFuncaoTubaria.rdlc"); // Substitua pelo caminho do seu arquivo .rdlc
             ReportDataSource reportDataSource = new ReportDataSource("DataSet1", dataSet.Tables["DadosRelatorioAudio"]);
             rpvRelatorioImpressaoTesteFuncaoTubaria.LocalReport.DataSources.Add(reportDataSource);
 

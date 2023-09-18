@@ -62,7 +62,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         protected void btnImprimir_Click(object sender, EventArgs e)
         {
-            ImprimeAudiograma();
+            ImprimeTesteFuncaoTubaria();
         }
 
         private void CarregaAudiogramaClinicoOD()
@@ -170,6 +170,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serD.Points.AddXY(valorA, valorB);
                         serD.Points.AddXY(-200000, 0);
+                        primeiroTeste.SetValueXY(-550, pontoB);
+                        primeiroTeste.Label = "1a";
+                        primeiroTeste.LabelForeColor = Color.White;
+                        primeiroTeste.LabelBackColor = Color.Red;
+                        serD.Points.Add(primeiroTeste);
 
                         serD.IsVisibleInLegend = false;
                         serD.MarkerStyle = MarkerStyle.None;
@@ -209,6 +214,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serD.Points.AddXY(valorA, valorB);
                         serD.Points.AddXY(-200000, 0);
+                        primeiroTeste.SetValueXY(-550, pontoB);
+                        primeiroTeste.Label = "1a";
+                        primeiroTeste.LabelForeColor = Color.White;
+                        primeiroTeste.LabelBackColor = Color.Red;
+                        serD.Points.Add(primeiroTeste);
 
                         serD.IsVisibleInLegend = false;
                         serD.MarkerStyle = MarkerStyle.None;
@@ -291,6 +301,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serG.Points.AddXY(200, 0);
                         serG.Points.AddXY(valorD, valorE);
+                        segundoTeste.SetValueXY(valorD, pontoB);
+                        segundoTeste.Label = "2a";
+                        segundoTeste.LabelForeColor = Color.White;
+                        segundoTeste.LabelBackColor = Color.Red;
+                        serG.Points.Add(segundoTeste);
 
                         serG.IsVisibleInLegend = false;
                         serG.MarkerStyle = MarkerStyle.None;
@@ -309,6 +324,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serH.Points.AddXY(valorD, valorE);
                         serH.Points.AddXY(-200000, 0);
+                        segundoTeste.SetValueXY(-580, pontoB);
+                        segundoTeste.Label = "2a";
+                        segundoTeste.LabelForeColor = Color.White;
+                        segundoTeste.LabelBackColor = Color.Red;
+                        serH.Points.Add(segundoTeste);
 
                         serH.IsVisibleInLegend = false;
                         serH.MarkerStyle = MarkerStyle.None;
@@ -330,6 +350,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serG.Points.AddXY(200, 0);
                         serG.Points.AddXY(valorD, valorE);
+                        segundoTeste.SetValueXY(valorD, pontoB);
+                        segundoTeste.Label = "2a";
+                        segundoTeste.LabelForeColor = Color.White;
+                        segundoTeste.LabelBackColor = Color.Red;
+                        serG.Points.Add(segundoTeste);
 
                         serG.IsVisibleInLegend = false;
                         serG.MarkerStyle = MarkerStyle.None;
@@ -348,6 +373,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serH.Points.AddXY(valorD, valorE);
                         serH.Points.AddXY(-200000, 0);
+                        segundoTeste.SetValueXY(-580, pontoB);
+                        segundoTeste.Label = "2a";
+                        segundoTeste.LabelForeColor = Color.White;
+                        segundoTeste.LabelBackColor = Color.Red;
+                        serH.Points.Add(segundoTeste);
 
                         serH.IsVisibleInLegend = false;
                         serH.MarkerStyle = MarkerStyle.None;
@@ -430,6 +460,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serK.Points.AddXY(200, 0);
                         serK.Points.AddXY(valorG, valorH);
+                        terceiroTeste.SetValueXY(valorG, pontoB);
+                        terceiroTeste.Label = "3a";
+                        terceiroTeste.LabelForeColor = Color.White;
+                        terceiroTeste.LabelBackColor = Color.Red;
+                        serK.Points.Add(terceiroTeste);
 
                         serK.IsVisibleInLegend = false;
                         serK.MarkerStyle = MarkerStyle.None;
@@ -448,6 +483,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serL.Points.AddXY(valorG, valorH);
                         serL.Points.AddXY(-200000, 0);
+                        terceiroTeste.SetValueXY(-580, pontoB);
+                        terceiroTeste.Label = "3a";
+                        terceiroTeste.LabelForeColor = Color.White;
+                        terceiroTeste.LabelBackColor = Color.Red;
+                        serL.Points.Add(terceiroTeste);
 
                         serL.IsVisibleInLegend = false;
                         serL.MarkerStyle = MarkerStyle.None;
@@ -469,6 +509,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serK.Points.AddXY(200, 0);
                         serK.Points.AddXY(valorG, valorH);
+                        terceiroTeste.SetValueXY(valorG, pontoB);
+                        terceiroTeste.Label = "3a";
+                        terceiroTeste.LabelForeColor = Color.White;
+                        terceiroTeste.LabelBackColor = Color.Red;
+                        serK.Points.Add(terceiroTeste);
 
                         serK.IsVisibleInLegend = false;
                         serK.MarkerStyle = MarkerStyle.None;
@@ -487,6 +532,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serL.Points.AddXY(valorG, valorH);
                         serL.Points.AddXY(-200000, 0);
+                        terceiroTeste.SetValueXY(-580, pontoB);
+                        terceiroTeste.Label = "3a";
+                        terceiroTeste.LabelForeColor = Color.White;
+                        terceiroTeste.LabelBackColor = Color.Red;
+                        serL.Points.Add(terceiroTeste);
 
                         serL.IsVisibleInLegend = false;
                         serL.MarkerStyle = MarkerStyle.None;
@@ -577,6 +627,12 @@ namespace SISTEMASLUASAUDE_APLICACAO
                         serC.Points.AddXY(200, 0);
                         serC.Points.AddXY(valorA, valorB);
 
+                        primeiroTeste.SetValueXY(valorA, pontoB);
+                        primeiroTeste.Label = "1a";
+                        primeiroTeste.LabelForeColor = Color.White;
+                        primeiroTeste.LabelBackColor = Color.Blue;
+                        serC.Points.Add(primeiroTeste);
+
                         serC.IsVisibleInLegend = false;
                         serC.MarkerStyle = MarkerStyle.None;
                         serC.BorderColor = Color.Transparent;
@@ -594,6 +650,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serD.Points.AddXY(valorA, valorB);
                         serD.Points.AddXY(-200000, 0);
+                        primeiroTeste.SetValueXY(-580, pontoB);
+                        primeiroTeste.Label = "1a";
+                        primeiroTeste.LabelForeColor = Color.White;
+                        primeiroTeste.LabelBackColor = Color.Blue;
+                        serD.Points.Add(primeiroTeste);
 
                         serD.IsVisibleInLegend = false;
                         serD.MarkerStyle = MarkerStyle.None;
@@ -616,6 +677,12 @@ namespace SISTEMASLUASAUDE_APLICACAO
                         serC.Points.AddXY(200, 0);
                         serC.Points.AddXY(valorA, valorB);
 
+                        primeiroTeste.SetValueXY(valorA, pontoB);
+                        primeiroTeste.Label = "1a";
+                        primeiroTeste.LabelForeColor = Color.White;
+                        primeiroTeste.LabelBackColor = Color.Blue;
+                        serC.Points.Add(primeiroTeste);
+
                         serC.IsVisibleInLegend = false;
                         serC.MarkerStyle = MarkerStyle.None;
                         serC.BorderColor = Color.Transparent;
@@ -633,6 +700,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serD.Points.AddXY(valorA, valorB);
                         serD.Points.AddXY(-200000, 0);
+                        primeiroTeste.SetValueXY(-580, pontoB);
+                        primeiroTeste.Label = "1a";
+                        primeiroTeste.LabelForeColor = Color.White;
+                        primeiroTeste.LabelBackColor = Color.Blue;
+                        serD.Points.Add(primeiroTeste);
 
                         serD.IsVisibleInLegend = false;
                         serD.MarkerStyle = MarkerStyle.None;
@@ -715,6 +787,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serG.Points.AddXY(200, 0);
                         serG.Points.AddXY(valorD, valorE);
+                        segundoTeste.SetValueXY(valorD, pontoB);
+                        segundoTeste.Label = "2a";
+                        segundoTeste.LabelForeColor = Color.White;
+                        segundoTeste.LabelBackColor = Color.Blue;
+                        serG.Points.Add(segundoTeste);
 
                         serG.IsVisibleInLegend = false;
                         serG.MarkerStyle = MarkerStyle.None;
@@ -733,6 +810,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serH.Points.AddXY(valorD, valorE);
                         serH.Points.AddXY(-200000, 0);
+                        segundoTeste.SetValueXY(-580, pontoB);
+                        segundoTeste.Label = "2a";
+                        segundoTeste.LabelForeColor = Color.White;
+                        segundoTeste.LabelBackColor = Color.Blue;
+                        serH.Points.Add(segundoTeste);
 
                         serH.IsVisibleInLegend = false;
                         serH.MarkerStyle = MarkerStyle.None;
@@ -754,6 +836,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serG.Points.AddXY(200, 0);
                         serG.Points.AddXY(valorD, valorE);
+                        segundoTeste.SetValueXY(valorD, pontoB);
+                        segundoTeste.Label = "2a";
+                        segundoTeste.LabelForeColor = Color.White;
+                        segundoTeste.LabelBackColor = Color.Blue;
+                        serG.Points.Add(segundoTeste);
 
                         serG.IsVisibleInLegend = false;
                         serG.MarkerStyle = MarkerStyle.None;
@@ -772,6 +859,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serH.Points.AddXY(valorD, valorE);
                         serH.Points.AddXY(-200000, 0);
+                        segundoTeste.SetValueXY(-580, pontoB);
+                        segundoTeste.Label = "2a";
+                        segundoTeste.LabelForeColor = Color.White;
+                        segundoTeste.LabelBackColor = Color.Blue;
+                        serH.Points.Add(segundoTeste);
 
                         serH.IsVisibleInLegend = false;
                         serH.MarkerStyle = MarkerStyle.None;
@@ -854,6 +946,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serK.Points.AddXY(200, 0);
                         serK.Points.AddXY(valorG, valorH);
+                        terceiroTeste.SetValueXY(valorG, pontoB);
+                        terceiroTeste.Label = "3a";
+                        terceiroTeste.LabelForeColor = Color.White;
+                        terceiroTeste.LabelBackColor = Color.Blue;
+                        serK.Points.Add(terceiroTeste);
 
                         serK.IsVisibleInLegend = false;
                         serK.MarkerStyle = MarkerStyle.None;
@@ -872,6 +969,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serL.Points.AddXY(valorG, valorH);
                         serL.Points.AddXY(-200000, 0);
+                        terceiroTeste.SetValueXY(-580, pontoB);
+                        terceiroTeste.Label = "3a";
+                        terceiroTeste.LabelForeColor = Color.White;
+                        terceiroTeste.LabelBackColor = Color.Blue;
+                        serL.Points.Add(terceiroTeste);
 
                         serL.IsVisibleInLegend = false;
                         serL.MarkerStyle = MarkerStyle.None;
@@ -893,6 +995,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serK.Points.AddXY(200, 0);
                         serK.Points.AddXY(valorG, valorH);
+                        terceiroTeste.SetValueXY(valorG, pontoB);
+                        terceiroTeste.Label = "3a";
+                        terceiroTeste.LabelForeColor = Color.White;
+                        terceiroTeste.LabelBackColor = Color.Blue;
+                        serK.Points.Add(terceiroTeste);
 
                         serK.IsVisibleInLegend = false;
                         serK.MarkerStyle = MarkerStyle.None;
@@ -911,6 +1018,11 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                         serL.Points.AddXY(valorG, valorH);
                         serL.Points.AddXY(-200000, 0);
+                        terceiroTeste.SetValueXY(-580, pontoB);
+                        terceiroTeste.Label = "3a";
+                        terceiroTeste.LabelForeColor = Color.White;
+                        terceiroTeste.LabelBackColor = Color.Blue;
+                        serL.Points.Add(terceiroTeste);
 
                         serL.IsVisibleInLegend = false;
                         serL.MarkerStyle = MarkerStyle.None;
@@ -975,10 +1087,10 @@ namespace SISTEMASLUASAUDE_APLICACAO
             
         }
 
-        private void ImprimeAudiograma()
+        private void ImprimeTesteFuncaoTubaria()
         {
-            //PlotaDadosAudiogramaOD();
-            //PlotaDadosAudiogramaOE();
+            PlotaDadosTimpanogramaOD();
+            PlotaDadosTimpanogramaOE();
 
             chartODimp.SaveImage("C:\\users/public/documents/chartODimp.png", System.Web.UI.DataVisualization.Charting.ChartImageFormat.Png);
             chartOEimp.SaveImage("C:\\users/public/documents/chartOEimp.png", System.Web.UI.DataVisualization.Charting.ChartImageFormat.Png);
