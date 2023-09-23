@@ -210,43 +210,75 @@
                                                 </asp:TableHeaderRow>
                                                 <asp:TableHeaderRow Width="100%">
                                                     <asp:TableHeaderCell Width="34%" Height="45px" Text="Sino (85 dBNPS):" BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="Black" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="sinoodComboBox" runat="server" Width="100%" Height="40px" BorderColor="Red" BackColor="MistyRose" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="sinooeComboBox" runat="server" Width="100%" Height="40px" BorderColor="Blue" BackColor="AliceBlue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
                                                 </asp:TableHeaderRow>
                                                 <asp:TableHeaderRow Width="100%">
                                                     <asp:TableHeaderCell Width="34%" Height="45px" Text="Black-black (90 dBNPS):" BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="Black" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="blackblackodComboBox" runat="server" Width="100%" Height="40px" BorderColor="Red" BackColor="MistyRose" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="blackblackoeComboBox" runat="server" Width="100%" Height="40px" BorderColor="Blue" BackColor="AliceBlue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
                                                 </asp:TableHeaderRow>
                                                 <asp:TableHeaderRow Width="100%">
                                                     <asp:TableHeaderCell Width="34%" Height="45px" Text="Agogô pequeno (95 dBNPS):" BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="Black" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="agogoPeqodComboBox" runat="server" Width="100%" Height="40px" BorderColor="Red" BackColor="MistyRose" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="agogoPeqoeComboBox" runat="server" Width="100%" Height="40px" BorderColor="Blue" BackColor="AliceBlue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
                                                 </asp:TableHeaderRow>
                                                 <asp:TableHeaderRow Width="100%">
                                                     <asp:TableHeaderCell Width="34%" Height="45px" Text="Agogô grande (100 dBNPS):" BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="Black" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="agogoGranodComboBox" runat="server" Width="100%" Height="40px" BorderColor="Red" BackColor="MistyRose" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="agogoGranoeComboBox" runat="server" Width="100%" Height="40px" BorderColor="Blue" BackColor="AliceBlue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
                                                 </asp:TableHeaderRow>
                                                 <asp:TableHeaderRow Width="100%">
                                                     <asp:TableHeaderCell Width="34%" Height="45px" Text="Chocalho (90 dBNPS):" BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="Black" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="chocalhoodComboBox" runat="server" Width="100%" Height="40px" BorderColor="Red" BackColor="MistyRose" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="chocalhooeComboBox" runat="server" Width="100%" Height="40px" BorderColor="Blue" BackColor="AliceBlue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
                                                 </asp:TableHeaderRow>
                                                 <asp:TableHeaderRow Width="100%">
                                                     <asp:TableHeaderCell Width="34%" Height="45px" Text="Triângulo (90 dBNPS):" BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="Black" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="trianguloodComboBox" runat="server" Width="100%" Height="40px" BorderColor="Red" BackColor="MistyRose" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="triangulooeComboBox" runat="server" Width="100%" Height="40px" BorderColor="Blue" BackColor="AliceBlue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
                                                 </asp:TableHeaderRow>
                                                 <asp:TableHeaderRow Width="100%">
                                                     <asp:TableHeaderCell Width="34%" Height="45px" Text="Prato (95 dBNPS):" BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="Black" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="pratoodComboBox" runat="server" Width="100%" Height="40px" BorderColor="Red" BackColor="MistyRose" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="pratooeComboBox" runat="server" Width="100%" Height="40px" BorderColor="Blue" BackColor="AliceBlue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
                                                 </asp:TableHeaderRow>
                                                 <asp:TableHeaderRow Width="100%">
                                                     <asp:TableHeaderCell Width="34%" Height="45px" Text="Tambor (100 dBPNS):" BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="Black" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="tamborodComboBox" runat="server" Width="100%" Height="40px" BorderColor="Red" BackColor="MistyRose" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="tamboroeComboBox" runat="server" Width="100%" Height="40px" BorderColor="Blue" BackColor="AliceBlue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
                                                 </asp:TableHeaderRow>
                                             </asp:Table>
                                         </asp:Panel>
@@ -280,9 +312,15 @@
                                                     <asp:TableHeaderCell Width="34%" Height="45px" Text="Ordens Simples" BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="Black" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
                                                 </asp:TableHeaderRow>
                                                 <asp:TableHeaderRow>
-                                                    <asp:TableHeaderCell Width="34%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="34%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="comportamentoAuditComboBox" runat="server" Width="100%" Height="40px" BorderColor="Black" BackColor="White" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="reacoesVerbaisComboBox" runat="server" Width="100%" Height="40px" BorderColor="Black" BackColor="White" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="ordensSimplesComboBox" runat="server" Width="100%" Height="40px" BorderColor="Black" BackColor="White" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
                                                 </asp:TableHeaderRow>
                                             </asp:Table>
                                         </asp:Panel>
