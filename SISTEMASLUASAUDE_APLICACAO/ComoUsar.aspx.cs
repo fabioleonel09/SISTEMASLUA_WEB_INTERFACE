@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SISTEMASLUASAUDE_APLICACAO
 {
-    public partial class login : System.Web.UI.Page
+    public partial class ComoUsar : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -26,8 +26,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         protected void btnInstrucoes_Click(object sender, EventArgs e)
         {
-            //redireciona para a próxima págna
-            Response.Redirect("ComoUsar.aspx");
+            
         }
     }
 }

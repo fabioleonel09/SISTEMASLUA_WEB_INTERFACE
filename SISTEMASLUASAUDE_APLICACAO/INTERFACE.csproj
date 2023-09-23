@@ -138,6 +138,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AudiometriaCampoAASI.aspx" />
+    <Content Include="AudiometriaAltasFrequencias.aspx" />
+    <Content Include="AudiometriaComportamental.aspx" />
     <Content Include="CadastroInicial.aspx" />
     <Content Include="Aplicativos.aspx" />
     <Content Include="Images\calculator.png" />
@@ -150,6 +153,10 @@
     <Content Include="Images\sombraImpedancioOE.png" />
     <Content Include="Images\sondaImpedancio.png" />
     <Content Include="Images\voltaTelaAplicativos.png" />
+    <Content Include="ComoUsar.aspx" />
+    <Content Include="RelatorioImpressaoAudioCampoAASI.aspx" />
+    <Content Include="RelatorioImpressaoAudioAltasFrequencias.aspx" />
+    <Content Include="RelatorioImpressaoAudioComportamental.aspx" />
     <Content Include="TesteFuncaoTubaria.aspx" />
     <Content Include="Impedanciometria.aspx" />
     <Content Include="AudiometriaEmCampoConvencional.aspx" />
@@ -426,6 +433,27 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AudiometriaCampoAASI.aspx.cs">
+      <DependentUpon>AudiometriaCampoAASI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AudiometriaCampoAASI.aspx.designer.cs">
+      <DependentUpon>AudiometriaCampoAASI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AudiometriaAltasFrequencias.aspx.cs">
+      <DependentUpon>AudiometriaAltasFrequencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AudiometriaAltasFrequencias.aspx.designer.cs">
+      <DependentUpon>AudiometriaAltasFrequencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AudiometriaComportamental.aspx.cs">
+      <DependentUpon>AudiometriaComportamental.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AudiometriaComportamental.aspx.designer.cs">
+      <DependentUpon>AudiometriaComportamental.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CadastroInicial.aspx.cs">
       <DependentUpon>CadastroInicial.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -450,6 +478,34 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="ComoUsar.aspx.cs">
+      <DependentUpon>ComoUsar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComoUsar.aspx.designer.cs">
+      <DependentUpon>ComoUsar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelatorioImpressaoAudioCampoAASI.aspx.cs">
+      <DependentUpon>RelatorioImpressaoAudioCampoAASI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelatorioImpressaoAudioCampoAASI.aspx.designer.cs">
+      <DependentUpon>RelatorioImpressaoAudioCampoAASI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelatorioImpressaoAudioAltasFrequencias.aspx.cs">
+      <DependentUpon>RelatorioImpressaoAudioAltasFrequencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelatorioImpressaoAudioAltasFrequencias.aspx.designer.cs">
+      <DependentUpon>RelatorioImpressaoAudioAltasFrequencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RelatorioImpressaoAudioComportamental.aspx.cs">
+      <DependentUpon>RelatorioImpressaoAudioComportamental.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RelatorioImpressaoAudioComportamental.aspx.designer.cs">
+      <DependentUpon>RelatorioImpressaoAudioComportamental.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TesteFuncaoTubaria.aspx.cs">
       <DependentUpon>TesteFuncaoTubaria.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -612,6 +668,9 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="RelatoriosImpressao\rltAudioCampoAASI.rdlc" />
+    <EmbeddedResource Include="RelatoriosImpressao\rltAudioAltasFrequencias.rdlc" />
+    <EmbeddedResource Include="RelatoriosImpressao\rltAudioComportamental.rdlc" />
     <EmbeddedResource Include="RelatoriosImpressao\rltTesteFuncaoTubaria.rdlc" />
     <EmbeddedResource Include="RelatoriosImpressao\rltImpedanciometria.rdlc" />
     <EmbeddedResource Include="RelatoriosImpressao\rltAudioEmCampoConvencional.rdlc" />

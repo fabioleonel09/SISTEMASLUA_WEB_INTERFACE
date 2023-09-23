@@ -26,12 +26,12 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         protected void btnAudioComportamental_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("AudiometriaComportamental.aspx");
         }
 
         protected void btnAudioCampoLivre_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("AudiometriaCampoAASI.aspx");
         }
 
         protected void btnAudioCampoConvencional_Click(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         protected void btnAltasFrequencias_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("AudiometriaAltasFrequencias.aspx");
         }
 
         protected void btnImpedanciometria_Click(object sender, EventArgs e)
