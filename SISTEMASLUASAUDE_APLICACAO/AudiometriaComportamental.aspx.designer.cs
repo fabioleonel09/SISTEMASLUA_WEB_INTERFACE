@@ -168,6 +168,24 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.DropDownList guizo1oeComboBox;
 
         /// <summary>
+        /// Controle guizo2odComboBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList guizo2odComboBox;
+
+        /// <summary>
+        /// Controle guizo2oeComboBox.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList guizo2oeComboBox;
+
+        /// <summary>
         /// Controle dadosAudioOE.
         /// </summary>
         /// <remarks>

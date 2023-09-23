@@ -201,8 +201,12 @@
                                                 </asp:TableHeaderRow>
                                                 <asp:TableHeaderRow Width="100%">
                                                     <asp:TableHeaderCell Width="34%" Height="45px" Text="Guizo 2 (75 dBNPS):" BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="Black" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
-                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="guizo2odComboBox" runat="server" Width="100%" Height="40px" BorderColor="Red" BackColor="MistyRose" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
+                                                        <asp:DropDownList ID="guizo2oeComboBox" runat="server" Width="100%" Height="40px" BorderColor="Blue" BackColor="AliceBlue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                    </asp:TableHeaderCell>
                                                 </asp:TableHeaderRow>
                                                 <asp:TableHeaderRow Width="100%">
                                                     <asp:TableHeaderCell Width="34%" Height="45px" Text="Sino (85 dBNPS):" BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="Black" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
