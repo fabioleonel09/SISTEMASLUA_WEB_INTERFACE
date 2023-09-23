@@ -147,6 +147,7 @@
     <Content Include="Images\caracolFundo.png" />
     <Content Include="Images\conservAudit.png" />
     <Content Include="Images\Estoque.png" />
+    <Content Include="Images\legendaAudioComportamental.png" />
     <Content Include="Images\receituario.png" />
     <Content Include="Images\recepcao.png" />
     <Content Include="Images\sombraImpedancioOD.png" />

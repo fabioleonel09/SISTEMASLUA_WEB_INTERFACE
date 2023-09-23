@@ -20,9 +20,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
         {
             if (!IsPostBack)
             {
-                CarregaLaudoaudiologico();
-
-                CarregaLaudosAutores();
+               
             }
         }
 
@@ -44,52 +42,6 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected void btnImprimir_Click(object sender, EventArgs e)
         {
             ImprimeAudiograma();
-        }
-
-        
-        private void CarregaLaudoaudiologico()
-        {
-            //para ddl normal
-            ddlAudicaoNormalOD.DataSource = DropdownData_LaudoAudioNormal.GetItems();
-            ddlAudicaoNormalOD.DataBind();
-
-            ddlAudicaoNormalOE.DataSource = DropdownData_LaudoAudioNormal.GetItems();
-            ddlAudicaoNormalOE.DataBind();
-
-            //para tipo de curva
-            ddlCurvaTipoOD.DataSource = DropdownData_CurvaAudioTipo.GetItems();
-            ddlCurvaTipoOD.DataBind();
-
-            ddlCurvaTipoOE.DataSource = DropdownData_CurvaAudioTipo.GetItems();
-            ddlCurvaTipoOE.DataBind();
-
-            //para o grau
-            ddlDeGrauOD.DataSource = DropdownData_GrauAudio.GetItems();
-            ddlDeGrauOD.DataBind();
-
-            ddlDeGrauOE.DataSource = DropdownData_GrauAudio.GetItems();
-            ddlDeGrauOE.DataBind();
-
-            //para a configuração
-            ddlDeConfigOD.DataSource = DropdownData_ConfigTipo.GetItems();
-            ddlDeConfigOD.DataBind();
-
-            ddlDeConfigOE.DataSource = DropdownData_ConfigTipo.GetItems();
-            ddlDeConfigOE.DataBind();
-
-            //para a audio vocal
-            ddlEaudioVocalOD.DataSource = DropdownData_LaudoAudioVocal.GetItems();
-            ddlEaudioVocalOD.DataBind();
-
-            ddlEaudioVocalOE.DataSource = DropdownData_LaudoAudioVocal.GetItems();
-            ddlEaudioVocalOE.DataBind();
-        }
-
-        private void CarregaLaudosAutores()
-        {
-            ddlLaudos.AppendDataBoundItems = true;
-            ddlLaudos.DataSource = DropdownData_LaudosAutores.GetItems();
-            ddlLaudos.DataBind();
         }
 
         private void ImprimeAudiograma()
@@ -121,84 +73,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
             dadosRel.idadePaciente = Session["ssnIdadePaciente"].ToString();
             dadosRel.dataNascimento = Session["ssnDataNascimento"].ToString();
 
-            dadosRel.monOD = ddlIPRFmonOd.Text;
-            dadosRel.monOE = ddlIPRFmonOe.Text;
-            dadosRel.dissOD = ddlIPRFdisOd.Text;
-            dadosRel.dissOE = ddlIPRFdisOe.Text;
-            var srtod = txtSRTOD.Text + " dBNA";
-            if (!String.IsNullOrEmpty(txtSRTOD.Text))
-            {
-                dadosRel.srtOD = srtod;
-            }
-            else
-            {
-                dadosRel.srtOD = txtSRTOD.Text;
-            }
-            var srtoe = txtSRTOE.Text + " dBNA";
-            if (!String.IsNullOrEmpty(txtSRTOE.Text))
-            {
-                dadosRel.srtOE = srtoe;
-            }
-            else
-            {
-                dadosRel.srtOE = txtSRTOE.Text;
-            }
-            var sdtod = txtSDTOD.Text + " dBNA";
-            if (!String.IsNullOrEmpty(txtSDTOD.Text))
-            {
-                dadosRel.sdtOD = sdtod;
-            }
-            else
-            {
-                dadosRel.sdtOD = txtSDTOD.Text;
-            }
-            var sdtoe = txtSDTOE.Text + " dBNA";
-            if (!String.IsNullOrEmpty(txtSDTOE.Text))
-            {
-                dadosRel.sdtOE = sdtoe;
-            }
-            else
-            {
-                dadosRel.sdtOE = txtSDTOE.Text;
-            }
-            var mediaod = mEDIAodTextBox.Text + " dBNA";
-            if (!String.IsNullOrEmpty(mEDIAodTextBox.Text))
-            {
-                dadosRel.mediaOD = mediaod;
-            }
-            else
-            {
-                dadosRel.mediaOD = mEDIAodTextBox.Text;
-            }
-            var mediaoe = mEDIAoeTextBox.Text + " dBNA";
-            if (!String.IsNullOrEmpty(mEDIAoeTextBox.Text))
-            {
-                dadosRel.mediaOE = mediaoe;
-            }
-            else
-            {
-                dadosRel.mediaOE = mEDIAoeTextBox.Text;
-            }
-
-            dadosRel.weber500Hz = weber500ComboBox.Text;
-            dadosRel.weber1kHz = weber1kComboBox.Text;
-            dadosRel.weber2kHz = weber2kComboBox.Text;
-            dadosRel.weber4kHz = weber4kComboBox.Text;
-
-            dadosRel.mascaramento = txtMascaramentoComent.Text;
-
-            dadosRel.curvaAudioNormalOD = ddlAudicaoNormalOD.Text;
-            dadosRel.curvaAudioNormalOE = ddlAudicaoNormalOE.Text;
-            dadosRel.doTipoOD = ddlCurvaTipoOD.Text;
-            dadosRel.doTipoOE = ddlCurvaTipoOE.Text;
-            dadosRel.deGrauOD = ddlDeGrauOD.Text;
-            dadosRel.deGrauOE = ddlDeGrauOE.Text;
-            dadosRel.deConfigOD = ddlDeConfigOD.Text;
-            dadosRel.deConfigOE = ddlDeConfigOE.Text;
-            dadosRel.deAudioVocalOD = ddlEaudioVocalOD.Text;
-            dadosRel.deAudioVocalOE = ddlEaudioVocalOE.Text;
-
-            dadosRel.autoresLaudo = ddlLaudos.Text;
+           
 
             dadosRel.comentarios = txtComentariosGerais.Text;
 
