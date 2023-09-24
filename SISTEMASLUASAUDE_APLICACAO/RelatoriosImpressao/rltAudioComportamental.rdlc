@@ -2078,21 +2078,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="observacoesComport">
+                    <Textbox Name="comentarios">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!comentarios.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>observacoesComport</rd:DefaultName>
+                      <rd:DefaultName>comentarios</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>Solid</Style>

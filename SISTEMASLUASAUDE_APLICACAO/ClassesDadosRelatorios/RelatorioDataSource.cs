@@ -57,6 +57,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.ClassesDadosRelatorios
             dataTable.Columns.Add("idadePaciente", typeof(string));
             dataTable.Columns.Add("dataNascimento", typeof(string));
 
+            //audiometrias completa e convencional
             dataTable.Columns.Add("monossilaboOD", typeof(string));
             dataTable.Columns.Add("monossilaboOE", typeof(string));
             dataTable.Columns.Add("dissilaboOD", typeof(string));
@@ -94,6 +95,9 @@ namespace SISTEMASLUASAUDE_APLICACAO.ClassesDadosRelatorios
             dataTable.Columns.Add("audiometro", typeof(string));
             dataTable.Columns.Add("dataCalibracao", typeof(string));
 
+            //audiometria comportamental
+
+
             // Crie uma nova linha e popule-a com os dados da classe DadosRelatorioAudio
             DataRow dataRow = dataTable.NewRow();
             DadosRelatorioAudio dadosRel = new DadosRelatorioAudio();
@@ -103,6 +107,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.ClassesDadosRelatorios
             dataRow["idadePaciente"] = IdadePaciente;
             dataRow["dataNascimento"] = DataNascimento;
 
+            //audiometrias completa e convencional
             dataRow["monossilaboOD"] = MonOD;
             dataRow["monossilaboOE"] = MonOE;
             dataRow["dissilaboOD"] = DissOD;

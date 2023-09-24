@@ -13,7 +13,7 @@ namespace SISTEMASLUASAUDE_APLICACAO.ClassesDadosRelatorios
         public string idadePaciente { get; set;}
         public string dataNascimento { get; set;}
 
-        //PARA A AUDIOMETRIA CLINICA COMPLETA ***************************
+        //PARA A AUDIOMETRIA CLINICA COMPLETA OU CONVENCIONAL***************************
         //para a fala da OD
         public string monOD { get; set;}
         public string dissOD { get; set;}
@@ -61,5 +61,37 @@ namespace SISTEMASLUASAUDE_APLICACAO.ClassesDadosRelatorios
         public string audiometro { get; set; }
         public string dataCalibracao { get; set; }
 
+        //PARA A AUDIOMETRIA COMPORTAMENTAL *************************
+        //localiza fonte sonora OD
+        public string guizo1OD { get; set; }
+        public string guizo2OD { get;set; }
+        public string sinoOD { get; set; }
+        public string blackblackOD { get; set; }
+        public string agogoPeqOD { get; set; }
+        public string agogoGranOD { get; set; }
+        public string chocalhoOD { get; set; }
+        public string trianguloOD { get; set; }
+        public string pratoOD { get; set; }
+        public string tamborOD { get; set; }
+
+        //localiza fonte sonora OE
+        public string guizo1OE { get; set; }
+        public string guizo2OE { get; set; }
+        public string sinoOE { get; set; }
+        public string blackblackOE { get; set; }
+        public string agogoPeqOE { get; set; }
+        public string agogoGranOE { get; set; }
+        public string chocalhoOE { get; set; }
+        public string trianguloOE { get; set; }
+        public string pratoOE { get; set; }
+        public string tamborOE { get; set; }
+
+        //demais avaliações
+        public string comportamentoAuditivo { get; set; }
+        public string reacoesVerbais { get; set; }
+        public string ordensSimples { get; set; }
+
+        public string conclusoesComportamentais { get; set; }
+        public string observacoesComportamentais { get; set; }
     }
 }
