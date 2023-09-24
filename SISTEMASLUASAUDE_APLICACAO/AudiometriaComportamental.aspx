@@ -148,7 +148,7 @@
                     <asp:Button id="voltaTelaCadastro" runat="server" OnClick="btnVoltaTelaCadastro" ToolTip="Volta à tela de Cadastro" CssClass="btn-Volta-Tela-Cadastro"/>
                     <asp:Button id="voltaTelaExames" runat="server" OnClick="btnVoltaTelaExames" ToolTip="Volta à tela de Exames" CssClass="btn-Volta-Tela-Exames"/>
                 </div>
-                <div class="box" style="width: 34%;">
+                <div class="box" style="width: 34%; font-size: 20px;">
                     <b>Audiometria Comportamental</b>
                 </div>
                 <div class="box" style="width: 33%;"></div>
@@ -172,7 +172,7 @@
                     <asp:Table ID="tbAudiometriaComportGeral" runat="server" Width="100%" BorderColor="#cccccc" BorderWidth="2px" BorderStyle="Solid">
                         <asp:TableHeaderRow Width="100%">
                             <asp:TableHeaderCell BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="White" Width="20%" Height="50px"></asp:TableHeaderCell>
-                            <asp:TableHeaderCell BackColor="#cccccc" Font-Bold="true" Font-Size="18" Width="60%" Height="50px">Avaliação do Comportamento Auditivo</asp:TableHeaderCell>
+                            <asp:TableHeaderCell BackColor="#cccccc" Font-Bold="true" Font-Size="16" Width="60%" Height="50px">Avaliação do Comportamento Auditivo</asp:TableHeaderCell>
                             <asp:TableHeaderCell BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="White" Width="20%" Height="50px"></asp:TableHeaderCell>
                         </asp:TableHeaderRow>
                         <asp:TableRow>
@@ -186,7 +186,7 @@
                                         <asp:Panel ID="pnlAudioComport" runat="server">
                                             <asp:Table ID="audioComportPrimeiraParte" runat="server" Width="100%" BorderColor="#cccccc" BorderWidth="2px" BorderStyle="Solid">
                                                 <asp:TableHeaderRow Width="100%">
-                                                    <asp:TableHeaderCell Width="34%" Height="45px" Text="Instrumento" BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="Black" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell Width="34%" Height="45px" Text="Instrumento/Intensidade" BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="Black" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
                                                     <asp:TableHeaderCell Width="33%" Height="45px" Text="Orelha Direita" BackColor="Red" Font-Bold="true" Font-Size="12" ForeColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
                                                     <asp:TableHeaderCell Width="33%" Height="45px" Text="Orelha Esquerda" BackColor="Blue" Font-Bold="true" Font-Size="12" ForeColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
                                                 </asp:TableHeaderRow>
@@ -296,7 +296,7 @@
                     <asp:Table ID="AudiometriaComportDemaisAvaliacoes" runat="server" Width="100%" BorderColor="#cccccc" BorderWidth="2px" BorderStyle="Solid">
                         <asp:TableHeaderRow Width="100%">
                             <asp:TableHeaderCell BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="White" Width="20%" Height="50px"></asp:TableHeaderCell>
-                            <asp:TableHeaderCell BackColor="#cccccc" Font-Bold="true" Font-Size="18" Width="60%" Height="50px">Demais Avaliações</asp:TableHeaderCell>
+                            <asp:TableHeaderCell BackColor="#cccccc" Font-Bold="true" Font-Size="16" Width="60%" Height="50px">Demais Avaliações</asp:TableHeaderCell>
                             <asp:TableHeaderCell BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="White" Width="20%" Height="50px"></asp:TableHeaderCell>
                         </asp:TableHeaderRow>
                         <asp:TableRow>
@@ -313,13 +313,13 @@
                                                 </asp:TableHeaderRow>
                                                 <asp:TableHeaderRow>
                                                     <asp:TableHeaderCell Width="34%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="comportamentoAuditComboBox" runat="server" Width="100%" Height="40px" BorderColor="Black" BackColor="White" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                        <asp:DropDownList ID="comportamentoAuditComboBox" runat="server" Width="100%" Height="40px" BorderColor="Black" BackColor="White" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
                                                     </asp:TableHeaderCell>
                                                     <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="reacoesVerbaisComboBox" runat="server" Width="100%" Height="40px" BorderColor="Black" BackColor="White" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                        <asp:DropDownList ID="reacoesVerbaisComboBox" runat="server" Width="100%" Height="40px" BorderColor="Black" BackColor="White" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
                                                     </asp:TableHeaderCell>
                                                     <asp:TableHeaderCell Width="33%" Height="45px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
-                                                        <asp:DropDownList ID="ordensSimplesComboBox" runat="server" Width="100%" Height="40px" BorderColor="Black" BackColor="White" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="14" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
+                                                        <asp:DropDownList ID="ordensSimplesComboBox" runat="server" Width="100%" Height="40px" BorderColor="Black" BackColor="White" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="12" CssClass="cantos-arredondados-alinhamento"></asp:DropDownList>
                                                     </asp:TableHeaderCell>
                                                 </asp:TableHeaderRow>
                                             </asp:Table>
@@ -333,12 +333,10 @@
                     <br />
                     <asp:Table ID="tbLegenda" runat="server" Width="100%" BorderColor="#cccccc" BorderWidth="2px" BorderStyle="Solid">
                         <asp:TableHeaderRow Width="100%">
-                            <asp:TableHeaderCell BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="White" Width="20%" Height="50px"></asp:TableHeaderCell>
-                            <asp:TableHeaderCell BackColor="#cccccc" Font-Bold="true" Font-Size="18" Width="60%" Height="50px">Legenda</asp:TableHeaderCell>
-                            <asp:TableHeaderCell BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="White" Width="20%" Height="50px"></asp:TableHeaderCell>
+                            <asp:TableHeaderCell BackColor="#cccccc" Font-Bold="true" Font-Size="16" Width="60%" Height="50px">Legenda</asp:TableHeaderCell>
+                            <asp:TableHeaderCell BackColor="#cccccc" Font-Bold="true" Font-Size="12" ForeColor="White" Width="40%" Height="50px"></asp:TableHeaderCell>
                         </asp:TableHeaderRow>
                         <asp:TableRow>
-                            <asp:TableCell Width="20%" Height="100%"></asp:TableCell>
                             <asp:TableCell Width="60%" Height="100%">
                                 <div class="container" style="text-align: center;">
                                     <div class="box">
@@ -348,7 +346,15 @@
                                     </div>
                                 </div>
                             </asp:TableCell>
-                            <asp:TableCell Width="20%" Height="100%"></asp:TableCell>
+                            <asp:TableCell Width="40%" Height="100%">
+                                <div class="container" style="text-align: center;">
+                                    <div class="box">
+                                        <asp:Panel ID="pnlComportamentoAuditivo" runat="server" Width="100%">
+                                            <asp:Image ID="imgComportamentoAuditivo" runat="server" ImageUrl="~/Images/comportamentoAuditivo.png" AlternateText="A imagem do comportamento auditivo não carregou." Width="100%" />
+                                        </asp:Panel>
+                                    </div>
+                                </div>
+                            </asp:TableCell>
                         </asp:TableRow>
                     </asp:Table>
                     <br />
@@ -357,7 +363,7 @@
                             <asp:TableHeaderCell Text="Conclusões: " Width="20%" Height="50px" BackColor="White" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1"></asp:TableHeaderCell>
                             <asp:TableHeaderCell Width="80%" Height="50px" BorderColor="#cccccc" BorderStyle="Solid" BorderWidth="1">
                                 <asp:DropDownList ID="ddlConclusões" runat="server" Width="98.7%" Height="50px" ForeColor="Black" BorderColor="Black"
-                                                            BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="8"
+                                                            BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="12"
                                                             CssClass="cantos-arredondados-alinhamento-left">
                                 </asp:DropDownList>
                             </asp:TableHeaderCell>

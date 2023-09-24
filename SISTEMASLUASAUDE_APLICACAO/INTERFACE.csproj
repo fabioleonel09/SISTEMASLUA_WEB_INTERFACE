@@ -145,6 +145,7 @@
     <Content Include="Aplicativos.aspx" />
     <Content Include="Images\calculator.png" />
     <Content Include="Images\caracolFundo.png" />
+    <Content Include="Images\comportamentoAuditivo.png" />
     <Content Include="Images\conservAudit.png" />
     <Content Include="Images\Estoque.png" />
     <Content Include="Images\legendaAudioComportamental.png" />
@@ -486,6 +487,11 @@
     <Compile Include="ComoUsar.aspx.designer.cs">
       <DependentUpon>ComoUsar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ddlList_Items\DropdownData_ConclusoesComportamental.cs" />
+    <Compile Include="ddlList_Items\DropdownData_OrdensSimples.cs" />
+    <Compile Include="ddlList_Items\DropdownData_ReacoesVerbais.cs" />
+    <Compile Include="ddlList_Items\DropdownData_ComportamentoAuditivo.cs" />
+    <Compile Include="ddlList_Items\DropdownData_LocalizaFonteSonora.cs" />
     <Compile Include="RelatorioImpressaoAudioCampoAASI.aspx.cs">
       <DependentUpon>RelatorioImpressaoAudioCampoAASI.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

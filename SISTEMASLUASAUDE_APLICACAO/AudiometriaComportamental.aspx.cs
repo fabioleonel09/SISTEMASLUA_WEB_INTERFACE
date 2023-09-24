@@ -20,7 +20,15 @@ namespace SISTEMASLUASAUDE_APLICACAO
         {
             if (!IsPostBack)
             {
-               
+                CarregaDDLlocalizaFonteSonora();
+
+                CarregaComportamentoAuditivo();
+
+                CarregaReacoesVerbais();
+
+                CarregaOrdensSimples();
+
+                CarregaConclusoesComportamental();
             }
         }
 
@@ -41,16 +49,100 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         protected void btnImprimir_Click(object sender, EventArgs e)
         {
-            ImprimeAudiograma();
+            ImprimeAudiometriaComportamental();
         }
 
-        private void ImprimeAudiograma()
+        private void CarregaDDLlocalizaFonteSonora()
         {
-            
+            //para a OD
+            guizo1odComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            guizo1odComboBox.DataBind();
 
-            //chartAudioOD.SaveImage("C:\\users/public/documents/chartODAudioClinica.png", System.Web.UI.DataVisualization.Charting.ChartImageFormat.Png);
-            //chartAudioOE.SaveImage("C:\\users/public/documents/chartOEAudioClinica.png", System.Web.UI.DataVisualization.Charting.ChartImageFormat.Png);
+            guizo2odComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            guizo2odComboBox.DataBind();
 
+            sinoodComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            sinoodComboBox.DataBind();
+
+            blackblackodComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            blackblackodComboBox.DataBind();
+
+            agogoPeqodComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            agogoPeqodComboBox.DataBind();
+
+            agogoGranodComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            agogoGranodComboBox.DataBind();
+
+            chocalhoodComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            chocalhoodComboBox.DataBind();
+
+            trianguloodComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            trianguloodComboBox.DataBind();
+
+            pratoodComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            pratoodComboBox.DataBind();
+
+            tamborodComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            tamborodComboBox.DataBind();
+
+            //para a OE
+            guizo1oeComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            guizo1oeComboBox.DataBind();
+
+            guizo2oeComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            guizo2oeComboBox.DataBind();
+
+            sinooeComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            sinooeComboBox.DataBind();
+
+            blackblackoeComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            blackblackoeComboBox.DataBind();
+
+            agogoPeqoeComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            agogoPeqoeComboBox.DataBind();
+
+            agogoGranoeComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            agogoGranoeComboBox.DataBind();
+
+            chocalhooeComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            chocalhooeComboBox.DataBind();
+
+            triangulooeComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            triangulooeComboBox.DataBind();
+
+            pratooeComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            pratooeComboBox.DataBind();
+
+            tamboroeComboBox.DataSource = DropdownData_LocalizaFonteSonora.GetItems();
+            tamboroeComboBox.DataBind();
+        }
+
+        private void CarregaComportamentoAuditivo()
+        {
+            comportamentoAuditComboBox.DataSource = DropdownData_ComportamentoAuditivo.GetItems();
+            comportamentoAuditComboBox.DataBind();
+        }
+
+        private void CarregaReacoesVerbais()
+        {
+            reacoesVerbaisComboBox.DataSource = DropdownData_ReacoesVerbais.GetItems();
+            reacoesVerbaisComboBox.DataBind();
+        }
+
+        private void CarregaOrdensSimples()
+        {
+            ordensSimplesComboBox.DataSource = DropdownData_OrdensSimples.GetItems();
+            ordensSimplesComboBox.DataBind();
+        }
+
+        private void CarregaConclusoesComportamental()
+        {
+            ddlConclusões.DataSource = DropdownData_ConclusoesComportamental.GetItems();
+            ddlConclusões.DataBind();
+        }
+
+        private void ImprimeAudiometriaComportamental()
+        {
             DadosRelatorioImpressao();
 
             // Define o URL para onde você deseja redirecionar

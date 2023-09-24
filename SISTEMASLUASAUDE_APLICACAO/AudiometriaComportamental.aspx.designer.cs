@@ -420,6 +420,24 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.Image imgLegenda;
 
         /// <summary>
+        /// Controle pnlComportamentoAuditivo.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlComportamentoAuditivo;
+
+        /// <summary>
+        /// Controle imgComportamentoAuditivo.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgComportamentoAuditivo;
+
+        /// <summary>
         /// Controle tbOutrosDados.
         /// </summary>
         /// <remarks>
