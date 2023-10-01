@@ -94,16 +94,6 @@
             font-family: "Arial", arial; /* Especifica a fonte personalizada */
         }
 
-        .cantos-arredondados-hand {
-            cursor: pointer; /* Altera o cursor para a forma de uma mão */
-            border-radius: 10px; /* Valor do raio dos cantos arredondados */
-            text-align: center; /* Centraliza horizontalmente */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
-            background: linear-gradient(to right, red, #0074D9);
-            color: white;
-            padding: 10px 20px
-        }
-
         .cantos-arredondados-alinhamento {
             border-radius: 10px; /* Valor do raio dos cantos arredondados */
             text-align: center; /* Centraliza horizontalmente */
@@ -135,7 +125,23 @@
             transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
 
-        .btn-Volta-Tela-Cadastro {
+        .cantos-arredondados-hand {
+            cursor: pointer; /* Altera o cursor para a forma de uma mão */
+            border-radius: 10px; /* Valor do raio dos cantos arredondados */
+            border-color: #4B0082;
+            text-align: center; /* Centraliza horizontalmente */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */  
+            background: linear-gradient(to right, red, #0074D9);
+            color: white;
+            padding: 10px 20px;
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .cantos-arredondados-hand:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
+        }
+
+	    .btn-Volta-Tela-Cadastro {
             width: 50px;
             height: 50px;
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
@@ -144,37 +150,52 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: 30px; /* Ajuste o tamanho da imagem conforme necessário */
-            background-color: transparent;
+            background-color: #333;
             border: 1px solid #363636;
             color: #333;
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .btn-Volta-Tela-Cadastro:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
 
         .btn-Volta-Tela-Exames {
             width: 50px;
             height: 50px;
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */       
             background-image: url('./Images/voltaTelaExames.png');
             background-repeat: no-repeat;
             background-position: center center;
             background-size: 30px; /* Ajuste o tamanho da imagem conforme necessário */
-            background-color: transparent;
+            background-color: #333;
             border: 1px solid #363636;
             color: #333;
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .btn-Volta-Tela-Exames:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
 
         .btn-Volta-Tela-Aplicativos {
             width: 50px;
             height: 50px;
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */       
             background-image: url('./Images/voltaTelaAplicativos.png');
             background-repeat: no-repeat;
             background-position: center center;
             background-size: 30px; /* Ajuste o tamanho da imagem conforme necessário */
-            background-color: transparent;
+            background-color: #333;
             border: 1px solid #363636;
             color: #333;
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .btn-Volta-Tela-Aplicativos:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
     </style>
 </head>

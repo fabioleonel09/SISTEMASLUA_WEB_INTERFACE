@@ -60,11 +60,6 @@
             font-family: "Arial", arial; /* Especifica a fonte personalizada */
         }
 
-        .cantos-arredondados-hand {
-            border-radius: 10px; /* Valor do raio dos cantos arredondados */
-            cursor: pointer; /* Altera o cursor para a forma de uma mão */
-        }
-
         .cantos-arredondados-alinhamento {
             border-radius: 10px; /* Valor do raio dos cantos arredondados */
             text-align: center; /* Centraliza horizontalmente */
@@ -96,7 +91,23 @@
             transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
 
-        .btn-Volta-Tela-Cadastro {
+        .cantos-arredondados-hand {
+            cursor: pointer; /* Altera o cursor para a forma de uma mão */
+            border-radius: 10px; /* Valor do raio dos cantos arredondados */
+            border-color: #4B0082;
+            text-align: center; /* Centraliza horizontalmente */
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */  
+            background: linear-gradient(to right, red, #0074D9);
+            color: white;
+            padding: 10px 20px;
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .cantos-arredondados-hand:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
+        }
+
+	.btn-Volta-Tela-Cadastro {
             width: 50px;
             height: 50px;
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
@@ -105,9 +116,14 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: 30px; /* Ajuste o tamanho da imagem conforme necessário */
-            background-color: transparent;
+            background-color: #333;
             border: 1px solid #363636;
             color: #333;
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .btn-Volta-Tela-Cadastro:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
 
         .btn-Volta-Tela-Exames {
@@ -119,9 +135,14 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: 30px; /* Ajuste o tamanho da imagem conforme necessário */
-            background-color: transparent;
+            background-color: #333;
             border: 1px solid #363636;
             color: #333;
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .btn-Volta-Tela-Exames:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
 
         .btn-Volta-Tela-Aplicativos {
@@ -133,9 +154,14 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: 30px; /* Ajuste o tamanho da imagem conforme necessário */
-            background-color: transparent;
+            background-color: #333;
             border: 1px solid #363636;
             color: #333;
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .btn-Volta-Tela-Aplicativos:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
     </style>
 </head>
@@ -861,7 +887,7 @@
                                 </asp:Panel>
                                 <br />
                                 <div id="btnPlotaTodos" runat="server" style="text-align: center;">
-                                    <asp:Button ID="btnPlotaGeral" runat="server" Text="Plotar" BackColor="#00cc99" BorderColor="Green" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnPlotarGeral_Click" />
+                                    <asp:Button ID="btnPlotaGeral" runat="server" Text="Plotar" BackColor="#00cc99" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnPlotarGeral_Click" />
                                 </div>
                                 <br />
                                 <div class="container" style="text-align: center;">
@@ -1017,11 +1043,11 @@
                                 <div style="text-align: center;">
                                     <br />
                                     <div class="box" id="audioVocalOD" runat="server">
-                                        <asp:Button ID="btnMediaTritonal" runat="server" Text="Média Tritonal (X/3)" BackColor="#00cc99" BorderColor="Green" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnMediaTritonal_Click" />
+                                        <asp:Button ID="btnMediaTritonal" runat="server" Text="Média Tritonal (X/3)" BackColor="#00cc99" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnMediaTritonal_Click" />
                                     </div>
                                     <br />
                                     <div class="box" id="audioVocalOE" runat="server">
-                                        <asp:Button ID="btnMediaQuadritonal" runat="server" Text="Média Quadritonal (X/4)" BackColor="#00cc99" BorderColor="Green" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnMediaQuadritonal_Click" />
+                                        <asp:Button ID="btnMediaQuadritonal" runat="server" Text="Média Quadritonal (X/4)" BackColor="#00cc99" BorderStyle="Solid" BorderWidth="1" Font-Bold="true" Font-Size="18" Width="100%" Height="50px" CssClass="cantos-arredondados-hand" OnClick="btnMediaQuadritonal_Click" />
                                     </div>
                                 </div>
                             </asp:TableCell>
