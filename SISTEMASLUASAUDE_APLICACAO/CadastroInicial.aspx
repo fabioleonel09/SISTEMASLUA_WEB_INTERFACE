@@ -57,86 +57,6 @@
             line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
         }
 
-        .btn-Agenda {
-            cursor: pointer; /* Altera o cursor para a forma de uma mão */
-            border-radius: 10px; /* Valor do raio dos cantos arredondados */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
-            background-image: url('./Images/agendamento.png');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
-        }
-
-        .btn-Prontuario {
-            cursor: pointer; /* Altera o cursor para a forma de uma mão */
-            border-radius: 10px; /* Valor do raio dos cantos arredondados */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
-            background-image: url('./Images/prontuario.png');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
-        }
-
-        .btn-Exames {
-            cursor: pointer; /* Altera o cursor para a forma de uma mão */
-            border-radius: 10px; /* Valor do raio dos cantos arredondados */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
-            background-image: url('./Images/Chart1.png');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
-        }
-
-        .btn-Conservacao-Auditiva {
-            cursor: pointer; /* Altera o cursor para a forma de uma mão */
-            border-radius: 10px; /* Valor do raio dos cantos arredondados */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
-            background-image: url('./Images/conservAudit.png');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
-        }
-
-        .btn-Recepcao {
-            cursor: pointer; /* Altera o cursor para a forma de uma mão */
-            border-radius: 10px; /* Valor do raio dos cantos arredondados */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
-            background-image: url('./Images/recepcao.png');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
-        }
-
-        .btn-Faturamento {
-            cursor: pointer; /* Altera o cursor para a forma de uma mão */
-            border-radius: 10px; /* Valor do raio dos cantos arredondados */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
-            background-image: url('./Images/calculator.png');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
-        }
-
-        .btn-Estoque {
-            cursor: pointer; /* Altera o cursor para a forma de uma mão */
-            border-radius: 10px; /* Valor do raio dos cantos arredondados */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
-            background-image: url('./Images/Estoque.png');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
-        }
-
-        .btn-Receituario {
-            cursor: pointer; /* Altera o cursor para a forma de uma mão */
-            border-radius: 10px; /* Valor do raio dos cantos arredondados */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
-            background-image: url('./Images/receituario.png');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
-        }
-
         .btn-Caracol {
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
             border-radius: 10px; /* Valor do raio dos cantos arredondados */
@@ -145,6 +65,11 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .btn-Caracol:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
     </style>
 </head>
@@ -222,11 +147,11 @@
                     <asp:TableCell Width="20%" Height="150px">
                     </asp:TableCell>
                     <asp:TableCell Width="20%" Height="150px">
-                    </asp:TableCell>
-                    <asp:TableCell Width="20%" Height="150px">
-                    </asp:TableCell>
-                    <asp:TableCell Width="20%" Height="150px">
                         <asp:Button ID="btnVai" runat="server" Width="100%" Height="100%" OnClick="btnVai_Click" CssClass="btn-Caracol" ToolTip="Vai!" />
+                    </asp:TableCell>
+                    <asp:TableCell Width="20%" Height="150px">
+                    </asp:TableCell>
+                    <asp:TableCell Width="20%" Height="150px">
                     </asp:TableCell>
                 </asp:TableRow>
             </asp:Table>

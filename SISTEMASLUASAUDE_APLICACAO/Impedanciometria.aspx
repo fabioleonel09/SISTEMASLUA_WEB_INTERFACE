@@ -128,6 +128,11 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: auto; /* Ajuste o tamanho da imagem conforme necessário */
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .btn-Imprimir:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
 
         .btn-Volta-Tela-Cadastro {

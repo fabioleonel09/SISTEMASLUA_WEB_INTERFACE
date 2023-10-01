@@ -4,27 +4,12 @@
     <ReportItems>
       <Image Name="Image1">
         <Source>External</Source>
-        <Value>file:////C:\users/public/documents/chartODAudioClinica.png</Value>
+        <Value>file:////C:\users/public/documents/chartAudioEmCampo.png</Value>
         <Sizing>FitProportional</Sizing>
         <Top>6.08947cm</Top>
-        <Left>2.88166cm</Left>
+        <Left>7.00916cm</Left>
         <Height>6.68584cm</Height>
         <Width>7.47154cm</Width>
-        <Style>
-          <Border>
-            <Style>Solid</Style>
-          </Border>
-        </Style>
-      </Image>
-      <Image Name="Image2">
-        <Source>External</Source>
-        <Value>file:////C:\users/public/documents/chartOEAudioClinica.png</Value>
-        <Sizing>FitProportional</Sizing>
-        <Top>6.08947cm</Top>
-        <Left>10.50067cm</Left>
-        <Height>6.68584cm</Height>
-        <Width>7.47154cm</Width>
-        <ZIndex>1</ZIndex>
         <Style>
           <Border>
             <Style>Solid</Style>
@@ -267,7 +252,7 @@
         <Left>1.29416cm</Left>
         <Height>1.2cm</Height>
         <Width>17.93287cm</Width>
-        <ZIndex>2</ZIndex>
+        <ZIndex>1</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -281,7 +266,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>AUDIOMETRIA TONAL E VOCAL</Value>
+                <Value>AUDIOMETRIA DE GANHO FUNIONAL</Value>
                 <Style>
                   <FontStyle>Italic</FontStyle>
                   <FontSize>12pt</FontSize>
@@ -299,7 +284,7 @@
         <Left>5.34592cm</Left>
         <Height>0.63981cm</Height>
         <Width>10.22583cm</Width>
-        <ZIndex>3</ZIndex>
+        <ZIndex>2</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -317,33 +302,15 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value xml:space="preserve">                       </Value>
+                <Value>Teste de AASI</Value>
                 <Style>
                   <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>Orelha direita</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                  <Color>Red</Color>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value xml:space="preserve">                                                     </Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>Orelha esquerda</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                  <Color>Blue</Color>
                 </Style>
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox26</rd:DefaultName>
@@ -351,7 +318,7 @@
         <Left>2.88166cm</Left>
         <Height>0.6cm</Height>
         <Width>15.09055cm</Width>
-        <ZIndex>4</ZIndex>
+        <ZIndex>3</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1115,7 +1082,7 @@
         <Left>8.24286cm</Left>
         <Height>3.6cm</Height>
         <Width>9.72199cm</Width>
-        <ZIndex>5</ZIndex>
+        <ZIndex>4</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1680,7 +1647,7 @@
         <Left>1.29416cm</Left>
         <Height>3cm</Height>
         <Width>17.93287cm</Width>
-        <ZIndex>6</ZIndex>
+        <ZIndex>5</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1735,7 +1702,7 @@
         <Left>1.29416cm</Left>
         <Height>0.6cm</Height>
         <Width>17.93287cm</Width>
-        <ZIndex>7</ZIndex>
+        <ZIndex>6</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1817,7 +1784,7 @@
         <Left>1.29416cm</Left>
         <Height>0.6cm</Height>
         <Width>17.93287cm</Width>
-        <ZIndex>8</ZIndex>
+        <ZIndex>7</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1934,7 +1901,7 @@
         <Left>1.29416cm</Left>
         <Height>1.2cm</Height>
         <Width>17.93287cm</Width>
-        <ZIndex>9</ZIndex>
+        <ZIndex>8</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2088,7 +2055,7 @@
         <Left>1.29416cm</Left>
         <Height>0.63556cm</Height>
         <Width>17.93287cm</Width>
-        <ZIndex>10</ZIndex>
+        <ZIndex>9</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2103,7 +2070,7 @@
         <Left>2.88166cm</Left>
         <Height>3.49416cm</Height>
         <Width>5.18481cm</Width>
-        <ZIndex>11</ZIndex>
+        <ZIndex>10</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2208,7 +2175,7 @@
         <Left>1.29416cm</Left>
         <Height>0.6cm</Height>
         <Width>17.93287cm</Width>
-        <ZIndex>12</ZIndex>
+        <ZIndex>11</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2239,7 +2206,7 @@
         <Left>1.29416cm</Left>
         <Height>0.61549cm</Height>
         <Width>17.93287cm</Width>
-        <ZIndex>13</ZIndex>
+        <ZIndex>12</ZIndex>
         <Style>
           <Border>
             <Style>Solid</Style>

@@ -123,58 +123,31 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl dadosAudioOD;
 
         /// <summary>
-        /// Controle audiogramaOD.
+        /// Controle audiogramaAASI.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl audiogramaOD;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl audiogramaAASI;
 
         /// <summary>
-        /// Controle chartAudioOD.
+        /// Controle chartAudioEmCampo.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.DataVisualization.Charting.Chart chartAudioOD;
+        protected global::System.Web.UI.DataVisualization.Charting.Chart chartAudioEmCampo;
 
         /// <summary>
-        /// Controle rbBananaFalaODClinica.
+        /// Controle rbBananaFalaEmCampo.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rbBananaFalaODClinica;
-
-        /// <summary>
-        /// Controle audiogramaOE.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl audiogramaOE;
-
-        /// <summary>
-        /// Controle chartAudioOE.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.DataVisualization.Charting.Chart chartAudioOE;
-
-        /// <summary>
-        /// Controle rbBananaFalaOEClinica.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rbBananaFalaOEClinica;
+        protected global::System.Web.UI.WebControls.RadioButtonList rbBananaFalaEmCampo;
 
         /// <summary>
         /// Controle pnlGridDadosOD.
@@ -195,1354 +168,256 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.Table tbDadosOD;
 
         /// <summary>
-        /// Controle va125odComboBox.
+        /// Controle com500ComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va125odComboBox;
+        protected global::System.Web.UI.WebControls.DropDownList com500ComboBox;
 
         /// <summary>
-        /// Controle masc125vaODCheckBox.
+        /// Controle chkAusente500comCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc125vaODCheckBox;
+        protected global::System.Web.UI.WebControls.CheckBox chkAusente500comCheckBox;
 
         /// <summary>
-        /// Controle aus125vaODCheckBox.
+        /// Controle sem500ComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus125vaODCheckBox;
+        protected global::System.Web.UI.WebControls.DropDownList sem500ComboBox;
 
         /// <summary>
-        /// Controle va250odComboBox.
+        /// Controle chkAusente500semCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va250odComboBox;
+        protected global::System.Web.UI.WebControls.CheckBox chkAusente500semCheckBox;
 
         /// <summary>
-        /// Controle masc250vaODCheckBox.
+        /// Controle com1kComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc250vaODCheckBox;
+        protected global::System.Web.UI.WebControls.DropDownList com1kComboBox;
 
         /// <summary>
-        /// Controle liga125_250vaODCheckBox.
+        /// Controle chbLiga500_1k_comCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga125_250vaODCheckBox;
+        protected global::System.Web.UI.WebControls.CheckBox chbLiga500_1k_comCheckBox;
 
         /// <summary>
-        /// Controle aus250vaODCheckBox.
+        /// Controle chkAusente1kcomCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus250vaODCheckBox;
+        protected global::System.Web.UI.WebControls.CheckBox chkAusente1kcomCheckBox;
 
         /// <summary>
-        /// Controle vo250odComboBox.
+        /// Controle sem1kComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList vo250odComboBox;
+        protected global::System.Web.UI.WebControls.DropDownList sem1kComboBox;
 
         /// <summary>
-        /// Controle masc250vo_ODCheckBox.
+        /// Controle chbLiga500_1k_semCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc250vo_ODCheckBox;
+        protected global::System.Web.UI.WebControls.CheckBox chbLiga500_1k_semCheckBox;
 
         /// <summary>
-        /// Controle aus250vo_ODCheckBox.
+        /// Controle chkAusente1ksemCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus250vo_ODCheckBox;
+        protected global::System.Web.UI.WebControls.CheckBox chkAusente1ksemCheckBox;
 
         /// <summary>
-        /// Controle va500odComboBox.
+        /// Controle com2KComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va500odComboBox;
+        protected global::System.Web.UI.WebControls.DropDownList com2KComboBox;
 
         /// <summary>
-        /// Controle masc500vaODCheckBox.
+        /// Controle chbLiga1k_2k_comCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc500vaODCheckBox;
+        protected global::System.Web.UI.WebControls.CheckBox chbLiga1k_2k_comCheckBox;
 
         /// <summary>
-        /// Controle liga250_500vaODCheckBox.
+        /// Controle chkAusente2kcomCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga250_500vaODCheckBox;
+        protected global::System.Web.UI.WebControls.CheckBox chkAusente2kcomCheckBox;
 
         /// <summary>
-        /// Controle aus500vaODCheckBox.
+        /// Controle sem2KComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus500vaODCheckBox;
+        protected global::System.Web.UI.WebControls.DropDownList sem2KComboBox;
 
         /// <summary>
-        /// Controle vo500odComboBox.
+        /// Controle chbLiga1k_2k_semCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList vo500odComboBox;
+        protected global::System.Web.UI.WebControls.CheckBox chbLiga1k_2k_semCheckBox;
 
         /// <summary>
-        /// Controle masc500vo_ODCheckBox.
+        /// Controle chkAusente2ksemCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc500vo_ODCheckBox;
+        protected global::System.Web.UI.WebControls.CheckBox chkAusente2ksemCheckBox;
 
         /// <summary>
-        /// Controle liga250_500vo_ODCheckBox.
+        /// Controle com3kComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga250_500vo_ODCheckBox;
+        protected global::System.Web.UI.WebControls.DropDownList com3kComboBox;
 
         /// <summary>
-        /// Controle aus500vo_ODCheckBox.
+        /// Controle chbLiga2k_3k_comCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus500vo_ODCheckBox;
+        protected global::System.Web.UI.WebControls.CheckBox chbLiga2k_3k_comCheckBox;
 
         /// <summary>
-        /// Controle va750odComboBox.
+        /// Controle chkAusente3kcomCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va750odComboBox;
+        protected global::System.Web.UI.WebControls.CheckBox chkAusente3kcomCheckBox;
 
         /// <summary>
-        /// Controle masc750vaODCheckBox.
+        /// Controle sem3kComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc750vaODCheckBox;
+        protected global::System.Web.UI.WebControls.DropDownList sem3kComboBox;
 
         /// <summary>
-        /// Controle liga500_750vaODCheckBox.
+        /// Controle chbLiga2k_3k_semCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga500_750vaODCheckBox;
+        protected global::System.Web.UI.WebControls.CheckBox chbLiga2k_3k_semCheckBox;
 
         /// <summary>
-        /// Controle aus750vaODCheckBox.
+        /// Controle chkAusente3ksemCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus750vaODCheckBox;
+        protected global::System.Web.UI.WebControls.CheckBox chkAusente3ksemCheckBox;
 
         /// <summary>
-        /// Controle vo750odComboBox.
+        /// Controle com4kComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList vo750odComboBox;
+        protected global::System.Web.UI.WebControls.DropDownList com4kComboBox;
 
         /// <summary>
-        /// Controle masc750vo_ODCheckBox.
+        /// Controle chbLiga3k_4k_comCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc750vo_ODCheckBox;
+        protected global::System.Web.UI.WebControls.CheckBox chbLiga3k_4k_comCheckBox;
 
         /// <summary>
-        /// Controle liga500_750vo_ODCheckBox.
+        /// Controle chkAusente4kcomCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga500_750vo_ODCheckBox;
+        protected global::System.Web.UI.WebControls.CheckBox chkAusente4kcomCheckBox;
 
         /// <summary>
-        /// Controle aus750vo_ODCheckBox.
+        /// Controle sem4kComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus750vo_ODCheckBox;
+        protected global::System.Web.UI.WebControls.DropDownList sem4kComboBox;
 
         /// <summary>
-        /// Controle va1kodComboBox.
+        /// Controle chbLiga3k_4k_semCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va1kodComboBox;
+        protected global::System.Web.UI.WebControls.CheckBox chbLiga3k_4k_semCheckBox;
 
         /// <summary>
-        /// Controle masc1kvaODCheckBox.
+        /// Controle chkAusente4ksemCheckBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc1kvaODCheckBox;
-
-        /// <summary>
-        /// Controle liga750_1kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga750_1kvaODCheckBox;
-
-        /// <summary>
-        /// Controle aus1kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus1kvaODCheckBox;
-
-        /// <summary>
-        /// Controle vo1kodComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList vo1kodComboBox;
-
-        /// <summary>
-        /// Controle masc1kvo_ODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc1kvo_ODCheckBox;
-
-        /// <summary>
-        /// Controle liga750_1kvo_ODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga750_1kvo_ODCheckBox;
-
-        /// <summary>
-        /// Controle aus1kvo_ODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus1kvo_ODCheckBox;
-
-        /// <summary>
-        /// Controle va1e5kodComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va1e5kodComboBox;
-
-        /// <summary>
-        /// Controle masc1_5kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc1_5kvaODCheckBox;
-
-        /// <summary>
-        /// Controle liga1k_1_5kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga1k_1_5kvaODCheckBox;
-
-        /// <summary>
-        /// Controle aus1_5kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus1_5kvaODCheckBox;
-
-        /// <summary>
-        /// Controle vo1e5kodComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList vo1e5kodComboBox;
-
-        /// <summary>
-        /// Controle masc1_5kvo_ODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc1_5kvo_ODCheckBox;
-
-        /// <summary>
-        /// Controle liga1k_1_5kvo_ODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga1k_1_5kvo_ODCheckBox;
-
-        /// <summary>
-        /// Controle aus1_5kvo_ODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus1_5kvo_ODCheckBox;
-
-        /// <summary>
-        /// Controle va2kodComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va2kodComboBox;
-
-        /// <summary>
-        /// Controle masc2kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc2kvaODCheckBox;
-
-        /// <summary>
-        /// Controle liga1_5k_2kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga1_5k_2kvaODCheckBox;
-
-        /// <summary>
-        /// Controle aus2kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus2kvaODCheckBox;
-
-        /// <summary>
-        /// Controle vo2kodComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList vo2kodComboBox;
-
-        /// <summary>
-        /// Controle masc2kvo_ODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc2kvo_ODCheckBox;
-
-        /// <summary>
-        /// Controle liga1_5k_2kvo_ODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga1_5k_2kvo_ODCheckBox;
-
-        /// <summary>
-        /// Controle aus2kvo_ODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus2kvo_ODCheckBox;
-
-        /// <summary>
-        /// Controle va3kodComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va3kodComboBox;
-
-        /// <summary>
-        /// Controle masc3kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc3kvaODCheckBox;
-
-        /// <summary>
-        /// Controle liga2k_3kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga2k_3kvaODCheckBox;
-
-        /// <summary>
-        /// Controle aus3kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus3kvaODCheckBox;
-
-        /// <summary>
-        /// Controle vo3kodComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList vo3kodComboBox;
-
-        /// <summary>
-        /// Controle masc3kvo_ODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc3kvo_ODCheckBox;
-
-        /// <summary>
-        /// Controle liga2k_3kvo_ODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga2k_3kvo_ODCheckBox;
-
-        /// <summary>
-        /// Controle aus3kvo_ODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus3kvo_ODCheckBox;
-
-        /// <summary>
-        /// Controle va4kodComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va4kodComboBox;
-
-        /// <summary>
-        /// Controle masc4kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc4kvaODCheckBox;
-
-        /// <summary>
-        /// Controle liga3k_4kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga3k_4kvaODCheckBox;
-
-        /// <summary>
-        /// Controle aus4kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus4kvaODCheckBox;
-
-        /// <summary>
-        /// Controle vo4kodComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList vo4kodComboBox;
-
-        /// <summary>
-        /// Controle masc4kvo_ODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc4kvo_ODCheckBox;
-
-        /// <summary>
-        /// Controle liga3k_4kvo_ODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga3k_4kvo_ODCheckBox;
-
-        /// <summary>
-        /// Controle aus4kvo_ODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus4kvo_ODCheckBox;
-
-        /// <summary>
-        /// Controle va6kodComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va6kodComboBox;
-
-        /// <summary>
-        /// Controle masc6kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc6kvaODCheckBox;
-
-        /// <summary>
-        /// Controle liga4k_6kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga4k_6kvaODCheckBox;
-
-        /// <summary>
-        /// Controle aus6kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus6kvaODCheckBox;
-
-        /// <summary>
-        /// Controle va8kodComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va8kodComboBox;
-
-        /// <summary>
-        /// Controle masc8kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc8kvaODCheckBox;
-
-        /// <summary>
-        /// Controle liga6k_8kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga6k_8kvaODCheckBox;
-
-        /// <summary>
-        /// Controle aus8kvaODCheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus8kvaODCheckBox;
-
-        /// <summary>
-        /// Controle pnlGridDadosOE.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlGridDadosOE;
-
-        /// <summary>
-        /// Controle tbDadosOE.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tbDadosOE;
-
-        /// <summary>
-        /// Controle va125oeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va125oeComboBox;
-
-        /// <summary>
-        /// Controle masc125vaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc125vaOECheckBox;
-
-        /// <summary>
-        /// Controle aus125vaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus125vaOECheckBox;
-
-        /// <summary>
-        /// Controle va250oeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va250oeComboBox;
-
-        /// <summary>
-        /// Controle masc250vaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc250vaOECheckBox;
-
-        /// <summary>
-        /// Controle liga125_250vaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga125_250vaOECheckBox;
-
-        /// <summary>
-        /// Controle aus250vaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus250vaOECheckBox;
-
-        /// <summary>
-        /// Controle vo250oeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList vo250oeComboBox;
-
-        /// <summary>
-        /// Controle masc250vo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc250vo_OECheckBox;
-
-        /// <summary>
-        /// Controle aus250vo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus250vo_OECheckBox;
-
-        /// <summary>
-        /// Controle va500oeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va500oeComboBox;
-
-        /// <summary>
-        /// Controle masc500vaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc500vaOECheckBox;
-
-        /// <summary>
-        /// Controle liga250_500vaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga250_500vaOECheckBox;
-
-        /// <summary>
-        /// Controle aus500vaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus500vaOECheckBox;
-
-        /// <summary>
-        /// Controle vo500oeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList vo500oeComboBox;
-
-        /// <summary>
-        /// Controle masc500vo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc500vo_OECheckBox;
-
-        /// <summary>
-        /// Controle liga250_500vo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga250_500vo_OECheckBox;
-
-        /// <summary>
-        /// Controle aus500vo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus500vo_OECheckBox;
-
-        /// <summary>
-        /// Controle va750oeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va750oeComboBox;
-
-        /// <summary>
-        /// Controle masc750vaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc750vaOECheckBox;
-
-        /// <summary>
-        /// Controle liga500_750vaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga500_750vaOECheckBox;
-
-        /// <summary>
-        /// Controle aus750vaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus750vaOECheckBox;
-
-        /// <summary>
-        /// Controle vo750oeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList vo750oeComboBox;
-
-        /// <summary>
-        /// Controle masc750vo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc750vo_OECheckBox;
-
-        /// <summary>
-        /// Controle liga500_750vo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga500_750vo_OECheckBox;
-
-        /// <summary>
-        /// Controle aus750vo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus750vo_OECheckBox;
-
-        /// <summary>
-        /// Controle va1koeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va1koeComboBox;
-
-        /// <summary>
-        /// Controle masc1kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc1kvaOECheckBox;
-
-        /// <summary>
-        /// Controle liga750_1kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga750_1kvaOECheckBox;
-
-        /// <summary>
-        /// Controle aus1kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus1kvaOECheckBox;
-
-        /// <summary>
-        /// Controle vo1koeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList vo1koeComboBox;
-
-        /// <summary>
-        /// Controle masc1kvo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc1kvo_OECheckBox;
-
-        /// <summary>
-        /// Controle liga750_1kvo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga750_1kvo_OECheckBox;
-
-        /// <summary>
-        /// Controle aus1kvo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus1kvo_OECheckBox;
-
-        /// <summary>
-        /// Controle va1e5koeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va1e5koeComboBox;
-
-        /// <summary>
-        /// Controle masc1_5kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc1_5kvaOECheckBox;
-
-        /// <summary>
-        /// Controle liga1k_1_5kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga1k_1_5kvaOECheckBox;
-
-        /// <summary>
-        /// Controle aus1_5kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus1_5kvaOECheckBox;
-
-        /// <summary>
-        /// Controle vo1e5koeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList vo1e5koeComboBox;
-
-        /// <summary>
-        /// Controle masc1_5kvo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc1_5kvo_OECheckBox;
-
-        /// <summary>
-        /// Controle liga1k_1_5kvo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga1k_1_5kvo_OECheckBox;
-
-        /// <summary>
-        /// Controle aus1_5kvo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus1_5kvo_OECheckBox;
-
-        /// <summary>
-        /// Controle va2koeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va2koeComboBox;
-
-        /// <summary>
-        /// Controle masc2kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc2kvaOECheckBox;
-
-        /// <summary>
-        /// Controle liga1_5k_2kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga1_5k_2kvaOECheckBox;
-
-        /// <summary>
-        /// Controle aus2kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus2kvaOECheckBox;
-
-        /// <summary>
-        /// Controle vo2koeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList vo2koeComboBox;
-
-        /// <summary>
-        /// Controle masc2kvo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc2kvo_OECheckBox;
-
-        /// <summary>
-        /// Controle liga1_5k_2kvo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga1_5k_2kvo_OECheckBox;
-
-        /// <summary>
-        /// Controle aus2kvo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus2kvo_OECheckBox;
-
-        /// <summary>
-        /// Controle va3koeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va3koeComboBox;
-
-        /// <summary>
-        /// Controle masc3kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc3kvaOECheckBox;
-
-        /// <summary>
-        /// Controle liga2k_3kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga2k_3kvaOECheckBox;
-
-        /// <summary>
-        /// Controle aus3kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus3kvaOECheckBox;
-
-        /// <summary>
-        /// Controle vo3koeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList vo3koeComboBox;
-
-        /// <summary>
-        /// Controle masc3kvo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc3kvo_OECheckBox;
-
-        /// <summary>
-        /// Controle liga2k_3kvo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga2k_3kvo_OECheckBox;
-
-        /// <summary>
-        /// Controle aus3kvo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus3kvo_OECheckBox;
-
-        /// <summary>
-        /// Controle va4koeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va4koeComboBox;
-
-        /// <summary>
-        /// Controle masc4kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc4kvaOECheckBox;
-
-        /// <summary>
-        /// Controle liga3k_4kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga3k_4kvaOECheckBox;
-
-        /// <summary>
-        /// Controle aus4kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus4kvaOECheckBox;
-
-        /// <summary>
-        /// Controle vo4koeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList vo4koeComboBox;
-
-        /// <summary>
-        /// Controle masc4kvo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc4kvo_OECheckBox;
-
-        /// <summary>
-        /// Controle liga3k_4kvo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga3k_4kvo_OECheckBox;
-
-        /// <summary>
-        /// Controle aus4kvo_OECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus4kvo_OECheckBox;
-
-        /// <summary>
-        /// Controle va6koeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va6koeComboBox;
-
-        /// <summary>
-        /// Controle masc6kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc6kvaOECheckBox;
-
-        /// <summary>
-        /// Controle liga4k_6kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga4k_6kvaOECheckBox;
-
-        /// <summary>
-        /// Controle aus6kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus6kvaOECheckBox;
-
-        /// <summary>
-        /// Controle va8koeComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList va8koeComboBox;
-
-        /// <summary>
-        /// Controle masc8kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox masc8kvaOECheckBox;
-
-        /// <summary>
-        /// Controle liga6k_8kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox liga6k_8kvaOECheckBox;
-
-        /// <summary>
-        /// Controle aus8kvaOECheckBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aus8kvaOECheckBox;
+        protected global::System.Web.UI.WebControls.CheckBox chkAusente4ksemCheckBox;
 
         /// <summary>
         /// Controle pnlLegenda.
@@ -1581,87 +456,6 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.Button btnPlotaGeral;
 
         /// <summary>
-        /// Controle tbTesteWeberCabecalho.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tbTesteWeberCabecalho;
-
-        /// <summary>
-        /// Controle pnlTesteWeberParteUm.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlTesteWeberParteUm;
-
-        /// <summary>
-        /// Controle tbTesteWeberCorpoPrimeiro.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tbTesteWeberCorpoPrimeiro;
-
-        /// <summary>
-        /// Controle weber500ComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList weber500ComboBox;
-
-        /// <summary>
-        /// Controle weber1kComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList weber1kComboBox;
-
-        /// <summary>
-        /// Controle pnlTesteWeberParteDois.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlTesteWeberParteDois;
-
-        /// <summary>
-        /// Controle tbTesteWeberCorpoSegundo.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tbTesteWeberCorpoSegundo;
-
-        /// <summary>
-        /// Controle weber2kComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList weber2kComboBox;
-
-        /// <summary>
-        /// Controle weber4kComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList weber4kComboBox;
-
-        /// <summary>
         /// Controle pnlSimbologiaAudiometrica.
         /// </summary>
         /// <remarks>
@@ -1689,22 +483,22 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl dadosAudioOE;
 
         /// <summary>
-        /// Controle AudiometriaVocalClinica.
+        /// Controle AudiometriaVocalEmCampo.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table AudiometriaVocalClinica;
+        protected global::System.Web.UI.WebControls.Table AudiometriaVocalEmCampo;
 
         /// <summary>
-        /// Controle pnlAudioVocalOD.
+        /// Controle pnlAudioVocalComAASI.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlAudioVocalOD;
+        protected global::System.Web.UI.WebControls.Panel pnlAudioVocalComAASI;
 
         /// <summary>
         /// Controle lblMediaOD.
@@ -1716,148 +510,148 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.Label lblMediaOD;
 
         /// <summary>
-        /// Controle mEDIAodTextBox.
+        /// Controle comMEDIATextBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox mEDIAodTextBox;
+        protected global::System.Web.UI.WebControls.TextBox comMEDIATextBox;
 
         /// <summary>
-        /// Controle pnlIPRFmomOd.
+        /// Controle pnlIPRFmomComAASI.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlIPRFmomOd;
+        protected global::System.Web.UI.WebControls.Panel pnlIPRFmomComAASI;
 
         /// <summary>
-        /// Controle ddlIPRFmonOd.
+        /// Controle comMONComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlIPRFmonOd;
+        protected global::System.Web.UI.WebControls.DropDownList comMONComboBox;
 
         /// <summary>
-        /// Controle pnlIPRFdissOd.
+        /// Controle pnlIPRFdissComAASI.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlIPRFdissOd;
+        protected global::System.Web.UI.WebControls.Panel pnlIPRFdissComAASI;
 
         /// <summary>
-        /// Controle ddlIPRFdisOd.
+        /// Controle comDISSComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlIPRFdisOd;
+        protected global::System.Web.UI.WebControls.DropDownList comDISSComboBox;
 
         /// <summary>
-        /// Controle txtSRTOD.
+        /// Controle comSRTTextBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSRTOD;
+        protected global::System.Web.UI.WebControls.TextBox comSRTTextBox;
 
         /// <summary>
-        /// Controle txtSDTOD.
+        /// Controle comSDTTextBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSDTOD;
+        protected global::System.Web.UI.WebControls.TextBox comSDTTextBox;
 
         /// <summary>
-        /// Controle pnlAudioVocalOE.
+        /// Controle pnlAudioVocalSemAASI.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlAudioVocalOE;
+        protected global::System.Web.UI.WebControls.Panel pnlAudioVocalSemAASI;
 
         /// <summary>
-        /// Controle lblMediaOE.
+        /// Controle lblMediaSemAASI.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMediaOE;
+        protected global::System.Web.UI.WebControls.Label lblMediaSemAASI;
 
         /// <summary>
-        /// Controle mEDIAoeTextBox.
+        /// Controle semMEDIATextBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox mEDIAoeTextBox;
+        protected global::System.Web.UI.WebControls.TextBox semMEDIATextBox;
 
         /// <summary>
-        /// Controle pnlIPRFmonOe.
+        /// Controle pnlIPRFmonSemAASI.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlIPRFmonOe;
+        protected global::System.Web.UI.WebControls.Panel pnlIPRFmonSemAASI;
 
         /// <summary>
-        /// Controle ddlIPRFmonOe.
+        /// Controle semMONComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlIPRFmonOe;
+        protected global::System.Web.UI.WebControls.DropDownList semMONComboBox;
 
         /// <summary>
-        /// Controle pnlIPRFdisOe.
+        /// Controle pnlIPRFdisSemAASI.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlIPRFdisOe;
+        protected global::System.Web.UI.WebControls.Panel pnlIPRFdisSemAASI;
 
         /// <summary>
-        /// Controle ddlIPRFdisOe.
+        /// Controle semDISSComboBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlIPRFdisOe;
+        protected global::System.Web.UI.WebControls.DropDownList semDISSComboBox;
 
         /// <summary>
-        /// Controle txtSRTOE.
+        /// Controle semSRTTextBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSRTOE;
+        protected global::System.Web.UI.WebControls.TextBox semSRTTextBox;
 
         /// <summary>
-        /// Controle txtSDTOE.
+        /// Controle semSDTTextBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSDTOE;
+        protected global::System.Web.UI.WebControls.TextBox semSDTTextBox;
 
         /// <summary>
         /// Controle audioVocalOD.
@@ -1896,159 +690,6 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.Button btnMediaQuadritonal;
 
         /// <summary>
-        /// Controle tbLaudoParecer.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tbLaudoParecer;
-
-        /// <summary>
-        /// Controle LaudoOD.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LaudoOD;
-
-        /// <summary>
-        /// Controle pnlLaudoOD.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlLaudoOD;
-
-        /// <summary>
-        /// Controle tbLaudoOD.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tbLaudoOD;
-
-        /// <summary>
-        /// Controle ddlAudicaoNormalOD.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlAudicaoNormalOD;
-
-        /// <summary>
-        /// Controle ddlCurvaTipoOD.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCurvaTipoOD;
-
-        /// <summary>
-        /// Controle ddlDeGrauOD.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDeGrauOD;
-
-        /// <summary>
-        /// Controle ddlDeConfigOD.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDeConfigOD;
-
-        /// <summary>
-        /// Controle ddlEaudioVocalOD.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlEaudioVocalOD;
-
-        /// <summary>
-        /// Controle LaudoOE.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LaudoOE;
-
-        /// <summary>
-        /// Controle pnlLaudoOE.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlLaudoOE;
-
-        /// <summary>
-        /// Controle tbLaudoOE.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tbLaudoOE;
-
-        /// <summary>
-        /// Controle ddlAudicaoNormalOE.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlAudicaoNormalOE;
-
-        /// <summary>
-        /// Controle ddlCurvaTipoOE.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCurvaTipoOE;
-
-        /// <summary>
-        /// Controle ddlDeGrauOE.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDeGrauOE;
-
-        /// <summary>
-        /// Controle ddlDeConfigOE.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDeConfigOE;
-
-        /// <summary>
-        /// Controle ddlEaudioVocalOE.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlEaudioVocalOE;
-
-        /// <summary>
         /// Controle tbOutrosDados.
         /// </summary>
         /// <remarks>
@@ -2058,15 +699,6 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.Table tbOutrosDados;
 
         /// <summary>
-        /// Controle txtMascaramentoComent.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMascaramentoComent;
-
-        /// <summary>
         /// Controle txtComentariosGerais.
         /// </summary>
         /// <remarks>
@@ -2074,15 +706,6 @@ namespace SISTEMASLUASAUDE_APLICACAO
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtComentariosGerais;
-
-        /// <summary>
-        /// Controle ddlLaudos.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlLaudos;
 
         /// <summary>
         /// Controle tbDadosComplementares.

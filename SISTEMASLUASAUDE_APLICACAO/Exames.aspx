@@ -67,6 +67,11 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .btn-Audio-Convencional:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
 
         .btn-Audio-Completa {
@@ -77,6 +82,11 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .btn-Audio-Completa:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
 
         .btn-Audio-Comportamental {
@@ -87,6 +97,11 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .btn-Audio-Comportamental:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
 
         .btn-Audio-Campo {
@@ -97,6 +112,11 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .btn-Audio-Campo:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
 
         .btn-Audio-Campo-Conven {
@@ -107,6 +127,11 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .btn-Audio-Campo-Conven:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
 
         .btn-Altas-frequencias {
@@ -117,6 +142,11 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .btn-Altas-frequencias:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
 
         .btn-Impepanciometria {
@@ -127,6 +157,11 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .btn-Impepanciometria:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
 
         .btn-Teste-Funcao-Tubaria {
@@ -137,6 +172,11 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain; /* Ajuste o tamanho da imagem conforme necessário */
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+        .btn-Teste-Funcao-Tubaria:hover {
+            transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
         }
     </style>
 </head>
