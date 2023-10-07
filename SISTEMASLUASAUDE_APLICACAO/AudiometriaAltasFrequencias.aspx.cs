@@ -337,123 +337,18 @@ namespace SISTEMASLUASAUDE_APLICACAO
         {
             //para OD ######################################################
             //VA
-            va125odComboBox.DataSource = DropdownData_VA.GetItems();//125Hz
-            va125odComboBox.DataBind();
-
-            va250odComboBox.DataSource = DropdownData_VA.GetItems();//250Hz
-            va250odComboBox.DataBind();
-
-            va500odComboBox.DataSource = DropdownData_VA.GetItems();//500Hz
-            va500odComboBox.DataBind();
-
-            va750odComboBox.DataSource = DropdownData_VA.GetItems();//750Hz
-            va750odComboBox.DataBind();
-
-            va1kodComboBox.DataSource = DropdownData_VA.GetItems();//1kHz
-            va1kodComboBox.DataBind();
-
-            va1e5kodComboBox.DataSource = DropdownData_VA.GetItems();//1,5kHz
-            va1e5kodComboBox.DataBind();
-
-            va2kodComboBox.DataSource = DropdownData_VA.GetItems();//2kHz
-            va2kodComboBox.DataBind();
-
-            va3kodComboBox.DataSource = DropdownData_VA.GetItems();//3kHz
-            va3kodComboBox.DataBind();
-
-            va4kodComboBox.DataSource = DropdownData_VA.GetItems();//4kHz
-            va4kodComboBox.DataBind();
-
-            va6kodComboBox.DataSource = DropdownData_VA.GetItems();//6kHz
-            va6kodComboBox.DataBind();
-
-            va8kodComboBox.DataSource = DropdownData_VA.GetItems();//8kHz
-            va8kodComboBox.DataBind();
+            
 
             //VO
-            vo250odComboBox.DataSource = DropdownData_VO.GetItems();//250Hz
-            vo250odComboBox.DataBind();
-
-            vo500odComboBox.DataSource = DropdownData_VO.GetItems();//500Hz
-            vo500odComboBox.DataBind();
-
-            vo750odComboBox.DataSource = DropdownData_VO.GetItems();//750Hz
-            vo750odComboBox.DataBind();
-
-            vo1kodComboBox.DataSource = DropdownData_VO.GetItems();//1kHz
-            vo1kodComboBox.DataBind();
-
-            vo1e5kodComboBox.DataSource = DropdownData_VO.GetItems();//1,5kHz
-            vo1e5kodComboBox.DataBind();
-
-            vo2kodComboBox.DataSource = DropdownData_VO.GetItems();//2kHz
-            vo2kodComboBox.DataBind();
-
-            vo3kodComboBox.DataSource = DropdownData_VO.GetItems();//3kHz
-            vo3kodComboBox.DataBind();
-
-            vo4kodComboBox.DataSource = DropdownData_VO.GetItems();//4kHz
-            vo4kodComboBox.DataBind();
+            
 
             //para OE ######################################################
             //VA
-            va125oeComboBox.DataSource = DropdownData_VA.GetItems();//125Hz
-            va125oeComboBox.DataBind();
-
-            va250oeComboBox.DataSource = DropdownData_VA.GetItems();//250Hz
-            va250oeComboBox.DataBind();
-
-            va500oeComboBox.DataSource = DropdownData_VA.GetItems();//500Hz
-            va500oeComboBox.DataBind();
-
-            va750oeComboBox.DataSource = DropdownData_VA.GetItems();//750Hz
-            va750oeComboBox.DataBind();
-
-            va1koeComboBox.DataSource = DropdownData_VA.GetItems();//1kHz
-            va1koeComboBox.DataBind();
-
-            va1e5koeComboBox.DataSource = DropdownData_VA.GetItems();//1,5kHz
-            va1e5koeComboBox.DataBind();
-
-            va2koeComboBox.DataSource = DropdownData_VA.GetItems();//2kHz
-            va2koeComboBox.DataBind();
-
-            va3koeComboBox.DataSource = DropdownData_VA.GetItems();//3kHz
-            va3koeComboBox.DataBind();
-
-            va4koeComboBox.DataSource = DropdownData_VA.GetItems();//4kHz
-            va4koeComboBox.DataBind();
-
-            va6koeComboBox.DataSource = DropdownData_VA.GetItems();//6kHz
-            va6koeComboBox.DataBind();
-
-            va8koeComboBox.DataSource = DropdownData_VA.GetItems();//8kHz
-            va8koeComboBox.DataBind();
+            
 
             //VO
-            vo250oeComboBox.DataSource = DropdownData_VO.GetItems();//250Hz
-            vo250oeComboBox.DataBind();
+            
 
-            vo500oeComboBox.DataSource = DropdownData_VO.GetItems();//500Hz
-            vo500oeComboBox.DataBind();
-
-            vo750oeComboBox.DataSource = DropdownData_VO.GetItems();//750Hz
-            vo750oeComboBox.DataBind();
-
-            vo1koeComboBox.DataSource = DropdownData_VO.GetItems();//1kHz
-            vo1koeComboBox.DataBind();
-
-            vo1e5koeComboBox.DataSource = DropdownData_VO.GetItems();//1,5kHz
-            vo1e5koeComboBox.DataBind();
-
-            vo2koeComboBox.DataSource = DropdownData_VO.GetItems();//2kHz
-            vo2koeComboBox.DataBind();
-
-            vo3koeComboBox.DataSource = DropdownData_VO.GetItems();//3kHz
-            vo3koeComboBox.DataBind();
-
-            vo4koeComboBox.DataSource = DropdownData_VO.GetItems();//4kHz
-            vo4koeComboBox.DataBind();
         }
 
         private void ImprimeAudiograma()
