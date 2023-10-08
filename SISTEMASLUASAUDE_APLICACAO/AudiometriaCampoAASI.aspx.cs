@@ -24,8 +24,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
                 CarregaDadosPaciente();
 
-                CarregaAudiogramaClinicoOD();
-                CarregaAudiogramaClinicoOE();
+                CarregaAudiogramaAASI();
 
                 CarregaDDLaudioTonalVA();
 
@@ -56,22 +55,19 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         protected void btnPlotarGeral_Click(object sender, EventArgs e)
         {
-            PlotaDadosAudiogramaOD();
-            PlotaDadosAudiogramaOE();
+            PlotaDadosAudiogramaAASI();
         }
 
         protected void btnMediaTritonal_Click(object sender, EventArgs e)
         {
             CalculaMediaTritonal();
-            PlotaDadosAudiogramaOD();
-            PlotaDadosAudiogramaOE();
+            PlotaDadosAudiogramaAASI();
         }
 
         protected void btnMediaQuadritonal_Click(object sender, EventArgs e)
         {
             CalculaMediaQuadritonal();
-            PlotaDadosAudiogramaOD();
-            PlotaDadosAudiogramaOE();
+            PlotaDadosAudiogramaAASI();
         }
 
         protected void btnImprimir_Click(object sender, EventArgs e)
@@ -79,24 +75,370 @@ namespace SISTEMASLUASAUDE_APLICACAO
             ImprimeAudiograma();
         }
 
-        private void CarregaAudiogramaClinicoOD()
+        private void CarregaAudiogramaAASI()
         {
-            
+            chartAudioEmCampo.Series.Clear();// limpa o chart
+
+            //***PARA MONTAR O GRÁFICO***
+
+            int iniciar = 1;
+            int finalizar = 15;
+
+            chartAudioEmCampo.ChartAreas[0].AxisX.MajorGrid.LineDashStyle = ChartDashStyle.Dash;
+            chartAudioEmCampo.ChartAreas[0].AxisX.MajorGrid.LineColor = Color.Transparent;
+
+            string fundoChart = "fundoChartTransp";
+            Series imgFundo = chartAudioEmCampo.Series.Add(fundoChart);
+
+            imgFundo.ChartArea = chartAudioEmCampo.ChartAreas[0].Name;
+            imgFundo.Name = fundoChart;
+            imgFundo.ChartType = SeriesChartType.Point;
+
+            if (rbBananaFalaEmCampo.SelectedValue == "0")
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/bananaCinza.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                imgFundo.Points.AddXY(7.50, 45);
+                imgFundo.MarkerImage = caminhoVirtual;
+            }
+            else if (rbBananaFalaEmCampo.SelectedValue == "1")
+            {
+                chartAudioEmCampo.Series[fundoChart].Points.Clear();
+            }
+
+            string seriesName1 = "grade1camp";
+            Series ser1 = chartAudioEmCampo.Series.Add(seriesName1);
+
+            ser1.IsVisibleInLegend = false;
+            ser1.ChartType = SeriesChartType.Line;
+
+            ser1.BorderWidth = 1;
+            ser1.Color = Color.Black;
+            ser1.MarkerStyle = MarkerStyle.None;
+            ser1.Points.AddXY(2, -10);  // x, high
+            ser1.Points.AddXY(2, 120);
+
+
+            string seriesName2 = "grade2camp";
+            Series ser2 = chartAudioEmCampo.Series.Add(seriesName2);
+
+            ser2.IsVisibleInLegend = false;
+            ser2.ChartType = SeriesChartType.Line;
+
+            ser2.BorderWidth = 1;
+            ser2.Color = Color.Black;
+            ser2.MarkerStyle = MarkerStyle.None;
+            ser2.Points.AddXY(4, -10);  // x, high
+            ser2.Points.AddXY(4, 120);
+
+            string seriesName3 = "grade3camp";
+            Series ser3 = chartAudioEmCampo.Series.Add(seriesName3);
+
+            ser3.IsVisibleInLegend = false;
+            ser3.ChartType = SeriesChartType.Line;
+
+            ser3.BorderWidth = 1;
+            ser3.Color = Color.Black;
+            ser3.MarkerStyle = MarkerStyle.None;
+            ser3.Points.AddXY(6, -10);  // x, high
+            ser3.Points.AddXY(6, 120);
+
+            string seriesName4 = "grade4camp";
+            Series ser4 = chartAudioEmCampo.Series.Add(seriesName4);
+
+            ser4.IsVisibleInLegend = false;
+            ser4.ChartType = SeriesChartType.Line;
+
+            ser4.BorderWidth = 1;
+            ser4.Color = Color.Black;
+            ser4.MarkerStyle = MarkerStyle.None;
+            ser4.BorderDashStyle = ChartDashStyle.Dash;
+            ser4.Points.AddXY(7.25, -10);  // x, high
+            ser4.Points.AddXY(7.25, 120);
+
+            string seriesName5 = "grade5camp";
+            Series ser5 = chartAudioEmCampo.Series.Add(seriesName5);
+
+            ser5.IsVisibleInLegend = false;
+            ser5.ChartType = SeriesChartType.Line;
+
+            ser5.BorderWidth = 1;
+            ser5.Color = Color.Black;
+            ser5.MarkerStyle = MarkerStyle.None;
+            ser5.Points.AddXY(8, -10);  // x, high
+            ser5.Points.AddXY(8, 120);
+
+            string seriesName6 = "grade6camp";
+            Series ser6 = chartAudioEmCampo.Series.Add(seriesName6);
+
+            ser6.IsVisibleInLegend = false;
+            ser6.ChartType = SeriesChartType.Line;
+
+            ser6.BorderWidth = 1;
+            ser6.Color = Color.Black;
+            ser6.MarkerStyle = MarkerStyle.None;
+            ser6.BorderDashStyle = ChartDashStyle.Dash;
+            ser6.Points.AddXY(9.25, -10);  // x, high
+            ser6.Points.AddXY(9.25, 120);
+
+            string seriesName7 = "grade7camp";
+            Series ser7 = chartAudioEmCampo.Series.Add(seriesName7);
+
+            ser7.IsVisibleInLegend = false;
+            ser7.ChartType = SeriesChartType.Line;
+
+            ser7.BorderWidth = 1;
+            ser7.Color = Color.Black;
+            ser7.MarkerStyle = MarkerStyle.None;
+            ser7.Points.AddXY(10, -10);  // x, high
+            ser7.Points.AddXY(10, 120);
+
+            string seriesName7a = "grade8camp";
+            Series ser7a = chartAudioEmCampo.Series.Add(seriesName7a);
+
+            ser7a.IsVisibleInLegend = false;
+            ser7a.ChartType = SeriesChartType.Line;
+
+            ser7a.BorderDashStyle = ChartDashStyle.Dash;
+            ser7a.BorderWidth = 1;
+            ser7a.Color = Color.Black;
+            ser7a.MarkerStyle = MarkerStyle.None;
+            ser7a.Points.AddXY(11.25, -10);  // x, high
+            ser7a.Points.AddXY(11.25, 120);
+
+            string seriesName9a = "grade9camp";
+            Series ser9a = chartAudioEmCampo.Series.Add(seriesName9a);
+
+            ser9a.IsVisibleInLegend = false;
+            ser9a.ChartType = SeriesChartType.Line;
+
+            ser9a.BorderWidth = 1;
+            ser9a.Color = Color.Black;
+            ser9a.MarkerStyle = MarkerStyle.None;
+            ser9a.Points.AddXY(12, -10);  // x, high
+            ser9a.Points.AddXY(12, 120);
+
+            string seriesName10a = "grade10camp";
+            Series ser10a = chartAudioEmCampo.Series.Add(seriesName10a);
+
+            ser10a.IsVisibleInLegend = false;
+            ser10a.ChartType = SeriesChartType.Line;
+
+            ser10a.BorderDashStyle = ChartDashStyle.Dash;
+            ser10a.BorderWidth = 1;
+            ser10a.Color = Color.Black;
+            ser10a.MarkerStyle = MarkerStyle.None;
+            ser10a.Points.AddXY(13.25, -10);  // x, high
+            ser10a.Points.AddXY(13.25, 120);
+
+            string seriesName11a = "grade11camp";
+            Series ser11a = chartAudioEmCampo.Series.Add(seriesName11a);
+
+            ser11a.IsVisibleInLegend = false;
+            ser11a.ChartType = SeriesChartType.Line;
+
+            ser11a.BorderWidth = 1;
+            ser11a.Color = Color.Black;
+            ser11a.MarkerStyle = MarkerStyle.None;
+            ser11a.Points.AddXY(14, -10);  // x, high
+            ser11a.Points.AddXY(14, 120);
+
+            string seriesName12a = "grade12camp";
+            Series ser12a = chartAudioEmCampo.Series.Add(seriesName12a);
+
+            ser12a.IsVisibleInLegend = false;
+            ser12a.ChartType = SeriesChartType.Line;
+
+            ser12a.BorderWidth = 1;
+            ser12a.Color = Color.Black;
+            ser12a.MarkerStyle = MarkerStyle.None;
+            ser12a.Points.AddXY(15, -10);  // x, high
+            ser12a.Points.AddXY(15, 120);
         }
 
-        private void CarregaAudiogramaClinicoOE()
+        private void PlotaDadosAudiogramaAASI()
         {
-            
-        }
+            chartAudioEmCampo.Series.Clear();// limpa o chart
 
-        private void PlotaDadosAudiogramaOD()
-        {
-            
-        }
+            //***PARA MONTAR O GRÁFICO***
 
-        private void PlotaDadosAudiogramaOE()
-        {
-            
+            int iniciar = 1;
+            int finalizar = 15;
+
+            chartAudioEmCampo.ChartAreas[0].AxisX.MajorGrid.LineDashStyle = ChartDashStyle.Dash;
+            chartAudioEmCampo.ChartAreas[0].AxisX.MajorGrid.LineColor = Color.Transparent;
+
+            string fundoChart = "fundoChartTransp";
+            Series imgFundo = chartAudioEmCampo.Series.Add(fundoChart);
+
+            imgFundo.ChartArea = chartAudioEmCampo.ChartAreas[0].Name;
+            imgFundo.Name = fundoChart;
+            imgFundo.ChartType = SeriesChartType.Point;
+
+            if (rbBananaFalaEmCampo.SelectedValue == "0")
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/bananaCinza.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                imgFundo.Points.AddXY(7.50, 45);
+                imgFundo.MarkerImage = caminhoVirtual;
+            }
+            else if (rbBananaFalaEmCampo.SelectedValue == "1")
+            {
+                chartAudioEmCampo.Series[fundoChart].Points.Clear();
+            }
+
+            string seriesName1 = "grade1camp";
+            Series ser1 = chartAudioEmCampo.Series.Add(seriesName1);
+
+            ser1.IsVisibleInLegend = false;
+            ser1.ChartType = SeriesChartType.Line;
+
+            ser1.BorderWidth = 1;
+            ser1.Color = Color.Black;
+            ser1.MarkerStyle = MarkerStyle.None;
+            ser1.Points.AddXY(2, -10);  // x, high
+            ser1.Points.AddXY(2, 120);
+
+
+            string seriesName2 = "grade2camp";
+            Series ser2 = chartAudioEmCampo.Series.Add(seriesName2);
+
+            ser2.IsVisibleInLegend = false;
+            ser2.ChartType = SeriesChartType.Line;
+
+            ser2.BorderWidth = 1;
+            ser2.Color = Color.Black;
+            ser2.MarkerStyle = MarkerStyle.None;
+            ser2.Points.AddXY(4, -10);  // x, high
+            ser2.Points.AddXY(4, 120);
+
+            string seriesName3 = "grade3camp";
+            Series ser3 = chartAudioEmCampo.Series.Add(seriesName3);
+
+            ser3.IsVisibleInLegend = false;
+            ser3.ChartType = SeriesChartType.Line;
+
+            ser3.BorderWidth = 1;
+            ser3.Color = Color.Black;
+            ser3.MarkerStyle = MarkerStyle.None;
+            ser3.Points.AddXY(6, -10);  // x, high
+            ser3.Points.AddXY(6, 120);
+
+            string seriesName4 = "grade4camp";
+            Series ser4 = chartAudioEmCampo.Series.Add(seriesName4);
+
+            ser4.IsVisibleInLegend = false;
+            ser4.ChartType = SeriesChartType.Line;
+
+            ser4.BorderWidth = 1;
+            ser4.Color = Color.Black;
+            ser4.MarkerStyle = MarkerStyle.None;
+            ser4.BorderDashStyle = ChartDashStyle.Dash;
+            ser4.Points.AddXY(7.25, -10);  // x, high
+            ser4.Points.AddXY(7.25, 120);
+
+            string seriesName5 = "grade5camp";
+            Series ser5 = chartAudioEmCampo.Series.Add(seriesName5);
+
+            ser5.IsVisibleInLegend = false;
+            ser5.ChartType = SeriesChartType.Line;
+
+            ser5.BorderWidth = 1;
+            ser5.Color = Color.Black;
+            ser5.MarkerStyle = MarkerStyle.None;
+            ser5.Points.AddXY(8, -10);  // x, high
+            ser5.Points.AddXY(8, 120);
+
+            string seriesName6 = "grade6camp";
+            Series ser6 = chartAudioEmCampo.Series.Add(seriesName6);
+
+            ser6.IsVisibleInLegend = false;
+            ser6.ChartType = SeriesChartType.Line;
+
+            ser6.BorderWidth = 1;
+            ser6.Color = Color.Black;
+            ser6.MarkerStyle = MarkerStyle.None;
+            ser6.BorderDashStyle = ChartDashStyle.Dash;
+            ser6.Points.AddXY(9.25, -10);  // x, high
+            ser6.Points.AddXY(9.25, 120);
+
+            string seriesName7 = "grade7camp";
+            Series ser7 = chartAudioEmCampo.Series.Add(seriesName7);
+
+            ser7.IsVisibleInLegend = false;
+            ser7.ChartType = SeriesChartType.Line;
+
+            ser7.BorderWidth = 1;
+            ser7.Color = Color.Black;
+            ser7.MarkerStyle = MarkerStyle.None;
+            ser7.Points.AddXY(10, -10);  // x, high
+            ser7.Points.AddXY(10, 120);
+
+            string seriesName7a = "grade8camp";
+            Series ser7a = chartAudioEmCampo.Series.Add(seriesName7a);
+
+            ser7a.IsVisibleInLegend = false;
+            ser7a.ChartType = SeriesChartType.Line;
+
+            ser7a.BorderDashStyle = ChartDashStyle.Dash;
+            ser7a.BorderWidth = 1;
+            ser7a.Color = Color.Black;
+            ser7a.MarkerStyle = MarkerStyle.None;
+            ser7a.Points.AddXY(11.25, -10);  // x, high
+            ser7a.Points.AddXY(11.25, 120);
+
+            string seriesName9a = "grade9camp";
+            Series ser9a = chartAudioEmCampo.Series.Add(seriesName9a);
+
+            ser9a.IsVisibleInLegend = false;
+            ser9a.ChartType = SeriesChartType.Line;
+
+            ser9a.BorderWidth = 1;
+            ser9a.Color = Color.Black;
+            ser9a.MarkerStyle = MarkerStyle.None;
+            ser9a.Points.AddXY(12, -10);  // x, high
+            ser9a.Points.AddXY(12, 120);
+
+            string seriesName10a = "grade10camp";
+            Series ser10a = chartAudioEmCampo.Series.Add(seriesName10a);
+
+            ser10a.IsVisibleInLegend = false;
+            ser10a.ChartType = SeriesChartType.Line;
+
+            ser10a.BorderDashStyle = ChartDashStyle.Dash;
+            ser10a.BorderWidth = 1;
+            ser10a.Color = Color.Black;
+            ser10a.MarkerStyle = MarkerStyle.None;
+            ser10a.Points.AddXY(13.25, -10);  // x, high
+            ser10a.Points.AddXY(13.25, 120);
+
+            string seriesName11a = "grade11camp";
+            Series ser11a = chartAudioEmCampo.Series.Add(seriesName11a);
+
+            ser11a.IsVisibleInLegend = false;
+            ser11a.ChartType = SeriesChartType.Line;
+
+            ser11a.BorderWidth = 1;
+            ser11a.Color = Color.Black;
+            ser11a.MarkerStyle = MarkerStyle.None;
+            ser11a.Points.AddXY(14, -10);  // x, high
+            ser11a.Points.AddXY(14, 120);
+
+            string seriesName12a = "grade12camp";
+            Series ser12a = chartAudioEmCampo.Series.Add(seriesName12a);
+
+            ser12a.IsVisibleInLegend = false;
+            ser12a.ChartType = SeriesChartType.Line;
+
+            ser12a.BorderWidth = 1;
+            ser12a.Color = Color.Black;
+            ser12a.MarkerStyle = MarkerStyle.None;
+            ser12a.Points.AddXY(15, -10);  // x, high
+            ser12a.Points.AddXY(15, 120);
         }
 
         private void CarregaProfissional()
@@ -202,8 +544,7 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
         private void ImprimeAudiograma()
         {
-            PlotaDadosAudiogramaOD();
-            PlotaDadosAudiogramaOE();
+            PlotaDadosAudiogramaAASI();
 
             chartAudioEmCampo.SaveImage("C:\\users/public/documents/chartAudioEmCampo.png", System.Web.UI.DataVisualization.Charting.ChartImageFormat.Png);
 
