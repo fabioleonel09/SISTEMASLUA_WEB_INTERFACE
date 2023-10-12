@@ -465,7 +465,7 @@
                                         <asp:Panel ID="pnlAudioVocalComAASI" runat="server" Width="100%" BackColor="#cccccc" BorderColor="Black" BorderStyle="Solid" BorderWidth="1">
                                             <div style="text-align: center;">
                                                 <br />
-                                                <asp:Label ID="lblMediaOD" runat="server" Text="Média:" ForeColor="Black" Font-Bold="true"></asp:Label>
+                                                <asp:Label ID="lblMediaComAASI" runat="server" Text="Média:" ForeColor="Black" Font-Bold="true"></asp:Label>
                                                 <asp:TextBox ID="comMEDIATextBox" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="1" ForeColor="Black" Font-Bold="true" Font-Size="14" Width="95%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
                                                 <br />
                                                 <br />

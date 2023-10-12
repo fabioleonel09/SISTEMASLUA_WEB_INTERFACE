@@ -4,7 +4,7 @@
     <ReportItems>
       <Image Name="Image1">
         <Source>External</Source>
-        <Value>file:////C:\users/public/documents/chartODAudioClinica.png</Value>
+        <Value>file:////C:\users/public/documents/chartCampoConvenOD.png</Value>
         <Sizing>FitProportional</Sizing>
         <Top>6.08947cm</Top>
         <Left>2.88166cm</Left>
@@ -18,7 +18,7 @@
       </Image>
       <Image Name="Image2">
         <Source>External</Source>
-        <Value>file:////C:\users/public/documents/chartOEAudioClinica.png</Value>
+        <Value>file:////C:\users/public/documents/chartCampoConvenOE.png</Value>
         <Sizing>FitProportional</Sizing>
         <Top>6.08947cm</Top>
         <Left>10.50067cm</Left>
@@ -281,7 +281,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>AUDIOMETRIA TONAL E VOCAL</Value>
+                <Value>AUDIOMETRIA EM CAMPO CONVENCIONAL</Value>
                 <Style>
                   <FontStyle>Italic</FontStyle>
                   <FontSize>12pt</FontSize>
