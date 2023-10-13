@@ -94,11 +94,12 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
             if (rbBananaFalaODCampoConven.SelectedValue == "0")
             {
-                var fundoAudioOD = new NamedImage("bananaVermelha", Properties.Resources.bananaVermelha);
-                chartCampoConvenOD.Images.Clear();
-                chartCampoConvenOD.Images.Add(fundoAudioOD);
-                imgFundo.MarkerImage = "bananaVermelha";
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/bananaVermelha.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
                 imgFundo.Points.AddXY(7.50, 45);
+                imgFundo.MarkerImage = caminhoVirtual;
             }
             else if (rbBananaFalaODCampoConven.SelectedValue == "1")
             {
@@ -276,11 +277,12 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
             if (rbBananaFalaOECampoConven.SelectedValue == "0")
             {
-                var fundoAudioOE = new NamedImage("bananaAzul", Properties.Resources.bananaAzul);
-                chartCampoConvenOE.Images.Clear();
-                chartCampoConvenOE.Images.Add(fundoAudioOE);
-                imgFundo.MarkerImage = "bananaAzul";
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/bananaAzul.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
                 imgFundo.Points.AddXY(7.50, 45);
+                imgFundo.MarkerImage = caminhoVirtual;
             }
             else if (rbBananaFalaOECampoConven.SelectedValue == "1")
             {
@@ -458,11 +460,12 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
             if (rbBananaFalaODCampoConven.SelectedValue == "0")
             {
-                var fundoAudioOD = new NamedImage("bananaVermelha", Properties.Resources.bananaVermelha);
-                chartCampoConvenOD.Images.Clear();
-                chartCampoConvenOD.Images.Add(fundoAudioOD);
-                imgFundo.MarkerImage = "bananaVermelha";
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/bananaVermelha.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
                 imgFundo.Points.AddXY(7.50, 45);
+                imgFundo.MarkerImage = caminhoVirtual;
             }
             else if (rbBananaFalaODCampoConven.SelectedValue == "1")
             {
@@ -617,6 +620,356 @@ namespace SISTEMASLUASAUDE_APLICACAO
             ser12a.MarkerStyle = MarkerStyle.None;
             ser12a.Points.AddXY(15, -10);  // x, high
             ser12a.Points.AddXY(15, 120);
+
+            //SIMBOLOGIA OD
+
+            string seriesName13 = "simbol_500campo";
+            Series ser13 = chartCampoConvenOD.Series.Add(seriesName13);
+
+            ser13.ChartArea = chartCampoConvenOD.ChartAreas[0].Name;
+            ser13.Name = seriesName13;
+            ser13.ChartType = SeriesChartType.Point;
+
+            if (campo500odComboBox.Text == "")
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/vazio.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser13.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campo500odComboBox.Text != "")
+            {
+                int valor13;
+                valor13 = Convert.ToInt32(campo500odComboBox.Text);
+                ser13.Points.AddXY(6, valor13);  // x, high
+            }
+
+
+            if (campoVAodAus500CheckBox.Checked == true)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreODausente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser13.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campoVAodAus500CheckBox.Checked == false)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreODpresente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser13.MarkerImage = caminhoVirtual;
+            }
+
+            //*****
+
+            string seriesName14 = "simbol_1kcampo";
+            Series ser14 = chartCampoConvenOD.Series.Add(seriesName14);
+
+            ser14.ChartArea = chartCampoConvenOD.ChartAreas[0].Name;
+            ser14.Name = seriesName14;
+            ser14.ChartType = SeriesChartType.Point;
+
+            if (campo1kodComboBox.Text == "")
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/vazio.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser14.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campo1kodComboBox.Text != "")
+            {
+                int valor14;
+                valor14 = Convert.ToInt32(campo1kodComboBox.Text);
+                ser14.Points.AddXY(8, valor14);  // x, high
+            }
+
+
+            if (campoVAodAus1kCheckBox.Checked == true)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreODausente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser14.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campoVAodAus1kCheckBox.Checked == false)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreODpresente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser14.MarkerImage = caminhoVirtual;
+            }
+
+            //*****
+
+            string seriesName15 = "simbol_2kcampo";
+            Series ser15 = chartCampoConvenOD.Series.Add(seriesName15);
+
+            ser15.ChartArea = chartCampoConvenOD.ChartAreas[0].Name;
+            ser15.Name = seriesName15;
+            ser15.ChartType = SeriesChartType.Point;
+
+            if (campo2kodComboBox.Text == "")
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/vazio.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser15.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campo2kodComboBox.Text != "")
+            {
+                int valor15;
+                valor15 = Convert.ToInt32(campo2kodComboBox.Text);
+                ser15.Points.AddXY(10, valor15);  // x, high
+            }
+
+
+            if (campoVAodAus2kCheckBox.Checked == true)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreODausente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser15.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campoVAodAus2kCheckBox.Checked == false)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreODpresente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser15.MarkerImage = caminhoVirtual;
+            }
+
+
+            //*****
+
+            string seriesName16 = "simbol_3kcampo";
+            Series ser16 = chartCampoConvenOD.Series.Add(seriesName16);
+
+            ser16.ChartArea = chartCampoConvenOD.ChartAreas[0].Name;
+            ser16.Name = seriesName16;
+            ser16.ChartType = SeriesChartType.Point;
+
+            if (campo3kodComboBox.Text == "")
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/vazio.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser16.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campo3kodComboBox.Text != "")
+            {
+                int valor16;
+                valor16 = Convert.ToInt32(campo3kodComboBox.Text);
+                ser16.Points.AddXY(11.25, valor16);  // x, high
+            }
+
+
+            if (campoVAodAus3kCheckBox.Checked == true)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreODausente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser16.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campoVAodAus3kCheckBox.Checked == false)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreODpresente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser16.MarkerImage = caminhoVirtual;
+            }
+
+            //******
+
+            string seriesName17 = "simbol_4kcampo";
+            Series ser17 = chartCampoConvenOD.Series.Add(seriesName17);
+
+            ser17.ChartArea = chartCampoConvenOD.ChartAreas[0].Name;
+            ser17.Name = seriesName17;
+            ser17.ChartType = SeriesChartType.Point;
+
+            if (campo4kodComboBox.Text == "")
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/vazio.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser17.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campo4kodComboBox.Text != "")
+            {
+                int valor17;
+                valor17 = Convert.ToInt32(campo4kodComboBox.Text);
+                ser17.Points.AddXY(12, valor17);  // x, high
+            }
+
+
+            if (campoVAodAus4kCheckBox.Checked == true)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreODausente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser17.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campoVAodAus4kCheckBox.Checked == false)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreODpresente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser17.MarkerImage = caminhoVirtual;
+            }
+
+            //LIGA A SIMBOLOGIA OD
+
+            try
+            {
+
+                string seriesName23 = "liga 500_1kCAMPOOD";
+                Series ser23 = chartCampoConvenOD.Series.Add(seriesName23);
+
+                ser23.ChartArea = chartCampoConvenOD.ChartAreas[0].Name;
+                ser23.Name = seriesName23;
+                ser23.ChartType = SeriesChartType.Line;
+
+                if (campoLiga500_1kodCheckBox.Checked == true)
+                {
+                    int valorA, valorB;
+
+                    valorA = Convert.ToInt32(campo500odComboBox.Text);
+                    valorB = Convert.ToInt32(campo1kodComboBox.Text);
+
+                    ser23.Points.AddXY(6, valorA);
+                    ser23.Points.AddXY(8, valorB);
+
+                    ser23.BorderColor = Color.Transparent;
+                    ser23.Color = Color.Red;
+                    ser23.BorderWidth = Convert.ToInt32(1.5);
+                }
+
+                else if (campoLiga500_1kodCheckBox.Checked == false)
+                {
+                    ser23.Points.Clear();
+                }
+
+                //*******
+
+                string seriesName24 = "liga 1k_2kCAMPOOD";
+                Series ser24 = chartCampoConvenOD.Series.Add(seriesName24);
+
+                ser24.ChartArea = chartCampoConvenOD.ChartAreas[0].Name;
+                ser24.Name = seriesName24;
+                ser24.ChartType = SeriesChartType.Line;
+
+                if (campoLiga1k_2kodCheckBox.Checked == true)
+                {
+                    int valorA, valorB;
+
+                    valorA = Convert.ToInt32(campo1kodComboBox.Text);
+                    valorB = Convert.ToInt32(campo2kodComboBox.Text);
+
+                    ser24.Points.AddXY(8, valorA);
+                    ser24.Points.AddXY(10, valorB);
+
+                    ser24.BorderColor = Color.Transparent;
+                    ser24.Color = Color.Red;
+                    ser24.BorderWidth = Convert.ToInt32(1.5);
+                }
+
+                else if (campoLiga1k_2kodCheckBox.Checked == false)
+                {
+                    ser24.Points.Clear();
+                }
+
+                //*******
+
+                string seriesName25 = "liga 2k_3kCAMPOOD";
+                Series ser25 = chartCampoConvenOD.Series.Add(seriesName25);
+
+                ser25.ChartArea = chartCampoConvenOD.ChartAreas[0].Name;
+                ser25.Name = seriesName25;
+                ser25.ChartType = SeriesChartType.Line;
+
+                if (campoLiga2k_3kodCheckBox.Checked == true)
+                {
+                    int valorA, valorB;
+
+                    valorA = Convert.ToInt32(campo2kodComboBox.Text);
+                    valorB = Convert.ToInt32(campo3kodComboBox.Text);
+
+                    ser25.Points.AddXY(10, valorA);
+                    ser25.Points.AddXY(11.25, valorB);
+
+                    ser25.BorderColor = Color.Transparent;
+                    ser25.Color = Color.Red;
+                    ser25.BorderWidth = Convert.ToInt32(1.5);
+                }
+
+                else if (campoLiga2k_3kodCheckBox.Checked == false)
+                {
+                    ser25.Points.Clear();
+                }
+
+                //******
+
+                string seriesName26 = "liga 3k_4kCAMPOOD";
+                Series ser26 = chartCampoConvenOD.Series.Add(seriesName26);
+
+                ser26.ChartArea = chartCampoConvenOD.ChartAreas[0].Name;
+                ser26.Name = seriesName26;
+                ser26.ChartType = SeriesChartType.Line;
+
+                if (campoLiga3k_4kodCheckBox.Checked == true)
+                {
+                    int valorA, valorB;
+
+                    valorA = Convert.ToInt32(campo3kodComboBox.Text);
+                    valorB = Convert.ToInt32(campo4kodComboBox.Text);
+
+                    ser26.Points.AddXY(11.25, valorA);
+                    ser26.Points.AddXY(12, valorB);
+
+                    ser26.BorderColor = Color.Transparent;
+                    ser26.Color = Color.Red;
+                    ser26.BorderWidth = Convert.ToInt32(1.5);
+                }
+
+                else if (campoLiga3k_4kodCheckBox.Checked == false)
+                {
+                    ser26.Points.Clear();
+                }
+            }
+            catch
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Não é possível ligar a simbologia!');", true);
+
+                campoLiga500_1kodCheckBox.Checked = false;
+                campoLiga1k_2kodCheckBox.Checked = false;
+                campoLiga2k_3kodCheckBox.Checked = false;
+                campoLiga3k_4kodCheckBox.Checked = false;
+            }
         }
 
         private void PlotaDadosAudiogramaOE()
@@ -640,11 +993,12 @@ namespace SISTEMASLUASAUDE_APLICACAO
 
             if (rbBananaFalaOECampoConven.SelectedValue == "0")
             {
-                var fundoAudioOE = new NamedImage("bananaAzul", Properties.Resources.bananaAzul);
-                chartCampoConvenOE.Images.Clear();
-                chartCampoConvenOE.Images.Add(fundoAudioOE);
-                imgFundo.MarkerImage = "bananaAzul";
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/bananaAzul.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
                 imgFundo.Points.AddXY(7.50, 45);
+                imgFundo.MarkerImage = caminhoVirtual;
             }
             else if (rbBananaFalaOECampoConven.SelectedValue == "1")
             {
@@ -799,6 +1153,356 @@ namespace SISTEMASLUASAUDE_APLICACAO
             ser12a.MarkerStyle = MarkerStyle.None;
             ser12a.Points.AddXY(15, -10);  // x, high
             ser12a.Points.AddXY(15, 120);
+
+            //SIMBOLOGIA OE
+
+            string seriesName18 = "simbol_500campoOE";
+            Series ser18 = chartCampoConvenOE.Series.Add(seriesName18);
+
+            ser18.ChartArea = chartCampoConvenOE.ChartAreas[0].Name;
+            ser18.Name = seriesName18;
+            ser18.ChartType = SeriesChartType.Point;
+
+            if (campo500oeComboBox.Text == "")
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/vazio.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser18.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campo500oeComboBox.Text != "")
+            {
+                int valor18;
+                valor18 = Convert.ToInt32(campo500oeComboBox.Text);
+                ser18.Points.AddXY(6, valor18);  // x, high
+            }
+
+
+            if (campoVAoeAus500CheckBox.Checked == true)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreOEausente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser18.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campoVAoeAus500CheckBox.Checked == false)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreOEpresente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser18.MarkerImage = caminhoVirtual;
+            }
+
+            //*****
+
+            string seriesName19 = "simbol_1kcampoOE";
+            Series ser19 = chartCampoConvenOE.Series.Add(seriesName19);
+
+            ser19.ChartArea = chartCampoConvenOE.ChartAreas[0].Name;
+            ser19.Name = seriesName19;
+            ser19.ChartType = SeriesChartType.Point;
+
+            if (campo1koeComboBox.Text == "")
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/vazio.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser19.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campo1koeComboBox.Text != "")
+            {
+                int valor19;
+                valor19 = Convert.ToInt32(campo1koeComboBox.Text);
+                ser19.Points.AddXY(8, valor19);  // x, high
+            }
+
+
+            if (campoVAoeAus1kCheckBox.Checked == true)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreOEausente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser19.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campoVAoeAus1kCheckBox.Checked == false)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreOEpresente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser19.MarkerImage = caminhoVirtual;
+            }
+
+            //*****
+
+            string seriesName20 = "simbol_2kcampoOE";
+            Series ser20 = chartCampoConvenOE.Series.Add(seriesName20);
+
+            ser20.ChartArea = chartCampoConvenOE.ChartAreas[0].Name;
+            ser20.Name = seriesName20;
+            ser20.ChartType = SeriesChartType.Point;
+
+            if (campo2koeComboBox.Text == "")
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/vazio.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser20.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campo2koeComboBox.Text != "")
+            {
+                int valor20;
+                valor20 = Convert.ToInt32(campo2koeComboBox.Text);
+                ser20.Points.AddXY(10, valor20);  // x, high
+            }
+
+
+            if (campoVAoeAus2kCheckBox.Checked == true)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreOEausente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser20.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campoVAoeAus2kCheckBox.Checked == false)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreOEpresente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser20.MarkerImage = caminhoVirtual;
+            }
+
+
+            //*****
+
+            string seriesName21 = "simbol_3kcampoOE";
+            Series ser21 = chartCampoConvenOE.Series.Add(seriesName21);
+
+            ser21.ChartArea = chartCampoConvenOE.ChartAreas[0].Name;
+            ser21.Name = seriesName21;
+            ser21.ChartType = SeriesChartType.Point;
+
+            if (campo3koeComboBox.Text == "")
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/vazio.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser21.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campo3koeComboBox.Text != "")
+            {
+                int valor21;
+                valor21 = Convert.ToInt32(campo3koeComboBox.Text);
+                ser21.Points.AddXY(11.25, valor21);  // x, high
+            }
+
+
+            if (campoVAoeAus3kCheckBox.Checked == true)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreOEausente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser21.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campoVAoeAus3kCheckBox.Checked == false)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreOEpresente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser21.MarkerImage = caminhoVirtual;
+            }
+
+            //******
+
+            string seriesName22 = "simbol_4kcampoOE";
+            Series ser22 = chartCampoConvenOE.Series.Add(seriesName22);
+
+            ser22.ChartArea = chartCampoConvenOE.ChartAreas[0].Name;
+            ser22.Name = seriesName22;
+            ser22.ChartType = SeriesChartType.Point;
+
+            if (campo4koeComboBox.Text == "")
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/vazio.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser22.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campo4koeComboBox.Text != "")
+            {
+                int valor22;
+                valor22 = Convert.ToInt32(campo4koeComboBox.Text);
+                ser22.Points.AddXY(12, valor22);  // x, high
+            }
+
+
+            if (campoVAoeAus4kCheckBox.Checked == true)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreOEausente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser22.MarkerImage = caminhoVirtual;
+            }
+
+            else if (campoVAoeAus4kCheckBox.Checked == false)
+            {
+                // Caminho virtual da imagem (relativo à raiz do projeto)
+                string caminhoVirtual = "~/Images/campoLivreOEpresente.png";
+
+                // Define o caminho virtual da imagem como imagem do marcador
+                ser22.MarkerImage = caminhoVirtual;
+            }
+
+            //LIGA A SIMBOLOGIA OE
+
+            try
+            {
+
+                string seriesName27 = "liga 500_1kCAMPOOE";
+                Series ser27 = chartCampoConvenOE.Series.Add(seriesName27);
+
+                ser27.ChartArea = chartCampoConvenOE.ChartAreas[0].Name;
+                ser27.Name = seriesName27;
+                ser27.ChartType = SeriesChartType.Line;
+
+                if (campoLiga500_1koeCheckBox.Checked == true)
+                {
+                    int valorA, valorB;
+
+                    valorA = Convert.ToInt32(campo500oeComboBox.Text);
+                    valorB = Convert.ToInt32(campo1koeComboBox.Text);
+
+                    ser27.Points.AddXY(6, valorA);
+                    ser27.Points.AddXY(8, valorB);
+
+                    ser27.BorderColor = Color.Transparent;
+                    ser27.Color = Color.DodgerBlue;
+                    ser27.BorderWidth = Convert.ToInt32(1.5);
+                }
+
+                else if (campoLiga500_1koeCheckBox.Checked == false)
+                {
+                    ser27.Points.Clear();
+                }
+
+                //*******
+
+                string seriesName28 = "liga 1k_2kCAMPOOE";
+                Series ser28 = chartCampoConvenOE.Series.Add(seriesName28);
+
+                ser28.ChartArea = chartCampoConvenOE.ChartAreas[0].Name;
+                ser28.Name = seriesName28;
+                ser28.ChartType = SeriesChartType.Line;
+
+                if (campoLiga1k_2koeCheckBox.Checked == true)
+                {
+                    int valorA, valorB;
+
+                    valorA = Convert.ToInt32(campo1koeComboBox.Text);
+                    valorB = Convert.ToInt32(campo2koeComboBox.Text);
+
+                    ser28.Points.AddXY(8, valorA);
+                    ser28.Points.AddXY(10, valorB);
+
+                    ser28.BorderColor = Color.Transparent;
+                    ser28.Color = Color.DodgerBlue;
+                    ser28.BorderWidth = Convert.ToInt32(1.5);
+                }
+
+                else if (campoLiga1k_2koeCheckBox.Checked == false)
+                {
+                    ser28.Points.Clear();
+                }
+
+                //*******
+
+                string seriesName29 = "liga 2k_3kCAMPOOE";
+                Series ser29 = chartCampoConvenOE.Series.Add(seriesName29);
+
+                ser29.ChartArea = chartCampoConvenOE.ChartAreas[0].Name;
+                ser29.Name = seriesName29;
+                ser29.ChartType = SeriesChartType.Line;
+
+                if (campoLiga2k_3koeCheckBox.Checked == true)
+                {
+                    int valorA, valorB;
+
+                    valorA = Convert.ToInt32(campo2koeComboBox.Text);
+                    valorB = Convert.ToInt32(campo3koeComboBox.Text);
+
+                    ser29.Points.AddXY(10, valorA);
+                    ser29.Points.AddXY(11.25, valorB);
+
+                    ser29.BorderColor = Color.Transparent;
+                    ser29.Color = Color.DodgerBlue;
+                    ser29.BorderWidth = Convert.ToInt32(1.5);
+                }
+
+                else if (campoLiga2k_3koeCheckBox.Checked == false)
+                {
+                    ser29.Points.Clear();
+                }
+
+                //******
+
+                string seriesName30 = "liga 3k_4kCAMPOOE";
+                Series ser30 = chartCampoConvenOE.Series.Add(seriesName30);
+
+                ser30.ChartArea = chartCampoConvenOE.ChartAreas[0].Name;
+                ser30.Name = seriesName30;
+                ser30.ChartType = SeriesChartType.Line;
+
+                if (campoLiga3k_4koeCheckBox.Checked == true)
+                {
+                    int valorA, valorB;
+
+                    valorA = Convert.ToInt32(campo3koeComboBox.Text);
+                    valorB = Convert.ToInt32(campo4koeComboBox.Text);
+
+                    ser30.Points.AddXY(11.25, valorA);
+                    ser30.Points.AddXY(12, valorB);
+
+                    ser30.BorderColor = Color.Transparent;
+                    ser30.Color = Color.DodgerBlue;
+                    ser30.BorderWidth = Convert.ToInt32(1.5);
+                }
+
+                else if (campoLiga3k_4koeCheckBox.Checked == false)
+                {
+                    ser30.Points.Clear();
+                }
+            }
+            catch
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Não é possível ligar a simbologia!');", true);
+
+                campoLiga500_1koeCheckBox.Checked = false;
+                campoLiga1k_2koeCheckBox.Checked = false;
+                campoLiga2k_3koeCheckBox.Checked = false;
+                campoLiga3k_4koeCheckBox.Checked = false;
+            }
         }
 
         private void CarregaProfissional()
