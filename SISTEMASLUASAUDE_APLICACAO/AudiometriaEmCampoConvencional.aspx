@@ -915,8 +915,8 @@
                                         <asp:Panel ID="pnlAudioVocalOD" runat="server" Width="100%" BackColor="MistyRose" BorderColor="Red" BorderStyle="Solid" BorderWidth="1">
                                             <div style="text-align: center;">
                                                 <br />
-                                                <asp:Label ID="lblMediaOD" runat="server" Text="Média:" ForeColor="Red" Font-Bold="true"></asp:Label>
-                                                <asp:TextBox ID="mEDIAodTextBox" runat="server" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" Width="95%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
+                                                <asp:Label ID="lblMediaCampoConvenOD" runat="server" Text="Média:" ForeColor="Red" Font-Bold="true"></asp:Label>
+                                                <asp:TextBox ID="campoMEDIATconvODTextBox" runat="server" BorderColor="Red" BorderStyle="Solid" BorderWidth="1" ForeColor="Red" Font-Bold="true" Font-Size="14" Width="95%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
                                                 <br />
                                                 <br />
                                                 <label style="color: red;"><b>I. P. R. F.</b></label><br />
@@ -950,8 +950,8 @@
                                         <asp:Panel ID="pnlAudioVocalOE" runat="server" Width="100%" BackColor="AliceBlue" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1">
                                             <div style="text-align: center;">
                                                 <br />
-                                                <asp:Label ID="lblMediaOE" runat="server" Text="Média:" ForeColor="Blue" Font-Bold="true"></asp:Label>
-                                                <asp:TextBox ID="mEDIAoeTextBox" runat="server" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" Width="95%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
+                                                <asp:Label ID="lblMediaCampoConvenOE" runat="server" Text="Média:" ForeColor="Blue" Font-Bold="true"></asp:Label>
+                                                <asp:TextBox ID="campoMEDIATconvOETextBox" runat="server" BorderColor="Blue" BorderStyle="Solid" BorderWidth="1" ForeColor="Blue" Font-Bold="true" Font-Size="14" Width="95%" Height="40px" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
                                                 <br />
                                                 <br />
                                                 <label style="color: blue;"><b>I. P. R. F.</b></label>

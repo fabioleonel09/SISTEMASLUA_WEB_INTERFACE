@@ -1626,22 +1626,22 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.Panel pnlAudioVocalOD;
 
         /// <summary>
-        /// Controle lblMediaOD.
+        /// Controle lblMediaCampoConvenOD.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMediaOD;
+        protected global::System.Web.UI.WebControls.Label lblMediaCampoConvenOD;
 
         /// <summary>
-        /// Controle mEDIAodTextBox.
+        /// Controle campoMEDIATconvODTextBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox mEDIAodTextBox;
+        protected global::System.Web.UI.WebControls.TextBox campoMEDIATconvODTextBox;
 
         /// <summary>
         /// Controle pnlIPRFmomOd.
@@ -1707,22 +1707,22 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.Panel pnlAudioVocalOE;
 
         /// <summary>
-        /// Controle lblMediaOE.
+        /// Controle lblMediaCampoConvenOE.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMediaOE;
+        protected global::System.Web.UI.WebControls.Label lblMediaCampoConvenOE;
 
         /// <summary>
-        /// Controle mEDIAoeTextBox.
+        /// Controle campoMEDIATconvOETextBox.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox mEDIAoeTextBox;
+        protected global::System.Web.UI.WebControls.TextBox campoMEDIATconvOETextBox;
 
         /// <summary>
         /// Controle pnlIPRFmonOe.

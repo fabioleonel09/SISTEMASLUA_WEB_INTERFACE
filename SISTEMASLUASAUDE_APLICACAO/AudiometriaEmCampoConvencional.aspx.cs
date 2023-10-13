@@ -1570,14 +1570,145 @@ namespace SISTEMASLUASAUDE_APLICACAO
         }
 
         private void CalculaMediaTritonal()
-        { 
-            //Para a OD #############################################
-            
+        {
+            try//no bloco de tratamento de erros
+            {
+                //PARA CAMPO CONVENCIONAL OD
+                campoMEDIATconvODTextBox.Text = "";//limpa o txt média tritonal 
+
+                if ((campo500odComboBox.Text == "") || (campo1kodComboBox.Text == "") || (campo2kodComboBox.Text == ""))//caso alguma das txt's de 500Hz, 1kHz e 2kHz estejam vazias
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Por favor, escolha os valores para a média tritonal de 500Hz, 1kHz e 2kHZ da OD.');", true);
+                }
+
+                else//do contrário
+                {
+                    if ((campoVAodAus500CheckBox.Checked == true) || (campoVAodAus1kCheckBox.Checked == true) || (campoVAodAus2kCheckBox.Checked == true))//caso alguma das txt's de 500Hz, 1kHz ou 2kHz esteja com o texto AUS, de ausente
+                    {
+                        campoMEDIATconvODTextBox.Text = "Saída máxima";//atritui a frase à txt média
+                    }
+
+                    else//caso contrário
+                    {
+                        int valor1, valor2, valor3, resultado;
+
+                        valor1 = Convert.ToInt32(campo500odComboBox.Text);
+                        valor2 = Convert.ToInt32(campo1kodComboBox.Text);
+                        valor3 = Convert.ToInt32(campo2kodComboBox.Text);
+
+                        resultado = ((valor1 + valor2 + valor3) / 3);
+
+                        campoMEDIATconvODTextBox.Text = Convert.ToString(resultado);
+                        lblMediaCampoConvenOD.Text = "Média Tritonal (dBNA):";
+                    }
+                }
+
+                //PARA CAMPO CONVENCIONAL OE #######################################
+                campoMEDIATconvOETextBox.Text = "";//limpa o txt média tritonal 
+
+                if ((campo500oeComboBox.Text == "") || (campo1koeComboBox.Text == "") || (campo2koeComboBox.Text == ""))//caso alguma das txt's de 500Hz, 1kHz e 2kHz estejam vazias
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Por favor, escolha os valores para a média tritonal de 500Hz, 1kHz e 2kHZ da OE.');", true);
+                }
+
+                else//do contrário
+                {
+                    if ((campoVAoeAus500CheckBox.Checked == true) || (campoVAoeAus1kCheckBox.Checked == true) || (campoVAoeAus2kCheckBox.Checked == true))//caso alguma das txt's de 500Hz, 1kHz ou 2kHz esteja com o texto AUS, de ausente
+                    {
+                        campoMEDIATconvOETextBox.Text = "Saída máxima";//atritui a frase à txt média com AASI
+                    }
+
+                    else//caso contrário
+                    {
+                        int valor1, valor2, valor3, resultado;
+
+                        valor1 = Convert.ToInt32(campo500oeComboBox.Text);
+                        valor2 = Convert.ToInt32(campo1koeComboBox.Text);
+                        valor3 = Convert.ToInt32(campo2koeComboBox.Text);
+
+                        resultado = ((valor1 + valor2 + valor3) / 3);
+
+                        campoMEDIATconvOETextBox.Text = Convert.ToString(resultado);
+                        lblMediaCampoConvenOE.Text = "Média Tritonal (dBNA):";
+                    }
+                }
+            }
+            catch (Exception ex)//tratamento de erro
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Ocorreu um erro.');" + ex.Message, true);
+            }
         }
 
         private void CalculaMediaQuadritonal()
         {
-            
+            try//no bloco de tratamento de erros
+            {
+                //Para a OD #########################################
+                campoMEDIATconvODTextBox.Text = "";//limpa o txt média tritonal
+
+                if ((campo500odComboBox.Text == "") || (campo1kodComboBox.Text == "") || (campo2kodComboBox.Text == "") || (campo4kodComboBox.Text == ""))//caso alguma das txt's de 500Hz, 1kHz e 2kHz estejam vazias
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Por favor, escolha os valores para a média quadritonal de 500Hz, 1kHz, 2kHZ e 4kHz da OD.');", true);
+                }
+
+                else//do contrário
+                {
+                    if ((campoVAodAus500CheckBox.Checked == true) || (campoVAodAus1kCheckBox.Checked == true) || (campoVAodAus2kCheckBox.Checked == true) || (campoVAodAus4kCheckBox.Checked == true))//caso alguma das txt's de 500Hz, 1kHz ou 2kHz esteja com o texto AUS, de ausente
+                    {
+                        campoMEDIATconvODTextBox.Text = "Saída máxima";//atritui a frase à txt média
+                    }
+
+                    else//caso contrário
+                    {
+                        int valor1, valor2, valor3, valor4, resultado;
+
+                        valor1 = Convert.ToInt32(campo500odComboBox.Text);
+                        valor2 = Convert.ToInt32(campo1kodComboBox.Text);
+                        valor3 = Convert.ToInt32(campo2kodComboBox.Text);
+                        valor4 = Convert.ToInt32(campo4kodComboBox.Text);
+
+                        resultado = ((valor1 + valor2 + valor3 + valor4) / 4);
+
+                        campoMEDIATconvODTextBox.Text = Convert.ToString(resultado);
+                        lblMediaCampoConvenOD.Text = "Média Quadritonal (dBNA):";
+                    }
+                }
+
+                //Para a OE #######################################
+                campoMEDIATconvOETextBox.Text = "";//limpa o txt média tritonal
+
+                if ((campo500oeComboBox.Text == "") || (campo1koeComboBox.Text == "") || (campo2koeComboBox.Text == "") || (campo4koeComboBox.Text == ""))//caso alguma das txt's de 500Hz, 1kHz e 2kHz estejam vazias
+                {
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Por favor, escolha os valores para a média quadritonal de 500Hz, 1kHz, 2kHZ e 4kHz da OE.');", true);
+                }
+
+                else//do contrário
+                {
+                    if ((campoVAoeAus500CheckBox.Checked == true) || (campoVAoeAus1kCheckBox.Checked == true) || (campoVAoeAus2kCheckBox.Checked == true) || (campoVAoeAus4kCheckBox.Checked == true))//caso alguma das txt's de 500Hz, 1kHz ou 2kHz esteja com o texto AUS, de ausente
+                    {
+                        campoMEDIATconvOETextBox.Text = "Saída máxima";//atritui a frase à txt média
+                    }
+
+                    else//caso contrário
+                    {
+                        int valor1, valor2, valor3, valor4, resultado;
+
+                        valor1 = Convert.ToInt32(campo500oeComboBox.Text);
+                        valor2 = Convert.ToInt32(campo1koeComboBox.Text);
+                        valor3 = Convert.ToInt32(campo2koeComboBox.Text);
+                        valor4 = Convert.ToInt32(campo4koeComboBox.Text);
+
+                        resultado = ((valor1 + valor2 + valor3 + valor4) / 4);
+
+                        campoMEDIATconvOETextBox.Text = Convert.ToString(resultado);
+                        lblMediaCampoConvenOE.Text = "Média Quadritonal (dBNA):";
+                    }
+                }
+            }
+            catch (Exception ex)//tratamento de erro
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Ocorreu um erro.');" + ex.Message, true);
+            }
         }
 
         private void ImprimeAudiograma()
