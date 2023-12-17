@@ -1781,24 +1781,24 @@ namespace SISTEMASLUASAUDE_APLICACAO
             {
                 dadosRel.sdtOE = txtSDTOE.Text;
             }
-            var mediaod = mEDIAodTextBox.Text + " dBNA";
-            if (!String.IsNullOrEmpty(mEDIAodTextBox.Text))
-            {
-                dadosRel.mediaOD = mediaod;
-            }
-            else
-            {
-                dadosRel.mediaOD = mEDIAodTextBox.Text;
-            }
-            var mediaoe = mEDIAoeTextBox.Text + " dBNA";
-            if (!String.IsNullOrEmpty(mEDIAoeTextBox.Text))
-            {
-                dadosRel.mediaOE = mediaoe;
-            }
-            else
-            {
-                dadosRel.mediaOE = mEDIAoeTextBox.Text;
-            }
+            //var mediaod = mEDIAodTextBox.Text + " dBNA";
+            //if (!String.IsNullOrEmpty(mEDIAodTextBox.Text))
+            //{
+            //    dadosRel.mediaOD = mediaod;
+            //}
+            //else
+            //{
+            //    dadosRel.mediaOD = mEDIAodTextBox.Text;
+            //}
+            //var mediaoe = mEDIAoeTextBox.Text + " dBNA";
+            //if (!String.IsNullOrEmpty(mEDIAoeTextBox.Text))
+            //{
+            //    dadosRel.mediaOE = mediaoe;
+            //}
+            //else
+            //{
+            //    dadosRel.mediaOE = mEDIAoeTextBox.Text;
+            //}
 
             dadosRel.comentarios = txtComentariosGerais.Text;
 

@@ -66,7 +66,7 @@
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
             border-radius: 10px; /* Valor do raio dos cantos arredondados */
             text-align: right; /* Centraliza horizontalmente */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */           
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
             background: linear-gradient(to right, #0074D9, #2ECC40);
             color: white;
             padding: 10px 20px;
@@ -76,49 +76,95 @@
             cursor: pointer; /* Altera o cursor para a forma de uma mão */
             border-radius: 10px; /* Valor do raio dos cantos arredondados */
             text-align: left; /* Centraliza horizontalmente */
-            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */           
+            line-height: normal; /* Redefine a altura da linha para evitar alinhamento vertical inadequado */
             background: linear-gradient(to right, #2ECC40, #0074D9);
             color: white;
             padding: 10px 20px;
         }
+
+        .tab-content {
+            display: none;
+        }
+
+        .active-tab {
+            display: block;
+        }
+
+        .tab-button {
+            cursor: pointer;
+            padding: 10px;
+            background: linear-gradient(to right, #2ECC40, #0074D9);
+            border-color: black;
+            display: inline-block;
+            margin-right: 5px;
+            transition: transform 0.3s; /* Adicione uma transição suave para o efeito de zoom */
+        }
+
+            .tab-button:hover{
+                transform: scale(1.2); /* Aumenta o tamanho em 10% quando o mouse passa por cima */
+            }
     </style>
 </head>
-<body class="custom-font" style="background-color: lightslategray; background-image: url('./Images/luaRecolorida2.png'); background-repeat: no-repeat; background-size: 80%; background-position: right top">
+<body class="custom-font" style="background-color: lightslategray;">
     <form id="frmLogin" runat="server" style="width: 100%; height: 100%">
         <header>
             <b>Sistemas Lua - Saúde: Como Usar?</b>
         </header>
         <div id="geral" runat="server" style="margin-top: 40px; margin-bottom: 50px; width: 100%; height: 100%; align-items: stretch; vertical-align: central">
-            <asp:Table ID="tbLogin" runat="server" Width="100%" CssClass="alinhamento-text-center">
+            <asp:Table ID="tbComoUsar" runat="server" Width="100%" CssClass="alinhamento-text-center">
                 <asp:TableHeaderRow>
-                    <asp:TableHeaderCell Width="50%">
-                        <asp:Image ID="imgUsuarios" runat="server" ImageUrl="~/Images/usuariosMaior.png" Width="35%" />
+                    <asp:TableHeaderCell Width="100%">
+                        <asp:Image ID="imgUsuarios" runat="server" ImageUrl="~/Images/usuariosMaior.png" Width="10%" />
                     </asp:TableHeaderCell>
-                    <asp:TableHeaderCell Width="50%"></asp:TableHeaderCell>
                 </asp:TableHeaderRow>
-                <asp:TableRow>
-                    <asp:TableCell Width="50%">
-                        <asp:TextBox ID="txtUsuario" runat="server" TextMode="SingleLine" placeholder="Digite o usuário..." Width="50%" Height="50px" Font-Bold="true" Font-Size="14" BorderColor="lightslategray" BorderStyle="Solid" BorderWidth="1" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
-                        <br />
-                        <br />
-                        <asp:TextBox ID="txtRegistroConselho" runat="server" TextMode="SingleLine" placeholder="Registro no Conselho Regional?" Width="50%" Height="50px" Font-Bold="true" Font-Size="14" BorderColor="lightslategray" BorderStyle="Solid" BorderWidth="1" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
-                        <br />
-                        <br />
-                        <asp:TextBox ID="txtSenha" runat="server" TextMode="Password" placeholder="Digite a senha..." Width="50%" Height="50px" Font-Bold="true" Font-Size="14" BorderColor="lightslategray" BorderStyle="Solid" BorderWidth="1" CssClass="cantos-arredondados-alinhamento"></asp:TextBox>
-                        <br />
-                        <br />
-                        <asp:Button ID="btnEntrar" runat="server" Text="Entrar" Width="35%" Height="50px" ForeColor="Black" Font-Bold="true" Font-Size="14" BorderColor="Black" BorderStyle="Solid" BorderWidth="2" CssClass="cantos-arredondados-alinhamento-imagem" OnClick="btnEntrar_Click" />
-                        <br />
-                        <br />
-                        <asp:Button ID="btnInstrucoes" runat="server" Text="Como usar?" Width="35%" Height="50px" BackColor="AliceBlue" ForeColor="Black" Font-Bold="true" Font-Size="14" BorderColor="Black" BorderStyle="Solid" BorderWidth="2" CssClass="cantos-arredondados-alinhamento-imagem-como-usar" OnClick="btnInstrucoes_Click" />
-                    </asp:TableCell>
-                    <asp:TableCell Width="50%"></asp:TableCell>
-                </asp:TableRow>
+                <asp:TableHeaderRow>
+                    <asp:TableHeaderCell Width="100%">
+                        <div style="width: 100%;">
+                            <%--abas--%>
+                            <div class="tab-button" style="width: 15%; border-style: solid; border-width: 1px; font-size: medium;" onclick="showTab('tabApres')">Apresentação</div>
+                            <div class="tab-button" style="width: 15%; border-style: solid; border-width: 1px; font-size: medium;" onclick="showTab('tabCont')">Conteúdos</div>
+                            <div class="tab-button" style="width: 15%; border-style: solid; border-width: 1px; font-size: medium;" onclick="showTab('tabManual')">Manual Geral</div>
+                            <div class="tab-button" style="width: 15%; border-style: solid; border-width: 1px; font-size: medium;" onclick="showTab('tabReq')">Especificações</div>
+                            <div class="tab-button" style="width: 15%; border-style: solid; border-width: 1px; font-size: medium;" onclick="showTab('tabSobreAutor')">Sobre o Autor</div>
+                            <%--conteúdos das abas--%>
+                            <div id="tabApres" class="tab-content active-tab" style="width: 100%;">
+                                <p>Apresentação</p>
+                            </div>
+                            <div id="tabCont" class="tab-content" style="width: 100%;">
+                                <p>Conteúdos</p>
+                            </div>
+                            <div id="tabManual" class="tab-content" style="width: 100%;">
+                                <p>Manual geral</p>
+                            </div>
+                            <div id="tabReq" class="tab-content" style="width: 100%;">
+                                <p>Requisitos</p>
+                            </div>
+                            <div id="tabSobreAutor" class="tab-content" style="width: 100%;">
+                                <p>Sobre o autor</p>
+                            </div>
+                        </div>
+                    </asp:TableHeaderCell>
+                </asp:TableHeaderRow>
             </asp:Table>
         </div>
         <footer>
             <b>Sistemas Lua de Gerenciamento EIRELI. CNPJ: 34.648.108/0001-07. Todos os direitos reservados. 2023. <a href="http://lattes.cnpq.br/5576683103146306" style="color: yellow; text-decoration: none;">Sobre o desenvolvedor.</a><a>&nbsp;&nbsp;&nbsp;</a><a href="https://www.linkedin.com/in/f%C3%A1bio-leonel-do-nascimento-0442b215b/" style="color: yellow; text-decoration: none;">Contato.</a></b>
         </footer>
     </form>
+
+    <script>
+        function showTab(tabId) {
+            // Esconder todas as abas
+            var tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(function (tab) {
+                tab.classList.remove('active-tab');
+            });
+
+            // Mostrar a aba selecionada
+            var selectedTab = document.getElementById(tabId);
+            selectedTab.classList.add('active-tab');
+        }
+    </script>
+
 </body>
 </html>
