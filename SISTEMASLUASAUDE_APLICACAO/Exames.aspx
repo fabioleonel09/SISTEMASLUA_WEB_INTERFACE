@@ -209,7 +209,6 @@
             <b>Audiologia: Exames Audiológicos</b>
         </header>
         <div id="geral" runat="server" style="margin-top: 50px; margin-bottom: 50px; width: 100%; height: 100%; align-items: center; vertical-align: central">
-            <br />
             <div class="container" style="text-align: right; width: 100%;">
                 <asp:Label ID="lblBoasVindas" runat="server" ForeColor="White" Font-Bold="true" Font-Size="Large"></asp:Label>
             </div>
@@ -224,7 +223,6 @@
 
                             <%--conteúdos das abas--%>
                             <div id="tabAudio" class="tab-content active-tab" style="width: 100%;">
-                                <br />
                                 <div style="width: 100%; background-color: white; text-align: center; vertical-align: bottom;">
                                     <asp:Label ID="lblTituloCabecalho" runat="server" Text="Audiometria" Font-Bold="true" Font-Size="22"></asp:Label>
                                 </div>
@@ -278,7 +276,6 @@
                                 </asp:Table>
                             </div>
                             <div id="tabImp" class="tab-content" style="width: 100%;">
-                                <br />
                                 <div style="width: 100%; background-color: white; text-align: center; vertical-align: bottom;">
                                     <asp:Label ID="lblTituloImpedanciometria" runat="server" Text="Timpanometria e Pesquisa dos Reflexos do Músculo do Estapédio" Font-Bold="true" Font-Size="22"></asp:Label>
                                 </div>

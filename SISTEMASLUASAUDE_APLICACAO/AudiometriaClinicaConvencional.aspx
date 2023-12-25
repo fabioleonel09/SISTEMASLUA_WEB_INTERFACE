@@ -180,20 +180,19 @@
                 <div class="box" style="width: 33%;"></div>
             </div>
         </header>
-        <br />
         <div id="geral" runat="server" style="margin-top: 50px; margin-bottom: 50px; width: 100%; height: 100%; align-items: stretch; vertical-align: central">
             <asp:Label ID="lblBoasVindas" runat="server" ForeColor="White" Font-Bold="true" Font-Size="Large"></asp:Label>
             <div class="container" style="text-align: center; width: 100%;">
                 <div class="box">
                     <br />
                     <div style="width: 100%; background-color: white; text-align: left; vertical-align: bottom;">
-                        <asp:Label ID="lblNomePaciente" runat="server" Font-Bold="true" Font-Size="14"></asp:Label>
+                        <asp:Label ID="lblNomePaciente" runat="server" Font-Bold="true" Font-Size="13"></asp:Label>
                         <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                        <asp:Label ID="lblIdadePaciente" runat="server" Font-Bold="true" Font-Size="14"></asp:Label>
+                        <asp:Label ID="lblIdadePaciente" runat="server" Font-Bold="true" Font-Size="13"></asp:Label>
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <asp:Label ID="lblDataHoje" runat="server" Font-Bold="true" Font-Size="13"></asp:Label>
                         <br />
-                        <asp:Label ID="lblNomeSocialPaciente" runat="server" Font-Bold="true" Font-Size="14"></asp:Label>
-                        <br />
-                        <asp:Label ID="lblDataHoje" runat="server" Font-Bold="true" Font-Size="14"></asp:Label>
+                        <asp:Label ID="lblNomeSocialPaciente" runat="server" Font-Bold="true" Font-Size="13"></asp:Label>
                     </div>
                     <asp:Table ID="tbAudiometriaClinica" runat="server" Width="100%" BorderColor="#cccccc" BorderWidth="2px" BorderStyle="Solid">
                         <asp:TableHeaderRow Width="100%">
