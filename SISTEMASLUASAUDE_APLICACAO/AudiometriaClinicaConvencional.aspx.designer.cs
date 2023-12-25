@@ -177,6 +177,33 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.RadioButtonList rbBananaFalaOEClinica;
 
         /// <summary>
+        /// Controle dadosAudioOE.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dadosAudioOE;
+
+        /// <summary>
+        /// Controle tbAudiometriaClinicaPlotagem.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table tbAudiometriaClinicaPlotagem;
+
+        /// <summary>
+        /// Controle dadosAudioODPlotagem.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dadosAudioODPlotagem;
+
+        /// <summary>
         /// Controle pnlGridDadosOD.
         /// </summary>
         /// <remarks>
@@ -1581,6 +1608,15 @@ namespace SISTEMASLUASAUDE_APLICACAO
         protected global::System.Web.UI.WebControls.Button btnPlotaGeral;
 
         /// <summary>
+        /// Controle dadosAudioOEPlotagem.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dadosAudioOEPlotagem;
+
+        /// <summary>
         /// Controle tbTesteWeberCabecalho.
         /// </summary>
         /// <remarks>
@@ -1678,15 +1714,6 @@ namespace SISTEMASLUASAUDE_APLICACAO
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image imgSimbologiaAudiometrica;
-
-        /// <summary>
-        /// Controle dadosAudioOE.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dadosAudioOE;
 
         /// <summary>
         /// Controle AudiometriaVocalClinica.
